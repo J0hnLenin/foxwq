@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	<!-- 常规按钮位置-->
+	<Element Type = "Button" Name="BtnAutoApply"  Pos =  "3,0" Visible = '1'>
+		<Image  Normal="button\HallActionPanel\btn_hr_pkg_01.png"  Normal_Pos="0,0,159,50" 
+			  Hover="button\HallActionPanel\btn_hr_pkg_01.png" Hover_Pos="0,50,159,50" 
+			  Down="button\HallActionPanel\btn_hr_pkg_01.png" Down_Pos="0,100,159,50"/>
+	</Element>
+
+	<Element Type = "Button" Name="BtnCancelAutoApply"  Pos =  "3,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_hr_pkg_01.png"  Normal_Pos="159,0,159,50" 
+			  Hover="button\HallActionPanel\btn_hr_pkg_01.png" Hover_Pos="159,50,159,50" 
+			  Down="button\HallActionPanel\btn_hr_pkg_01.png" Down_Pos="159,100,159,50"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnNineFlyKnife"  Pos =  "174,0" Visible = '1'>
+		<Image  Normal="button\HallActionPanel\btn_flyknife.png"  Normal_Pos="0,0,126,50" 
+			  Hover="button\HallActionPanel\btn_flyknife.png" Hover_Pos="0,50,126,50" 
+			  Down="button\HallActionPanel\btn_flyknife.png" Down_Pos="0,100,126,50"/>
+	</Element>
+	<Element Type = "Button" Name="BtnAI"  Pos =  "312,0" Visible = '1'>
+		<Image  Normal="button\HallActionPanel\btn_hr_pkg_02.png"  Normal_Pos="126,0,126,50" 
+			  Hover="button\HallActionPanel\btn_hr_pkg_02.png" Hover_Pos="126,50,126,50" 
+			  Down="button\HallActionPanel\btn_hr_pkg_02.png" Down_Pos="126,100,126,50"/>
+	</Element>	
+	
+	<!-- 新框架急速匹配及PC自动申请按钮位置 -->
+	<Element Type = "Button" Name="BtnFastMatch_Field"  Pos = "3,0" Visible = '0'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "13" Name = "" Bold="1" TextShadow="1" Pos="0,25,141,23"/>
+		<Image  Normal="button\HallActionPanel\btn_field.png"  Normal_Pos="0,0,141,48"  Normal_TextColor = "#aee3ff"
+			  Hover="button\HallActionPanel\btn_field.png" Hover_Pos="0,48,141,48" Hover_TextColor = "#aee3ff"
+			  Down="button\HallActionPanel\btn_field.png" Down_Pos="0,96,141,48" Down_TextColor = "#aee3ff"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnSelectField_Field"  Pos = "146,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_field.png"  Normal_Pos="141,0,53,48" 
+			  Hover="button\HallActionPanel\btn_field.png" Hover_Pos="141,48,53,48" 
+			  Down="button\HallActionPanel\btn_field.png" Down_Pos="141,96,53,48"/>
+	</Element>
+	<Element Type = "Button" Name="BtnAutoApply_Field"  Pos =  "206,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_field.png"  Normal_Pos="194,0,72,48" 
+			  Hover="button\HallActionPanel\btn_field.png" Hover_Pos="194,48,72,48" 
+			  Down="button\HallActionPanel\btn_field.png" Down_Pos="194,96,72,48"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnCancelAutoApply_Field"  Pos =  "13,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_add.png"  Normal_Pos="148,151,237,48" 
+			  Hover="button\HallActionPanel\btn_add.png" Hover_Pos="148,199,237,48" 
+			  Down="button\HallActionPanel\btn_add.png" Down_Pos="148,247,237,48"/>
+	</Element>
+	<Element Type = "Button" Name="BtnNineFlyKnife_Field"  Pos =  "285,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_flyknife.png"  Normal_Pos="126,0,73,48" 
+			  Hover="button\HallActionPanel\btn_flyknife.png" Hover_Pos="126,48,73,48" 
+			  Down="button\HallActionPanel\btn_flyknife.png" Down_Pos="126,96,73,48"/>
+	</Element>
+	<Element Type = "Button" Name="BtnAI_Field"  Pos =  "365,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_add.png"  Normal_Pos="0,151,73,48" 
+			  Hover="button\HallActionPanel\btn_add.png" Hover_Pos="0,199,73,48" 
+			  Down="button\HallActionPanel\btn_add.png" Down_Pos="0,247,73,48"/>
+	</Element>
+	
+	<!-- 新框架急速匹配及死活对战按钮位置 -->
+	<Element Type = "Button" Name="BtnFastMatch_NFLAD"  Pos = "3,0" Visible = '0'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "13" Name = "" Bold="1" TextShadow="1" Pos="0,25,141,23"/>
+		<Image  Normal="button\HallActionPanel\btn_field.png"  Normal_Pos="0,0,141,48"  Normal_TextColor = "#aee3ff"
+			  Hover="button\HallActionPanel\btn_field.png" Hover_Pos="0,48,141,48" Hover_TextColor = "#aee3ff"
+			  Down="button\HallActionPanel\btn_field.png" Down_Pos="0,96,141,48" Down_TextColor = "#aee3ff"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnSelectField_NFLAD"  Pos = "146,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_field.png"  Normal_Pos="141,0,53,48" 
+			  Hover="button\HallActionPanel\btn_field.png" Hover_Pos="141,48,53,48" 
+			  Down="button\HallActionPanel\btn_field.png" Down_Pos="141,96,53,48"/>
+	</Element>
+	<Element Type = "Button" Name="BtnNFLAD_NFLAD"  Pos =  "285,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_nflad.png"  Normal_Pos="0,0,72,48" 
+			  Hover="button\HallActionPanel\btn_nflad.png" Hover_Pos="0,48,72,48" 
+			  Down="button\HallActionPanel\btn_nflad.png" Down_Pos="0,96,72,48"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnNineFlyKnife_NFLAD"  Pos =  "206,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_flyknife.png"  Normal_Pos="126,0,73,48" 
+			  Hover="button\HallActionPanel\btn_flyknife.png" Hover_Pos="126,48,73,48" 
+			  Down="button\HallActionPanel\btn_flyknife.png" Down_Pos="126,96,73,48"/>
+	</Element>
+	<Element Type = "Button" Name="BtnAI_NFLAD"  Pos =  "365,0" Visible = '0'>
+		<Image  Normal="button\HallActionPanel\btn_add.png"  Normal_Pos="0,151,73,48" 
+			  Hover="button\HallActionPanel\btn_add.png" Hover_Pos="0,199,73,48" 
+			  Down="button\HallActionPanel\btn_add.png" Down_Pos="0,247,73,48"/>
+	</Element>
+	
+	
+	
+	
+	
+	
+	<!----------------------------------------------------------------------->	
+	<Element Type = "Button" Name="Btnadvertisement"  Pos =  "0,50" Visible = '1'>
+		<Image  Normal="button\HallActionPanel\wobar2_pkg_01.png"  Normal_Pos="0,0,265,40" 
+			  Hover="button\HallActionPanel\wobar2_pkg_01.png" Hover_Pos="0,40,265,40" 
+			  Down="button\HallActionPanel\wobar2_pkg_01.png" Down_Pos="0,80,265,40"/>
+	</Element>	
+	<Element Type = "String" Text = "" Pos = "12,60,200,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "自动邀请描述" Visible="0"/>
+</root> 

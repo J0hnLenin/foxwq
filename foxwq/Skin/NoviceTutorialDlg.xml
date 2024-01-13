@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="TitleLogo"  Pos = "4,0"  Visible = '1'>
+		<Image  Background = "background\main\logo.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name = "RichTextBoxBack" Pos = "624, 37" Visible = "1">
+		<Image Background = "button\RichTextBoxBack.png"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!--边框-->	
+	<Element Type = "Frame" Name="FrameRichEdit"  Pos = "0,0"  Visible = '1'  DisplayScale="1">
+		<Image  Background = "HallRoomListPanel\list_bg.png" />
+	</Element>
+	
+	<Element Type = "Button" Name="BtnPrevious"  Pos ="407,48" Anchor_LTRBC = "00110">
+		<Image  Normal="button\TutorialButton.png"  Normal_Pos="0,0,134,44"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\TutorialButton.png"     Hover_Pos="0,44,134,44"  Hover_TextColor = "#d1ffc9"
+			  Down="button\TutorialButton.png"      Down_Pos="0,88,134,44"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\TutorialButton.png"   Disable_Pos="0,132,134,44"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnRetry"  Pos ="273,48" Anchor_LTRBC = "00110">
+		<Image  Normal="button\TutorialButton.png"  Normal_Pos="134,0,134,44"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\TutorialButton.png"     Hover_Pos="134,44,134,44"  Hover_TextColor = "#d1ffc9"
+			  Down="button\TutorialButton.png"      Down_Pos="134,88,134,44"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\TutorialButton.png"   Disable_Pos="134,132,134,44"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnNext"  Pos ="139,48" Anchor_LTRBC = "00110">
+		<Image  Normal="button\TutorialButton.png"  Normal_Pos="268,0,134,44"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\TutorialButton.png"     Hover_Pos="268,44,134,44"  Hover_TextColor = "#d1ffc9"
+			  Down="button\TutorialButton.png"      Down_Pos="268,88,134,44"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\TutorialButton.png"   Disable_Pos="268,132,134,44"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+
+</root> 

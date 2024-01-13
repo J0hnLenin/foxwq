@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Frame" Name="Frame"  Pos = "0,0"  Visible = '1'>
+		<Image  Background = "HallRoomListPanel\roomlist_bg.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="m_pic"  Visible = '0'>
+		<Image  Background = ""/>
+	</Element> 
+	<Element Type = "Image" Name="m_picCN"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picKR"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="16,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picJP"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="32,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picTW"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="48,48,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picSelf"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="64,48,16,16"/>
+	</Element>
+	
+	<Element Type = "Image" Name="m_picMemberGold"  Visible = '0'>
+		<Image  Background = "listicon\viplevel_pkg_01.png" Pos="16,0,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picMemberWhiteGold"  Visible = '0'>
+		<Image  Background = "listicon\viplevel_pkg_01.png" Pos="0,0,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picMemberBK"  Visible = '0'>
+		<Image  Background = "listicon\viplevel_pkg_01.png" Pos="0,120,47,20"/>
+	</Element>
+
+	<Element Type = "Image" Name="m_picClubImage"  Visible = '0'>
+		<Image  Background = ""/>
+	</Element>
+
+	<Element Type = "Image" Name="m_picOwner"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,64,16,16"/>
+	</Element>  
+	<Element Type = "Image" Name="m_picWhite"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="96,48,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picBlack"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="112,48,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picOwnerWhite"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="128,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picOwnerBlack"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="144,48,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picManager"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="80,32,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picOperator"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="96,32,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picAudio"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="112,32,16,16"/>
+	</Element>
+	
+	<Element Type = "Image" Name="ListBkg"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,132,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="ListItemBkg"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,110,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="ListFocusbar"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_focusbar.png" />
+	</Element> 
+	<Element Type = "Image" Name="ColumnSplitor"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_stk1.png" />
+	</Element> 
+
+</root> 

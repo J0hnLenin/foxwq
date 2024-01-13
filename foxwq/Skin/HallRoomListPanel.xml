@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Image" Name="ha1_svl"  Pos = "0,0"  Visible = '1'>
+		<Image  Background = "HallRoomListPanel\ha1_svl.png" Pos='193,0,150,27'/>
+	</Element> 
+	<Element Type = "Image" Name="ha1_svl_2"  Pos = "156,0"  Visible = '1'>
+		<Image  Background = "HallRoomListPanel\ha1_svl.png" Pos='273,0,71,27'/>
+	</Element> 
+	
+	<Element Type = "Frame" Name="Frame"  Pos = "0,0"  Visible = '1'>
+		<Image  Background = "HallRoomListPanel\list_bg.png" />
+	</Element> 	
+
+	<Element Type="String" Name = "房间名" Text = "-----" 	Font = "宋体" Pos = "40,5,130,15" Align = "L" Height = "14" TextColor = '#c5a886' Visible = '0'/>
+	<Element Type = "Image" Name="RoomCountIcon" Pos = "15,5" Visible = '1'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="80,16,16,16"/>
+	</Element> 
+	<Element Type="String" Name = "房间数" Text = "0" Font = "宋体" Pos = "35,5,130,15" Align = "L" Height = "14" TextColor = '#c5a886' />
+	<Element Type = "Image" Name="PeopleCountIcon" Pos = "90,5" Visible = '1'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="96,16,16,16"/>
+	</Element> 	 
+	<Element Type="String" Name = "人数" Text = "0" Font = "宋体" Pos = "110,5,130,15" Align = "L" Height = "14" TextColor = '#c5a886' />
+	
+	<!--移动端人数显示，默认隐藏，靠数据触发显示-->  
+	<Element Type = "Image" Name="MobileCountIcon" Pos = "165,5" Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="96,80,16,16"/>
+	</Element> 	 
+	<Element Type="String" Name = "MobileCount" Text = "0" Font = "宋体" Pos = "185,5,130,15" Align = "L" Height = "14" TextColor = '#c5a886' Visible = '0'/>
+
+	<Element Type = "Button" Name="BtnServer"  Pos = "232,0"  Anchor_LTRBC = "11000">
+	<Element Type="String"  Name = "BtnServerText" Text = "" Font = "宋体" Pos = "30,5,120,15" Align = "L" Height = "14" TextColor = '#c5a886'/>
+	<Image  Normal="HallRoomListPanel\serverswitch.png"  Normal_Pos="0,0,150,27"  Normal_TextColor = "#FFFFFF"
+			  Hover="HallRoomListPanel\serverswitch.png" Hover_Pos="0,27,150,27"  Hover_TextColor = "#FFFFFF"
+			  Down="HallRoomListPanel\serverswitch.png"  Down_Pos="0,54,150,27"  Down_TextColor = "#FFFFFF"/>
+	</Element>
+
+	<!--TabCtrl 切换ListCtrl-->
+	<Element Type = "TabCtrl" Name= "TabCtrl按钮" Pos = "159,10,159,20"  Align = "R" Interval = '3' >
+		<Item Name = "全部" Visible = '1'
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,0,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,0,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,0,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>		
+		<Item Name = "对弈"  Visible = '1'  ReleventElement = "ListCtrl成员列表2"
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,40,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,40,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,40,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>		
+		<Item Name = "直播"  Visible = '1'  ReleventElement = "ListCtrl成员列表2"
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,80,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,80,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,80,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>
+	</Element>
+	<!--TabCtrl 切换ListCtrl-->  
+	
+	<!--List-->  
+	
+	<!--Begin of ListCtrl-->
+	<Element Type = "ListCtrl" Name= "ListCtrlRoom"  IgnoreDrawColumnWhenSel = '0' Pos = "0,0,524,380"  Visible = "0">
+		<HeadCtrl Height = '20' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+		<Row Height = '30' Background = "" HoverImage = "HallRoomListPanel\list_focusbar.png"  HoverImageOffset = "-8,-8" ColumnImage = "HallRoomListPanel\list_stk1.png" ColumnImageSelectedRow = ""  />
+		<Cloumn	Width = '60' Title = "编号">
+		  <Element Type="String"  Name = "Lable编号" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+		</Cloumn>
+		<Cloumn	Width = '40'  Title = "类型">
+		  <Element Type="String"  Name = "Lable类型" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+		</Cloumn>
+		<Cloumn	Width = '40' Title = "人数">
+		  <Element Type="String"  Name = "Lable人数" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+		</Cloumn>
+		<Cloumn	Width = '180'  Title = "白">
+		  <Element Type="String"  Name = "Lable白" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+		</Cloumn>
+		<Cloumn	Width = '180'  Title = "黑">
+		  <Element Type="String"  Name = "Lable黑" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+		</Cloumn>
+		<Cloumn	Width = '50' Title = "状态">
+		  <Element Type="String"  Name = "Lable状态" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+		</Cloumn>
+		<Cloumn	Width = '500' Title = "备注">
+		  <Element Type="String"  Name = "Lable备注" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+		</Cloumn>
+		<!--滚动条-->
+		<ScrollBar Name="MyProperty_ScrollBar" Type = "ScrollBar" Pos = "0,0" Visible = '0'>
+			<!-- 向上箭头-->
+			<Element Name="VScrollBarUpArrow" Type = "Button">
+				<Image  Normal="ScrollBar\VScrollBarUpArrowNormal.bmp"
+					  Down="ScrollBar\VScrollBarUpArrowDown.bmp"
+					  Hover="ScrollBar\VScrollBarUpArrowUp.bmp"/>
+			</Element>
+			<!--滑槽-->
+			<Element Name="Span" Type = "Panel">
+				<Image Background = "ScrollBar\VScrollBarSpanNormal.bmp"/>
+			</Element>
+			<!-- 滑块-->
+			<Element Name="VScrollBarThumb" Type = "Button">
+				<Image  Normal="ScrollBar\VScrollBarThumbNormal.bmp"
+					  Down="ScrollBar\VScrollBarThumbDown.bmp"
+					  Hover="ScrollBar\VScrollBarThumbUp.bmp"/>
+			</Element>
+
+			<!-- 向下箭头-->
+			<Element Name="VScrollBarDownArrow" Type = "Button">
+				<Image  Normal="ScrollBar\VScrollBarDownArrowNormal.bmp"
+					  Down="ScrollBar\VScrollBarDownArrowDown.bmp"
+					  Hover="ScrollBar\VScrollBarDownArrowUp.bmp"/>
+			</Element>
+
+		</ScrollBar>
+	</Element>
+	<!--End of ListCtrl-->
+	<Element Type = "Image" Name="RoomListBkg"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,132,200,98"/>
+	</Element> 
+	
+	<Element Type = "Image" Name="ListCtrlRoomListHead"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\ha1_nav.png" />
+	</Element> 
+	<Element Type = "Image" Name="RoomListItem_LIVE"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,22,200,22"/>
+	</Element> 		
+	<Element Type = "Image" Name="RoomListItem_MATCH"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,22,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="RoomListItem_EXPLAIN"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,22,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="RoomListItem_P1_P9"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,88,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="RoomListItem_D9"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,44,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="RoomListItem_D7_D8"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,66,200,22"/>
+	</Element>
+	<Element Type = "Image" Name="RoomListItem_Normal"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,110,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="RoomListItem_Top"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,0,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="ColumnSplitor"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_stk1.png" />
+	</Element> 
+	<Element Type = "Image" Name="V"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_stk2_01.png" />
+	</Element> 
+	<Element Type = "Image" Name="S"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_stk2_02.png" />
+	</Element> 
+	<Element Type = "Image" Name="liststk_01"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\liststk_01.png" />
+	</Element> 
+	<Element Type = "Image" Name="liststk_02"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\liststk_02.png" />
+	</Element> 
+	<Element Type = "Image" Name="ListFocusbar"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_focusbar.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="picCN"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="16,32,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picJP"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="48,32,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picKR"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="32,32,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picTW"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="64,32,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picCNL"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picJPL"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="32,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picKRL"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="16,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picTWL"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="48,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picBet"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="144,32,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picAmateur"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="32,0,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picOccupation"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="16,0,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picChampion"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,0,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="picChampionNational"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="80,64,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="IconHot"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="144,16,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="Marquee"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\wobar.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="RoomEnd"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_08.png" />
+	</Element> 
+	
+	<Custom HotNumberOfPeople = '500'/>
+</root> 

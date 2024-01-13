@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnHelp"  Pos ="105,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,0,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,0,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,0,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,0,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!--左侧背景条-->
+	<Element Type = "Image" Name="LTBack_1"  Pos = "5,35" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,107,375,56"/>
+	</Element>
+	<Element Type = "Image" Name="LTBack_2_Left"  Pos = "5,96" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,0,131,106"/>
+	</Element>
+	<Element Type = "Image" Name="LTBack_2_Right"  Pos = "141,96" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="132,0,240,106"/>
+	</Element>
+	<Element Type = "Image" Name="LTBack_3"  Pos = "5,207" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,163,375,62"/>
+	</Element>
+	<Element Type = "Image" Name="LTBack_4"  Pos = "5,269" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,163,375,62"/>
+	</Element>
+	<Element Type = "Image" Name="LTBack_5"  Pos = "5,331" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,163,375,62"/>
+	</Element>
+	<Element Type = "Image" Name="LTBack_6"  Pos = "5,393" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,163,375,62"/>
+	</Element>
+	
+	<!--左侧小图标-->
+	<Element Type = "Image" Name="LTIcon_3"  Pos = "18,220" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="476,169,36,36"/>
+	</Element>
+	<Element Type = "Image" Name="LTIcon_4"  Pos = "18,282" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="440,169,36,36"/>
+	</Element>
+	<Element Type = "Image" Name="LTIcon_5"  Pos = "18,344" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="405,169,36,36"/>
+	</Element>
+	<Element Type = "Image" Name="LTIcon_6"  Pos = "23,406" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="379,169,26,36"/>
+	</Element>
+	
+	<!--左侧框文字-->
+	<Element Type = "String"  Name = "LTTxt_1" Text = "--------" Pos = "18,35,180,56" Font = "宋体" Align = "L" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_HaveCount" Text = "0" Pos = "198,35,50,56" Font = "宋体" Align = "L" Height = "20" TextColor = "#ff8534" Bold="1" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_2_LTop" Text = "----" Pos = "5,96,131,30" Font = "宋体" Align = "C" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_2_LBtm" Text = "-------" Pos = "5,172,131,30" Font = "宋体" Align = "C" Height = "12" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_2_TotalScore" Text = "0" Pos = "5,126,131,46" Font = "宋体" Align = "C" Height = "24" TextColor = "#ff8534" Bold="1" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_2_UseScore" Text = "0" Pos = "144,96,46,60" Font = "宋体" Align = "C" Height = "18" TextColor = "#ffeb64" Bold="1" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_2_RTop" Text = "-----" Pos = "190,96,200,60" Font = "宋体" Align = "L" Height = "16" TextColor = "#ffffff" Visible = "1"/>
+	
+	<Element Type = "String"  Name = "LTTxt_3_Top" Text = "-----" Pos = "67,214,300,18" Font = "宋体" Align = "L" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_3_Center" Text = "-----" Pos = "67,232,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_3_Btm" Text = "---" Pos = "67,248,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffa23f" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_3_Remain" Text = "-----" Pos = "5,247,365,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	
+	<Element Type = "String"  Name = "LTTxt_4_Top" Text = "----" Pos = "67,276,300,18" Font = "宋体" Align = "L" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_4_Center" Text = "------" Pos = "67,294,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_4_Btm" Text = "--" Pos = "67,310,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffa23f" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_4_Remain" Text = "----" Pos = "5,309,365,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	
+	<Element Type = "String"  Name = "LTTxt_5_Top" Text = "--" Pos = "67,338,300,18" Font = "宋体" Align = "L" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_5_Center" Text = "--" Pos = "67,356,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_5_Btm" Text = "--" Pos = "67,372,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffa23f" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_5_Remain" Text = "--" Pos = "5,373,365,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	
+	<Element Type = "String"  Name = "LTTxt_6_Top" Text = "--" Pos = "67,400,300,18" Font = "宋体" Align = "L" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_6_Center" Text = "--" Pos = "67,418,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_6_Btm" Text = "--" Pos = "67,434,300,16" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffa23f" Visible = "1"/>
+	<Element Type = "String"  Name = "LTTxt_6_Remain" Text = "--" Pos = "5,433,365,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#a6a6a6" Visible = "1"/>
+	
+	<!--左侧按钮-->
+	<Element Type = "Button" Name="BtnViewCount"  Pos = "200,48">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="679,0,81,30"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="679,30,81,30"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="679,60,81,30"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="679,90,81,30"  
+		/>
+	</Element>	
+	<Element Type = "Button" Name="BtnStartReplay"  Pos = "290,48">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="679,0,81,30"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="679,30,81,30"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="679,60,81,30"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="679,90,81,30"  
+		/>
+	</Element>	
+	<Element Type = "Button" Name="BtnExchange"  Pos = "171,150">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "18"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#872900" Normal_Pos="376,0,180,39"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#872900" Hover_Pos="376,43,180,39"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#872900" Down_Pos="376,86,180,39"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#872900" Disable_Pos="376,129,180,39"  
+		/>
+	</Element>	
+	<Element Type = "Button" Name="BtnTask_1"  Pos = "290,218">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="761,0,81,30"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="761,30,81,30"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="761,60,81,30"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="761,90,81,30"  
+		/>
+	</Element>	
+	<Element Type = "Button" Name="BtnTask_2"  Pos = "290,280">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="761,0,81,30"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="761,30,81,30"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="761,60,81,30"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="761,90,81,30"  
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnTask_3_ToFinish"  Pos = "290,342">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="679,0,81,30"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="679,30,81,30"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="679,60,81,30"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="679,90,81,30"  
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnTask_3"  Pos = "290,342" Visible = "0">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="761,0,81,30"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="761,30,81,30"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="761,60,81,30"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="761,90,81,30"  
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnTask_4"  Pos = "290,404">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="761,0,81,30"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="761,30,81,30"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="761,60,81,30"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="761,90,81,30"  
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnInputInvitePeople"  Pos = "5,460">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "14"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="559,0,119,36"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="559,36,119,36"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="559,72,119,36"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="559,108,119,36"  
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnInviteFriend"  Pos = "260,460">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "14"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="559,0,119,36"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="559,36,119,36"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="559,72,119,36"
+				Disable="FineArtReplay\notxt_image.png" Disable_TextColor = "#ffffff" Disable_Pos="559,108,119,36"  
+		/>
+	</Element>
+	
+	<!--右侧列表边框-->	
+	<Element Type = "Frame" Name="FrameRightList"  Pos = "0,0"  Visible = '1'  DisplayScale="1">
+		<Image  Background = "HallRoomListPanel\list_bg.png" />
+	</Element>	
+
+</root> 

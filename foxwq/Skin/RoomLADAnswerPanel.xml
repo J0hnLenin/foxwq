@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Frame" Name="Frame"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_bg.png" />
+	</Element> 
+</root> 

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "370,225" Transparent = '1'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,370,30" >	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0">	
+		<Image  Background = "InviteGameDlg\auto_inv.png" Pos="0,0,370,225"/>
+	</Element>
+	<Element Name="PanelMainUp" Type = "Panel" Pos = "0,0" >	
+		<Image  Background = "InviteGameDlg\auto_inv.png" Pos="0,225,370,225"/>
+	</Element>
+	
+	<Element Type = "AnimalImage" Name="头像"  Pos = "45,69,74,80" Stretching = "1" Visible = '1'>
+			<Image  Background = "" />
+	</Element>
+	
+	<!--按钮 -->
+	<Element Type = "Button" Name="BtnClose"  Pos = "36,6" Anchor_LTRBC="01100">
+		<Image  Normal="button\close_btn_pkg.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,30,30"
+				Hover="button\close_btn_pkg.png"  Hover_TextColor = "#666666" Hover_Pos="30,0,30,30"
+				Down="button\close_btn_pkg.png"      Down_TextColor = "#ffffff" Down_Pos="60,0,30,30"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnOK"  Pos = "5,36" Anchor_LTRBC="10010">
+		<Image  Normal="InviteGameDlg\auto_inv.png"  Normal_TextColor = "#666666" Normal_Pos="5,675,180,30"
+				Hover="InviteGameDlg\auto_inv.png"  Hover_TextColor = "#666666" Hover_Pos="5,705,180,30"
+				Down="InviteGameDlg\auto_inv.png"      Down_TextColor = "#ffffff" Down_Pos="5,735,180,30"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnCancel"  Pos = "185,36" Anchor_LTRBC="00110">
+		<Image  Normal="InviteGameDlg\auto_inv.png" Normal_TextColor = "#666666" Normal_Pos="185,675,180,30"
+			  Hover="InviteGameDlg\auto_inv.png" Hover_TextColor = "#666666" Hover_Pos="185,705,180,30"
+			  Down="InviteGameDlg\auto_inv.png" Down_TextColor = "#ffffff" Down_Pos="185,735,180,30"/>
+	</Element>
+	
+		
+	<!-- 动态信息 -->
+	<Element Type = "String" Text = "" Pos = "130,81,95,30" Font = "黑体" Align = "L" Height = "16" TextColor = "#ffffff" Name = "昵称"  Bold="true" Visible="1"/>
+	<Element Type = "String" Text = "" Pos = "225,81,40,30" Font = "黑体" Align = "L" Height = "15" TextColor = "#ffffff" Name = "级别"  Bold="true" Visible="1"/>	
+	<Element Type = "Image" Name="OccuImg"  Pos = "272,88,16,16" Visible = "0">
+		<Image  Background = "" />
+	</Element>
+	<Element Type = "Image" Name="CountryImg"  Pos = "302,88,16,16" Visible = "0">
+		<Image  Background = "" />
+	</Element>
+	
+	<Element Type = "String" Text = "-" Pos = "181,127,25,14" Font = "黑体" Align = "C" Height = "13" TextColor = "#ffffff" Name = "最近胜数"  Bold="true" Visible="1"/>
+	<Element Type = "String" Text = "-" Pos = "219,127,25,14" Font = "黑体" Align = "C" Height = "13" TextColor = "#ffffff" Name = "最近败数"  Bold="true" Visible="1"/>
+	<Element Type = "String" Text = "-" Pos = "255,127,25,14" Font = "黑体" Align = "C" Height = "13" TextColor = "#ffffff" Name = "最近平数"  Bold="true" Visible="1"/>
+	
+	<!-- 复选框位置Pos = 263,159,97,17 -->
+	<Element Type = "SwithButton" Name="SB拒绝此人邀请"  Pos = "263,159,97,14" Visible = '1'>
+				<Image  OnNormal="button\checkbox_pkg_01.png" OnNormal_Pos="0,14,14,14"  
+					  OnHover="button\checkbox_pkg_01.png" OnHover_Pos="14,14,14,14"  
+					  OffNormal="button\checkbox_pkg_01.png" OffNormal_Pos="28,14,14,14" 
+					  OffHover="button\checkbox_pkg_01.png" OffHover_Pos="42,14,14,14" 
+					  Disable="button\checkbox_pkg_01.png" Disable_Pos="56,14,14,14" 
+					  />
+	</Element>
+	<Element Type = "String" Text = "------"  Name = "Static" Pos = "283,159,85,14" TextColor = "#ffffff" Font = "宋体" Align = "L" Height = "12"  Visible = '1'/>
+	
+	<!--指导费用显示-->
+	<Element Type = "String" Text = "------"  Name = "PayForGuideTxt" Pos = "60,159,200,14" TextColor = "#ffffff" Font = "宋体" Align = "L" Height = "12"  Visible = '0'/>
+		
+	<Element Type = "CustomCtrl" Name="载入进度"  Pos = "6,182,358,7">
+		<Image  left_img = "TimerPromptDialog\rb_n1_01.png" 
+				mid_img = "TimerPromptDialog\rb_n1_02.png"
+				right_img = "TimerPromptDialog\rb_n1_03.png"/>
+	</Element>
+	
+	<Element Type = "Image" Name="十位"  Pos = "10,154,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+		</Element>
+	<Element Type = "Image" Name="个位"  Pos = "28,154,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+		</Element>
+		
+	<Element Type = "Image" Name="last20_perf"  Pos = "10,42,350,17" Visible = '1'>
+		<Image  Background = "" />
+	</Element>
+	
+</root>

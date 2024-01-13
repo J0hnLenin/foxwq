@@ -1,0 +1,482 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "700,500" Transparent = '1'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "9,8,653,35">	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0">	
+		<Image  Background = "setting_pkg_01.png" Pos="0,0,700,500"/>
+	</Element>
+	<Element Type = "Button" Name="BtnClose"  Pos = "39,11" Anchor_LTRBC="01100">
+	<Image  Normal="setting_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,753,23,23"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="23,753,23,23"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="46,753,23,23"/>
+	</Element>	
+	
+	<Element Name= "Panel代理" Type = "Panel" Pos = "150,50,530,395,">	
+		<Element Type = "String" Text = "한국,일본,미국,유럽에서 접속불안정시 사용!, 재접속시 효과발생!" Pos = "45,19,425,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text显示" Anchor_LTRBC="11000" />
+		<Element Type = "SwithButton" Name="SB使用代理"  Pos = "45,43" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>	
+		
+		<Element Type = "RideoBtn" Name= "RideoBtnNetLine" Pos = "0,40,300,378" Visible = '1'>
+			<Element Type = "String" Text = "Line 1: Hong Kong" Pos = "63,45,300,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text简体中文" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item_HongKong" Pos = "45,45,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>			
+			
+			<Element Type = "String" Text = "Line 2: England" Pos = "63,70,300,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text繁体中文" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item_England" Pos = "45,70,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>		
+			
+			<Element Type = "String" Text = "Line 3: Korea" Pos = "63,95,300,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text日语" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item_Korea"  Pos = "45,95,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>		
+
+			<Element Type = "String" Text = "Line 4: Japan" Pos = "63,120,300,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text韩语" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item_Japan"  Pos = "45,120,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>						
+			
+			<ActiveImage
+					ActiveNormal="..\..\skin\button\checkbox_pkg_01.png"  ActiveNormal_TextColor = "#333333" ActiveNormal_Pos="28,0,14,14"
+					ActiveHover="..\..\skin\button\checkbox_pkg_01.png"   ActiveHover_TextColor = "#ffdebb" ActiveHover_Pos="28,0,14,14"
+					ActiveDown="..\..\skin\button\checkbox_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="28,0,14,14"/>	
+		</Element>	
+		
+	</Element>
+	
+	<Element Name= "Panel语言" Type = "Panel" Pos = "150,50,530,395," >	
+	    <Element Type = "String" Text = "수정 후 재접속시 효과발생!" Pos = "45,15,425,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text显示" Anchor_LTRBC="11000" />
+		<Element Type = "RideoBtn" Name= "RideoBtn语言" Pos = "0,0,137,378" Visible = '1'>
+			<Element Type = "String" Text = "简体中文" Pos = "63,45,80,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text简体中文" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item简体中文" Pos = "45,45,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>			
+			
+			<Element Type = "String" Text = "繁體中文" Pos = "63,70,80,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text繁体中文" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item繁体中文" Pos = "45,70,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>		
+			
+			<Element Type = "String" Text = "日本語" Pos = "63,95,145,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text日语" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item日语"  Pos = "45,95,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>		
+
+			<Element Type = "String" Text = "한국어" Pos = "63,120,145,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text韩语" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item韩语"  Pos = "45,120,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>			
+
+			<Element Type = "String" Text = "English" Pos = "63,145,145,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text英语" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item英语"  Pos = "45,145,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>				
+			
+			<ActiveImage
+					ActiveNormal="..\..\skin\button\checkbox_pkg_01.png"  ActiveNormal_TextColor = "#333333" ActiveNormal_Pos="28,0,14,14"
+					ActiveHover="..\..\skin\button\checkbox_pkg_01.png"   ActiveHover_TextColor = "#ffdebb" ActiveHover_Pos="28,0,14,14"
+					ActiveDown="..\..\skin\button\checkbox_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="28,0,14,14"/>	
+		</Element>		
+	</Element>
+	
+	<Element Name= "Panel显示" Type = "Panel" Pos = "150,50,530,395," >	
+		<Element Type = "String" Text = "베팅승리animation" Pos = "45,19,180,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text显示" Anchor_LTRBC="11000" />
+		<Element Type = "SwithButton" Name="SB显示竞猜动画"  Pos = "45,43" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		<Element Type = "String" Text = "대국승패animation" Pos = "45,79,180,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text显示" Anchor_LTRBC="11000" />
+		<Element Type = "SwithButton" Name="SB显示胜负动画"  Pos = "45,103" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>		
+		
+		<!--禁止鼠标滚轮浏览棋局-->
+		<Element Type = "SwithButton" Name="ckDisableMouseWheelBrowseGame"  Pos = "45,220,15,14" Visible = '1'>
+			<Image  OnNormal="..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					OnHover="..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					OffNormal="..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					OffHover="..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					Disable="..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+		</Element>	
+		<Element Type = "String" Text = "게임을 탐색하기 위해 마우스 휠을 금지합니다"  Name = "DisableMouseWheelBrowseGameText" Pos = "63,220,400,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333"  Visible = '1'/>
+		
+		<!--兼容内核模式-->
+		<Element Type = "SwithButton" Name="ckUseCompatibleKernelMode"  Pos = "45,250,15,14" Visible = '1'>
+			<Image  OnNormal="..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					OnHover="..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					OffNormal="..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					OffHover="..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					Disable="..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+		</Element>	
+		<Element Type = "String" Text = "호환되는 커널 모드 사용"  Name = "UseCompatibleModeText" Pos = "63,250,400,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333"  Visible = '1'/>
+		
+		<!--棋盘线宽自适应-->
+		<Element Type = "SwithButton" Name="ckUseChessboardLineAdaptation"  Pos = "45,280,15,14" Visible = '1'>
+			<Image  OnNormal="..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					OnHover="..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					OffNormal="..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					OffHover="..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					Disable="..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+		</Element>	
+		<Element Type = "String" Text = "바둑판 선폭 적응"  Name = "UseChessboardLineAdaptationText" Pos = "63,280,400,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333"  Visible = '1'/>
+			
+		<!--关闭时最小化到系统托盘-->
+		<Element Type = "SwithButton" Name="ckUseCloseToSystemTray"  Pos = "45,310,15,14" Visible = '1'>
+			<Image  OnNormal="..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					OnHover="..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					OffNormal="..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					OffHover="..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					Disable="..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+		</Element>	
+		<Element Type = "String" Text = "닫을 때 시스템 트레이로 최소화"  Name = "UseCloseToSystemTrayText" Pos = "63,310,400,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333"  Visible = '1'/>
+		
+	</Element>
+	<Element Type = "String" Text = "설정" Pos = "15,15,80,16" Font = "黑体" Align = "L" Height = "16" TextColor = "#000000" Name = "Text设置"/>
+
+	<Element Name= "Panel声音" Type = "Panel" Pos = "150,50,530,395,">	
+		<Element Type = "RideoBtn" Name= "RideoBtn声音" Pos = "0,0,137,378" Visible = '1'>
+			<Element Type = "String" Text = "모든방 음성듣기" Pos = "63,10,180,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text打开房间声音" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item打开房间声音" Pos = "45,10,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>			
+			
+			<Element Type = "String" Text = "모든방 음성끄기" Pos = "63,45,180,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text关闭房间声音" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item关闭房间声音" Pos = "45,45,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>		
+			
+			<Element Type = "String" Text = "자신의 대국시에만 음성 듣기" Pos = "63,80,245,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text只打开自己对弈房的声音" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item只打开自己对弈房的声音"  Pos = "45,80,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>				
+			
+			<ActiveImage
+					ActiveNormal="..\..\skin\button\checkbox_pkg_01.png"  ActiveNormal_TextColor = "#333333" ActiveNormal_Pos="28,0,14,14"
+					ActiveHover="..\..\skin\button\checkbox_pkg_01.png"   ActiveHover_TextColor = "#ffdebb" ActiveHover_Pos="28,0,14,14"
+					ActiveDown="..\..\skin\button\checkbox_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="28,0,14,14"/>	
+		</Element>
+		
+		<Element Type = "String" Text = "초읽기음성" Pos = "94,102,92,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text读秒音"  />
+		<Element Type = "SwithButton" Name="SB读秒音"  Pos = "94,126" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "String" Text = "바둑돌에 초읽기표시" Pos = "186,102,244,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text棋子显示读秒倒计时数字"  />
+		<Element Type = "SwithButton" Name="SB棋子显示读秒倒计时数字"  Pos = "186,126" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "String" Text = "착수음" Pos = "94,162,142,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text落子音"  />
+		<Element Type = "SwithButton" Name="SB落子音"  Pos = "94,186" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "String" Text = "쪽지알림음" Pos = "45,242,166,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text短信提示音"  />
+		<Element Type = "SwithButton" Name="SB短信提示音"  Pos = "45,266" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "String" Text = "进房动画音效" Pos = "200,242,105,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text进房提示音"  />
+		<Element Type = "SwithButton" Name="SB进房提示音"  Pos = "200,266" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "String" Text = "친구접속사운드효과" Pos = "45,302,205,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text好友上线声音提示"  />
+		<Element Type = "SwithButton" Name="SB好友上线声音提示"  Pos = "45,325" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "String" Text = "대국표시음push" Pos = "200,302,105,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text推送对局提示音"  />
+		<Element Type = "SwithButton" Name="SB推送对局提示音"  Pos = "200,325" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "String" Text = "빨간 봉투 색조" Pos = "355,302,105,24" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text红包提示音"  />
+		<Element Type = "SwithButton" Name="SB红包提示音"  Pos = "355,325" >
+				<Image  OnNormal="setting_pkg_01.png"  OnNormal_Pos="0,701,68,27"
+					  OnHover="setting_pkg_01.png"   OnHover_Pos="136,701,68,27"
+					  OffNormal="setting_pkg_01.png"  OffNormal_Pos="68,701,68,27"
+					  OffHover="setting_pkg_01.png"  OffHover_Pos="204,701,68,27"
+					  Disable="setting_pkg_01.png"  Disable_Pos="272,701,68,27"
+					  />
+		</Element>
+		
+		<Element Type = "SwithButton" Name="SoundSwitch"  Pos = "490,370" >
+				<Image  OnNormal="speaker.png"  OnNormal_Pos="0,0,45,30"
+					    OnHover="speaker.png"   OnHover_Pos="0,30,45,30"
+					    OffNormal="speaker.png"  OffNormal_Pos="0,60,45,30"
+					    OffHover="speaker.png"  OffHover_Pos="0,90,45,30"
+					    Disable="speaker.png"  Disable_Pos="0,120,45,30"
+				/>
+		</Element>
+		
+	</Element>
+	
+	<Element Name= "Panel对局邀请" Type = "Panel" Pos = "150,50,530,395,">	
+		<Element Type = "RideoBtn" Name= "RideoBtn邀请" Pos = "0,0,137,378" Visible = '1'>
+			<Element Type = "String" Text = "모든대국신청허용" Pos = "63,10,180,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text接收所有邀请" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item接收所有邀请" Pos = "45,10,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>			
+			
+			<Element Type = "String" Text = "모든대국신청거절" Pos = "63,45,180,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text拒绝所有邀请" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item拒绝所有邀请" Pos = "45,45,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>		
+			
+			<Element Type = "String" Text = "동급신청만 허용" Pos = "63,80,245,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text只接收好友邀请" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item只接收同级邀请"  Pos = "45,80,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>				
+			
+			<ActiveImage
+					ActiveNormal="..\..\skin\button\checkbox_pkg_01.png"  ActiveNormal_TextColor = "#333333" ActiveNormal_Pos="28,0,14,14"
+					ActiveHover="..\..\skin\button\checkbox_pkg_01.png"   ActiveHover_TextColor = "#ffdebb" ActiveHover_Pos="28,0,14,14"
+					ActiveDown="..\..\skin\button\checkbox_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="28,0,14,14"/>	
+		</Element>		
+				
+	</Element>
+	
+	<Element Name= "Panel短信" Type = "Panel" Pos = "150,50,530,395,">	
+		<Element Type = "RideoBtn" Name= "RideoBtn短信" Pos = "0,0,137,378" Visible = '1'>
+			<Element Type = "String" Text = "도착시 바로열기" Pos = "63,10,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text新短信直接打开" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item新短信直接打开" Pos = "45,10,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>			
+			
+			<Element Type = "String" Text = "도착시 자동저장" Pos = "63,45,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text存入信箱" Anchor_LTRBC="11000" />
+			<Item Name = "RideoBtn_Item新短信不直接打开" Pos = "45,45,14,14"
+				 Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+				  Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+				  Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14" >
+			</Item>		
+			
+			<ActiveImage
+					ActiveNormal="..\..\skin\button\checkbox_pkg_01.png"  ActiveNormal_TextColor = "#333333" ActiveNormal_Pos="28,0,14,14"
+					ActiveHover="..\..\skin\button\checkbox_pkg_01.png"   ActiveHover_TextColor = "#ffdebb" ActiveHover_Pos="28,0,14,14"
+					ActiveDown="..\..\skin\button\checkbox_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="28,0,14,14"/>
+		</Element>
+		
+	</Element>
+
+	<Element Name= "Panel问候语" Type = "Panel" Pos = "150,50,530,395,">	
+		<Element Type = "Image" Name="ListCtrlBkg"  Pos = "10,0,405,400" Visible = "1" Stretching="1">
+			<Image  Background = "setting_pkg_01.png" Pos="0,500,360,144"/>
+		</Element>
+		<HeadCtrl Height = '0' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>		
+		<Element Type = "ListCtrl" Name= "ListCtrl问候语" IgnoreDrawColumnWhenSel = '0'  Pos = "10,0,405,400"  Visible = "1">
+			<SelectedRow  Pos = "0,0">
+			  <Image  Background = "st_chat_01.png" />
+			</SelectedRow>			
+
+			<Row Height = '20' ColumnImageSelectedRow = "list_stk_01.png"  />
+			<Cloumn	Width = '4' >
+			</Cloumn>
+			<Cloumn	Width = '405' >
+			  <Element Type="String"  Name = "Lable问候语" Text = "" Height = '12' Font = "宋体"  TextColor = "#000000" Align = "L"/>
+			</Cloumn>
+		</Element>
+		 
+		<Element Type = "Button" Name="Btn添加"  Pos = "425,0" >
+			<Element Type="String"  Name = "StrBtn添加" Text = "첨가" Font = "宋体" Height	= "12" TransRender="1"/>
+				<Image  Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="0,728,85,25"
+					  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="85,728,85,25"
+					  Down="setting_pkg_01.png"      Down_TextColor = "#666666"  Down_Pos="170,728,85,25"
+					  Disable="setting_pkg_01.png"   Disable_TextColor = "#cccccc" Disable_Pos="255,728,85,25"/>
+		</Element>
+		
+		<Element Type = "Button" Name="Btn编辑"  Pos = "425,30" >
+			<Element Type="String"  Name = "StrBtn编辑" Text = "편집" Font = "宋体" Height	= "12" TransRender="1"/>
+				<Image  Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="0,728,85,25"
+					  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="85,728,85,25"
+					  Down="setting_pkg_01.png"      Down_TextColor = "#666666"  Down_Pos="170,728,85,25"
+					  Disable="setting_pkg_01.png"   Disable_TextColor = "#cccccc" Disable_Pos="255,728,85,25"/>
+		</Element>
+		
+		<Element Type = "Button" Name="Btn删除"  Pos = "425,70" >
+			<Element Type="String"  Name = "StrBtn删除" Text = "삭제" Font = "宋体" Height	= "12" TransRender="1"/>
+				<Image  Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="0,728,85,25"
+					  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="85,728,85,25"
+					  Down="setting_pkg_01.png"      Down_TextColor = "#666666"  Down_Pos="170,728,85,25"
+					  Disable="setting_pkg_01.png"   Disable_TextColor = "#cccccc" Disable_Pos="255,728,85,25"/>
+		</Element>		
+	</Element>
+	
+	<Element Name= "PanelPrivacy" Type = "Panel" Pos = "150,50,530,395,">					
+		<Element Type = "SwithButton" Name="ckAllowGameBroadcast"  Pos = "45,10,15,14" Visible = '1'>
+			<Image  OnNormal="..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					OnHover="..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					OffNormal="..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					OffHover="..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					Disable="..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+		</Element>	
+		<Element Type = "String" Text = "授权《腾讯围棋》转播我的站内棋局"  Name = "AllowGameBroadcastText" Pos = "63,10,400,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333"  Visible = '1'/>
+		
+		<Element Type = "SwithButton" Name="ckShowEnterRoomNotice"  Pos = "45,40,15,14" Visible = '1'>
+			<Image  OnNormal="..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					OnHover="..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					OffNormal="..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					OffHover="..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					Disable="..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+		</Element>	
+		<Element Type = "String" Text = "展示我的进房动画"  Name = "ShowEnterRoomNoticeText" Pos = "63,40,400,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333"  Visible = '1'/>
+		
+		<Element Type = "Button" Name="BtnAgreement"  Pos = "100,380,120,14" Visible = '1' Anchor_LTRBC="11000">
+			<Element Type="String"  Name = "BtnAgreementText" Text = "野狐围棋用户协议" Font = "宋体" Align = "L" Height = "12" />		
+			<Image  Normal_TextColor = "#0066CC" Hover_TextColor = "#00A5F4" Down_TextColor = "#00A5F4"/>
+		</Element>
+		<Element Type = "Button" Name="BtnPrivacy"  Pos = "360,380,70,14" Visible = '1' Anchor_LTRBC="11000">
+			<Element Type="String"  Name = "BtnPrivacyText" Text = "隐私政策" Font = "宋体" Align = "L" Height = "12" />		
+			<Image  Normal_TextColor = "#0066CC" Hover_TextColor = "#00A5F4" Down_TextColor = "#00A5F4"/>
+		</Element>
+		
+	</Element>
+	
+	<!--工具栏 -->
+	<Element Type = "TabCtrl" Name= "TabCtrlTools" Pos = "15,60,137,378" Align = "V" Interval = '2' >
+				
+		<Item Name = "TabCtrl_Item代理" ReleventElement = "Panel代理" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "한국에서 접속시 특별망" Font = "宋体" Height	= "12" Name = "BtnText代理" Anchor_LTRBC="11000" />
+		</Item>	
+		
+		<Item Name = "TabCtrl_Item语言" ReleventElement = "Panel语言" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "언어" Font = "宋体" Height	= "12" Name = "BtnText语言" Anchor_LTRBC="11000" />
+		</Item>
+		
+		<Item Name = "TabCtrl_Item显示" ReleventElement = "Panel显示" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "효과" Font = "宋体" Height	= "12" Name = "BtnText显示" Anchor_LTRBC="11000" />
+		</Item>			
+		
+		<Item Name = "TabCtrl_Item声音" ReleventElement = "Panel声音" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "음향" Font = "宋体" Height	= "12" Name = "BtnText显示" Anchor_LTRBC="11000" />
+		</Item>	
+		<Item Name = "TabCtrl_Item对局邀请" ReleventElement = "Panel对局邀请" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "대국수락" Font = "宋体" Height	= "12" Name = "BtnText显示" Anchor_LTRBC="11000" />
+		</Item>	
+		<Item Name = "TabCtrl_Item短信" ReleventElement = "Panel短信" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "쪽지" Font = "宋体" Height	= "12" Name = "BtnText显示" Anchor_LTRBC="11000" />
+		</Item>	
+		<Item Name = "TabCtrl_Item聊天/问候语" ReleventElement = "Panel问候语" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "인사말" Font = "宋体" Height	= "12" Name = "BtnText显示" Anchor_LTRBC="11000" />
+		</Item>	
+		<Item Name = "TabCtrl_ItemPrivacy" ReleventElement = "PanelPrivacy" Visible = '1'
+			 Normal="setting_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="270,668,135,33"
+			  Hover="setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="135,668,135,33"
+			  Down="setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,668,135,33">
+			<Element Type="String" Text = "은둔" Font = "宋体" Height	= "12" Name = "BtnText显示" Anchor_LTRBC="11000" />
+		</Item>
+		
+		<ActiveImage
+				ActiveNormal="setting_pkg_01.png"  ActiveNormal_TextColor = "#ffdebb" ActiveNormal_Pos="0,668,135,33"
+				ActiveHover="setting_pkg_01.png"   ActiveHover_TextColor = "#ffdebb"  ActiveHover_Pos="0,668,135,33"
+				ActiveDown="setting_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="0,668,135,33"/>	
+	</Element>
+	<Element Type = "Image" Name="shadow"  Pos = "141,40" Visible = "1">
+		<Image  Background = "setting_pkg_01.png" Pos="0,776,9,415"/>
+	</Element>
+</root>
+

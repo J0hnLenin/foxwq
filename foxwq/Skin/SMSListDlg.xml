@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!-- 阅读短信 -->
+	<Element Type = "Button" Name="BtnReadSMS"  Pos = "2,32"  Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\cbook_tab.png"  Normal_Pos="0,0,120,26"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\cbook_tab.png" Hover_Pos="0,36,120,26"  Hover_TextColor = "#C2C2C2"
+			  Down="button\cbook_tab.png"  Down_Pos="0,72,120,26"  Down_TextColor = "#B2975D"
+			  Disable="button\cbook_tab.png"   Disable_Pos="0,108,120,26"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!-- 删除短信 -->
+	<Element Type = "Button" Name="BtnDelSelectedSMS"  Pos = "122,32" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\cbook_tab.png"  Normal_Pos="0,0,120,26"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\cbook_tab.png" Hover_Pos="0,36,120,26"  Hover_TextColor = "#C2C2C2"
+			  Down="button\cbook_tab.png"  Down_Pos="0,72,120,26"  Down_TextColor = "#B2975D"
+			  Disable="button\cbook_tab.png"   Disable_Pos="0,108,120,26"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!-- 全部删除 -->
+	<Element Type = "Button" Name="BtnDelAll"  Pos = "242,32" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\cbook_tab.png"  Normal_Pos="0,0,120,26"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\cbook_tab.png" Hover_Pos="0,36,120,26"  Hover_TextColor = "#C2C2C2"
+			  Down="button\cbook_tab.png"  Down_Pos="0,72,120,26"  Down_TextColor = "#B2975D"
+			  Disable="button\cbook_tab.png"   Disable_Pos="0,108,120,26"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!-- 写短信 -->
+	<Element Type = "Button" Name="BtnWriteSMS"  Pos = "362,32" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体"Height = "13"/>
+		<Image  Normal="button\cbook_tab.png"  Normal_Pos="0,0,120,26"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\cbook_tab.png" Hover_Pos="0,36,120,26"  Hover_TextColor = "#C2C2C2"
+			  Down="button\cbook_tab.png"  Down_Pos="0,72,120,26"  Down_TextColor = "#B2975D"
+			  Disable="button\cbook_tab.png"   Disable_Pos="0,108,120,26"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!-- 向右箭头 -->
+	<Element Type = "Button" Name="BtnRightArrow"  Pos = "24,32"  Anchor_LTRBC="01100"  Visible = '1'>
+		<Image  Normal="button\btn_leftright.png"  Normal_Pos="22,0,22,26" 
+			  Hover="button\btn_leftright.png" Hover_Pos="22,26,22,26" 
+			  Down="button\btn_leftright.png"  Down_Pos="22,52,22,26" 
+			  Disable="button\btn_leftright.png"   Disable_Pos="22,78,22,26"/>
+	</Element>	
+	
+	<!-- 页码 -->
+	<Element Type = "Button" Name="BtnPageNumber"  Pos = "91,35" Anchor_LTRBC="01100" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13" Anchor_LTRBC="01100"/>
+		<Image  Normal="button\edit_back.png" Normal_TextColor = "#000000"
+			  Hover="button\edit_back.png"  Hover_TextColor = "#000000"
+			  Down="button\edit_back.png"    Down_TextColor = "#000000"
+			  Disable="button\edit_back.png"  Disable_TextColor  = "#000000"/>
+	</Element>	
+	
+	<!-- 向左箭头 -->
+	<Element Type = "Button" Name="BtnLeftArrow"  Pos = "115,32"  Anchor_LTRBC="01100"  Visible = '1'>
+		<Image  Normal="button\btn_leftright.png"  Normal_Pos="0,0,22,26"
+			  Hover="button\btn_leftright.png" Hover_Pos="0,26,22,26"
+			  Down="button\btn_leftright.png"  Down_Pos="0,52,22,26"
+			  Disable="button\btn_leftright.png"   Disable_Pos="0,78,22,26"/>
+	</Element>
+	
+	
+	
+	
+
+</root> 

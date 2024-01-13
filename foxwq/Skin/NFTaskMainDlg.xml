@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="TitleLogo"  Pos = "4,0"  Visible = '1'>
+		<Image  Background = "background\main\logo.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnHelp"  Pos ="105,0" Anchor_LTRBC = "01100" Visible='0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,0,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,0,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,0,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,0,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!--当前任务按钮-->
+	<Element Type = "Button" Name="BtnCurrentTask"  Pos = "13,54">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "20" Bold="1"/>
+		<Image  Normal="Task\Task.png"  Normal_Pos="0,0,156,60"  Normal_TextColor = "#6A2D00"
+					Hover="Task\Task.png" Hover_Pos="0,60,156,60"  Hover_TextColor = "#6A2D00"
+					Down="Task\Task.png"  Down_Pos="0,120,156,60"  Down_TextColor = "#6A2D00"/>
+	</Element>
+
+	<!--当前任务可领取奖励数量-->
+	<Element Type = "Button" Name="BtnCurrentTaskRedNumber"  Pos ="140,48" Visible = '1'>
+	<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "10" Bold="false"/>
+		<Image  Normal="Task\Task.png" Normal_Pos="452,33,16,15" Normal_TextColor = "#FFFFFF"
+			    Hover="Task\Task.png" Hover_Pos="452,33,16,15" Hover_TextColor = "#FFFFFF"
+			    Down="Task\Task.png"  Down_Pos="452,33,16,15" Down_TextColor = "#FFFFFF"/>
+	</Element>		
+		
+	<!--历史记录按钮-->
+	<Element Type = "Button" Name="BtnHistory"  Pos = "13,137">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "20" Bold="1"/>
+		<Image  Normal="Task\Task.png"  Normal_Pos="0,0,156,60"  Normal_TextColor = "#6A2D00"
+				Hover="Task\Task.png" Hover_Pos="0,60,156,60"  Hover_TextColor = "#6A2D00"
+				Down="Task\Task.png"  Down_Pos="0,120,156,60"  Down_TextColor = "#6A2D00"/>
+	</Element>
+		
+	<!--可领取奖励按钮-->
+	<Element Type = "Button" Name="BtnCanObtainAward"  Pos = "13,220">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "20" Bold="1"/>
+		<Image  Normal="Task\Task.png"  Normal_Pos="0,180,156,60"  Normal_TextColor = "#1B351D"
+				Hover="Task\Task.png" Hover_Pos="0,180,156,60"  Hover_TextColor = "#1B351D"
+				Down="Task\Task.png"  Down_Pos="0,120,156,60"  Down_TextColor = "#6A2D00"/>
+	</Element>
+	
+	<!--历史待领可领取奖励数量-->
+	<Element Type = "Button" Name="BtnAwardListRedNumber"  Pos = "140,214" Visible = '1'>
+	<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "10" Bold="false"/>
+		<Image  Normal="Task\Task.png" Normal_Pos="452,33,16,15" Normal_TextColor = "#FFFFFF"
+			    Hover="Task\Task.png" Hover_Pos="452,33,16,15" Hover_TextColor = "#FFFFFF"
+			    Down="Task\Task.png"  Down_Pos="452,33,16,15" Down_TextColor = "#FFFFFF"/>
+	</Element>	
+	
+	
+	
+	
+
+</root> 

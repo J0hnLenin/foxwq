@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+
+	<Element Name="ExercisesBottomPanel" Type = "Panel" Pos = "0,0,439,65" >		
+			<Element Type = "Button" Name = "m_gotoBegin"  Pos = "75,3,41,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "0,0,40,30"
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "0,30,40,30"
+				 Down="btn_player_pkg_01.png" Down_Pos = "0,60,40,30"
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "0,90,40,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_fastBackward"  Pos = "116,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "40,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "40,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "40,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "40,90,35,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_backward"  Pos = "151,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "75,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "75,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "75,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "75,90,35,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_forward"  Pos = "186,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "110,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "110,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "110,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "110,90,35,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_fastForward"  Pos = "221,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "145,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "145,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "145,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "145,90,35,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_gotoEnd"  Pos = "256,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "180,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "180,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "180,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "180,90,35,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_roundBoxBack"  Pos = "291,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "215,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "215,0,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "215,0,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "215,90,35,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_gotoRound"  Pos = "326,3,39,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "250,0,40,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "250,30,40,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "250,60,40,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "250,90,40,30"/>  
+			</Element>
+			
+			
+			
+			<Element Type = "Button" Name = "m_LADGameAnswer"  Pos = "7,33,85,30">
+				<Element Type="String" Text = "---" Font = "宋体" Height = "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#00E600" Normal_Pos = "0,0,85,30" 
+					    Hover="btn_rmot_pkg_01.png" Down_TextColor = "#D89D4B" Hover_Pos = "85,0,85,30" 
+					    Down="btn_rmot_pkg_01.png" Hover_TextColor = "#D89D4B" Down_Pos = "170,0,85,30" 
+					    Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"
+				/>  
+			</Element>		
+			<Element Type = "Button" Name="m_ViewAnswerNumber"  Pos =  "7,33,16,16" Visible = '0'>
+			<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12" Bold="false"/>
+				<Image  Normal="red_point.png" Normal_Pos="0,0,16,16" Normal_TextColor = "#FFFFFF"
+						Hover="red_point.png" Hover_Pos="0,0,16,16" Hover_TextColor = "#FFFFFF"
+						Down="red_point.png"  Down_Pos="0,0,16,16" Down_TextColor = "#FFFFFF"/>
+			</Element>
+			
+			<Element Type = "Button" Name = "m_LADPreGame"  Pos = "92,33,85,30">
+				 <Element Type="String" Text = "---" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_LADLastGame"  Pos = "177,33,85,30">
+				 <Element Type="String" Text = "---" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+	
+			 <Element Type = "Button" Name = "m_beginTry"  Pos = "262,33,85,30">
+				 <Element Type="String" Text = "----" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_endTry"  Pos = "262,33,85,30" Visible = "0">
+				 <Element Type="String" Text = "----" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>		
+			<Element Type = "Button" Name = "m_LADRetryGame"  Pos = "347,33,85,30">
+				 <Element Type="String" Text = "----" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+	</Element>
+
+</root>

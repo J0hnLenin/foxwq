@@ -1,0 +1,53 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "700,500" Transparent = '1'> 
+	
+<Element Name="TitleBar" Type = "Panel" Pos = "9,8,653,35" Anchor_LTRBC="11110">	
+</Element>
+
+<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+	<Image  Background = "..\setting\setting_pkg_01.png" Pos="0,0,700,500"/>
+</Element>
+
+<Element Type = "Button" Name="BtnClose"  Pos = "39,11" Anchor_LTRBC="01100">
+	<Image  Normal="..\setting\setting_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,753,23,23"
+		    Hover="..\setting\setting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="23,753,23,23"
+		    Down="..\setting\setting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="46,753,23,23"
+	/>
+</Element>
+
+<Element Type = "String" Name = "Str标题" Text = "------" Pos = "15,15,150,16" Font = "黑体" Align = "L" Height = "16" TextColor = "#000000"/>
+
+<Element Type = "Image" Name="image设置1"  Pos = "100, 100, 500, 300" Anchor_LTRBC="11110" Stretching="1">
+		<Image  Background = "set_01.png" />
+</Element>
+
+<Element Type="String"  Name = "Str页数" Pos = "350,467,30,20" Text = "" Font = "宋体" Height = "13" TransRender="0" TextColor = "#d1ffc9" MultiLine='1'/>
+
+<Element Type = "Button" Name="Btn前页"  Pos ="240,465" Anchor_LTRBC="11000">
+	<Element Type="String"  Name = "StrBtn前页" Text = "<" Font = "宋体" Height	= "13" TransRender="0" />
+	<Image  Normal="..\club\club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+		    Hover="..\club\club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+		    Down="..\club\club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="695,1290,50,20"
+		    Disable="..\club\club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="695,1310,50,20"
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn后页"  Pos ="430,465" Anchor_LTRBC="11000">
+	<Element Type="String"  Name = "StrBtn末页" Text = ">" Font = "宋体" Height	= "13" TransRender="0" />
+	<Image  Normal="..\club\club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+		    Hover="..\club\club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+		    Down="..\club\club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="695,1290,50,20"
+		    Disable="..\club\club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="695,1310,50,20" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn关闭"  Pos ="620,465" Anchor_LTRBC="11000">
+	<Element Type="String"  Name = "StrBtn关闭" Text = "--" Font = "宋体" Height	= "13" TransRender="0" />
+	<Image  Normal="..\club\club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+		    Hover="..\club\club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+		    Down="..\club\club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="695,1290,50,20"
+		    Disable="..\club\club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="695,1310,50,20" 
+	/>
+</Element>
+	
+</root>

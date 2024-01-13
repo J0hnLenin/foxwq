@@ -1,0 +1,154 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "350,235" Transparent = '0'> 
+	<Element Name="bkg" Type = "Image" Pos = "0,0" >	
+		<Image  Background = "rmbg_pkg_01.png" Pos="0,0,350,166"/>
+		
+		<Element Type = "Button" Name="BtnHistory"  Pos = "147,104" >
+			<Image  Normal="btn_rmjc_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,19,53,18"
+				  Hover="btn_rmjc_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="53,19,53,18"
+				  Down="btn_rmjc_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="106,19,53,18"/>
+		</Element>
+	
+		<!--白方黑方国旗-->
+		<Element Type = "AnimalImage" Name="WhiteCountryIcon"  Pos = "120,6,36,24" Stretching = "1" Visible = '1'>
+			<Image  Background = "" />			
+		</Element>
+		<Element Type = "Image" Name="ImgVS"  Pos = "162,8,25,24" Visible = "1">
+			<Image  Background = "ImgVS.png" />
+		</Element>
+		<Element Type = "AnimalImage" Name="BlackCountryIcon"  Pos = "192,6,36,24" Stretching = "1" Visible = '1'>
+			<Image  Background = "" />			
+		</Element>
+	
+		<!--动态标签-->
+		<Element Type = "String" Text = "" Pos = "119,14,112,19" Font = "宋体" Align = "C" Height = "12" Bold="true" TextColor = "#e8e8e8" Name = "TextGameType"/>
+		<Element Type = "String" Text = "" Pos = "119,35,112,19" Font = "宋体" Align = "C" Height = "12" Bold="true" TextColor = "#e8e8e8" Name = "TextFirstRule"/>
+		<Element Type = "String" Text = "" Pos = "119,56,112,19" Font = "宋体" Align = "C" Height = "12" Bold="true" TextColor = "#e8e8e8" Name = "TextRuleTime"/>
+		<Element Type = "String" Text = "" Pos = "119,77,112,19" Font = "宋体" Align = "C" Height = "12" Bold="true" TextColor = "#e8e8e8" Name = "TextRuleCountDown"/>
+		<Element Type = "String" Text = "" Pos = "22,136,80,16" Font = "宋体" Align = "C" Height = "14" Bold="true" TextColor = "#e8e8e8" Name = "白方昵称" TextShadow="true"/>
+		<Element Type = "String" Text = "" Pos = "248,136,80,16" Font = "宋体" Align = "C" Height = "14" Bold="true" TextColor = "#e8e8e8" Name = "黑方昵称" TextShadow="true"/>
+		<Element Type = "String" Text = "" Pos = "102,136,28,16" Font = "宋体" Align = "R" Height = "12" Bold="true" TextColor = "#e8e8e8" Name = "白方段位" />
+		<Element Type = "String" Text = "" Pos = "222,136,28,16" Font = "宋体" Align = "L" Height = "12" Bold="true" TextColor = "#e8e8e8" Name = "黑方段位" />
+		<Element Type="Image" Pos="120,112,112,26"  Name="历史战绩对比条" Visible="1"> </Element>
+	
+		<!--头像-->
+		<Element Type = "AnimalImage" Name="白方头像"  Pos = "7,8,110,120" Stretching = "1" Visible = '1'>
+			<Image  Background = "" />
+			<Element Type = "Image" Name = "白方获胜" Pos = "15, 20, 70, 70">
+				<Image Background = ""/>
+				</Element>
+		</Element>
+		<Element Type = "Button" Name="btnWhiteHead"  Pos = "7, 8, 110, 120" Visible = "1">
+			<Image  Normal="btnHeadImage.png" 
+			  Hover="btnHeadImage.png"
+			  Down="btnHeadImage.png" />
+		</Element>
+
+		<Element Type = "AnimalImage" Name="黑方头像"  Pos = "233,8,110,120" Stretching = "1" Visible = '1'>
+			<Image  Background = "" />
+			<Element Type = "Image" Name = "黑方获胜" Pos = "15, 20, 70, 70">
+				<Image Background = ""/>
+				</Element>
+		</Element>
+		<Element Type = "Button" Name="btnBlackHead"  Pos = "233, 8, 110, 120" Visible = "1">
+			<Image  Normal="btnHeadImage.png" 
+			  Hover="btnHeadImage.png"
+			  Down="btnHeadImage.png" />
+		</Element>
+
+		<Element Type = "Image" Name="AOccupationImg"  Pos = "6,136, 16, 16" Visible = "0">
+			<Image  Background = "" />
+		</Element>
+		<Element Type = "Image" Name="BOccupationImg"  Pos = "328,136, 16, 16" Visible = "0">
+			<Image  Background = "" />
+		</Element>
+
+	</Element>
+	
+	
+	<Element Name="bkg1" Type = "Image" Pos = "0,160" >	
+			<Image  Background = "rmbg_pkg_01.png" Pos="0,166,350,60"/>
+
+			<!--动态标签-->
+			<Element Type = "String" Text = "" Pos = "135,13,25,13" Font = "宋体" Align = "L" Height = "12" TextColor = "#e8e8e8" Name = "白方读秒剩余次数" Visible = '1' TextShadow="true"/>
+			<Element Type = "String" Text = "" Pos = "190,13,25,13" Font = "宋体" Align = "R" Height = "12" TextColor = "#e8e8e8" Name = "黑方读秒剩余次数" Visible = '1' TextShadow="true"/>
+			<Element Type = "String" Text = "" Pos = "135,36,25,13" Font = "宋体" Align = "L" Height = "12" TextColor = "#e8e8e8" Name = "白方提子数" TextShadow="true"/>
+			<Element Type = "String" Text = "" Pos = "190,36,25,13" Font = "宋体" Align = "R" Height = "12" TextColor = "#e8e8e8" Name = "黑方提子数" TextShadow="true"/>
+			<!--剩余时间-->
+			<Element Type = "String" Text = "" Pos = "20,20,95,16" Font = "宋体" Align = "C" Height = "16" Bold="true" TextColor = "#eab603" Name = "白方剩余时间" Visible = '1' TextShadow="true"/>
+			<Element Type = "String" Text = "" Pos = "245,20,95,16" Font = "宋体" Align = "C" Height = "16" Bold="true" TextColor = "#eab603" Name = "黑方剩余时间" Visible = '1' TextShadow="true"/>
+			<!--数字倒计时器-->
+			<Element Type = "Image" Name="白方十位"  Pos = "35,10,30,40" Stretching = "1" Visible = '0'>
+					<Image  Background = "" />
+				</Element>
+
+			<Element Type = "Image" Name="白方个位"  Pos = "70,10,30,40" Stretching = "1" Visible = '0'>
+				<Image  Background = "" />
+			</Element>
+
+			<Element Type = "Image" Name="黑方十位"  Pos = "250,10,30,40" Stretching = "1" Visible = '0'>
+					<Image  Background = "" />
+				</Element>
+
+			<Element Type = "Image" Name="黑方个位"  Pos = "285,10,30,40" Stretching = "1" Visible = '0'>
+				<Image  Background = "" />
+			</Element>
+			
+			<!-- 白方剩余时间显示 -->
+			<Element Type = "Image" Name="白方分百位"  Pos = "8,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="白方分十位"  Pos = "24,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="白方分个位"  Pos = "40,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="白方分"  Pos = "56,20,16,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="白方秒十位"  Pos = "74,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="白方秒个位"  Pos = "90,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="白方秒"  Pos = "106,20,16,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+				
+			<!-- 黑方剩余时间显示 -->
+			<Element Type = "Image" Name="黑方分百位"  Pos = "228,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="黑方分十位"  Pos = "244,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="黑方分个位"  Pos = "260,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="黑方分"  Pos = "276,20,16,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="黑方秒十位"  Pos = "294,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="黑方秒个位"  Pos = "310,20,14,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			<Element Type = "Image" Name="黑方秒"  Pos = "326,20,16,20" Stretching = "1" Visible = '1'>
+					<Image  Background = "" />
+			</Element>
+			
+			<!-- 网速显示 -->
+			<Element Type = "AnimalImage" Name="白方网速"  Pos = "10,10,24,6" Stretching = "1" Visible = '1'>
+					<Image  Background = "delay_01.gif" />
+				</Element>
+			<Element Type = "AnimalImage" Name="黑方网速"  Pos = "316,10,24,6" Stretching = "1" Visible = '1'>
+					<Image  Background = "delay_01.gif" />
+				</Element>
+			
+	</Element>
+
+
+</root>

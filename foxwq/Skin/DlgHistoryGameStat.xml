@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "460,300" Transparent = '1'> 
+<Element Name="TitleBar" Type = "Panel" Pos = "0,0,460,30" >	
+</Element>
+
+<Element Name="PanelMain" Type = "Panel" Pos = "0,0" >	
+	<Image  Background = "DlgHistoryGameStat\bg_hisrec.png" />
+</Element>
+
+<Element Name="PanelMainUp" Type = "Panel" Pos = "0,0" >	
+	<Image  Background = "DlgHistoryGameStat\hisrec.png" />
+</Element>
+
+<!--按钮 -->
+<Element Type = "Button" Name="BtnClose"  Pos = "38,05" Anchor_LTRBC="01100">
+	<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,120,25,30"
+			Hover="button\main_title\btn_title_pkg_01.png"  Hover_TextColor = "#666666" Hover_Pos="25,120,25,30"
+			Down="button\main_title\btn_title_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="50,120,25,30"
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnCloseDlg"  Pos = "105,34" Anchor_LTRBC="00110">
+	<Image  Normal="button\main_bottom\btn_btmcl_pkg_01.png"  Normal_Pos="0,0,100,30"  Normal_TextColor = "#666666"
+			Hover="button\main_bottom\btn_btmcl_pkg_01.png"  Hover_Pos="100,0,100,30"  Hover_TextColor = "#666666"
+			Down="button\main_bottom\btn_btmcl_pkg_01.png"  Down_Pos="200,0,100,30"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+	
+	<!--双方战绩信息 -->
+<Element Type = "Image" Name="双方对战信息背景"  Pos = "5, 339" Visible = "0">
+	<Image  Background = "DlgHistoryGameStat\jc_bg_04.png" />
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "85,50,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方总败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "70,43,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方总败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "14,50,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方总胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "0,43,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方总胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "85,80,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方最近败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "0" Pos = "70,73,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方最近败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "52,80,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方最近胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "20" Pos = "38,73,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方最近胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "85,108,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#FFF696" Name = "label白方胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "3" Pos = "70,101,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#FFF696" Name = "label白方胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "395,50,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方总败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "345,43,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方总败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "325,50,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方总胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "276,43,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方总胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "336,80,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方最近败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "0" Pos = "322,73,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方最近败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "301,80,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方最近胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "20" Pos = "276,73,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方最近胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "289,108,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFF696" Name = "label黑方胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "127" Pos = "276,101,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#FFF696" Name = "label黑方胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "Image" Name="双方对战信息条背景1"  Pos = "5, 127" Visible = "1">
+	<Image  Background = "DlgHistoryGameStat\jc_dlst.png" />
+</Element>
+		
+<Element Type = "Image" Name="双方对战信息条背景2"  Pos = "5, 450" Visible = "1">
+	<Image  Background = "DlgHistoryGameStat\jc_dlst.png" />
+</Element>
+		
+<Element Type = "Image" Name="双方对战信息条背景3"  Pos = "5, 473" Visible = "1">
+	<Image  Background = "DlgHistoryGameStat\jc_dlst.png" />
+</Element>
+		
+<Element Type = "Image" Name="双方对战信息条背景4"  Pos = "5, 496" Visible = "1">
+	<Image  Background = "DlgHistoryGameStat\jc_dlst.png" />
+</Element>
+		
+<Element Type = "Image" Name="双方对战信息条背景5"  Pos = "5, 519" Visible = "1">
+	<Image  Background = "DlgHistoryGameStat\jc_dlst.png" />
+</Element>
+
+<Element Type = "Image" Name="双方对战信息条背景6"  Pos = "5, 542" Visible = "1">
+		<Image  Background = "DlgHistoryGameStat\jc_dlst.png" />
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条1"  Pos = "5,127" Visible = "1">
+	<Image  Normal="DlgHistoryGameStat\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="DlgHistoryGameStat\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="DlgHistoryGameStat\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条2"  Pos = "5,150" Visible = "1">
+	<Image  Normal="DlgHistoryGameStat\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="DlgHistoryGameStat\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="DlgHistoryGameStat\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条3"  Pos = "5,173" Visible = "1">
+	<Image  Normal="DlgHistoryGameStat\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="DlgHistoryGameStat\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="DlgHistoryGameStat\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条4"  Pos = "5,196" Visible = "1">
+	<Image  Normal="DlgHistoryGameStat\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="DlgHistoryGameStat\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="DlgHistoryGameStat\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条5"  Pos = "5,219" Visible = "1">
+	<Image  Normal="DlgHistoryGameStat\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="DlgHistoryGameStat\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="DlgHistoryGameStat\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条6"  Pos = "5,242" Visible = "1">
+	<Image  Normal="DlgHistoryGameStat\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="DlgHistoryGameStat\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="DlgHistoryGameStat\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "String" Text = "2013-07-30" Pos = "32,132,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "122,132,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,132,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,132,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,132,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "390,132,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数1" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "2013-07-30" Pos = "32,155,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "122,155,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,155,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,155,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,155,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "390,155,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数2" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "2013-07-30" Pos = "32,178,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "122,178,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,178,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,178,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,178,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "390,178,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数3" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "2013-07-30" Pos = "32,201,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "122,201,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,201,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,201,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,201,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "390,201,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数4" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "2013-07-30" Pos = "32,224,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "122,224,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,224,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,224,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,224,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "390,224,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数5" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "2013-07-30 13:43" Pos = "32,247,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "122,247,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,247,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,247,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,247,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "390,247,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数6" Bold="true"  Visible="1"/>
+
+	
+</root>

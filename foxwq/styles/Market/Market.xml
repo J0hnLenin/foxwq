@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "1200,700"> 
+<Element Name="Main" Type = "Panel" Pos = "0,0,1200,700" Anchor_LTRBC="11110">
+	<Element Name="MyProperty" Type = "Image" Pos = "771,50,429,665" Anchor_LTRBC="11110">
+		<Image Background = "market_pkg_01.png" Pos="0,0,200,200"/>
+		<Grid Name="Grid" Type = "Panel" Number = "1" Pos = "0,0">
+			<Image  Background = "market_pkg_01.png" Pos="0,250,106,116" Background_Hover = "market_pkg_01.png" Hover_Pos="106,250,106,116"/>
+			<Element Name="GridPic" Type = "Image" Pos = "0,8,106,65" Visible = "1">
+			</Element>
+			<Element Name="GridName" Type = "Image" Pos = "0,73" Visible = "1">
+				<Image  Background = "market_pkg_01.png" Pos="200,64,106,18"/>
+			</Element>
+			<Element Name="IsNew" Type = "Image" Pos = "61,0" Visible = "1">
+				<Image  Background = "market_pkg_01.png" Pos="200,26,45,15"/>
+			</Element>
+			<Element Type="String" Text = "YHMP" Font = "宋体" Pos = "0,73,108,18" Height = "13"  Name = "GridName_Text" Anchor_LTRBC="11000" />
+			<Element Name="GridToolBar" Type = "Image" Pos = "0,91">				
+				<Image  Background = "market_pkg_01.png" Pos="200,82,106,25" />
+			</Element>
+			<Element Type="String" Text = "10" Pos = "45,60,45,15" TextColor = "#000000" Font = "宋体" Height = "12" Bold="1"  Name = "Number_Text" Anchor_LTRBC="00110" />
+			<Element Name="Give" Type = "Button" Pos = "32,94" StreathBtn='1' Anchor_LTRBC="11000" >
+					<Element Type="String" Text = "Handsel" Font = "宋体" Height	= "13" Name = "TextGive" Anchor_LTRBC="11000" />
+					<Image  Normal="market_pkg_01.png" Normal_TextColor = "#5d0000" Normal_Pos="200,166,32,17"
+						  Down="market_pkg_01.png"  Down_TextColor = "#ffffff" Hover_Pos="232,166,32,17"
+						  Hover="market_pkg_01.png" Hover_TextColor = "#fff000" Down_Pos="264,166,32,17"/>
+			</Element>
+				
+			<Element Name="Use" Type = "Button" Pos = "67,94" StreathBtn='1' Anchor_LTRBC="11000" >
+					<Element Type="String" Text = "Use" Font = "宋体" Height = "13" Name = "TextUse" Anchor_LTRBC="11000" />
+					<Image  Normal="market_pkg_01.png" Normal_TextColor = "#5d0000" Normal_Pos="200,183,32,17"
+						  Down="market_pkg_01.png"  Down_TextColor = "#ffffff" Hover_Pos="232,183,32,17"
+						  Hover="market_pkg_01.png" Hover_TextColor = "#fff000" Down_Pos="264,183,32,17"/>
+			</Element>
+		</Grid>
+		
+		<ScrollBar Name="MyProperty_ScrollBar" Type = "ScrollBar" Pos = "0,0">
+			<!-- 向上箭头-->
+			<Element Name="VScrollBarUpArrow" Type = "Button">
+				<Image  Normal="VScrollBarUpArrowNormal.bmp"
+					  Down="VScrollBarUpArrowDown.bmp"
+					  Hover="VScrollBarUpArrowUp.bmp"/>
+			</Element>
+			<!--滑槽-->
+			<Element Name="Span" Type = "Panel">
+				<Image Background = "VScrollBarSpanNormal.bmp"/>
+			</Element>
+			<!-- 滑块-->
+			<Element Name="VScrollBarThumb" Type = "Button">
+				<Image  Normal="VScrollBarThumbNormal.bmp"
+					  Down="VScrollBarThumbDown.bmp"
+					  Hover="VScrollBarThumbUp.bmp"/>
+			</Element>
+
+			<!-- 向下箭头-->
+			<Element Name="VScrollBarDownArrow" Type = "Button">
+				<Image  Normal="VScrollBarDownArrowNormal.bmp"
+					  Down="VScrollBarDownArrowDown.bmp"
+					  Hover="VScrollBarDownArrowUp.bmp"/>
+			</Element>
+
+		</ScrollBar>
+	</Element>
+	
+	<!--标题背景左上图片-->
+	<Element Name="PanelLeftTop" Type = "Image" Pos = "0,0,338,50">
+		<Image  Background = "market_pkg_01.png" Pos="0,366,50,50"/>
+	</Element>
+	
+	<!--标题背景顶端中间图片-->
+	<Element Name="PanelTopM" Type = "Image" Pos = "335,0">
+		<Image  Background = "market_pkg_01.png" Pos="0,200,330,50"/>
+	</Element>
+	
+	<!--标题背景顶端右侧图片-->
+	<Element Name="PanelTopR" Type = "Image" Pos = "665,0,536,50" Anchor_LTRBC="11100">
+		<Image  Background = "market_pkg_01.png" Pos="50,366,50,50"/>
+	</Element>
+	
+	<Element Name="Box" Type = "Image" Pos = "452,1">
+		<Image  Background = "market_pkg_01.png" Pos="200,107,81,59"/>
+	</Element>
+	
+	<Element Name="BtnOpenShop" Type = "Button" Pos = "0,11,335,25" Anchor_LTRBC="11000">
+		<Element Type="String" Text = "WYGM" Font = "宋体" Height	= "13" Name = "TextOpenShop" Anchor_LTRBC="11000" />
+		<Image  Normal="market_pkg_01.png"  Normal_TextColor = "#5d0000" Normal_Pos="55,466,40,25"
+			  Down="market_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="155,466,40,25"
+			  Hover="market_pkg_01.png"  Hover_TextColor = "#fff000" Hover_Pos="55,466,40,25"/>
+	</Element>
+	
+	<Element Name="其它" Type = "Button" Pos = "50,11" Anchor_LTRBC="01100">
+		<Element Type="String" Text = "QT" Font = "宋体" Height	= "13" Name = "TextOther" Anchor_LTRBC="11000" />
+		<Image  Normal="market_pkg_01.png"  Normal_TextColor = "#5d0000" Normal_Pos="50,466,50,25"
+			  Down="market_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="150,466,50,25"
+			  Hover="market_pkg_01.png"  Hover_TextColor = "#fff000" Hover_Pos="50,466,50,25"/>
+	</Element>
+	
+	<Element Name="围棋" Type = "Button" Pos = "108,11,58,25" Anchor_LTRBC="01100">
+		<Element Type="String" Text = "WQ" Font = "宋体" Height	= "13" Name = "TextWeiqi" Anchor_LTRBC="11000" />
+		<Image  Normal="market_pkg_01.png"  Normal_TextColor = "#5d0000" Normal_Pos="50,466,50,25"
+			  Down="market_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="150,466,50,25"
+			  Hover="market_pkg_01.png"  Hover_TextColor = "#fff000" Hover_Pos="50,466,50,25"/>
+	</Element>
+	
+	<Element Name="幸运礼包" Type = "Button" Pos = "193,11,85,25" Anchor_LTRBC="01100" >
+		<Element Type="String" Text = "XYLB" Font = "宋体" Height	= "13" Name = "TextFP" Anchor_LTRBC="11000" />
+		<Image  Normal="market_pkg_01.png"  Normal_TextColor = "#5d0000" Normal_Pos="50,466,50,25"
+			  Down="market_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="150,466,50,25"
+			  Hover="market_pkg_01.png"  Hover_TextColor = "#fff000" Hover_Pos="50,466,50,25"/>
+	</Element>
+	
+	<Element Name="竞猜" Type = "Button" Pos = "250,11,57,25" Anchor_LTRBC="01100" >
+		<Element Type="String" Text = "JC" Font = "宋体" Height	= "13" Name = "TextGuess" Anchor_LTRBC="11000" />
+		<Image  Normal="market_pkg_01.png"  Normal_TextColor = "#5d0000" Normal_Pos="50,466,50,25"
+			  Down="market_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="150,466,50,25"
+			  Hover="market_pkg_01.png"  Hover_TextColor = "#fff000" Hover_Pos="50,466,50,25"/>
+	</Element>
+	
+	<Element Name="头像" Type = "Button" Pos = "307,11,57,25" Anchor_LTRBC="01100">
+		<Element Type="String" Text = "TX" Font = "宋体" Height	= "13" Name = "TextGuess" Anchor_LTRBC="11000" />
+		<Image  Normal="market_pkg_01.png"  Normal_TextColor = "#5d0000" Normal_Pos="50,466,50,25"
+			  Down="market_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="150,466,50,25"
+			  Hover="market_pkg_01.png"  Hover_TextColor = "#fff000" Hover_Pos="50,466,50,25"/>
+	</Element>
+	
+	<Element Name="全部" Type = "Button" Pos = "357,11,50,25" Anchor_LTRBC="01100" >
+		<Element Type="String" Text = "QB" Font = "宋体" Height	= "13" Name = "TextAll" Anchor_LTRBC="11000" />
+		<Image  Normal="market_pkg_01.png"  Normal_TextColor = "#5d0000" Normal_Pos="0,466,50,25"
+			  Down="market_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="100,466,50,25"
+			  Hover="market_pkg_01.png"  Hover_TextColor = "#fff000" Hover_Pos="0,466,50,25"/>
+	</Element>
+	
+	
+	<!--底部横条背景图片-->
+	<Element Name="Bottom" Type = "Image" Pos = "0,50,1200,50" Anchor_LTRBC="10110" >
+		<Image  Background = "market_pkg_01.png" Pos="100,366,50,50"/>
+	</Element>
+	
+	<Element Name="yehuCash" Type = "Image" Pos = "480,50" Anchor_LTRBC="10010">
+		<Element Type="String" Text = "HB：" Font = "Arial" Height= "15" Pos = "58,18,48,15" Name = "yehuCash_Text" Anchor_LTRBC="11000" Align = "L"/>
+		<Element Type="String" Text = "1,000,000,000,000,000" Font = "Arial" Height	= "15" Pos = "100,18,230,15" Name = "yehuCash_Number" Anchor_LTRBC="11000" Align = "L"/>
+		<Image  Background = "market_pkg_01.png" Pos="0,416,300,50"/>
+	</Element>
+	
+	<Element Name="Close" Type = "Button" Pos = "77,36,60,26" StreathBtn='1' Anchor_LTRBC="00110" >
+		<Element Type="String" Text = "GB" Font = "宋体" Height	= "13" Name = "TextClose" Anchor_LTRBC="11000" />
+		<Image  Normal="..\btns\btn_fu_01.png" Normal_TextColor = "#5d0000" 
+			  Down="..\btns\btn_fu_03.png"  Down_TextColor = "#ffffff"
+			  Hover="..\btns\btn_fu_02.png" Hover_TextColor = "#fff000" />
+	</Element>
+	
+	<!--WEB控件框-->
+	<Element Name="WebBorder" Type = "Image" Pos = "771,50,6,600"  Visible = "1" Anchor_LTRBC="11010">
+			<Image  Background = "market_pkg_01.png" Pos="200,0,6,1"/>
+	</Element>
+	
+	<Element Type="String" Pos="0,50,466,50" Anchor_LTRBC="10010" Text="TEL：010-67022389" TextColor="#ffffff" Font="宋体" Height="13" Name="Blue"/>
+</Element>
+</root>

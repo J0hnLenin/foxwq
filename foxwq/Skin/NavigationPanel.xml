@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Image" Name="Background"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\Navigation\bg_mainbtn.png" />
+	</Element>
+	
+	<!-- 注意：新添加按钮一定要在NavigationPanel.cpp文件NPING_AllNaviBtnCfgArray中添加相应配置，会根据窗口高度动态调整显示按钮-->
+	<Element Type = "Button" Name="BtnPageUp"  Pos = "0,0" Visible = '0'>
+	<Image  Normal="Navigation\btn_page.png"   Normal_Pos="60,0,60,20"
+			Hover="Navigation\btn_page.png"    Hover_Pos="60,20,60,20"
+			Down="Navigation\btn_page.png"     Down_Pos="60,40,60,20"
+			Disable="Navigation\btn_page.png"  Disable_Pos="60,60,60,20"/>			  
+	</Element>	
+	<Element Type = "Button" Name="BtnPageDown"  Pos = "0,0" Visible = '0'>
+	<Image  Normal="Navigation\btn_page.png"   Normal_Pos="0,0,60,20"
+			Hover="Navigation\btn_page.png"    Hover_Pos="0,20,60,20"
+			Down="Navigation\btn_page.png"     Down_Pos="0,40,60,20"
+			Disable="Navigation\btn_page.png"  Disable_Pos="0,60,60,20"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnRecordList"  Pos =  "0,0" Visible = '1'>
+	<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,60,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,60,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,60,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnRankinglist"  Pos =  "0,60" Visible = '1'>
+	<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,120,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,120,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,120,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnShop"  Pos =  "0,120" Visible = '1'>
+	<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,360,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,360,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,360,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClub"  Pos =  "0,180" Visible = '1'>
+	<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,300,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,300,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,300,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnTask"  Pos =  "0,240" Visible = '1'>
+		<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,660,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,660,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,660,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnTaskRedNumber"  Pos =  "36,240" Visible = '1'>
+	<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "10" Bold="false"/>
+		<Image  Normal="Task\Task.png" Normal_Pos="452,33,16,15" Normal_TextColor = "#FFFFFF"
+			    Hover="Task\Task.png" Hover_Pos="452,33,16,15" Hover_TextColor = "#FFFFFF"
+			    Down="Task\Task.png"  Down_Pos="452,33,16,15" Down_TextColor = "#FFFFFF"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnFineArt"  Pos =  "0,300" Visible = '1'>
+	<Image  Normal="Navigation\mbtn_fineart.png"  Normal_Pos="0,0,60,60"
+			  Hover="Navigation\mbtn_fineart.png"  Hover_Pos="60,0,60,60"
+			  Down="Navigation\mbtn_fineart.png"  Down_Pos="120,0,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnFineArtRedNumber"  Pos =  "36,300" Visible = '0'>
+	<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "10" Bold="false"/>
+		<Image  Normal="Task\Task.png" Normal_Pos="452,33,16,15" Normal_TextColor = "#FFFFFF"
+			    Hover="Task\Task.png" Hover_Pos="452,33,16,15" Hover_TextColor = "#FFFFFF"
+			    Down="Task\Task.png"  Down_Pos="452,33,16,15" Down_TextColor = "#FFFFFF"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnNFLAD"  Pos =  "0,360" Visible = '1'>
+	<Image  Normal="Navigation\mbtn_lad.png"  Normal_Pos="0,0,60,60"
+			  Hover="Navigation\mbtn_lad.png"  Hover_Pos="60,0,60,60"
+			  Down="Navigation\mbtn_lad.png"  Down_Pos="120,0,60,60"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnNFRecord"  Pos =  "0,420" Visible = '1'>
+	<Image  Normal="Navigation\mbtn_record.png"  Normal_Pos="0,0,60,60"
+			  Hover="Navigation\mbtn_record.png"  Hover_Pos="60,0,60,60"
+			  Down="Navigation\mbtn_record.png"  Down_Pos="120,0,60,60"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnNoviceTutorial"  Pos =  "0,480" Visible = '1'>
+		<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,600,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,600,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,600,60,60"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnLAD"  Pos =  "0,540" Visible = '1'>
+	<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,540,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,540,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,540,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnCreateRoom"  Pos =  "0,600" Visible = '1'>
+	<Image  Normal="Navigation\mbtn_createroom.png"  Normal_Pos="0,0,60,60"
+			  Hover="Navigation\mbtn_createroom.png"  Hover_Pos="60,0,60,60"
+			  Down="Navigation\mbtn_createroom.png"  Down_Pos="120,0,60,60"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnServerlist"  Pos =  "0,660" Visible = '1'>
+	<Image  Normal="Navigation\mbtn4_pkg_01.png"  Normal_Pos="0,0,60,60"
+			  Hover="Navigation\mbtn4_pkg_01.png"  Hover_Pos="60,0,60,60"
+			  Down="Navigation\mbtn4_pkg_01.png"  Down_Pos="120,0,60,60"/>
+	</Element>
+
+	<Element Type = "Image" Name="AwardStage01"  Visible = '0'>
+		<Image  Background = "Navigation\award_01.png"/>
+	</Element> 
+	<Element Type = "Image" Name="AwardStage02"  Visible = '0'>
+		<Image  Background = "Navigation\award_02.png"/>
+	</Element> 
+	<Element Type = "Image" Name="AwardStage03"  Visible = '0'>
+		<Image  Background = "Navigation\award_03.png"/>
+	</Element> 
+	<Element Type = "Image" Name="AwardStage04"  Visible = '0'>
+		<Image  Background = "Navigation\award_04.png"/>
+	</Element>  
+	<Element Type = "Image" Name="AwardStage05"  Visible = '0'>
+		<Image  Background = "Navigation\award_05.png"/>
+	</Element>
+	
+	<Element Type = "CustomCtrl" Name="OnlineFruitTree"  Pos = "0,620,65,85" Visible = '0'>
+	</Element>
+	
+</root> 

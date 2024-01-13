@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Image" Name="bg_c"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_c.png" />
+	</Element> 
+	<Element Type = "TitleBar" Name="MainFrmTitleBar"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	<Element Type = "Image" Name="MainFrmTitleBarShadow"  Pos = "2,30"  Visible = '1'>
+		<Image  Background = "background\main\ha1_sd.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="MainFrmTitleLogo"  Pos = "4,0"  Visible = '1'>
+		<Image  Background = "background\main\logo.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnAIUIConnect"  Pos ="230,0" Anchor_LTRBC = "01100" Visible = '0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,240,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,240,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,240,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,240,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnAIUI"  Pos ="230,0" Anchor_LTRBC = "01100" Visible = '0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,210,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,210,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,210,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,210,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnUser"  Pos ="205,0" Anchor_LTRBC = "01100" Visible = '0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,270,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,270,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,270,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,270,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnHomePage"  Pos ="180,0" Anchor_LTRBC = "01100" Visible = '0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,300,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,300,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,300,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,300,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+
+	<Element Type = "Button" Name="BtnChangeSkin"  Pos ="155,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,180,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,180,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,180,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,180,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	<Element Type = "Button" Name="BtnHelp"  Pos ="130,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,0,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,0,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,0,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,0,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	<Element Type = "Button" Name="BtnSetting"  Pos ="105,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,30,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,30,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,30,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,30,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	<Element Type = "Button" Name="BtnMaxmized"  Pos ="55,0" Anchor_LTRBC = "01100" Visible = '0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,150,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,150,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,150,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,150,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+</root>

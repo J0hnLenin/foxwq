@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Frame" Name="Frame"  Pos = "0,0"  Visible = '1'>
+		<Image  Background = "HallRoomListPanel\list_bg.png" />
+	</Element>
+	<Element Type = "Image" Name="InputBox"  Pos = "4,1"  Visible = '1'>
+		<Image  Background = "textbar\searchbar.png" />
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSearch"  Pos = "68,3">
+		<Image 
+		  Normal="button\searchbtn_pkg_01.png"  Normal_Pos="0,0,52,21"  Normal_TextColor = "#d1ffc9"
+		  Hover="button\searchbtn_pkg_01.png"  Hover_Pos="0,21,52,21"  Hover_TextColor = "#d1ffc9"
+		  Down="button\searchbtn_pkg_01.png"  Down_Pos="0,42,52,21"  Down_TextColor = "#d1ffc9"  />
+	</Element>
+	
+	<Element Type = "TabCtrl" Name= "TabCtrl按钮" Pos = "75,10,310,20"  Align = "L" Interval = '1' >
+		<Item Name = "TabBtn_Master" Visible = '1'
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,160,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,160,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,160,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>
+		<Item Name = "TabBtn_All" Visible = '1'
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,0,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,0,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,0,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>
+		<Item Name = "TabBtn_SameLevel" Visible = '1'
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,180,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,180,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,180,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>
+		<Item Name = "TabBtn_Location"  Visible = '1'  
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,140,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,140,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,140,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>
+		<Item Name = "TabBtn_Club"  Visible = '1'  
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,120,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,120,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,120,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>
+		<Item Name = "TabBtn_Friend"  Visible = '1'  
+		  Normal="HallRoomListPanel\list_btn_pkg_01.png"  Normal_Pos="0,100,50,20"  Normal_TextColor = "#d1ffc9"
+		  Hover="HallRoomListPanel\list_btn_pkg_01.png"  Hover_Pos="50,100,50,20"  Hover_TextColor = "#d1ffc9"
+		  Down="HallRoomListPanel\list_btn_pkg_01.png"  Down_Pos="100,100,50,20"  Down_TextColor = "#d1ffc9"  >
+		</Item>		
+	</Element>
+	
+	<Element Type = "Image" Name="ListBkg"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,132,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="ListItemBkg"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_pkg_01.png" Pos="0,110,200,22"/>
+	</Element> 
+	<Element Type = "Image" Name="ListFocusbar"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_focusbar.png" />
+	</Element> 
+	<Element Type = "Image" Name="ColumnSplitor"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\list_stk1.png" />
+	</Element> 
+
+	<Element Type = "Image" Name="m_pic"  Visible = '0'>
+		<Image  Background = ""/>
+	</Element> 
+	<Element Type = "Image" Name="m_picCN"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picKR"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="16,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picJP"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="32,48,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picTW"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="48,48,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picSelf"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="64,48,16,16"/>
+	</Element>
+
+	<Element Type = "Image" Name="m_picMemberGold"  Visible = '0'>
+		<Image  Background = "listicon\viplevel_pkg_01.png" Pos="16,0,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picMemberWhiteGold"  Visible = '0'>
+		<Image  Background = "listicon\viplevel_pkg_01.png" Pos="0,0,16,16"/>
+	</Element> 
+	<Element Type = "Image" Name="m_picMemberBK"  Visible = '0'>
+		<Image  Background = "listicon\viplevel_pkg_01.png" Pos="0,120,47,20"/>
+	</Element>
+
+	<Element Type = "Image" Name="m_picClubImage"  Visible = '0'>
+		<Image  Background = ""/>
+	</Element>
+
+	<Element Type = "Image" Name="m_picChkNormal"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="16,64,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picChkHover"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="32,64,16,16"/>
+	</Element>
+	<Element Type = "Image" Name="m_picChkSelect"  Visible = '0'>
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="48,64,16,16"/>
+	</Element> 
+
+</root> 

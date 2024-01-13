@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "330,205" Transparent = '1'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,330,205" >	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "WarResultDlg\result.png" Pos="0,0,330,205"/>
+	</Element>
+	<Element Type = "Button" Name="BtnPlayAgain"  Pos = "140,150" Anchor_LTRBC="11000" Visible = "0">
+		<Image  Normal="WarResultDlg\result.png"  Normal_TextColor = "#666666" Normal_Pos="215,440,120,40"
+				Hover="WarResultDlg\result.png"  Hover_TextColor = "#666666" Hover_Pos="335,440,120,40"
+				Down="WarResultDlg\result.png"      Down_TextColor = "#ffffff" Down_Pos="455,440,120,40"/>
+	</Element>
+	<Element Type = "Button" Name="BtnOK"  Pos = "16,150" Anchor_LTRBC="11000" Visible = "0">
+		<Image  Normal="WarResultDlg\result.png"  Normal_TextColor = "#666666" Normal_Pos="215,340,120,40"
+				Hover="WarResultDlg\result.png"  Hover_TextColor = "#666666" Hover_Pos="335,340,120,40"
+				Down="WarResultDlg\result.png"      Down_TextColor = "#ffffff" Down_Pos="455,340,120,40"/>
+	</Element>
+	<Element Type = "Button" Name="BtnBtmOK"  Pos = "136,56" Anchor_LTRBC="00110" Visible = "0">
+		<Image  Normal="WarResultDlg\result.png"  Normal_TextColor = "#666666" Normal_Pos="215,340,120,40"
+				Hover="WarResultDlg\result.png"  Hover_TextColor = "#666666" Hover_Pos="335,340,120,40"
+				Down="WarResultDlg\result.png"      Down_TextColor = "#ffffff" Down_Pos="455,340,120,40"/>
+	</Element>
+	<Element Type = "Button" Name="BtnClose"  Pos = "291,18" Anchor_LTRBC="11000" Visible = "0">
+		<Image  Normal="WarResultDlg\flyknife_button.png"  Normal_Pos="447,5,20,20"
+				Hover="WarResultDlg\flyknife_button.png"  Hover_Pos="447,25,20,20"
+				Down="WarResultDlg\flyknife_button.png"    Down_Pos="447,45,20,20"/>
+	</Element>
+	<Element Type = "Button" Name="BtnContinueGame"  Pos = "8,152" Anchor_LTRBC="11000" Visible = "0">
+		<Image  Normal="WarResultDlg\flyknife_button.png"  Normal_Pos="2,6,111,30"
+				Hover="WarResultDlg\flyknife_button.png"  Hover_Pos="113,6,111,30"
+				Down="WarResultDlg\flyknife_button.png"    Down_Pos="224,6,111,30"/>
+	</Element>
+	<Element Type = "Button" Name="BtnRematchGame"  Pos = "120,152" Anchor_LTRBC="11000" Visible = "0">
+		<Image  Normal="WarResultDlg\flyknife_button.png"  Normal_Pos="2,46,111,30"
+				Hover="WarResultDlg\flyknife_button.png"  Hover_Pos="113,46,111,30"
+				Down="WarResultDlg\flyknife_button.png"    Down_Pos="224,46,111,30"/>
+	</Element>
+
+	<!-- 胜负状态 -->
+	<Element Type = "Image" Name = "黑胜" Pos = "128, 6, 75, 45" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="0,495,75,45"/>
+		</Element>
+	<Element Type = "Image" Name = "白胜" Pos = "128, 6, 75, 45" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="75,495,75,45"/>
+		</Element>
+	<Element Type = "Image" Name = "平局" Pos = "128, 6, 75, 45" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="150,495,75,45"/>
+		</Element>
+	<Element Type = "Image" Name = "无效" Pos = "128,6,75,45" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="225,495,75,45"/>
+		</Element>
+		
+	<!-- 胜方显示 -->	
+	<Element Type = "Image" Name = "您胜利了" Pos = "10,60,100,34" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="320,381,100,34"/>
+	</Element>
+	<Element Type = "Image" Name = "胜利奖杯" Pos = "200,70,118,114" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="0,381,118,114"/>
+		</Element>	
+	<Element Type = "String" Text = "" Pos = "20,100,210,20" Font = "黑体" Align = "L" Height = "14" TextColor = "#EDF8FF" Name = "胜利方结果描述" Bold="true" Visible="0"/>
+	
+	<!-- 负方显示 -->	
+	<Element Type = "Image" Name = "您输了" Pos = "10,60,100,34" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="420,381,100,34"/>
+	</Element>
+	<Element Type = "Image" Name = "失败奖杯" Pos = "225,50,97,114" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="118,381,97,114"/>
+		</Element>
+	<Element Type = "String" Text = "" Pos = "20,100,210,20" Font = "黑体" Align = "L" Height = "14" TextColor = "#EDF8FF" Name = "失败方结果描述" Bold="true" Visible="0"/>
+	
+	<!-- 平局、无效显示 -->
+	<Element Type = "String" Text = "" Pos = "20,70,260,20" Font = "黑体" Align = "L" Height = "14" TextColor = "#EDF8FF" Name = "参与方平局显示"  Bold="true" Visible="0"/>
+	<Element Type = "String" Text = "---" Pos = "180,70,60,20" Font = "黑体" Align = "L" Height = "16" TextColor = "#EDF8FF" Name = "的对局"  Bold="true" Visible="0"/> -->
+	<Element Type = "Image" Name = "不分胜负" Pos = "110,100,100,34" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="520,381,100,34"/>
+		</Element>
+	<Element Type = "Image" Name = "对局无效" Pos = "140,100,100,34" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="620,381,100,34"/>
+		</Element>
+		
+	<!-- 观察者显示 -->
+	<Element Type = "Image" Name = "胜利小奖杯" Pos = "18,55,45,58" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="215,381,45,58"/>
+		</Element>
+	<Element Type = "String" Text = "" Pos = "75,70,210,20" Font = "黑体" Align = "L" Height = "14" TextColor = "#EDF8FF" Name = "黑方或胜方显示" Bold="true" Visible="0"/>
+	<Element Type = "String" Text = "" Pos = "90,120,160,20" Font = "黑体" Align = "L" Height = "14" TextColor = "#EDF8FF" Name = "白方或败方显示" Bold="true" Visible="0"/>
+	<Element Type = "Image" Name = "VS" Pos = "105,78,45,58" Visible = "0">
+		<Image Background = "WarResultDlg\result.png" Pos="260,381,45,58"/>
+		</Element>
+	
+	
+	<Element Type = "CustomCtrl" Name="载入进度"  Pos = "6,177,338,7">
+		<Image  left_img = "TimerPromptDialog\rb_n1_01.png" 
+				mid_img = "TimerPromptDialog\rb_n1_02.png"
+				right_img = "TimerPromptDialog\rb_n1_03.png"/>
+	</Element>
+	
+	<Element Type = "Image" Name="十位"  Pos = "24,154,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+		</Element>
+	<Element Type = "Image" Name="个位"  Pos = "42,154,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+		</Element>
+	
+</root>

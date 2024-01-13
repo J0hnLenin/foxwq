@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="TitleLogo"  Pos = "4,0"  Visible = '1'>
+		<Image  Background = "background\main\logo.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnHelp"  Pos ="105,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,0,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,0,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,0,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,0,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Image" Name="LeftTopBack"  Pos="8,51" Visible = '1'>
+		<Image  Background = "FineArtComplex\back.png"  Pos="0,295,152,57"/>
+	</Element> 
+	
+	<Element Type = "Image" Name="LeftMiddleBack"  Pos="8,118" Visible = '1'>
+		<Image  Background = "FineArtComplex\back.png"  Pos="0,295,152,57"/>
+	</Element> 
+	<Element Type = "Image" Name="LeftMiddleBack_big"  Pos="8,118" Visible = '0'>
+		<Image  Background = "FineArtComplex\back.png"  Pos="0,352,152,149"/>
+	</Element> 
+	
+	<Element Type = "Image" Name="LeftBottomBack"  Pos="8,185" Visible = '1'>
+		<Image  Background = "FineArtComplex\back.png"  Pos="0,295,152,57"/>
+	</Element> 
+	<Element Type = "Image" Name="LeftBottomBack_big"  Pos="8,277" Visible = '0'>
+		<Image  Background = "FineArtComplex\back.png"  Pos="0,295,152,57"/>
+	</Element> 
+	
+
+	<Element Type = "Button" Name="BtnDeepAnalysis"  Pos = "13,56">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "20" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="286,158,152,48"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="286,158,152,48"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="286,206,152,48"  Down_TextColor = "#88462C"/>
+	</Element>
+
+	<Element Type = "Button" Name="BtnReplayList"  Pos = "13,123">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "20" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="286,62,152,48"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="286,62,152,48"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="286,206,152,48"  Down_TextColor = "#88462C"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnReplayMyGame"  Pos = "13,178"  Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "------" Font = "黑体" Height = "16" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="286,256,152,37"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="286,293,152,37"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="286,330,152,37"  Down_TextColor = "#88462C"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnReplayOtherGame"  Pos = "13,220"  Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "------" Font = "黑体" Height = "16" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="286,256,152,37"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="286,293,152,37"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="286,330,152,37"  Down_TextColor = "#88462C"/>
+	</Element>	
+
+	<Element Type = "Button" Name="BtnScoreExchange"  Pos = "13,190">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "20" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="286,110,152,48"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="286,110,152,48"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="286,206,152,48"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<!--可领取积分红点+次数-->
+	<Element Type = "Button" Name="BtnScoreRedNumber"  Pos =  "8,186" Visible = '0'>
+	<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "10" Bold="false"/>
+	<Image  Normal="Task\Task.png" Normal_Pos="452,33,16,15" Normal_TextColor = "#FFFFFF"
+			Hover="Task\Task.png" Hover_Pos="452,33,16,15" Hover_TextColor = "#FFFFFF"
+			Down="Task\Task.png"  Down_Pos="452,33,16,15" Down_TextColor = "#FFFFFF"/>
+	</Element>	
+	
+
+</root> 

@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "312,204" NoActivate="1"> 	
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">			
+		<Image  Background = "FocusGameNoticeDlg\back.png"/>
+	</Element>
+	
+	<!--标题文字图片-->	
+	<Element Type = "Image" Name="imgTitleTxt"  Pos = "116,5" >
+		<Image  Background="FocusGameNoticeDlg\titleTxt.png"/>
+	</Element>
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="btnClose"  Pos = "282,0">
+		<Image  Normal="FocusGameNoticeDlg\btnClose.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,27,29"
+				Hover="FocusGameNoticeDlg\btnClose.png"   Hover_TextColor = "#666666" Hover_Pos="27,0,27,29"
+				Down="FocusGameNoticeDlg\btnClose.png"    Down_TextColor = "#ffffff" Down_Pos="54,0,27,29"/>
+	</Element>
+	
+	<!--观看按钮-->
+	<Element Type = "Button" Name="btnWatch"  Pos = "110,140">
+		<Image  Normal="FocusGameNoticeDlg\btnWatch.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,92,38"
+				Hover="FocusGameNoticeDlg\btnWatch.png"   Hover_TextColor = "#666666" Hover_Pos="0,38,92,38"
+				Down="FocusGameNoticeDlg\btnWatch.png"    Down_TextColor = "#ffffff" Down_Pos="0,76,92,38"/>
+	</Element>
+	
+	<!--白方头像-->	
+	<Element Type = "AnimalImage" Name="WhiteHeadImage"  Pos = "19,34,74,82" Stretching = "1" Visible = '1'>
+	</Element>
+	
+	<!--黑方头像-->	
+	<Element Type = "AnimalImage" Name="BlackHeadImage"  Pos = "218,34,74,82" Stretching = "1" Visible = '1'>
+	</Element>
+	
+	<!--国籍-->	
+	<Element Type = "Image" Name="WhiteCountryImg"  Pos = "110,100" Visible = "1">
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,48,16,16" />
+	</Element>
+	<Element Type = "Image" Name="BlackCountryImg"  Pos = "185,100" Visible = "1">
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="16,48,16,16" />
+	</Element>
+	
+	<!--用户名信息-->	
+	<Element Type = "String" Text = "-----" Pos = "15,122,81,22" Font = "宋体" Align = "C" Height = "14" TextColor = "#FFFFFF" Name = "WhiteName"/>
+	<Element Type = "String" Text = "-----" Pos = "214,122,81,22" Font = "宋体" Align = "C" Height = "14" TextColor = "#FFFFFF" Name = "BlackName"/>
+	
+	<!--段位信息-->	
+	<Element Type = "String" Text = "--" Pos = "48,146,32,32" Font = "宋体" Align = "C" Height = "12" TextColor = "#000000" Name = "WhiteGrade"/>
+	<Element Type = "String" Text = "--" Pos = "229,146,32,32" Font = "宋体" Align = "C" Height = "12" TextColor = "#FFFFFF" Name = "BlackGrade"/>
+	
+	<!--认证-->	
+	<Element Type = "Image" Name="WhiteOccuImg"  Pos = "20,155" Visible = "1">
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,0,16,16" />
+	</Element>
+	<Element Type = "Image" Name="BlackOccuImg"  Pos = "275,155" Visible = "1">
+		<Image  Background = "listicon\icon_pkg_01.png" Pos="0,0,16,16" />
+	</Element>
+	
+	<!--当天不再提示框-->
+	<Element Type = "SwithButton" Name="CheckBox"  Pos = "10,184,200,14" Visible = '1'>
+				<Image  OnNormal="button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					  OnHover="button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					  OffNormal="button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					  OffHover="button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					  Disable="button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"
+					  />
+		</Element>	
+	<Element Type = "String" Text = "------"  Name = "CheckBoxText" Pos = "29,184,200,14" Font = "黑体" Align = "L" Height = "12" TextColor = "#646464"  Visible = '1'/>
+
+</root>

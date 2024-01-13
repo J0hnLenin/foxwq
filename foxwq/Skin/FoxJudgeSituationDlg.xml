@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "350,220" Transparent = '1'> 
+
+<Element Name="TitleBar" Type = "Panel" Pos = "0,0,350,30" >	
+</Element>
+
+<Element Name="PanelMain" Type = "Panel" Pos = "0,0">	
+	<Image  Background = "TimerPromptDialog\notice_bkgnd.png" Pos="0,0,350,220"/>
+</Element>
+
+<!--由于图片上目的位置支持数子规则需要用子，图片没来的及修改，这里直接用空行拼接目行-->
+<Element Name="PanelMainUp" Type = "Panel" Pos = "0,80">	
+	<Image  Background = "TimerPromptDialog\notice.png" Pos="0,590,350,30"/>
+</Element>
+<Element Name="PanelMainMid" Type = "Panel" Pos = "0,110">	
+	<Image  Background = "TimerPromptDialog\notice.png" Pos="0,670,350,25"/>
+</Element>
+<Element Name="PanelMainDown" Type = "Panel" Pos = "0,135">	
+	<Image  Background = "TimerPromptDialog\notice.png" Pos="0,645,350,50"/>
+</Element>
+
+
+<!--按钮 -->
+<Element Type = "Button" Name="BtnClose"  Pos = "35,5" Anchor_LTRBC="01100">
+	<Image  Normal="TimerPromptDialog\close_btn_pkg.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,30,30"
+			Hover="TimerPromptDialog\close_btn_pkg.png"  Hover_TextColor = "#666666" Hover_Pos="30,0,30,30"
+			Down="TimerPromptDialog\close_btn_pkg.png"      Down_TextColor = "#ffffff" Down_Pos="60,0,30,30"
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnOK"  Pos = "115,36" Anchor_LTRBC="00110">
+	<Image  Normal="button\main_bottom\btn_btmcl_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,100,30"
+			Hover="button\main_bottom\btn_btmcl_pkg_01.png"  Hover_TextColor = "#666666" Hover_Pos="100,0,100,30"
+			Down="button\main_bottom\btn_btmcl_pkg_01.png"   Down_TextColor = "#ffffff" Down_Pos="200,0,100,30"
+	/>
+</Element>
+
+<!-- 标题 -->
+<Element Type = "Image" Name="形式判断" Pos = "5, 5, 350, 30" Visible = "1">
+	<Image Background = "TimerPromptDialog\notice.png" Pos="0,470,350,30"/>
+</Element>
+
+<!--领先信息-->
+<Element Type = "String" Text = "" Pos = "42,60,100,20" Font = "黑体" Align = "L" Height = "12" TextColor = "#aaaaaa" Name = "比赛规则" Visible = '1' TextShadow="true"/>
+<Element Type = "String" Text = "" Pos = "160,45,26,24" Font = "黑体" Align = "L" Height = "22" TextColor = "#aaaaaa" Name = "领先方" Bold = "1" Visible = '1' TextShadow="true"/>
+<Element Type = "String" Text = "--" Pos = "186,50,50,18" Font = "黑体" Align = "R" Height = "12" TextColor = "#aaaaaa" Name = "领先" Bold = "1" Visible = '1' TextShadow="true"/>
+<Element Type = "String" Text = "--" Pos = "240,42,80,30" Font = "黑体" Align = "C" Height = "30" TextColor = "#ffffff" Name = "领先目数" Bold = "1" TextShadow="true"/>
+<Element Type = "String" Text = "--" Pos = "320,50,15,18" Font = "黑体" Align = "R" Height = "12" TextColor = "#aaaaaa" Name = "目" Bold = "1" TextShadow="true"/>
+
+<!--对战双方昵称、目数、提子数-->
+<Element Type = "String" Text = "" Pos = "42,90,110,20" Font = "黑体" Align = "L" Height = "13" TextColor = "#aaaaaa" Name = "白方昵称" Bold = "1" Visible = '1' TextShadow="true"/>
+<Element Type = "String" Text = "" Pos = "42,115,110,18" Font = "黑体" Align = "L" Height = "16" TextColor = "#aaaaaa" Name = "白方目数" Bold = "1" Visible = '1' TextShadow="true"/>
+<Element Type = "String" Text = "" Pos = "42,140,110,18" Font = "黑体" Align = "L" Height = "16" TextColor = "#aaaaaa" Name = "白方提子数" Bold = "1" Visible = '1' TextShadow="true"/>
+
+<Element Type = "String" Text = "" Pos = "198,90,110,20" Font = "黑体" Align = "R" Height = "13" TextColor = "#aaaaaa" Name = "黑方昵称" Bold = "1" Visible = '1' TextShadow="true"/>
+<Element Type = "String" Text = "" Pos = "198,115,110,18" Font = "黑体" Align = "R" Height = "16" TextColor = "#aaaaaa" Name = "黑方目数" Bold = "1" Visible = '1' TextShadow="true"/>
+<Element Type = "String" Text = "" Pos = "198,140,110,18" Font = "黑体" Align = "R" Height = "16" TextColor = "#aaaaaa" Name = "黑方提子数" Bold = "1" Visible = '1' TextShadow="true"/>
+
+<!---目数或子数-->
+<Element Type = "String" Text = "子" Pos = "42,115,266,18" Font = "黑体" Align = "C" Height = "14" TextColor = "#aaaaaa" Name = "TxtMu" Bold = "1" Visible = '1' TextShadow="true"/>
+
+<!-- 附加规则死子加目信息-->
+<Element Type = "String" Text = "" Pos = "42,165,110,18" Font = "黑体" Align = "L" Height = "16" TextColor = "#aaaaaa" Name = "AdditionalRuleAddWhitePoints" Bold = "1" Visible = '0' TextShadow="true"/>
+<Element Type = "String" Text = "" Pos = "198,165,110,18" Font = "黑体" Align = "R" Height = "16" TextColor = "#aaaaaa" Name = "AdditionalRuleAddBlackPoints" Bold = "1" Visible = '0' TextShadow="true"/>
+<Element Type = "String" Text = "" Pos = "42,165,266,18" Font = "黑体" Align = "C" Height = "16" TextColor = "#aaaaaa" Name = "AdditionalRuleName" Bold = "0" Visible = '0' TextShadow="true"/>	
+	
+</root>
+

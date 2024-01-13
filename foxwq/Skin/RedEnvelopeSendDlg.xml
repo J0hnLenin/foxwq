@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "504,368" Transparent = '0'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,504,38">	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0">	
+		<Image  Background = "RedEnvelope\back_send.png" Pos="0,0,504,368"/>
+	</Element>
+	
+	<!-- 标题文字 -->
+	<Element Type = "String" Text = "---"  Name = "TitleTxt" Pos = "0,0,504,38" TextColor = "#ffc77e" Font = "宋体" Align = "C" Height = "20" Bold="1"  TextShadow="true" Visible = '1'/>
+	
+	<!-- 关闭按钮 -->
+	<Element Type = "Button" Name="BtnClose"  Pos = "26,11" Anchor_LTRBC="01100">
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#666666" Normal_Pos="348,0,15,15"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#666666" Hover_Pos="363,0,15,15"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="378,0,15,15"/>
+	</Element>	
+	
+	<!-- 塞进红包按钮 -->
+	<Element Type = "Button" Name="BtnSend"  Pos = "165,301">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height = "20"/>
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#ffffff" Normal_Pos="174,0,174,45"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#ffffff" Hover_Pos="174,45,174,45"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="174,90,174,45"/>
+	</Element>	
+	
+	<!-- 红包类型、总金额行 -->
+	<Element Type = "Image" Name="TypeRandomImg"  Pos = "52,67,25,25" Stretching = "0" Visible = '1'>
+			<Image  Background = "RedEnvelope\image_txt.png" Pos="25,0,25,25"/>
+	</Element>
+	<Element Type = "Image" Name="TypeAverageImg"  Pos = "52,67,25,25" Stretching = "0" Visible = '0'>
+			<Image  Background = "RedEnvelope\image_txt.png" Pos="0,0,25,25"/>
+	</Element>
+	<Element Type = "String" Text = "---" Name = "TotalMoney" Pos = "80,67,300,25" TextColor = "#343434" Font = "宋体" Align = "L" Height = "16" Bold="0"  Visible = '1'/>
+	<Element Type = "String" Text = "--" Name = "MoneyUnit" Pos = "80,67,380,25" TextColor = "#343434" Font = "宋体" Align = "R" Height = "16" Bold="0"  Visible = '1'/>
+	<Element Type = "String" Text = "-------" Name = "RedPackageTypeTxt" Pos = "44,104,300,25" TextColor = "#a0a0a0" Font = "宋体" Align = "L" Height = "12" Bold="0"  Visible = '1'/>
+	<Element Type = "Button" Name="BtnAveragePackage"  Pos = "344,104">
+		<Element Type="String"  Name = "BtnText" Text = "------" Font = "宋体" Height = "12"/>
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#ffffff" Normal_Pos="596,0,120,20"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#ffffff" Hover_Pos="596,20,120,20"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="596,40,120,20"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnRandomPackage"  Pos = "344,104" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "-------" Font = "宋体" Height = "12"/>
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#ffffff" Normal_Pos="470,0,120,20"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#ffffff" Hover_Pos="470,20,120,20"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="470,40,120,20"/>
+	</Element>	
+	
+	<!-- 红包个数 -->
+	<Element Type = "String" Text = "----" Name = "TotalCount" Pos = "52,138,300,25" TextColor = "#343434" Font = "宋体" Align = "L" Height = "16" Bold="0"  Visible = '1'/>	
+	<Element Type = "String" Text = "-" Name = "CountUnit" Pos = "80,138,380,25" TextColor = "#343434" Font = "宋体" Align = "R" Height = "16" Bold="0"  Visible = '1'/>
+
+	<!-- 留言 -->
+	<Element Type = "String" Text = "--" Name = "MsgTxt" Pos = "52,209,300,25" TextColor = "#343434" Font = "宋体" Align = "L" Height = "16" Bold="0"  Visible = '1'/>
+	
+</root>
+

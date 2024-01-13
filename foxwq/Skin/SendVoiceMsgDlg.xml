@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "272,196" NoActivate="1"> 	
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">			
+		<Image  Background = "SendVoiceMsgDlg\back.png"/>
+	</Element>
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="btnClose"  Pos = "252,4">		
+		<Image  Normal="SendVoiceMsgDlg\btn_close.png"  Normal_TextColor = "#000000" Normal_Pos="0,0,16,16"
+				Hover="SendVoiceMsgDlg\btn_close.png"   Hover_TextColor = "#000000" Hover_Pos="0,16,16,16"
+				Down="SendVoiceMsgDlg\btn_close.png"    Down_TextColor = "#000000" Down_Pos="0,32,16,16"/>
+	</Element>
+	
+	<!--取消按钮-->
+	<Element Type = "Button" Name="btnCancel"  Pos = "0,162" Visible = '0'>
+		<Element Type="String"  Name = "BtnCancelText" Text = "Cancel" Font = "黑体" Height = "20"/>
+		<Image  Normal="SendVoiceMsgDlg\btn_back.png"  Normal_TextColor = "#000000" Normal_Pos="0,0,135,34"
+				Hover="SendVoiceMsgDlg\btn_back.png"   Hover_TextColor = "#000000" Hover_Pos="0,34,135,34"
+				Down="SendVoiceMsgDlg\btn_back.png"    Down_TextColor = "#000000" Down_Pos="0,68,135,34"/>
+	</Element>
+	
+	<!--发送按钮-->
+	<Element Type = "Button" Name="btnSend"  Pos = "137,162" Visible = '0'>
+		<Element Type="String"  Name = "BtnSendText" Text = "Send" Font = "黑体" Height = "20"/>
+		<Image  Normal="SendVoiceMsgDlg\btn_back.png"  Normal_TextColor = "#000000" Normal_Pos="135,0,135,34"
+				Hover="SendVoiceMsgDlg\btn_back.png"   Hover_TextColor = "#000000" Hover_Pos="135,34,135,34"
+				Down="SendVoiceMsgDlg\btn_back.png"    Down_TextColor = "#000000" Down_Pos="135,68,135,34"/>
+	</Element>
+	
+	<!--录音按钮-->
+	<Element Type = "Button" Name="btnRecord"  Pos = "93,20">
+		<Image  Normal="SendVoiceMsgDlg\btn_operate.png"  Normal_TextColor = "#000000" Normal_Pos="0,0,85,85"
+				Hover="SendVoiceMsgDlg\btn_operate.png"   Hover_TextColor = "#000000" Hover_Pos="0,85,85,85"
+				Down="SendVoiceMsgDlg\btn_operate.png"    Down_TextColor = "#000000" Down_Pos="0,170,85,85"/>
+	</Element>
+	
+	<!--停止按钮-->
+	<Element Type = "Button" Name="btnStop"  Pos = "93,20" Visible = '0'>
+		<Image  Normal="SendVoiceMsgDlg\btn_operate.png"  Normal_TextColor = "#000000" Normal_Pos="85,0,85,85"
+				Hover="SendVoiceMsgDlg\btn_operate.png"   Hover_TextColor = "#000000" Hover_Pos="85,85,85,85"
+				Down="SendVoiceMsgDlg\btn_operate.png"    Down_TextColor = "#000000" Down_Pos="85,170,85,85"/>
+	</Element>
+	
+	<!--播放录音按钮-->
+	<Element Type = "Button" Name="btnPlay"  Pos = "93,20" Visible = '0'>
+		<Image  Normal="SendVoiceMsgDlg\btn_operate.png"  Normal_TextColor = "#000000" Normal_Pos="170,0,85,85"
+				Hover="SendVoiceMsgDlg\btn_operate.png"   Hover_TextColor = "#000000" Hover_Pos="170,85,85,85"
+				Down="SendVoiceMsgDlg\btn_operate.png"    Down_TextColor = "#000000" Down_Pos="170,170,85,85"/>
+	</Element>
+	
+	<!--进度图标-->
+	<Element Type = "Image" Name="progressBarImg"  Pos = "80,120" Visible = "0">
+		<Image  Background = "SendVoiceMsgDlg\progress.png" Pos="0,0,113,17" />
+	</Element>
+	
+	<!--录音长度-->
+	<Element Type = "String" Text = "00:00"  Name = "timeTxt" Pos = "80,123,113,17" Font = "宋体" Align = "C" Height = "14" TextColor = "#ffffff"  Visible = '0'/>
+	
+	<!--点击录音-->
+	<Element Type = "String" Text = "Click the button to start recording"  Name = "DescriptionTxt" Pos = "0,123,272,17" Font = "宋体" Align = "C" Height = "14" TextColor = "#ffffff"  Visible = '1'/>
+	
+
+</root>

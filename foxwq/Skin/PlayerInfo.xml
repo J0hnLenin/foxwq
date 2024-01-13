@@ -1,0 +1,571 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "500,600" Transparent = '1'> 
+
+<Element Name="TitleBar" Type = "Panel" Pos = "0,0,500,30" >	
+</Element>
+
+<Element Name="PanelMain" Type = "Panel" Pos = "0,0" >	
+	<Image  Background = "PlayerInfo\player_info_bg.png" />
+</Element>
+
+<Element Name="PanelMain_bk_layer1" Type = "Panel" Pos = "5,37,489,555"  Visible = "0">	
+	<Image  Background = "background\main\bg_c.png" />
+</Element>
+
+<Element Name="PanelMain_bk_layer2" Type = "Image" Pos = "5,37,489,555"  Visible = "0">
+</Element>
+
+<Element Name="PanelMain_bk_layer3" Type = "Panel" Pos = "5,37,489,555" >	
+	<Image  Background = "PlayerInfo\background\main\bg_c.png" />
+</Element>
+
+<Element Type = "Image" Name="GradeLayerImg"  Pos = "1,29" Visible = "1">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="0,530,490,80" />
+</Element>
+
+<Element Name="PanelMain_bk_layer4" Type = "Panel" Pos = "5,37" >	
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="0,0,490,530" />
+</Element>
+
+<!--按钮 -->
+<Element Type = "Button" Name="BtnClose"  Pos = "38,05" Anchor_LTRBC="01100">
+	<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#666666"
+			Hover="button\main_title\btn_title_pkg_01.png"  Hover_Pos="25,120,25,30"  Hover_TextColor = "#666666"
+			Down="button\main_title\btn_title_pkg_01.png"   Down_Pos="50,120,25,30"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnCloseDlg"  Pos = "105,35" Anchor_LTRBC="00110">
+	<Image  Normal="button\main_bottom\btn_btmcl_pkg_01.png"  Normal_Pos="0,0,100,30"  Normal_TextColor = "#666666"
+			Hover="button\main_bottom\btn_btmcl_pkg_01.png"  Hover_Pos="100,0,100,30"  Hover_TextColor = "#666666"
+			Down="button\main_bottom\btn_btmcl_pkg_01.png"  Down_Pos="200,0,100,30"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnRuleDetail"  Pos = "408,338">
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1110,80,20"  Normal_TextColor = "#666666"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="0,1110,80,20"  Hover_TextColor = "#666666"
+			Down="PlayerInfo\playerinfo_pkg_01.png"  Down_Pos="0,1130,80,20"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnOldGoRecord"  Pos = "120,364" Visible="0">
+	<Image  Normal="PlayerInfo\oldgobtn.png"  Normal_Pos="0,40,80,20"  Normal_TextColor = "#666666"
+			Hover="PlayerInfo\oldgobtn.png"  Hover_Pos="0,20,80,20"  Hover_TextColor = "#666666"
+			Down="PlayerInfo\oldgobtn.png"  Down_Pos="0,40,80,20"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnTop"  Pos = "469,366" Visible="0">
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="390,1090,25,196"  Normal_TextColor = "#666666"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="390,1090,25,196"  Hover_TextColor = "#666666"
+			Down="PlayerInfo\playerinfo_pkg_01.png"  Down_Pos="390,1090,25,196"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<!--固定标签-->
+<Element Type = "String" Text = "------" Pos = "5,106,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text国籍" TextShadow="true"/>
+<Element Type = "String" Text = "---------" Pos = "5,136,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text棋力" TextShadow="true"/>
+<Element Type = "String" Text = "--" Pos = "5,166,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#caa00d" Name = "Text狐币" TextShadow="true"/>
+<Element Type = "String" Text = "----" Pos = "5,197,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text竞猜战绩" TextShadow="true"/>
+
+<Element Type = "String" Text = "---" Pos = "5,385,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text总战绩" TextShadow="true"/>
+<Element Type = "String" Text = "----" Pos = "5,405,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text当前战绩" TextShadow="true"/>
+<Element Type = "String" Text = "---" Pos = "5,425,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text现段位" TextShadow="true"/>
+<Element Type = "String" Text = "---" Pos = "5,445,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text升降级" TextShadow="true"/>
+<Element Type = "String" Text = "---" Pos = "5,465,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text友谊" TextShadow="true"/>
+<Element Type = "String" Text = "---" Pos = "5,485,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text比赛" TextShadow="true"/>
+<Element Type = "String" Text = "------" Pos = "5,528,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text最高段位" TextShadow="true"/>
+<Element Type = "String" Text = "------" Pos = "5,547,110,20" Font = "宋体" Align = "R" Height = "12" TextColor = "#c5c5c5" Name = "Text最高竞猜段位" TextShadow="true"/>
+
+<!--动态信息-->
+<Element Type = "String" Text = "---------" Pos = "126,136,250,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "棋力信息" TextShadow="true" Bold="true"/>
+<Element Type = "Image" Name="FlyKnifeLevelIcon"  Pos = "180,132,64,28" Visible = "0">
+	<Image  Background = "" />
+</Element>
+<Element Type = "String" Text = "----" Pos = "126,167,250,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffc600" Name = "狐币信息" TextShadow="true" Bold="true"/>
+
+<!--狐币等级改为兼容动画模式-->
+<Element Type = "AnimalImage" Name="狐币等级"  Pos = "166,167,70,20" Visible = "1">
+	<Image  Background = "PlayerInfo\mlv_pkg_01.png" Pos="0,0,70,20"/>
+</Element>
+	
+<Element Type = "String" Text = "------" Pos = "126,197,250,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "竞猜战绩信息" TextShadow="true" Bold="true"/>
+
+<Element Type = "Image" Name="CountryImg"  Pos = "130,110" Visible = "1">
+	<Image  Background = "listicon\icon_pkg_01.png" Pos="16,32,16,16" />
+</Element>
+
+<Element Type = "String" Text = "----" Pos = "155,108,250,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "国籍信息" TextShadow="true" Bold="true"/>
+
+<Element Type = "Image" Name="ClubImg"  Pos = "208,110,18,15" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "String" Text = "-----" Pos = "230,108,250,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "棋友会信息" TextShadow="true" Bold="true" Visible="0"/>
+<Element Type = "String" Text = "" Pos = "270,108,250,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "棋友会员信息" TextShadow="true" Bold="true" Visible="1"/>
+
+<!-- 总战绩信息 -->
+<Element Type = "String" Text = "9999" Pos = "120,385,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text总战绩胜数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "180,385,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text总战绩胜文字" TextShadow="true"/>
+<Element Type = "String" Text = " / 9999" Pos = "200,385,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text总战绩败数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "260,385,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text总战绩败文字" TextShadow="true"/>
+
+<!-- 当前战绩 -->
+<Element Type = "String" Text = "9999" Pos = "120,405,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text当前战绩胜数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "180,405,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text当前战绩胜文字" TextShadow="true"/>
+<Element Type = "String" Text = " / 9999" Pos = "200,405,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text当前战绩败数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "260,405,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text当前战绩败文字" TextShadow="true"/>
+
+<!-- 现段位信息 -->
+<Element Type = "String" Text = "9999" Pos = "120,425,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text现段位信息胜数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "180,425,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text现段位信息胜文字" TextShadow="true"/>
+<Element Type = "String" Text = " / 9999" Pos = "200,425,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text现段位信息败数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "260,425,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text现段位信息败文字" TextShadow="true"/>
+
+<!-- 升降级信息 -->
+<Element Type = "String" Text = "9999" Pos = "120,445,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text升降级信息胜数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "180,445,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text升降级信息胜文字" TextShadow="true"/>
+<Element Type = "String" Text = " / 9999" Pos = "200,445,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text升降级信息败数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "260,445,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text升降级信息败文字" TextShadow="true"/>
+
+<!-- 友谊信息 -->
+<Element Type = "String" Text = "9999" Pos = "120,465,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text友谊信息胜数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "180,465,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text友谊信息胜文字" TextShadow="true"/>
+<Element Type = "String" Text = " / 9999" Pos = "200,465,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text友谊信息败数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "260,465,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text友谊信息败文字" TextShadow="true"/>
+
+<!-- 比赛信息 -->
+<Element Type = "String" Text = "9999" Pos = "120,485,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text比赛信息胜数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "180,485,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text比赛信息胜文字" TextShadow="true"/>
+<Element Type = "String" Text = " / 9999" Pos = "200,485,60,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text比赛信息败数" TextShadow="true"/>
+<Element Type = "String" Text = "-" Pos = "260,485,20,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Bold="true" Name = "Text比赛信息败文字" TextShadow="true"/>
+
+<!-- 最高纪录 -->
+<Element Type = "String" Text = "------" Pos = "124,528,250,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text最高段位信息" TextShadow="true"/>
+<Element Type = "String" Text = "----" Pos = "124,547,250,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "Text最高竞猜段位信息" TextShadow="true"/>
+
+<Element Type = "String" Text = "---" Pos = "47,25,310,60" Font = "黑体" Align = "L" Height = "25" TextColor = "#FFFFFF" Name = "用户名信息" TextShadow="true"/>
+<Element Type = "Edit" Name = "Text心情" Text = "" Pos = "45,72,295,25" Font = "黑体" Border = '0' Align = "L" Height = "16" TextColor = "#E2D2DC"  Anchor_LTRBC="11000" Visible="0"/>
+<Element Type = "String" Text = "" Pos = "45,72,295,25" Font = "黑体" Align = "L" Height = "16" TextColor = "#E2D2DC" Name = "txt用户名信息" TextShadow="true" Visible="0"/>
+
+<Element Type = "Image" Name="img在线情况"  Pos = "20,55" Visible = "1">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="308,1123,20,24"/>
+</Element>
+
+<!--段位-->
+<Element Type = "Image" Name="Num0Img"  Pos = "8,283" Visible = "1">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="0,1222,38,52"/>
+</Element>
+
+<Element Type = "Image" Name="Num1Img"  Pos = "38,283" Visible = "1">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="0,1222,38,52"/>
+</Element>
+
+<!--实名职业段位-->
+<Element Type = "Image" Name="ProfesstionalGrade"  Pos = "27,280" Visible = "1">
+	<Image  Background = "PlayerInfo\professional_grade.png" Pos="0,0,49,54"/>
+</Element>
+
+<Element Type = "Image" Name="gradeImg"  Pos = "77,308" Visible = "1">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="284,1123,24,24"/>
+</Element>
+
+<Element Type = "Image" Name="OccupationImg"  Pos = "82,291" Visible = "1">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="340,1090,16,16" />
+</Element>
+<Element Type = "Image" Name="FlyKnifeOccupation"  Pos = "100,291" Visible = "10">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="340,1090,16,16" />
+</Element>
+
+<!--飞刀段位-->
+<Element Type = "Image" Name="FlyKnifeGradeImg"  Pos = "24,275,75,75" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<!--头像-->
+<Element Type = "AnimalImage" Name="头像"  Pos = "370,52,110,120" Stretching = "1" Visible = '1'>
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "Button" Name="BtnEditHead"  Pos = "377,178" Visible = '0'>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="80,1090,45,20"  Normal_TextColor = "#666666"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="125,1090,45,20"  Hover_TextColor = "#666666"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1090,45,20"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnBuyHead"  Pos = "431,177">
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="80,1110,45,20"  Normal_TextColor = "#666666"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="125,1110,45,20"  Hover_TextColor = "#666666"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1110,45,20"   Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<!--会员-->
+<Element Type = "Image" Name="会员"  Pos = "100,235" Visible = '1'>
+	<Image  Background = "listicon\viplevel_pkg_01.png" Pos="0,16,24,24"/>
+</Element>
+
+<Element Type = "String" Text = "--------" Pos = "128,239,180,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#C39E69" Name = "Text会员有效期" TextShadow="true"  Bold="true"/>
+
+<Element Type = "Button" Name="会员续费"  Pos = "277,235">
+	<Image  Normal="PlayerInfo\vbtn.png"  Normal_TextColor = "#666666" Normal_Pos="0,46,76,26"
+			Hover="PlayerInfo\vbtn.png"  Hover_TextColor = "#666666"  Hover_Pos="76,46,76,26"
+			Down="PlayerInfo\vbtn.png"      Down_TextColor = "#ffffff" Down_Pos="152,46,76,26"
+	/>
+</Element>
+
+<Element Type = "Button" Name="加入会员"  Pos = "277,235">
+	<Image  Normal="PlayerInfo\vbtn.png"  Normal_TextColor = "#666666" Normal_Pos="0,20,76,26"
+			Hover="PlayerInfo\vbtn.png"  Hover_TextColor = "#666666"  Hover_Pos="76,20,76,26"
+			Down="PlayerInfo\vbtn.png"      Down_TextColor = "#ffffff" Down_Pos="152,20,76,26"
+	/>
+</Element>
+
+<Element Type = "Button" Name="Text会员特权"  Pos = "358,243">
+	<Image  Normal="PlayerInfo\vbtn.png"  Normal_Pos="0,0,60,20"
+			Hover="PlayerInfo\vbtn.png"  Hover_Pos="60,0,60,20"
+			Down="PlayerInfo\vbtn.png"   Down_Pos="120,0,60,20" 
+	/>
+</Element>
+
+<!--排行榜-->
+<Element Type = "String" Text = "---" Pos = "278,370,180,25" Font = "宋体" Align = "L" Height = "13" TextColor = "#c5c5c5" Name = "排行1" TextShadow="true"/>
+<Element Type = "Image" Name="排行1箭头"  Pos = "355,375" Visible = '1'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="324,1090,16,16"/>
+</Element>
+<Element Type = "String" Text = "-----" Pos = "374,370,180,25" Font = "宋体" Align = "L" Height = "18" TextColor = "#6B6B6B" Name = "排行1信息" TextShadow="true" Bold="true"/>
+<Element Type = "Image" Name="分隔符1"  Pos = "263,393" Visible = '1'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="80,1150,205,2"/>
+</Element>
+
+<Element Type = "String" Text = "---" Pos = "278,395,180,25" Font = "宋体" Align = "L" Height = "13" TextColor = "#c5c5c5" Name = "排行2" TextShadow="true"/>
+<Element Type = "Image" Name="排行2箭头"  Pos = "355,400" Visible = '1'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="324,1090,16,16"/>
+</Element>
+<Element Type = "String" Text = "-----" Pos = "374,395,180,25" Font = "宋体" Align = "L" Height = "18" TextColor = "#A3A3A3" Name = "排行2信息" TextShadow="true" Bold="true"/>
+<Element Type = "Image" Name="分隔符2"  Pos = "263,418" Visible = '1'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="80,1150,205,2"/>
+</Element>
+
+<Element Type = "String" Text = "---" Pos = "278,420,180,25" Font = "宋体" Align = "L" Height = "13" TextColor = "#c5c5c5" Name = "排行3" TextShadow="true"/>
+<Element Type = "Image" Name="排行3箭头"  Pos = "355,425" Visible = '1'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="324,1090,16,16"/>
+</Element>
+<Element Type = "String" Text = "-----" Pos = "374,420,180,25" Font = "宋体" Align = "L" Height = "18" TextColor = "#FF5C00" Name = "排行3信息" TextShadow="true" Bold="true"/>
+
+<!--排行4不含箭头-->
+<Element Type = "String" Text = "---" Pos = "278,443,180,25" Font = "宋体" Align = "L" Height = "13" TextColor = "#c5c5c5" Name = "排行4" TextShadow="true"/>
+<Element Type = "String" Text = "-----" Pos = "325,443,180,25" Font = "宋体" Align = "L" Height = "13" TextColor = "#FFFFFF" Name = "排行4信息" TextShadow="true" Bold="true"/>
+
+<!--排行5不含箭头-->
+<Element Type = "String" Text = "---" Pos = "278,466,180,25" Font = "宋体" Align = "L" Height = "13" TextColor = "#c5c5c5" Name = "排行5" TextShadow="true"/>
+<Element Type = "String" Text = "-----" Pos = "325,466,180,25" Font = "宋体" Align = "L" Height = "13" TextColor = "#FFFFFF" Name = "排行5信息" TextShadow="true" Bold="true"/>
+
+<!-------------------------------------------------------------------------------------------->
+<Element Type = "Image" Name="NewTop"  Pos = "278,436" Visible = '0'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="260,1170,80,40"/>
+</Element>
+
+<Element Type = "Image" Name="NewTopArrow"  Pos = "365,448" Visible = '0'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="324,1090,16,16"/>
+</Element>
+
+<Element Type = "Image" Name="NewTopNum0"  Pos = "390,426" Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,0,60,60"/>
+</Element>
+
+<Element Type = "Image" Name="NewTopNum1"  Pos = "360,434" Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,60,40,44"/>
+</Element>
+
+<Element Type = "Image" Name="NewTopNum2"  Pos = "390,434" Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,60,40,44"/>
+</Element>
+
+<Element Type = "Image" Name="NewTopNum3"  Pos = "420,434" Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,60,40,44"/>
+</Element>
+
+<Element Type = "Image" Name="NewTop+"  Pos = "450,440" Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="300,104,30,36"/>
+</Element>
+<!---------------------------------------------------------------------------------------------->
+
+<Element Type = "Image" Name="分隔符3"  Pos = "263,493" Visible = '1'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="80,1150,205,2"/>
+</Element>
+
+<Element Type = "Image" Name="人气排行榜"  Pos = "278,510,72,36" Stretching='1' Visible = '0'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="260,1170,80,40"/>
+</Element>
+
+<Element Type = "Image" Name="人气排行箭头"  Pos = "357,522" Visible = '0'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="324,1090,16,16"/>
+</Element>
+
+<Element Type = "Image" Name="人气排行榜信息Num0"  Pos = "382,500,54,54" Stretching='1' Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,0,60,60"/>
+</Element>
+
+<Element Type = "Image" Name="人气排行榜信息Num1"  Pos = "352,508,36,40" Stretching='1' Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,60,40,44"/>
+</Element>
+
+<Element Type = "Image" Name="人气排行榜信息Num2"  Pos = "378,508,36,40" Stretching='1' Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,60,40,44"/>
+</Element>
+
+<Element Type = "Image" Name="人气排行榜信息Num3"  Pos = "404,508,36,40" Stretching='1' Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="0,60,40,44"/>
+</Element>
+
+<Element Type = "Image" Name="人气排行榜信息+"  Pos = "432,514,27,32" Stretching='1' Visible = '0'>
+	<Image  Background = "PlayerInfo\nm_phs_pkg_01.png" Pos="300,104,30,36"/>
+</Element>
+
+<!--最近战绩-->
+<Element Type = "String" Text = "-" Pos = "284,279,200,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "最近胜文字" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "332,279,200,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "最近负文字" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "360,279,200,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "最近平文字" TextShadow="true" Bold="true" Visible = '0'/>
+<Element Type = "String" Text = "0" Pos = "241,276,40,22" Font = "宋体" Align = "R" Height = "22" TextColor = "#ffffff" Name = "最近胜信息" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "0" Pos = "290,276,40,22" Font = "宋体" Align = "R" Height = "22" TextColor = "#ffffff" Name = "最近负信息" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "0" Pos = "319,276,40,22" Font = "宋体" Align = "R" Height = "22" TextColor = "#ffffff" Name = "最近平信息" TextShadow="true" Bold="true" Visible = '0'/>
+
+<!--实名关联信息-->
+<Element Type = "Image" Name="xRelateback"  Pos = "10,336" Visible = '0'>
+	<Image  Background = "PlayerInfo\relateback.png"/>
+</Element>
+<Element Type = "String" Text = "" Pos = "5,338,86,20" Font = "宋体" Align = "C" Height = "13" TextColor = "#ffffff" Name = "xRealName" TextShadow="true" Bold="true" Visible='0'/>
+<Element Type = "String" Text = "" Pos = "80,338,32,20" Font = "宋体" Align = "R" Height = "13" TextColor = "#BB5714" Name = "xRealGrade" TextShadow="true" Bold="true" Visible='0'/>
+<Element Type = "String" Text = "" Pos = "10,338,102,20" Font = "宋体" Align = "C" Height = "13" TextColor = "#ffffff" Name = "xNotRealName" TextShadow="true" Bold="true" Visible='0'/>
+
+<!--差多少局升降数据行配置信息-->
+<Element Type = "String" Text = "-" Pos = "164,340,100,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "还差几胜升1段文字" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "234,340,100,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "还差几胜升2段文字" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "302,340,100,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "还差几负降1段文字" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "372,340,100,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#ffffff" Name = "还差几负降2段文字" TextShadow="true" Bold="true"/>
+<Element Type = "Image" Name="升1段图标"  Pos = "180,342">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="260,1090,16,16"/>
+</Element>
+<Element Type = "Image" Name="升2段图标"  Pos = "249,342">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="276,1090,16,16"/>
+</Element>
+<Element Type = "Image" Name="降1段图标"  Pos = "317,342">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="292,1090,16,16"/>
+</Element>
+<Element Type = "Image" Name="降2段图标"  Pos = "386,342">
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="308,1090,16,16"/>
+</Element>
+<Element Type = "String" Text = "-" Pos = "130,338,30,20" Font = "宋体" Align = "R" Height = "20" TextColor = "#ffffff" Name = "还差几胜升1段信息" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "200,338,30,20" Font = "宋体" Align = "R" Height = "20" TextColor = "#ffffff" Name = "还差几胜升2段信息" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "268,338,30,20" Font = "宋体" Align = "R" Height = "20" TextColor = "#ffffff" Name = "还差几负降1段信息" TextShadow="true" Bold="true"/>
+<Element Type = "String" Text = "-" Pos = "338,338,30,20" Font = "宋体" Align = "R" Height = "20" TextColor = "#ffffff" Name = "还差几负降2段信息" TextShadow="true" Bold="true"/>
+
+<!--飞刀段位切换-->
+<Element Type = "Image" Name="xSwitchGradeBack"  Pos = "130,276" Visible = '0'>
+	<Image  Background = "PlayerInfo\btn_flyknife.png" Pos="48,0,100,22"/>
+</Element>
+<Element Type = "Button" Name="BtnGoGrade"  Pos = "132,278" Visible="0">
+	<Element Type="String"  Name = "BtnGoGradeText" Text = "--" Font = "宋体" Height	= "12" Bold="0"/>
+	<Image  Normal="PlayerInfo\btn_flyknife.png"  Normal_Pos="0,54,48,18"  Normal_TextColor = "#ffffff"
+			Hover="PlayerInfo\btn_flyknife.png"  Hover_Pos="0,54,48,18"  Hover_TextColor = "#c8c8c8"
+			Down="PlayerInfo\btn_flyknife.png"   Down_Pos="0,54,48,18"   Down_TextColor = "#808080" 
+			Disable="PlayerInfo\btn_flyknife.png"  Disable_Pos="0,0,48,18"  Disable_TextColor = "#192125"
+	/>
+</Element>
+<Element Type = "Button" Name="BtnFlyKnifeGrade"  Pos = "180,278" Visible="0">
+	<Element Type="String"  Name = "BtnFlyKnifeGradeText" Text = "--" Font = "宋体" Height= "12" Bold="0"/>
+	<Image  Normal="PlayerInfo\btn_flyknife.png"  Normal_Pos="0,54,48,18"  Normal_TextColor = "#ffffff"
+			Hover="PlayerInfo\btn_flyknife.png"  Hover_Pos="0,54,48,18"  Hover_TextColor = "#c8c8c8"
+			Down="PlayerInfo\btn_flyknife.png"   Down_Pos="0,54,48,18"   Down_TextColor = "#808080" 
+			Disable="PlayerInfo\btn_flyknife.png"  Disable_Pos="0,0,48,18"  Disable_TextColor = "#192125"
+	/>
+</Element>
+
+<!--底部按钮-->
+<Element Type = "Button" Name="Btn棋谱"  Pos = "408,276" Visible="0">
+	<Image  Normal="PlayerInfo\infbtn_pkg_01.png"  Normal_Pos="0,0,80,24"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\infbtn_pkg_01.png"  Hover_Pos="0,24,80,24"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\infbtn_pkg_01.png"   Down_Pos="0,48,80,24"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn竞猜历史"  Pos = "5,566" Visible="0">
+	<Element Type="String"  Name = "StrBtn竞猜历史" Text = "----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			  Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			  Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn当前竞猜"  Pos = "85,566" Visible="0">
+	<Element Type="String"  Name = "StrBtn当前竞猜" Text = "----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn狐币记录"  Pos = "165,566" Visible="0">
+	<Element Type="String"  Name = "StrBtn狐币记录" Text = "----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn对局邀请"  Pos = "5,566" Visible="0">
+	<Element Type="String"  Name = "StrBtn对局邀请" Text = "----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+			Disable="PlayerInfo\playerinfo_pkg_01.png"  Disable_Pos="0,1352,80,30"  Disable_TextColor = "#808080"
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn短信"  Pos = "85,566" Visible="0">
+	<Element Type="String"  Name = "StrBtn短信" Text = "--" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn添加好友"  Pos = "165,566" Visible="0">
+	<Element Type="String"  Name = "StrBtn添加好友" Text = "----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn删除好友"  Pos = "165,566" Visible="0">
+	<Element Type="String"  Name = "StrBtn删除好友" Text = "----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnNFKnifeGod"  Pos = "245,566" Visible="0">
+	<Element Type="String"  Name = "StrBtnBtnNFKnifeGod" Text = "----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+			Disable="PlayerInfo\playerinfo_pkg_01.png"  Disable_Pos="0,1352,80,30"  Disable_TextColor = "#808080"
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnNFIviteGame"  Pos = "325,566,171,30" Visible="0">
+	<Element Type="String"  Name = "StrBtnPayForGuide" Text = "-----" Font = "宋体" Height	= "13" TransRender="0"  TextShadow="true" Bold="true"/>
+	<Image  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="0,1352,80,30"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="80,1352,80,30"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="160,1352,80,30"   Down_TextColor = "#C6BE53" 
+			Disable="PlayerInfo\playerinfo_pkg_01.png"  Disable_Pos="0,1352,80,30"  Disable_TextColor = "#808080"
+	/>
+</Element>
+
+<!--所在位置-->
+<Element Type = "Image" Name="当前状态背景"  Pos = "178,238" Visible = '0'>
+	<Image  Background = "PlayerInfo\playerinfo_pkg_01.png" Pos="80,1152,131,18"/>
+</Element>
+
+<Element Type = "String" Text = "-----" Pos = "190,240,100,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#AAAAAA" Name = "当前状态文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "----" Pos = "270,240,100,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#CD5F22" Name = "当前状态" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "#1" Pos = "20,226,52,20" Font = "宋体" Align = "R" Height = "13" TextColor = "#ffffff" Name = "所在房间1" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "79,226,50,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "所在房间1_1" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "---" Pos = "30,244,55,20" Font = "宋体" Height = "14" TextColor = "#3F7845" Name = "所在房间状态1" TextShadow="true" Bold="true"  Visible="0"/>
+
+<Element Type = "Button" Name="所在房间Go1"  Pos = "79,246"  Visible="0">
+	<Image  Normal="PlayerInfo\infbtn_pkg_01.png"  Normal_Pos="0,96,30,18"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\infbtn_pkg_01.png"  Hover_Pos="0,114,30,18"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\infbtn_pkg_01.png"  Down_Pos="0,132,30,18"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "String" Text = "#2" Pos = "108,226,52,20" Font = "宋体" Align = "R" Height = "13" TextColor = "#ffffff" Name = "所在房间2" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "167,226,50,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "所在房间2_1" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "---" Pos = "118,244,55,20" Font = "宋体" Height = "14" TextColor = "#3F7845" Name = "所在房间状态2" TextShadow="true" Bold="true"  Visible="0"/>
+
+<Element Type = "Button" Name="所在房间Go2"  Pos = "167,246"  Visible="0">
+	<Image  Normal="PlayerInfo\infbtn_pkg_01.png"  Normal_Pos="0,96,30,18"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\infbtn_pkg_01.png"  Hover_Pos="0,114,30,18"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\infbtn_pkg_01.png"  Down_Pos="0,132,30,18"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "String" Text = "#3" Pos = "196,226,52,20" Font = "宋体" Align = "R" Height = "13" TextColor = "#ffffff" Name = "所在房间3" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "256,226,50,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "所在房间3_1" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "---" Pos = "206,244,55,20" Font = "宋体" Height = "14" TextColor = "#3F7845" Name = "所在房间状态3" TextShadow="true" Bold="true"  Visible="0"/>
+
+<Element Type = "Button" Name="所在房间Go3"  Pos = "256,246"  Visible="0">
+	<Image  Normal="PlayerInfo\infbtn_pkg_01.png"  Normal_Pos="0,96,30,18"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\infbtn_pkg_01.png"  Hover_Pos="0,114,30,18"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\infbtn_pkg_01.png"  Down_Pos="0,132,30,18"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "String" Text = "#4" Pos = "284,226,52,20" Font = "宋体" Align = "R" Height = "13" TextColor = "#ffffff" Name = "所在房间4" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "344,226,50,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "所在房间4_1" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "---" Pos = "294,244,55,20" Font = "宋体" Height = "14" TextColor = "#3F7845" Name = "所在房间状态4" TextShadow="true" Bold="true"  Visible="0"/>
+
+<Element Type = "Button" Name="所在房间Go4"  Pos = "344,246"  Visible="0">
+	<Image  Normal="PlayerInfo\infbtn_pkg_01.png"  Normal_Pos="0,96,30,18"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\infbtn_pkg_01.png"  Hover_Pos="0,114,30,18"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\infbtn_pkg_01.png"  Down_Pos="0,132,30,18"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "String" Text = "#5" Pos = "372,226,52,20" Font = "宋体" Align = "R" Height = "13" TextColor = "#ffffff" Name = "所在房间5" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "432,226,50,20" Font = "宋体" Align = "L" Height = "13" TextColor = "#ffffff" Name = "所在房间5_1" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "---" Pos = "382,244,55,20" Font = "宋体" Height = "14" TextColor = "#3F7845" Name = "所在房间状态5" TextShadow="true" Bold="true"  Visible="0"/>
+
+<Element Type = "Button" Name="所在房间Go5"  Pos = "432,246"  Visible="0">
+	<Image  Normal="PlayerInfo\infbtn_pkg_01.png"  Normal_Pos="0,96,30,18"  Normal_TextColor = "#C6BE53"
+			Hover="PlayerInfo\infbtn_pkg_01.png"  Hover_Pos="0,114,30,18"  Hover_TextColor = "#C6BE53"
+			Down="PlayerInfo\infbtn_pkg_01.png"  Down_Pos="0,132,30,18"   Down_TextColor = "#C6BE53" 
+	/>
+</Element>
+
+<Element Type = "TabCtrl" Name= "TabCtrlTopAndState" Pos = "469,366,30,190" Align = "V" Interval = '0'  Visible="0">
+	<Item Name = "TabCtrl_Item排行榜" Visible = '1'
+		  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="415,1090,25,98"  Normal_TextColor = "#666666"
+		  Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="440,1090,25,98"  Hover_TextColor = "#666666"
+		  Down="PlayerInfo\playerinfo_pkg_01.png"   Down_Pos="465,1090,25,98"   Down_TextColor = "#ffffff" >
+	</Item>	
+
+	<Item Name = "TabCtrl_Item当前状态" Visible = '1'
+		  Normal="PlayerInfo\playerinfo_pkg_01.png"  Normal_Pos="415,1188,25,98"  Normal_TextColor = "#666666"
+		  Hover="PlayerInfo\playerinfo_pkg_01.png"  Hover_Pos="440,1188,25,98"  Hover_TextColor = "#666666"
+		  Down="PlayerInfo\playerinfo_pkg_01.png"  Down_Pos="465,1188,25,98"   Down_TextColor = "#ffffff" >
+	</Item>			
+</Element>
+
+<Element Type = "Image" Name="房间对局信息"  Pos = "100,100, 200, 20" Stretching="true" Visible = '0'>
+	<Image  Background = "PlayerInfo\localinfo.png" />
+</Element>
+
+<Element Type = "String" Text = "--------" Pos = "100,100,200,20" Font = "宋体" Align = "C" Height = "13" TextColor = "#000000" Name = "房间对局信息文字"  Visible="0"/>
+
+<Element Type = "Image" Name="战绩图标"  Pos = "120,310,362,26" Visible = '1'>
+	<Image  Background = "" />
+</Element>
+
+<!--规则-->
+<Element Type = "Image" Name="规则介绍"  Pos = "64,50" Visible = '0'>
+	<Image  Background = "PlayerInfo\rule.png" />
+</Element>
+
+<!--飞刀规则-->
+<Element Type = "Image" Name="FlyKnifeRuleImage"  Pos = "64,82" Visible = '0'>
+	<Image  Background = "PlayerInfo\rule_flyknife.png" />
+</Element>
+	
+<!--职业头衔图标介绍-->
+<Element Type = "Image" Name="头衔介绍"  Pos = "100,280" Visible = '0'>
+	<Image  Background = "PlayerInfo\occupation_explain.png" />
+</Element>
+
+</root>

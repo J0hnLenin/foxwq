@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="TitleLogo"  Pos = "4,0"  Visible = '1'>
+		<Image  Background = "background\main\logo.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnHelp"  Pos ="105,0" Anchor_LTRBC = "01100" Visible = '0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,0,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,0,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,0,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,0,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	
+	<Element Type = "Image" Name="imgBack"  Pos = "21,43" Visible = "1">
+		<Image  Background = "button\NFArena_Back.png" Pos="0,0,936,534"/>
+	</Element>		
+	
+	<Element Type = "String" Text = "----" Pos = "30,43,235,38" Font = "黑体" Align = "L" Height = "22" TextColor = "#FCE164" Name = "txtName" TextShadow="true"/>
+	<Element Type = "String" Text = "---------" Pos = "756,43,150,38" Font = "黑体" Align = "L" Height = "22" TextColor = "#FCE164" Name = "txtMoney" TextShadow="true"/>
+	
+	<Element Type = "Button" Name="BtnPlus"  Pos = "925,51" Visible = '1'>
+		<Image  Normal="button\NFArena_Back.png"  Normal_Pos="771,534,28,28"  Normal_TextColor = "#fce164"
+			  Hover="button\NFArena_Back.png" Hover_Pos="771,562,28,28" Hover_TextColor = "#fce164"
+			  Down="button\NFArena_Back.png" Down_Pos="771,590,28,28" Down_TextColor = "#fce164"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnRingMatchField"  Pos = "130,170" Visible = '1'>
+		<Element Type="String" Text = "----" Font = "宋体" Height = "20" Name = "Number" Bold="1" TextEdge="1" EdgeColor="#3a2a11" Align = "L" Pos="100,254,115,32"/>
+		<Element Type="String" Text = "" Font = "宋体" Height = "20" Name = "Time" Bold="1" TextEdge="1" EdgeColor="#3a2a11" Align = "C" Pos="0,225,215,32"/>
+		<Image  Normal="button\NFArena_NewTxt.png"  Normal_Pos="938,0,215,304"  Normal_TextColor = "#fce164"
+			  Hover="button\NFArena_NewTxt.png" Hover_Pos="938,304,215,304" Hover_TextColor = "#fce164"
+			  Down="button\NFArena_NewTxt.png" Down_Pos="938,608,215,304" Down_TextColor = "#fce164"/>
+	</Element>
+
+	<Element Type = "Button" Name="BtnKnifeGodHegemonyField"  Pos = "359,170" Visible = '1'>
+		<Element Type="String" Text = "----" Font = "宋体" Height = "20" Name = "" Bold="1" TextEdge="1" EdgeColor="#3a2a11" Align = "L" Pos="100,254,115,32"/>
+		<Image  Normal="button\NFArena_NewTxt.png"  Normal_Pos="1157,0,215,304"  Normal_TextColor = "#fce164"
+			  Hover="button\NFArena_NewTxt.png" Hover_Pos="1157,304,215,304" Hover_TextColor = "#fce164"
+			  Down="button\NFArena_NewTxt.png" Down_Pos="1157,608,215,304" Down_TextColor = "#fce164"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMiddleField"  Pos = "588,170" Visible = '1'>
+		<Element Type="String" Text = "----" Font = "宋体" Height = "20" Name = "" Bold="1" TextEdge="1" EdgeColor="#3a2a11" Align = "L" Pos="115,98,126,32"/>
+		<Image  Normal="button\NFArena_NewTxt.png"  Normal_Pos="262,0,262,148"  Normal_TextColor = "#fce164"
+			  Hover="button\NFArena_NewTxt.png" Hover_Pos="262,148,262,148" Hover_TextColor = "#fce164"
+			  Down="button\NFArena_NewTxt.png" Down_Pos="262,296,262,148" Down_TextColor = "#fce164"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnAdvancedField"  Pos = "588,330" Visible = '1'>
+		<Element Type="String" Text = "----" Font = "宋体" Height = "20" Name = "" Bold="1" TextEdge="1" EdgeColor="#3a2a11" Align = "L" Pos="115,98,126,32"/>
+		<Image  Normal="button\NFArena_NewTxt.png"  Normal_Pos="524,0,262,148"  Normal_TextColor = "#fce164"
+			  Hover="button\NFArena_NewTxt.png" Hover_Pos="524,148,262,148" Hover_TextColor = "#fce164"
+			  Down="button\NFArena_NewTxt.png" Down_Pos="524,296,262,148" Down_TextColor = "#fce164"/>
+	</Element>	
+
+		
+	<Element Type = "Button" Name="BtnQuestionMark"  Pos = "907,526" Visible = '1'>
+		<Image  Normal="button\NFArena_Back.png"  Normal_Pos="234,651,40,40"  Normal_TextColor = "#fce164"
+			  Hover="button\NFArena_Back.png" Hover_Pos="234,651,40,40" Hover_TextColor = "#fce164"
+			  Down="button\NFArena_Back.png" Down_Pos="234,651,40,40" Down_TextColor = "#fce164"/>
+	</Element>
+	
+
+
+</root> 

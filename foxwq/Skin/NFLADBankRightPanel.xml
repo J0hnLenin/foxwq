@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+		
+	<Element Type = "Image" Name="imgTopBack"  Pos = "7,7" Visible = "1">
+		<Image  Background = "button\NFLADBank.png" Pos="0,0,372,162"/>
+	</Element>
+	
+
+	<Element Type = "TabCtrl" Name= "TabCtrlQuestionType" Pos = "12,169,361,34"  Align = "L">
+		<Item Name = "HaveDown" Visible = '1'
+		  Normal="button\NFLADBank.png"  Normal_Pos="373,0,121,34"  Normal_TextColor = "#d2d2d2"
+		  Hover="button\NFLADBank.png"  Hover_Pos="373,35,121,34"  Hover_TextColor = "#d2d2d2"
+		  Down="button\NFLADBank.png"  Down_Pos="373,70,121,34"  Down_TextColor = "#d2d2d2">
+		  <Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "14" Bold="1"/>
+		</Item>
+		<Item Name = "AnswerWrong" Visible = '1'
+		  Normal="button\NFLADBank.png"  Normal_Pos="495,0,120,34"  Normal_TextColor = "#d2d2d2"
+		  Hover="button\NFLADBank.png"  Hover_Pos="495,35,120,34"  Hover_TextColor = "#d2d2d2"
+		  Down="button\NFLADBank.png"  Down_Pos="495,70,120,34"  Down_TextColor = "#d2d2d2">	
+		  <Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "14" Bold="1"/>		  
+		</Item>
+		<Item Name = "MyFavorites" Visible = '1'
+		  Normal="button\NFLADBank.png"  Normal_Pos="616,0,120,34"  Normal_TextColor = "#d2d2d2"
+		  Hover="button\NFLADBank.png"  Hover_Pos="616,35,120,34"  Hover_TextColor = "#d2d2d2"
+		  Down="button\NFLADBank.png"  Down_Pos="616,70,120,34"  Down_TextColor = "#d2d2d2">
+		  <Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "14" Bold="1"/>
+		</Item>		
+	</Element>
+
+</root>

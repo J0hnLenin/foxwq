@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,229,553,35"/>
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,2" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+		
+	<Element Type = "String"  Name = "TitleTxt" Text = "--" Pos = "10,0,300,35" Font = "宋体" Align = "L" Height = "14" TextColor = "#fff6cd" Visible = "1"/>	
+	
+	<Element Type = "String"  Name = "NameTitle" Text = "--" Pos = "0,45,72,29" Font = "宋体" Align = "R" Height = "14" TextColor = "#bdbebf" Visible = "1"/>
+	
+	<Element Type = "Image" Name="InputBoxBackImage"  Pos = "77,45" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="191,297,190,29"/>
+	</Element>
+	<Element Type = "Image" Name="UserBackImage"  Pos = "77,76" Visible = "1">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,297,190,50"/>
+	</Element>
+	
+	<Element Type = "AnimalImage" Name="HeadImage"  Pos = "78,77,44,48" Stretching = "1" Visible = '1'>
+	</Element>
+	<Element Type = "String"  Name = "UserName" Text = "" Pos = "124,76,143,25" Font = "宋体" Align = "L" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	<Element Type = "String"  Name = "UserGrade" Text = "" Pos = "124,101,143,25" Font = "宋体" Align = "L" Height = "14" TextColor = "#ffffff" Visible = "1"/>
+	
+	<Element Type = "Image" Name="CheckmarkImage"  Pos = "248,91" Visible = "0">
+			<Image  Background = "FineArtReplay\notxt_image.png" Pos="381,297,17,17"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSearch"  Pos ="270,45">
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_Pos="656,229,50,29" 
+			  Hover="FineArtReplay\notxt_image.png"     Hover_Pos="656,258,50,29" 
+			  Down="FineArtReplay\notxt_image.png"      Down_Pos="656,287,50,29" 
+		/>
+	</Element>
+	
+	<Element Type = "String"  Name = "ScoreTitle" Text = "--" Pos = "0,128,344,20" Font = "宋体" Align = "C" Height = "12" TextColor = "#bdbebf" Visible = "1"/>
+	<Element Type = "String"  Name = "ScoreValue" Text = "--" Pos = "0,148,344,18" Font = "宋体" Align = "C" Height = "12" TextColor = "#ffb376" Visible = "1"/>
+	
+	<Element Type = "Button" Name="BtnSubmit"  Pos = "124,171">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "14"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="559,229,96,31"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="559,260,96,31"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="559,291,96,31"
+		/>
+	</Element>
+
+
+
+</root> 

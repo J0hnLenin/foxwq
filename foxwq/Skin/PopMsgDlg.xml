@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "350,220" Transparent = '1'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,350,30" >	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "TimerPromptDialog\notice.png" Pos="0,0,350,220"/>
+	</Element>
+	
+	<!-- 关闭按钮 -->
+	<Element Type = "Button" Name="BtnClose"  Pos = "35,5" Anchor_LTRBC="01100">
+		<Image  Normal="TimerPromptDialog\close_btn_pkg.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,30,30"
+				Hover="TimerPromptDialog\close_btn_pkg.png"  Hover_TextColor = "#666666" Hover_Pos="30,0,30,30"
+				Down="TimerPromptDialog\close_btn_pkg.png"      Down_TextColor = "#ffffff" Down_Pos="60,0,30,30"/>
+	</Element>
+	
+	<!-- 单个确定按钮 -->
+	<Element Type = "Button" Name="BtnOK"  Pos = "224,36" Anchor_LTRBC="10010"  Visible = "1">
+		<Image  Normal="TimerPromptDialog\notice.png"  Normal_TextColor = "#666666" Normal_Pos="218,815,120,30"
+				Hover="TimerPromptDialog\notice.png"  Hover_TextColor = "#666666" Hover_Pos="218,845,120,30"
+				Down="TimerPromptDialog\notice.png"      Down_TextColor = "#ffffff" Down_Pos="218,875,120,30"/>
+	</Element>
+	
+	<!-- 感叹号图标 -->
+	<Element Type = "Image" Name = "ExclamationMark" Pos = "20,80,70,70" Visible = "1">
+		<Image Background = "TimerPromptDialog\notice.png" Pos="70,340,70,70"/>
+	</Element>
+		
+	<!-- 标题文字 -->
+	<Element Type = "String" Text = "" Pos = "10,5,300,30" Font = "宋体" Align = "L" Height = "16" TextColor = "#D09B47" Name = "TitleTxt" TextShadow="true"  Bold="true" Visible="1"/>
+	
+	<!-- 内容文字 -->	
+	<Element Type = "String" Text = "" Pos = "90,40,250,144" Font = "宋体" Align = "L" Height = "15" TextColor = "#EDF8FF" Name = "ContentTxt" TextShadow="true"  MultiLine="1" MultiVCenter="1" Bold="true" Visible="1"/>	
+		
+	<!-- 数字十位及个位 -->	
+	<Element Type = "Image" Name="TenImg"  Pos = "8,191,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+	</Element>
+	<Element Type = "Image" Name="UnitImg"  Pos = "26,191,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+	</Element>
+	
+</root>
+
+

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	<Element Type = "Button" Name="BtnTXCHDWQ"  Pos ="45,5" Anchor_LTRBC = "00100"  Visible = '0'>
+		<Image  Normal="Chessboard\txchdwq.png"  Normal_Pos="0,0,40,40" 
+				Hover="Chessboard\txchdwq.png" Hover_Pos="40,0,40,40" 
+				Down="Chessboard\txchdwq.png" Down_Pos="80,0,40,40"/>
+	</Element>
+	
+	
+	<Element Type = "Button" Name="BtnPauseGame"  Pos ="43,400,36,61" Anchor_LTRBC = "00110"  Visible = '0'>		
+		<Image  Normal="Chessboard\btn_pause.png"  Normal_Pos="0,0,36,61" 
+				Hover="Chessboard\btn_pause.png" Hover_Pos="0,61,36,61"
+				Down="Chessboard\btn_pause.png" Down_Pos="0,122,36,61"
+				Disable="Chessboard\btn_pause.png"  Disable_Pos="0,183,36,61"/>
+	</Element>
+	<Element Type = "Button" Name="BtnResumeGame"  Pos ="43,400,36,61" Anchor_LTRBC = "00110"  Visible = '0'>		
+		<Image  Normal="Chessboard\btn_pause.png"  Normal_Pos="36,0,36,61"  
+				Hover="Chessboard\btn_pause.png" Hover_Pos="36,61,36,61" 
+				Down="Chessboard\btn_pause.png" Down_Pos="36,122,36,61" 
+				Disable="Chessboard\btn_pause.png.png"  Disable_Pos="36,183,36,61" />
+	</Element>
+	
+	<Element Type = "Button" Name="BtnGM"  Pos ="39,200" Anchor_LTRBC = "00110"  Visible = '0'>
+		<Image  Normal="Chessboard\btn_gm.png"  Normal_Pos="0,0,26,46" 
+				Hover="Chessboard\btn_gm.png" Hover_Pos="26,0,26,46" 
+				Down="Chessboard\btn_gm.png" Down_Pos="52,0,26,46"
+				Disable="Chessboard\btn_gm.png"  Disable_Pos="78,0,26,46"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnShare"  Pos ="45,134" Anchor_LTRBC = "00110"  Visible = '0'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="120,96,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="160,96,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="200,96,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnInviteWatch"  Pos ="45,112" Anchor_LTRBC = "00110"  Visible = '1'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="0,96,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="40,96,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="80,96,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnStyleCarving"  Pos ="45,90" Anchor_LTRBC = "00110"  Visible = '1'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="120,24,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="160,24,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="200,24,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnStyleDefault"   Pos ="45,90" Anchor_LTRBC = "00110"  Visible = '0'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="0,24,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="40,24,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="80,24,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnShowRounds"  Pos ="45,68" Anchor_LTRBC = "00110"  Visible = '1'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="0,0,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="40,0,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="80,0,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnActiveRounds"  Pos ="45,68" Anchor_LTRBC = "00110"  Visible = '0'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="120,0,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="160,0,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="200,0,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnShowBoardIndex" Pos ="45,46" Anchor_LTRBC = "00110"  Visible = '1'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="0,48,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="40,48,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="80,48,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnHideBoardIndex"  Pos ="45,46" Anchor_LTRBC = "00110"  Visible = '0'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="120,48,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="160,48,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="200,48,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnLargeBoard"  Pos ="45,24" Anchor_LTRBC = "00110"  Visible = '1'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="0,72,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="40,72,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="80,72,40,24"/>
+	</Element>
+	<Element Type = "Button" Name="BtnSmallBoard"  Pos ="45,24" Anchor_LTRBC = "00110"  Visible = '0'>
+		<Image  Normal="Chessboard\btn_bsdb_pkg_01.png"  Normal_Pos="120,72,40,24" 
+				Hover="Chessboard\btn_bsdb_pkg_01.png" Hover_Pos="160,72,40,24" 
+				Down="Chessboard\btn_bsdb_pkg_01.png" Down_Pos="200,72,40,24"/>
+	</Element>
+	<Element Type = "Image" Name = "CoorTip" Pos = "270, 200, 33, 30" Visible = "0">
+		<Image Background = "Chessboard\CoorTip.png" />
+		<Element Type = "String" Text = "88,O" Pos = "5,6,25,13" Font = "宋体" Align = "C" Height = "12" TextColor = "#000000" Name = "CoorValue"/>
+	</Element> 
+	
+</root> 

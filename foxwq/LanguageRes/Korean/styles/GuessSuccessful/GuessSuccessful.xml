@@ -1,0 +1,102 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root> 
+	<Element Type="String" Name = "WhiteNickName" Text = "用户名昵称" 
+		Font = "宋体" Pos = "25,94,65,15" Height = "13"  Align = 'L'
+		Bold ='1' TextColor = '#935700' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "WhiteGrade" Text = "[9段]" 
+		Font = "宋体" Pos = "92,94,65,15" Height = "13" Align = 'L'
+		Bold ='0' TextColor = '#FF0000' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "BlackNickName" Text = "用户名昵称" 
+		Font = "宋体" Pos = "230,94,65,15" Height = "13" Align = 'L'
+		Bold ='1' TextColor = '#935700' Anchor_LTRBC="11000" TransRender = '1'
+	/>
+	<Element Type="String" Name = "BlackGrade" Text = "[8段]" 
+		Font = "宋体" Pos = "297,94,65,15" Height = "13" Align = 'L'
+		Bold ='0' TextColor = '#FF0000' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "RoomName" Text = "[Daum新바둑고수방 - 100" 
+		Font = "宋体" Pos = "75,122,294,15" Height = "13" Align = 'L'
+		Bold ='0' TextColor = '#935700' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "NumberOfPeople_Text" Text = "베팅인수" 
+		Font = "宋体" Pos = "40,175,70,20" Height = "16" Align = 'R'
+		Bold ='1' TextColor = '#febc68' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "NumberOfGuessPeople_Text" Text = "총베팅액" 
+		Font = "宋体" Pos = "40,215,70,20" Height = "16" Align = 'R'
+		Bold ='1' TextColor = '#febc68' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "Guess_Text" Text = "베팅" 
+		Font = "宋体" Pos = "40,255,65,20" Height = "16" Align = 'R'
+		Bold ='1' TextColor = '#febc68' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "Income_Text" Text = "수익" 
+		Font = "宋体" Pos = "40,295,65,20" Height = "16" Align = 'R'
+		Bold ='1' TextColor = '#febc68' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "Total_Text" Text = "머니총액" 
+		Font = "宋体" Pos = "20,335,85,20" Height = "16" Align = 'R'
+		Bold ='1' TextColor = '#febc68' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Element Type="String" Name = "Order_Text" Text = "본대국베팅순위" 
+		Font = "宋体" Pos = "70,422,165,20" Height = "19" Align = 'L'
+		Bold ='1' TextColor = '#febc68' Anchor_LTRBC="11000" TransRender = '1'	
+	/>
+	<Image Name = "Top" ImageFile = "bg_hp_y_03.png"/>
+	<Image Name = "Bottom" ImageFile = "bg_hp_y_05.png"/>
+	
+	
+	
+	<Region Name = 'NumberOfPeople' Pos = '115,170'/>
+	<Region Name = 'Guess' Pos = '115,250'/>
+	<Region Name = 'NumberOfGuessPeople' Pos = '115,210'/>
+	<Region Name = 'Income' Pos = '115,290'/>
+	<Region Name = 'Total' Pos = '115,330'/>
+	<Region Name = 'Order1' Pos = '205,387'/>
+	<Region Name = 'Order2' Pos = '205,397'/>
+	<NumberPic Name = "Num1" ImageFile = "num1.png"  Pos = '0,20,38,60,80,101,121,142,162,183,205'/>
+	<NumberPic Name = "Num2" ImageFile = "num2.png"  Pos = '0,46,82,124,168,214,256,302,342,386,430'/>
+	<NumberPic Name = "Num3" ImageFile = "num3.png"  Pos = '0,64,114,171,229,295'/>
+	<Sound Name = "ShowNumber" SoundFile = "Coin.wav"/>
+	<Sound Name = "ShowOrder" SoundFile = "NormalNumber.wav"/>
+	<Sound Name = "ShowIncome" SoundFile = "Coin.wav"/>
+</root>
+<!--
+skip按钮:  313,10 r
+用户名-白: 25,90     #935700
+       黑: 230,90
+房间: 75,120
+
+人数: 40,175
+      115,170
+全部: 40,215
+      115,210
+竞猜: 40,255
+      115,250
+收益: 40,395
+      115,390
+
+排名: 90,425
+      1-5:220,395 / 6>:220,405
+
+
+//数字坐标
+
+num1
+
+0,16,38,58,80,99,121,140,161,182
+num2
+0,38,80,122,169,211,256,296,340,385
+
+num3
+
+0，48,108,166,232
+//按钮
+1:普通,焦点
+2:经过,选中
+3:按下
+4:无效
+
+-->

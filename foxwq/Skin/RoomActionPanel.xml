@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	<Element Type = "Button" Name="BtnJudgeSituation"  Pos =  "5,2" Visible = '1'>
+	<Image  Normal="button\RoomActionPanel\btn_rmbtm_pkg_01.png"   Normal_Pos="0,0,115,25"
+			  Hover="button\RoomActionPanel\btn_rmbtm_pkg_01.png"  Hover_Pos="0,25,115,25"
+			  Down="button\RoomActionPanel\btn_rmbtm_pkg_01.png"   Down_Pos="0,50,115,25"
+			  Disable="button\RoomActionPanel\btn_rmbtm_pkg_01.png" Disable_Pos="0,75,115,25"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnAnalysisGame"  Pos =  "120,2" Visible = '1'>
+	<Image  Normal="button\RoomActionPanel\btn_rmbtm_pkg_01.png"   Normal_Pos="115,0,115,25"
+			  Hover="button\RoomActionPanel\btn_rmbtm_pkg_01.png"  Hover_Pos="115,25,115,25"
+			  Down="button\RoomActionPanel\btn_rmbtm_pkg_01.png"   Down_Pos="115,50,115,25"
+			  Disable="button\RoomActionPanel\btn_rmbtm_pkg_01.png" Disable_Pos="115,75,115,25"/>
+	</Element>
+	<Element Type = "Button" Name="BtnExitRoom"  Pos =  "235,2" Visible = '1'>
+	<Image  Normal="button\RoomActionPanel\btn_rmbtm_pkg_01.png"   Normal_Pos="230,0,110,25"
+			  Hover="button\RoomActionPanel\btn_rmbtm_pkg_01.png"  Hover_Pos="230,25,110,25"
+			  Down="button\RoomActionPanel\btn_rmbtm_pkg_01.png"   Down_Pos="230,50,110,25"
+			  Disable="button\RoomActionPanel\btn_rmbtm_pkg_01.png" Disable_Pos="230,75,110,25"/>
+	</Element>
+
+</root> 

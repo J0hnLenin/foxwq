@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	
+	<Element Type = "Button" Name="BtnMyGame"  Pos = "0,5">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMyRecord"  Pos = "105,5">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnOtherGame"  Pos = "210,5">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnReport"  Pos = "360,5,134,31" Visible='0'>
+		<Element Type="String"  Name = "BtnText" Text = "------" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+
+	
+	
+
+	
+	
+	
+	
+	
+
+</root> 

@@ -1,0 +1,636 @@
+ <?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	<!-- 背景图片 -->
+	<Element Type = "Image" Name="Bkg"  Pos = "0,0"  Visible = '1'>
+		<Image  Background = "background\main\bg_bottom.png" />
+	</Element>
+	
+	<!-- 大厅切换按钮 -->
+	<Element Type = "Button" Name="BtnHall"  Pos = "0,0" Visible = '1'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,0,100,30"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,0,100,30"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,0,100,30"/>
+	</Element>
+	
+	<!-- 自己房间切换按钮必须在后面房间切换按钮之前创建，每个切换按钮上会浮动一个小的关闭按钮，只有关闭按钮后创建才能够优先响应关闭按钮 -->
+	<!-- 自己房间1切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom1"  Pos = "100,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间2切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom2"  Pos = "200,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间3切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom3"  Pos = "300,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>	
+	
+	<!-- 自己房间4切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom4"  Pos = "400,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间5切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom5"  Pos = "500,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间6切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom6"  Pos = "600,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间7切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom7"  Pos = "700,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间8切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom8"  Pos = "800,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间9切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom9"  Pos = "900,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间10切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom10"  Pos = "1000,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间11切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom11"  Pos = "1100,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间12切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom12"  Pos = "1200,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间13切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom13"  Pos = "1300,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间14切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom14"  Pos = "1400,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间15切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom15"  Pos = "1500,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间16切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom16"  Pos = "1600,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间17切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom17"  Pos = "1700,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间18切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom18"  Pos = "1800,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间19切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom19"  Pos = "1900,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间20切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom20"  Pos = "2000,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间21切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom21"  Pos = "2100,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间22切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom22"  Pos = "2200,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间23切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom23"  Pos = "2300,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 自己房间24切换按钮 -->
+	<Element Type = "Button" Name="BtnSelfRoom24"  Pos = "2400,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,60,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,60,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,60,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间1切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom1"  Pos = "100,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间1切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose1"  Pos ="188,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间2切换按钮 -->	
+	<Element Type = "Button" Name="BtnRoom2"  Pos = "200,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间2切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose2"  Pos ="288,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9" />
+	</Element>
+	
+	<!-- 房间3切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom3"  Pos = "300,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>	
+	
+	<!-- 房间3切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose3"  Pos ="388,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间4切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom4"  Pos = "400,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间4切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose4"  Pos ="488,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间5切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom5"  Pos = "500,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间5切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose5"  Pos ="588,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间6切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom6"  Pos = "600,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间6切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose6"  Pos ="688,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间7切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom7"  Pos = "700,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间7切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose7"  Pos ="788,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间8切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom8"  Pos = "800,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间8切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose8"  Pos ="888,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间9切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom9"  Pos = "900,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间9切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose9"  Pos ="988,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间10切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom10"  Pos = "1000,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间10切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose10"  Pos ="1088,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间11切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom11"  Pos = "1100,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间11切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose11"  Pos ="1188,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间12切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom12"  Pos = "1200,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间12切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose12"  Pos ="1288,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间13切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom13"  Pos = "1300,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间13切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose13"  Pos ="1388,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间14切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom14"  Pos = "1400,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间14切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose14"  Pos ="1488,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间15切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom15"  Pos = "1500,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间15切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose15"  Pos ="1588,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间16切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom16"  Pos = "1600,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间16切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose16"  Pos ="1688,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间17切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom17"  Pos = "1700,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间17切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose17"  Pos ="1788,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间18切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom18"  Pos = "1800,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间18切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose18"  Pos ="1888,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间19切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom19"  Pos = "1900,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间19切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose19"  Pos ="1988,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间20切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom20"  Pos = "2000,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间20切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose20"  Pos ="2088,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间21切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom21"  Pos = "2100,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间21切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose21"  Pos ="2188,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间22切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom22"  Pos = "2200,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间22切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose22"  Pos ="2288,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间23切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom23"  Pos = "2300,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间23切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose23"  Pos ="2388,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 房间24切换按钮 -->
+	<Element Type = "Button" Name="BtnRoom24"  Pos = "2400,0" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,30,100,30"  Normal_TextColor = "#C2C2C2"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png" Hover_Pos="100,30,100,30"  Hover_TextColor = "#C2C2C2"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Down_Pos="200,30,100,30"  Down_TextColor = "#B2975D"/>
+	</Element>
+	
+	<!-- 房间24切换按钮右上角小关闭按钮 -->
+	<Element Type = "Button" Name="BtnRoomClose24"  Pos ="2488,0" Visible = '0'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_01.png"  Normal_Pos="0,120,12,12"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\RoomSwitchPanel\btn_mb1_pkg_01.png"     Hover_Pos="12,120,12,12"  Hover_TextColor = "#d1ffc9"
+			  Down="button\RoomSwitchPanel\btn_mb1_pkg_01.png"      Down_Pos="24,120,12,12"  Down_TextColor = "#d1ffc9"/>
+	</Element>
+	
+	<!-- 获取礼物按钮 -->
+	<Element Type = "Button" Name="BtnGetGift"  Pos = "199,4" Anchor_LTRBC="01100" Visible = '0'>
+		<Element Type = "String" Name="领取按钮显示信息"	Text = "" Font = "宋体" Height	= "13"  Anchor_LTRBC="01100"/>
+		<Image  Normal="EverydayGift\dquset.png"  Normal_Pos="360,552,70,22" Normal_TextColor = "#eb5f00"
+			    Hover="EverydayGift\dquset.png"  Hover_Pos="360,574,70,22" Hover_TextColor = "#ffff00"
+			    Down="EverydayGift\dquset.png"  Down_Pos="360,596,70,22" Down_TextColor = "#01a915"/>
+	</Element>
+	
+	<!-- Lotto Title Begin -->
+	<Element Type = "Image" Name="ImgHubi"  Visible = '1' Pos = "390,0" Anchor_LTRBC="01100">
+		<Image  Background = "lottotitle\lotto_title_hubi.png" Pos="0,0,27,28"/>
+	</Element> 
+		
+	<Element Type = "Button" Name="BtnDiamond" Pos = "235,4,50,38" Anchor_LTRBC="01100">
+	</Element>
+	<Element Type = "Image" Name="ImgDiamond"  Visible = '1' Pos = "235,4" Anchor_LTRBC="01100">
+		<Image  Background = "lottotitle\lotto_title_diamond.png" Pos="0,0,50,38"/>
+	</Element> 
+	<Element Type = "Image" Name="ImgBubble"  Visible = '0' Pos = "223,-2" Anchor_LTRBC="01100">
+		<Image  Background = "lottotitle\lotto_title_bubble.png" Pos="0,0,50,38"/>
+	</Element> 
+		
+    <Element Type = "Image" Name="ImgStar01"  Visible = '1' Pos = "240,0" Anchor_LTRBC="01100">
+		  <Image  Background = "lottotitle\lotto_title_star1.png" Pos="0,0,50,38"/>
+    </Element> 
+    <Element Type = "Image" Name="ImgStar02"  Visible = '1' Pos = "240,0" Anchor_LTRBC="01100">
+		  <Image  Background = "lottotitle\lotto_title_star2.png" Pos="0,0,50,38"/>
+    </Element> 
+    <Element Type = "Image" Name="ImgStar03"  Visible = '1' Pos = "240,0" Anchor_LTRBC="01100">
+		  <Image  Background = "lottotitle\lotto_title_star3.png" Pos="0,0,50,38"/>
+    </Element> 
+
+	<Element Type = "Button" Name="BtnJackpot"  Pos = "205,5,38,22" Anchor_LTRBC="01100">
+		<Image  Normal="lottotitle\lotto_title_choujiang.png" Normal_Pos="0,0,38,22"  Normal_TextColor = "#91eeff"
+				Hover ="lottotitle\lotto_title_choujiang.png" Hover_Pos ="0,22,38,22" Hover_TextColor = "#91eeff"
+				Down  ="lottotitle\lotto_title_choujiang.png" Down_Pos  ="0,44,38,22" Down_TextColor = "#91eeff"/>
+		</Element>
+	<Element Type="String"  Name = "StrJackpot" Text = "0" Font = "宋体" TextColor = "#ff95db" Align = "C" Pos = "360,0,120,30" Height= "13" Bold ='1' TransRender="0"  Anchor_LTRBC="01100" />
+	<Element Type="String"  Name = "StrStoneTotal" Text = "00" Visible='0' Font = "宋体" TextColor = "#00eeff" Align = "C" Pos = "224,-1,20,20" Height= "11" Bold ='0' TransRender="1"  Anchor_LTRBC="01100" />
+	<!-- Lotto Title End -->
+	
+	<Element Type = "Button" Name="BtnComplain"  Pos = "165,0" Anchor_LTRBC="01100" Visible = '1'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_02.png"  Normal_Pos="0,0,65,30"
+			    Hover="button\RoomSwitchPanel\btn_mb1_pkg_02.png" Hover_Pos="65,0,65,30"
+			    Down="button\RoomSwitchPanel\btn_mb1_pkg_02.png"  Down_Pos="130,0,65,30"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSMS"  Pos =  "100,0"  Anchor_LTRBC="01100" Visible = '1'>
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_02.png"  Normal_Pos="0,30,65,30"
+			    Hover="button\RoomSwitchPanel\btn_mb1_pkg_02.png" Hover_Pos="65,30,65,30"
+			    Down="button\RoomSwitchPanel\btn_mb1_pkg_02.png"  Down_Pos="130,30,65,30"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSMSNotify"  Pos = "100,0"  Anchor_LTRBC="01100" Visible = '0'>
+		<Element Type = "String" Name = "TextSMS" Text = "0" Pos = "35,8,20,14" Font = "黑体" Align = "C" Height = "18" TextColor = "#FFFFFF"  Anchor_LTRBC="11000" />
+		<Image  Normal="button\RoomSwitchPanel\btn_mb1_pkg_02.png"  Normal_Pos="0,60,65,30"
+			    Hover="button\RoomSwitchPanel\btn_mb1_pkg_02.png" Hover_Pos="65,60,65,30"
+			    Down="button\RoomSwitchPanel\btn_mb1_pkg_02.png"  Down_Pos="130,60,65,30"/>
+	</Element>
+	
+	<Element Type = "SwithButton" Name="SoundSwitch"  Pos = "35,0,35,30" Anchor_LTRBC="01100">
+		<Image  OnNormal="button\RoomSwitchPanel\btn_speaker.png"  OnNormal_Pos="0,0,35,30"
+				OnHover="button\RoomSwitchPanel\btn_speaker.png"   OnHover_Pos="0,30,35,30"
+				OffNormal="button\RoomSwitchPanel\btn_speaker.png"  OffNormal_Pos="0,60,35,30"
+				OffHover="button\RoomSwitchPanel\btn_speaker.png"  OffHover_Pos="0,90,35,30"				
+		/>
+	</Element>
+	
+</root> 

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	<!-- 胜率 -->
+	<Element Type = "Button" Name="BtnWinRate"  Pos = "75,23" Anchor_LTRBC = "01100" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13" TextEdge="1" Anchor_LTRBC = "01100"/>
+		<Image  Normal="FineArtDeepAnalysis\bottom_panel.png"  Normal_Pos="0,35,73,26"  Normal_TextColor = "#FFD05F"
+			    Hover="FineArtDeepAnalysis\bottom_panel.png" Hover_Pos="0,61,73,26"  Hover_TextColor = "#FFD05F"
+			    Down="FineArtDeepAnalysis\bottom_panel.png"  Down_Pos="0,87,73,26"  Down_TextColor = "#FFFFFF"
+		/>
+	</Element>
+	
+	<!-- 吻合度 -->
+	<Element Type = "Button" Name="BtnMatching"  Pos = "75,49" Anchor_LTRBC = "01100" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13" TextEdge="1" Anchor_LTRBC = "01100"/>
+		<Image  Normal="FineArtDeepAnalysis\bottom_panel.png"  Normal_Pos="0,35,73,26"  Normal_TextColor = "#FFD05F"
+			    Hover="FineArtDeepAnalysis\bottom_panel.png" Hover_Pos="0,61,73,26"  Hover_TextColor = "#FFD05F"
+			    Down="FineArtDeepAnalysis\bottom_panel.png"  Down_Pos="0,87,73,26"  Down_TextColor = "#FFFFFF"
+		/>
+	</Element>
+	
+	<!-- 惨案现场 -->
+	<Element Type = "Button" Name="BtnTragicScene"  Pos = "75,75" Anchor_LTRBC = "01100" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13" TextEdge="1" Anchor_LTRBC = "01100"/>
+		<Image  Normal="FineArtDeepAnalysis\bottom_panel.png"  Normal_Pos="0,35,73,26"  Normal_TextColor = "#FFD05F"
+			    Hover="FineArtDeepAnalysis\bottom_panel.png" Hover_Pos="0,61,73,26"  Hover_TextColor = "#FFD05F"
+			    Down="FineArtDeepAnalysis\bottom_panel.png"  Down_Pos="0,87,73,26"  Down_TextColor = "#FFFFFF"
+		/>
+	</Element>	
+	
+	<!-- 巅峰时刻 -->
+	<Element Type = "Button" Name="BtnPeakTime"  Pos = "75,101" Anchor_LTRBC = "01100" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13" TextEdge="1" Anchor_LTRBC = "01100"/>
+		<Image  Normal="FineArtDeepAnalysis\bottom_panel.png"  Normal_Pos="0,35,73,26"  Normal_TextColor = "#FFD05F"
+			    Hover="FineArtDeepAnalysis\bottom_panel.png" Hover_Pos="0,61,73,26"  Hover_TextColor = "#FFD05F"
+			    Down="FineArtDeepAnalysis\bottom_panel.png"  Down_Pos="0,87,73,26"  Down_TextColor = "#FFFFFF"
+		/>
+	</Element>
+	
+	<!-- 分享 -->
+	<Element Type = "Button" Name="BtnShare"  Pos = "75,158" Anchor_LTRBC = "01100" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13" TextEdge="1" Anchor_LTRBC = "01100"/>
+		<Image  Normal="FineArtDeepAnalysis\bottom_panel.png"  Normal_Pos="0,35,73,26"  Normal_TextColor = "#61B3FF"
+			    Hover="FineArtDeepAnalysis\bottom_panel.png" Hover_Pos="0,87,73,26"  Hover_TextColor = "#FFFFFF"
+			    Down="FineArtDeepAnalysis\bottom_panel.png"  Down_Pos="0,61,73,26"  Down_TextColor = "#61B3FF"
+		/>
+	</Element>
+	
+
+	
+</root> 

@@ -1,0 +1,19 @@
+﻿ml version='1.0' encoding='utf-8' ?>
+<root Size = "610,350"> 
+<Element Name="Main" Type = "Panel" Pos = "0,0,610,350" Anchor_LTRBC="11110">
+	<Image  Background = "PanelFiller.png" />
+
+	<Element Name="Bottom" Type = "Image" Pos = "0,50,610,50" Anchor_LTRBC="10110" >
+		<Image  Background = "item_bg_14.png" />
+	</Element>
+	<Element Name="Close" Type = "Button" Pos = "77,36,60,26" StreathBtn='0' Anchor_LTRBC="00110" >
+		<Element Type="String" Text = "關閉" Font = "宋体" Height	= "13" Name = "TextClose" Anchor_LTRBC="11000" />
+		<Image  Normal="..\btns\btn_fu_01.png" Normal_TextColor = "#5d0000" 
+			  Down="..\btns\btn_fu_03.png"  Down_TextColor = "#ffffff"
+			  Hover="..\btns\btn_fu_02.png" Hover_TextColor = "#fff000" />
+	</Element>
+	<Element Name="WebBorder" Type = "Image" Pos = "650,0,0,650" Anchor_LTRBC="11000" Visible = "1">
+			<Image  Background = "item_bg_07.png" />
+	</Element>
+</Element>
+</root>

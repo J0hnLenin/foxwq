@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	
+	<Element Type = "Button" Name="BtnReceiveAll"  Pos = "330,473">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "24" Bold="0"/>
+		<Image  Normal="Task\NFTask.png"  Normal_Pos="0,198,140,60"  Normal_TextColor = "#651D06"
+				Hover="Task\NFTask.png" Hover_Pos="140,198,140,60"  Hover_TextColor = "#651D06"
+				Down="Task\NFTask.png"  Down_Pos="280,198,140,60"  Down_TextColor = "#651D06"/>
+	</Element>
+	
+		
+
+</root> 

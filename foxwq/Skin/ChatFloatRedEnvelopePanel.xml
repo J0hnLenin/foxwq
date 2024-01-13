@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<!-- 头像边框及头像 -->
+	<Element Type = "Image" Name="HeadImgFrame"  Pos = "5,4" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "720,0,59,64"/>
+	</Element>
+	<Element Type = "AnimalImage" Name="HeadImage"  Pos = "7,6,55,60" Stretching = "1" Visible = '1'>
+	</Element>
+	
+	<!--用户名留言-->	
+	<Element Type = "String" Text = "-------" Pos = "72,3,380,33" Font = "宋体" Align = "L" Height = "14" Bold='1' TextShadow="1" TextColor = "#FFFFFF" Name = "NameMsgTxt"/>
+	
+	<!--红包图标-->	
+	<Element Type = "Image" Name="RedPacketIcon"  Pos = "70,40" Visible = "1">
+		<Image  Background = "RedEnvelope\redpacket.png"/>
+	</Element>
+	
+	<!--狐币-->	
+	<Element Type = "String" Text = "------" Pos = "100,30,200,43" Font = "宋体" Align = "L" Height = "24" Bold='1' TextColor = "#fffd7e" TextShadow="1" Name = "MoneyTxt"/>
+	
+	<!--动画序列-->
+	<Element Type = "AnimalImage" Name="DynamicImage"  Pos = "50,0,180,73" Stretching = "1" Visible = '1'>
+	</Element>
+
+</root> 

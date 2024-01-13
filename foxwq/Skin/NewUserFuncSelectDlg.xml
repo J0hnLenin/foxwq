@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+    <!--背景图片-->
+	<Element Type = "Image" Name="backImage"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "NewUserFuncSelectDlg\back.png" />
+	</Element> 
+	
+	<!--新手教学按钮-->
+	<Element Type = "Button" Name="BtnToturial"  Pos = "1,182">
+		<Image  Normal="NewUserFuncSelectDlg\button.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,179,32"
+				Hover="NewUserFuncSelectDlg\button.png"   Hover_TextColor = "#666666" Hover_Pos="0,32,179,32"
+				Down="NewUserFuncSelectDlg\button.png"    Down_TextColor = "#ffffff" Down_Pos="0,64,179,32"/>
+	</Element>
+	
+	<!--我要对弈按钮-->
+	<Element Type = "Button" Name="BtnAutoInvite"  Pos ="180,182">
+		<Image  Normal="NewUserFuncSelectDlg\button.png"  Normal_Pos="0,96,179,32"  Normal_TextColor = "#d1ffc9"
+			    Hover="NewUserFuncSelectDlg\button.png"  Hover_Pos="0,128,179,32"  Hover_TextColor = "#d1ffc9"
+			    Down="NewUserFuncSelectDlg\button.png"  Down_Pos="0,160,179,32"  Down_TextColor = "#d1ffc9"/>	
+	</Element>
+
+</root> 

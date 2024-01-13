@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "460,604" Transparent = '1'> 
+<Element Name="TitleBar" Type = "Panel" Pos = "0,0,460,44" >	
+</Element>
+
+<Element Name="PanelMain" Type = "Panel" Pos = "0,0" >	
+	<Image  Background = "DlgHistoryGameStat\record_bg.png" />
+</Element>
+
+<!--按钮 -->
+<Element Type = "Button" Name="BtnClose"  Pos = "44,5" Anchor_LTRBC="01100">
+	<Image  Normal="DlgHistoryGameStat\record_icon.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,36,32"
+			Hover="DlgHistoryGameStat\record_icon.png"   Hover_TextColor = "#666666" Hover_Pos="0,32,36,32"
+			Down="DlgHistoryGameStat\record_icon.png"    Down_TextColor = "#ffffff" Down_Pos="0,64,36,32"
+	/>
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "85,57,100,16" Font = "宋体" Align = "R" Height = "16" TextColor = "#FFFFFF" Name = "label白方总败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "70,50,100,26" Font = "宋体" Align = "R" Height = "26" TextColor = "#FFFFFF" Name = "label白方总败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "14,57,100,16" Font = "宋体" Align = "R" Height = "16" TextColor = "#FFFFFF" Name = "label白方总胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "0,50,100,26" Font = "宋体" Align = "R" Height = "26" TextColor = "#FFFFFF" Name = "label白方总胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "85,94,100,16" Font = "宋体" Align = "R" Height = "16" TextColor = "#FFFFFF" Name = "label白方最近败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "0" Pos = "70,87,100,26" Font = "宋体" Align = "R" Height = "26" TextColor = "#FFFFFF" Name = "label白方最近败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "52,94,100,16" Font = "宋体" Align = "R" Height = "16" TextColor = "#FFFFFF" Name = "label白方最近胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "20" Pos = "38,87,100,26" Font = "宋体" Align = "R" Height = "26" TextColor = "#FFFFFF" Name = "label白方最近胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "85,132,100,16" Font = "宋体" Align = "R" Height = "16" TextColor = "#FFFFFF" Name = "label白方胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "31" Pos = "70,125,100,26" Font = "宋体" Align = "R" Height = "26" TextColor = "#FFFFFF" Name = "label白方胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "395,57,100,16" Font = "宋体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "label黑方总败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "345,50,100,26" Font = "宋体" Align = "L" Height = "26" TextColor = "#FFFFFF" Name = "label黑方总败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "325,57,100,16" Font = "宋体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "label黑方总胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "9999" Pos = "276,50,100,26" Font = "宋体" Align = "L" Height = "26" TextColor = "#FFFFFF" Name = "label黑方总胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "336,94,100,16" Font = "宋体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "label黑方最近败文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "0" Pos = "322,87,100,26" Font = "宋体" Align = "L" Height = "26" TextColor = "#FFFFFF" Name = "label黑方最近败数" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "301,94,100,16" Font = "宋体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "label黑方最近胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "20" Pos = "276,87,100,26" Font = "宋体" Align = "L" Height = "26" TextColor = "#FFFFFF" Name = "label黑方最近胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "289,132,100,16" Font = "宋体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "label黑方胜文字" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "127" Pos = "276,125,100,26" Font = "宋体" Align = "L" Height = "26" TextColor = "#FFFFFF" Name = "label黑方胜数" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "85,157,100,45" Font = "宋体" Align = "R" Height = "20" TextColor = "#FFFFFF" Name = "labelWhiteGrade" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "5,157,130,45" Font = "宋体" Align = "R" Height = "20" TextColor = "#FFEBC3" Name = "labelWhiteName" TextShadow="true" Bold="true"  Visible="1"/>
+
+<Element Type = "String" Text = "--" Pos = "276,157,100,45" Font = "宋体" Align = "L" Height = "20" TextColor = "#FFFFFF" Name = "labelBlackGrade" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "326,157,130,45" Font = "宋体" Align = "L" Height = "20" TextColor = "#FFEBC3" Name = "labelBlackName" TextShadow="true" Bold="true"  Visible="1"/>
+
+	
+</root>

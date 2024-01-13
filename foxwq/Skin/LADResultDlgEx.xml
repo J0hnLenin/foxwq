@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "550,320" Frames="36,12"> 
+	<!-- 透明背景 -->
+	<Element Type = "AnimalImage2" Name = "Image4" Pos = "0,0,550,320" StopPos=" 0,0,550,320" ScalFrame="1,2" Stretching = "1" Visible = "0">
+		<Image Background = "LADResultDlg\msresult_01.png" Pos="0,0,550,320"/>
+	</Element>
+
+	<!-- 动画帧 -->
+	<Element Type = "AnimalImage2" Name = "Image1StartFrame" Pos = "0,160,550,1" StopPos=" 0,0,550,320" ScalFrame="1,12" Stretching = "1" Visible = "0">
+		<Image Background = "LADResultDlg\msresult_02.png" Pos="0,0,550,320"/>
+	</Element>
+	<Element Type = "AnimalImage2" Name = "Image2StartFrame" Pos = "275,130,1,60" StopPos="65,130,420,60" ScalFrame="6,17" Stretching = "1" Visible = "0">
+		<Image Background = "LADResultDlg\msresult_03_ex.png" Pos="0,0,420,60"/>
+	</Element>
+	<Element Type = "AnimalImage2" Name = "Image3StartFrame" Pos = "250,175,1,60" StopPos = "0,175,262,60" ScalFrame="14,24" Stretching = "1" Visible = "0">
+		<Image Background = "LADResultDlg\msresult_04.png" Pos="0,0,262,60"/>
+	</Element> 
+
+</root>

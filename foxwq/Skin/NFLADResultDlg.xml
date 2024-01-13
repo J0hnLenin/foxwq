@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "String" Text = "------" Pos = "20,-10,400,80" Font = "黑体" Align = "L" Height = "20" TextColor = "#FFFFFF" Name = "txtRanking" TextShadow="true"/>
+	
+	<Element Type = "Image" Name="imgMoneyIcon"  Pos = "320,16" Visible = "1">
+		<Image  Background = "button\NFLADResult.png" Pos="579,87,26,26"/>
+	</Element>
+	<Element Type = "String" Text = "----" Pos = "350,-10,200,80" Font = "黑体" Align = "L" Height = "20" TextColor = "#FFFFFF" Name = "txtMoney"/>
+	
+	<Element Type = "Image" Name="imgMidBack"  Pos = "20,55" Visible = "1">
+		<Image  Background = "button\NFLADResult.png" Pos="0,0,558,297"/>
+	</Element>
+	
+	<Element Type = "Image" Name="imgHand1"  Pos = "35,80" Visible = "0">
+		<Image  Background = "button\NFLADResult.png" Pos="558,87,20,20"/>
+	</Element>
+	<Element Type = "Image" Name="imgHand2"  Pos = "35,114" Visible = "0">
+		<Image  Background = "button\NFLADResult.png" Pos="558,87,20,20"/>
+	</Element>
+	<Element Type = "Image" Name="imgHand3"  Pos = "35,148" Visible = "0">
+		<Image  Background = "button\NFLADResult.png" Pos="558,87,20,20"/>
+	</Element>
+	<Element Type = "Image" Name="imgHand4"  Pos = "35,183" Visible = "0">
+		<Image  Background = "button\NFLADResult.png" Pos="558,87,20,20"/>
+	</Element>
+	
+	<Element Type = "String" Text = "" Pos = "90,74,120,30" Font = "黑体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "txtName1"/>
+	<Element Type = "String" Text = "" Pos = "90,108,120,30" Font = "黑体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "txtName2"/>
+	<Element Type = "String" Text = "" Pos = "90,142,120,30" Font = "黑体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "txtName3"/>
+	<Element Type = "String" Text = "" Pos = "90,177,120,30" Font = "黑体" Align = "L" Height = "16" TextColor = "#FFFFFF" Name = "txtName4"/>
+	
+	<Element Type = "Image" Name="imgQRCode"  Pos = "477,78" Visible = "1">
+		<Image  Background = "button\NFLADResult.png" Pos="558,0,87,86"/>
+	</Element>
+	<Element Type = "String" Text = "---" Pos = "464,170,114,200" Font = "黑体" Align = "L" Height = "14" TextColor = "#8DBDF5" Name = "txtQRCode" MultiLine="1"/>
+	
+	<Element Type = "Button" Name="BtnSolveWrong"  Pos = "93,365">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "24" Bold="0"/>
+		<Image  Normal="Task\NFTask.png"  Normal_Pos="0,198,140,60"  Normal_TextColor = "#651D06"
+				Hover="Task\NFTask.png" Hover_Pos="140,198,140,60"  Hover_TextColor = "#651D06"
+				Down="Task\NFTask.png"  Down_Pos="280,198,140,60"  Down_TextColor = "#651D06"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnOneMoreGame"  Pos = "365,365">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "24" Bold="0"/>
+		<Image  Normal="Task\NFTask.png"  Normal_Pos="0,198,140,60"  Normal_TextColor = "#651D06"
+				Hover="Task\NFTask.png" Hover_Pos="140,198,140,60"  Hover_TextColor = "#651D06"
+				Down="Task\NFTask.png"  Down_Pos="280,198,140,60"  Down_TextColor = "#651D06"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnCancel"  Pos = "365,365" Visible = "0">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "黑体" Height = "24" Bold="0"/>
+		<Image  Normal="Task\NFTask.png"  Normal_Pos="0,198,140,60"  Normal_TextColor = "#651D06"
+				Hover="Task\NFTask.png" Hover_Pos="140,198,140,60"  Hover_TextColor = "#651D06"
+				Down="Task\NFTask.png"  Down_Pos="280,198,140,60"  Down_TextColor = "#651D06"/>
+	</Element>
+
+</root>

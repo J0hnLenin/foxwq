@@ -1,0 +1,185 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "789,542"> 
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0">	
+		<Image  Background = "SnatchTreasure\back.png" Pos="0,0,789,542"/>
+	</Element>
+		
+	<!--个人信息文字-->
+	<Element Type = "String" Name="TxtUserName" Text = "-----" Pos = "10,5,400,24" Font="黑体" Align="L" Height = "20" TextColor="#99B8FF" Bold="0"/>
+	<Element Type = "Image" Name="ImgVip01"  Visible = '0' Pos = "120,5,24,24">
+		<Image  Background = "SnatchTreasure\vip01.png" Pos="0,0,24,24"/>
+	</Element> 
+	<Element Type = "Image" Name="ImgVip02"  Visible = '0' Pos = "120,5,24,24">
+		<Image  Background = "SnatchTreasure\vip02.png" Pos="0,0,24,24"/>
+	</Element> 	
+	
+	<!--宝库总金额-->
+	<Element Type = "String" Name="TxtTotalMoney" Text = "--,---,---,---" Pos = "210,36,404,36" Font="黑体" Align="C" Height = "24" TextColor="#FFFFFF" Bold="0"/>
+	
+	 <!-- 当前中奖提示 -->
+	<Element Type="String" Name = "TxtNowAwardTip" Pos = "210,76,404,38" Text="----" Font = "宋体" Align = "C" Height="28" TextColor="#ffd57a"/>
+		
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="BtnClose"  Pos = "760,5">
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,324,24,23"
+			    Hover="SnatchTreasure\img_notxt.png"  Hover_Pos="360,347,24,23"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,370,24,23" 
+				Disable="SnatchTreasure\img_notxt.png" Disable_Pos="360,324,24,23"  
+		/>
+	</Element>		
+		
+	<!--最小化按钮-->
+	<Element Type = "Button" Name="BtnMin"  Pos = "732,5">
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="384,324,24,23"
+			    Hover="SnatchTreasure\img_notxt.png"  Hover_Pos="384,347,24,23"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="384,370,24,23" 
+		/>
+	</Element>	
+		
+	<!--宝石按钮-->
+	<Element Type = "Button" Name="BtnGem101"  Pos = "88,120" >
+		<Image  Normal="SnatchTreasure\btn_gem.png" Normal_Pos="0,0,40,40"
+			    Hover ="SnatchTreasure\btn_gem.png" Hover_Pos ="0,40,40,40"
+			    Down  ="SnatchTreasure\btn_gem.png" Down_Pos  ="0,80,40,40"
+				Disable="SnatchTreasure\btn_gem.png" Disable_Pos="0,0,40,40"  
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnGem102"  Pos = "158,120" >
+		<Image  Normal="SnatchTreasure\btn_gem.png" Normal_Pos="40,0,40,40" 
+			    Hover ="SnatchTreasure\btn_gem.png" Hover_Pos ="40,40,40,40" 
+			    Down  ="SnatchTreasure\btn_gem.png" Down_Pos  ="40,80,40,40" 
+				Disable="SnatchTreasure\btn_gem.png" Disable_Pos="40,0,40,40"  
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnGem103"  Pos = "228,120" >
+		<Image  Normal="SnatchTreasure\btn_gem.png" Normal_Pos="80,0,40,40"  
+			    Hover ="SnatchTreasure\btn_gem.png" Hover_Pos ="80,40,40,40" 
+			    Down  ="SnatchTreasure\btn_gem.png" Down_Pos  ="80,80,40,40" 
+				Disable="SnatchTreasure\btn_gem.png" Disable_Pos="80,0,40,40" 
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnGem104"  Pos = "298,120" >
+		<Image  Normal="SnatchTreasure\btn_gem.png" Normal_Pos="120,0,40,40"  
+			    Hover ="SnatchTreasure\btn_gem.png" Hover_Pos ="120,40,40,40" 
+			    Down  ="SnatchTreasure\btn_gem.png" Down_Pos  ="120,80,40,40" 
+				Disable="SnatchTreasure\btn_gem.png" Disable_Pos="120,0,40,40" 
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnGem105"  Pos = "368,120" >
+		<Image  Normal="SnatchTreasure\btn_gem.png" Normal_Pos="160,0,40,40"  
+			    Hover ="SnatchTreasure\btn_gem.png" Hover_Pos ="160,40,40,40" 
+			    Down  ="SnatchTreasure\btn_gem.png" Down_Pos  ="160,80,40,40" 
+				Disable="SnatchTreasure\btn_gem.png" Disable_Pos="160,0,40,40" 
+		/>
+	</Element>
+	
+	<!--宝石按钮下方文字-->
+	<Element Type="String"  Name="TxtGemCount101" Pos="84,160,48,16"  Text="0" Font="黑体" Align="C" Height="15" TextColor="#adc1fb"/>
+	<Element Type="String"  Name="TxtGemCount102" Pos="154,160,48,16" Text="0" Font="黑体" Align="C" Height="15" TextColor="#adc1fb"/>
+	<Element Type="String"  Name="TxtGemCount103" Pos="224,160,48,16" Text="0" Font="黑体" Align="C" Height="15" TextColor="#adc1fb"/>
+	<Element Type="String"  Name="TxtGemCount104" Pos="294,160,48,16" Text="0" Font="黑体" Align="C" Height="15" TextColor="#adc1fb"/>
+	<Element Type="String"  Name="TxtGemCount105" Pos="364,160,48,16" Text="0" Font="黑体" Align="C" Height="15" TextColor="#adc1fb"/>
+	
+	<!--开始按钮-->
+	<Element Type = "Button" Name="BtnStart"  Pos = "152,444" >
+		<Image  Normal="SnatchTreasure\img_notxt.png" Normal_Pos="163,182,190,77"
+			    Hover ="SnatchTreasure\img_notxt.png" Hover_Pos ="163,259,190,77" 
+			    Down  ="SnatchTreasure\img_notxt.png" Down_Pos  ="163,336,190,77" 
+				Disable="SnatchTreasure\img_notxt.png" Disable_Pos="163,412,190,77"  
+		/>
+	</Element>
+	
+	<!--本周、本月、全部按钮-->
+	<Element Type = "Button" Name="BtnCurrentWeek"  Pos = "493,118" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height	= "12" TextEdge="0"/>
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,180,93,18"  Normal_TextColor = "#FFFFFF"
+			    Hover="SnatchTreasure\img_notxt.png" Hover_Pos="360,198,93,18"  Hover_TextColor = "#FFFFFF"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,216,93,18"  Down_TextColor = "#FFFFFF"
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnCurrentMonth"  Pos = "587,118" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height	= "12" TextEdge="0"/>
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,180,93,18"  Normal_TextColor = "#FFFFFF"
+			    Hover="SnatchTreasure\img_notxt.png" Hover_Pos="360,198,93,18"  Hover_TextColor = "#FFFFFF"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,216,93,18"  Down_TextColor = "#FFFFFF"
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnAll"  Pos = "681,118" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height	= "12" TextEdge="0"/>
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,180,93,18"  Normal_TextColor = "#FFFFFF"
+			    Hover="SnatchTreasure\img_notxt.png" Hover_Pos="360,198,93,18"  Hover_TextColor = "#FFFFFF"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,216,93,18"  Down_TextColor = "#FFFFFF"
+		/>
+	</Element>
+	
+	<!--如何获得宝石等按钮-->
+	<Element Type = "Button" Name="BtnHowGetGem"  Pos = "673,501" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "-----" Font = "黑体" Height="14" TextEdge="0"/>
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,234,105,30"  Normal_TextColor = "#C9D4FF"
+			    Hover="SnatchTreasure\img_notxt.png" Hover_Pos="360,264,105,30"  Hover_TextColor = "#C9D4FF"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,294,105,30"  Down_TextColor = "#C9D4FF"
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnGemRecord"  Pos = "582,501" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height="14" TextEdge="0"/>
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,234,90,30"  Normal_TextColor = "#C9D4FF"
+			    Hover="SnatchTreasure\img_notxt.png" Hover_Pos="360,264,90,30"  Hover_TextColor = "#C9D4FF"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,294,90,30"  Down_TextColor = "#C9D4FF"
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnSoundClose"  Pos = "491,501" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height="14" TextEdge="0"/>
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,234,90,30"  Normal_TextColor = "#C9D4FF"
+			    Hover="SnatchTreasure\img_notxt.png" Hover_Pos="360,264,90,30"  Hover_TextColor = "#C9D4FF"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,294,90,30"  Down_TextColor = "#C9D4FF"
+		/>
+	</Element>
+	<Element Type = "Button" Name="BtnSoundOpen"  Pos = "491,501" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height="14" TextEdge="0"/>
+		<Image  Normal="SnatchTreasure\img_notxt.png"  Normal_Pos="360,234,90,30"  Normal_TextColor = "#C9D4FF"
+			    Hover="SnatchTreasure\img_notxt.png" Hover_Pos="360,264,90,30"  Hover_TextColor = "#C9D4FF"
+			    Down="SnatchTreasure\img_notxt.png"  Down_Pos="360,294,90,30"  Down_TextColor = "#C9D4FF"
+		/>
+	</Element>
+	
+	
+	<!-- 排行榜列表及滚动条 -->
+	<Element Type = "CustomCtrl" Name="LeaderboardList"  Pos = "493,138,267,310" Visible = '1'>		
+	</Element>
+	<Element Type = "CustomCtrl" Name="ListScrollbar"  Pos = "759,138,15,310" Visible = '1'>
+		<Image  top2_btn_n_img = "BetInfoDlg/rolling.png"
+			top2_btn_h_img = "BetInfoDlg/rolling.png"
+			top2_btn_d_img = "BetInfoDlg/rolling.png"
+			top_btn_n_img = "BetInfoDlg/rolling.png"
+			top_btn_h_img = "BetInfoDlg/rolling.png"
+			top_btn_d_img = "BetInfoDlg/rolling.png"
+			bk_img = "BetInfoDlg/rolling.png"
+			block_t_n_img = "BetInfoDlg/rolling.png"
+			block_t_h_img = "BetInfoDlg/rolling.png"
+			block_t_d_img = "BetInfoDlg/rolling.png"
+			block_m_n_img = "BetInfoDlg/rolling.png"
+			block_m_h_img = "BetInfoDlg/rolling.png"
+			block_m_d_img = "BetInfoDlg/rolling.png"
+			block_b_n_img = "BetInfoDlg/rolling.png"
+			block_b_h_img = "BetInfoDlg/rolling.png"
+			block_b_d_img = "BetInfoDlg/rolling.png"
+			bottom_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom_btn_d_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_d_img = "BetInfoDlg/rolling.png"
+		/>
+	</Element>
+	
+
+
+      
+
+ 
+
+
+ 
+	
+
+</root>

@@ -1,0 +1,756 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "460,600" Transparent = '1'> 
+
+<Element Name="TitleBar" Type = "Panel" Pos = "0,0,460,30" Anchor_LTRBC="11110">	
+</Element>
+
+<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="0,0,460,600"/>
+</Element>
+
+<!--背景层 -->
+<Element Name="PanelMain_bk_layer1" Type = "Panel" Pos = "5,37,450,558" Anchor_LTRBC="11110">	
+	<Image  Background = "PlayerInfo\background\main\bg_s.png" />
+</Element>
+
+<Element Name="PanelMain_bk_layer2" Type = "Panel" Pos = "5,37,450,558" Anchor_LTRBC="11110">	
+	<Image  Background = "PlayerInfo\background\main\bg_c.png" />
+</Element>
+
+<Element Name="PanelMain_bk_layer4" Type = "Panel" Pos = "5,36" Anchor_LTRBC="11110" Visible = "1">	
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="5,1750,450,560" />
+</Element>
+
+<Element Type = "Image" Name="PanelMain_bk_layer5"  Pos = "5, 194" Visible = "1">
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="5,600,450,145" />
+</Element>
+
+<Element Type = "Image" Name="PanelMain_bk_layer6"  Pos = "5, 339" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="5,1155,450,225"  />
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "60,38,300,40" Font = "宋体" Align = "L" Height = "16" TextColor = "#EDF8FF" Name = "label白方用户名" TextShadow="true"  Bold="true" Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "100,38,300,40" Font = "宋体" Align = "R" Height = "16" TextColor = "#EDF8FF" Name = "label黑方用户名" TextShadow="true"  Bold="true" Visible="1"/>
+
+<Element Type = "Image" Name="白方国籍"  Pos = "120, 55, 16, 16" Visible = "1">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "Image" Name="黑方国籍"  Pos = "317, 55, 16, 16" Visible = "1">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "62,66,50,40" Font = "宋体" Align = "L" Height = "12" TextColor = "#EDF8FF" Name = "label白方段位" TextShadow="true"  Bold="true" Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "348,66,50,40" Font = "宋体" Align = "R" Height = "12" TextColor = "#EDF8FF" Name = "label黑方段位" TextShadow="true"  Bold="true" Visible="1"/>
+<Element Type = "String" Text = "1000,000,000" Pos = "22,125,300,30" Font = "黑体" Align = "L" Height = "20" TextColor = "#EDF8FF" Name = "label白方总押分量" TextShadow="true"  Bold="true" Visible="1"/>
+<Element Type = "String" Text = "1000,000,000" Pos = "138,125,300,30" Font = "黑体" Align = "R" Height = "20" TextColor = "#EDF8FF" Name = "label黑方总押分量" TextShadow="true"  Bold="true" Visible="1"/>
+<Element Type = "String" Text = "1.92 : 1.81" Pos = "165,138,130,20" Font = "黑体" Align = "C" Height = "14" TextColor = "#CDC272" Name = "label赔率" TextShadow="true"  Bold="true" Visible="1"/>
+
+<Element Type = "CustomCtrl" Name="押分比率"  Pos = "20,95,420,20" Visible = '1'>
+	<Image  Background = "BetInfoDlg/betprocess_bk.png" left_img = "BetInfoDlg/betprocess_left.png"/>
+</Element>
+	
+<Element Type = "CustomCtrl" Name="押分区间标签"  Pos = "5,165,450,30" Visible = '1'>
+	<Image  tab_n_img =  "BetInfoDlg\bet_kalei_pkg.png"
+			tab_h_img =  "BetInfoDlg\bet_kalei_pkg.png"
+			tab_d_img = "BetInfoDlg\bet_kalei_pkg.png"
+			tab_disable_img = "BetInfoDlg\bet_kalei_pkg.png"
+			tab_s_n_img = "BetInfoDlg\bet_kalei_pkg.png"
+			tab_s_h_img = "BetInfoDlg\bet_kalei_pkg.png"
+			tab_s_d_img = "BetInfoDlg\bet_kalei_pkg.png"
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn选白"  Pos = "50,220">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,190,150,70" Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="150,190,150,70" Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="0,260,150,70"   Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="150,260,150,70" Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="Btn选黑"  Pos = "265,220">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,330,150,70"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="150,330,150,70" Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="0,400,150,70"  Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="150,400,150,70"  Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "120,300,230,30" Font = "宋体" Align = "C" Height = "15" TextColor = "#758295" Name = "label押分限制说明" TextShadow="true" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "60,283,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#929ED5" Name = "label我的白方全部押分" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "60,303,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的白方全部所得" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "105,283,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#C08483" Name = "label我的黑方全部押分" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "105,303,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#FFFFFF" Name = "label我的黑方全部所得" TextShadow="true" Bold="true"  Visible="0"/>
+
+
+<!--竞猜排行部分 -->
+<Element Type = "Image" Name="竞猜排行列表列头"  Pos = "5, 339" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_kalei_pkg.png" Pos="0,0,450,20" />
+</Element>
+
+<Element Type = "CustomCtrl" Name="押分列表"  Pos = "16,360,425,184" Visible = '0'>
+	<Image  left_bk_img = "BetInfoDlg\bet_kalei_pkg.png" 
+			right_bk_img = "BetInfoDlg\bet_kalei_pkg.png"
+			left_top_bk_img = "BetInfoDlg\bet_kalei_pkg.png"
+			right_top_bk_img = "BetInfoDlg\bet_kalei_pkg.png"
+			left_my_bk_img = "BetInfoDlg\bet_kalei_pkg.png"
+			right_my_bk_img = "BetInfoDlg\bet_kalei_pkg.png"
+			double_item_img = "listicon/icon_pkg_01.png"
+			safe_item_img = "listicon/icon_pkg_01.png"
+			medal_1 = "BetInfoDlg\bet_kalei_pkg.png"
+			medal_2 = "BetInfoDlg\bet_kalei_pkg.png"
+			medal_3 = "BetInfoDlg\bet_kalei_pkg.png"
+	/>
+</Element>
+
+<Element Type = "CustomCtrl" Name="押分列表滚动条"  Pos = "440,360,15,184" Visible = '0'>
+	<Image  top2_btn_n_img = "BetInfoDlg/rolling.png"
+			top2_btn_h_img = "BetInfoDlg/rolling.png"
+			top2_btn_d_img = "BetInfoDlg/rolling.png"
+			top_btn_n_img = "BetInfoDlg/rolling.png"
+			top_btn_h_img = "BetInfoDlg/rolling.png"
+			top_btn_d_img = "BetInfoDlg/rolling.png"
+			bk_img = "BetInfoDlg/rolling.png"
+			block_t_n_img = "BetInfoDlg/rolling.png"
+			block_t_h_img = "BetInfoDlg/rolling.png"
+			block_t_d_img = "BetInfoDlg/rolling.png"
+			block_m_n_img = "BetInfoDlg/rolling.png"
+			block_m_h_img = "BetInfoDlg/rolling.png"
+			block_m_d_img = "BetInfoDlg/rolling.png"
+			block_b_n_img = "BetInfoDlg/rolling.png"
+			block_b_h_img = "BetInfoDlg/rolling.png"
+			block_b_d_img = "BetInfoDlg/rolling.png"
+			bottom_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom_btn_d_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_d_img = "BetInfoDlg/rolling.png"
+	/>
+</Element>
+
+<Element Type = "Button" Name="展开押分列表"  Pos = "5,545" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,20,450,20"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="0,40,450,20"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="0,60,450,20"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+	
+<Element Type = "Button" Name="收起押分列表"  Pos = "5,545" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,80,450,20"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="0,100,450,20"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="0,120,450,20"     Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "16,343,100,12" Font = "宋体" Align = "L" Height = "13" TextColor = "#bbc5ce" Name = "白方押分人数" Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "340,343,100,12" Font = "宋体" Align = "R" Height = "13" TextColor = "#ddbbbb" Name = "黑方押分人数" Visible="1"/>
+
+<!--双方信息部分 -->
+<Element Type = "Image" Name="双方对战信息背景"  Pos = "5, 339" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="5,1155,450,225" />
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "85,350,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方总败文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "70,343,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方总败数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "14,350,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方总胜文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "0,343,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方总胜数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "85,380,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方最近败文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "70,373,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方最近败数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "52,380,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#D5D7E3" Name = "label白方最近胜文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "38,373,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#D5D7E3" Name = "label白方最近胜数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "85,408,100,12" Font = "宋体" Align = "R" Height = "12" TextColor = "#FFF696" Name = "label白方胜文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "70,401,100,20" Font = "宋体" Align = "R" Height = "22" TextColor = "#FFF696" Name = "label白方胜数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "395,350,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方总败文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "345,343,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方总败数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "325,350,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方总胜文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "276,343,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方总胜数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "336,380,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方最近败文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "322,373,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方最近败数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "301,380,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" Name = "label黑方最近胜文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "276,373,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#D5D7E3" Name = "label黑方最近胜数" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "289,408,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFF696" Name = "label黑方胜文字" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "276,401,100,20" Font = "宋体" Align = "L" Height = "22" TextColor = "#FFF696" Name = "label黑方胜数" TextShadow="true" Bold="true"  Visible="0"/>
+
+<Element Type = "Image" Name="双方对战信息条背景1"  Pos = "5, 427" Visible = "1">
+	<Image  Background = "BetInfoDlg\jc_dlst.png" />
+</Element>
+
+<Element Type = "Image" Name="双方对战信息条背景2"  Pos = "5, 450" Visible = "1">
+	<Image  Background = "BetInfoDlg\jc_dlst.png" />
+</Element>
+
+<Element Type = "Image" Name="双方对战信息条背景3"  Pos = "5, 473" Visible = "1">
+	<Image  Background = "BetInfoDlg\jc_dlst.png" />
+</Element>
+
+<Element Type = "Image" Name="双方对战信息条背景4"  Pos = "5, 496" Visible = "1">
+	<Image  Background = "BetInfoDlg\jc_dlst.png" />
+</Element>
+
+<Element Type = "Image" Name="双方对战信息条背景5"  Pos = "5, 519" Visible = "1">
+	<Image  Background = "BetInfoDlg\jc_dlst.png" />
+</Element>
+
+<Element Type = "Image" Name="双方对战信息条背景6"  Pos = "5, 542" Visible = "1">
+	<Image  Background = "BetInfoDlg\jc_dlst.png" />
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条1"  Pos = "5,427" Visible = "0">
+	<Image  Normal="BetInfoDlg\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\btn2playerhistory.png"   Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条2"  Pos = "5,450" Visible = "0">
+	<Image  Normal="BetInfoDlg\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条3"  Pos = "5,473" Visible = "0">
+	<Image  Normal="BetInfoDlg\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条4"  Pos = "5,496" Visible = "0">
+	<Image  Normal="BetInfoDlg\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条5"  Pos = "5,519" Visible = "0">
+	<Image  Normal="BetInfoDlg\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn双方对战信息条6"  Pos = "5,542" Visible = "0">
+	<Image  Normal="BetInfoDlg\btn2playerhistory.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\btn2playerhistory.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\btn2playerhistory.png"      Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "String" Text = "2013-07-30" Pos = "32,432,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "------" Pos = "122,432,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,432,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,432,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,432,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "390,432,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数1" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "2013-07-30 13:43" Pos = "32,455,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "------" Pos = "122,455,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,455,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,455,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,455,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "390,455,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数2" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "2013-07-30 13:43" Pos = "32,478,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "------" Pos = "122,478,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,478,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,478,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,478,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "390,478,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数3" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "2013-07-30 13:43" Pos = "32,501,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "------" Pos = "122,501,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,501,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,501,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,501,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "390,501,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数4" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "2013-07-30 13:43" Pos = "32,524,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "------" Pos = "122,524,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,524,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,524,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,524,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "390,524,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数5" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "2013-07-30 13:43" Pos = "32,547,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩时间6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "------" Pos = "122,547,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩昵称6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "197,547,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩段位6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "--" Pos = "237,547,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩颜色6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "287,547,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩结果6" Bold="true"  Visible="1"/>
+<Element Type = "String" Text = "---" Pos = "390,547,200,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#000000" Name = "label双方战绩手数6" Bold="true"  Visible="1"/>
+
+<!--我的竞猜部分 -->
+<Element Type = "Image" Name="我的竞猜背景"  Pos = "5, 339" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="5,930,450,225" />
+</Element>
+
+<Element Type = "Image" Name="我的竞猜区间文字图白"  Pos = "35, 395" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_kalei_pkg.png" Pos="330,400,37,165" />
+</Element>
+
+<Element Type = "Image" Name="我的竞猜区间文字图黑"  Pos = "387, 395" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_kalei_pkg.png" Pos="367,400,37,165" />
+</Element>
+
+<Element Type = "Image" Name="img我的第1区间竞猜颜色"  Pos = "16,350,16,16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "Image" Name="img我的第2区间竞猜颜色"  Pos = "242,350,16,16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "Image" Name="img我的第3区间竞猜颜色"  Pos = "16,374,16,16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "String" Text = "-----" Pos = "35,343,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的第1区间总竞猜" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "-----" Pos = "262,343,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的第2区间总竞猜" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "-----" Pos = "35,367,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的第3区间总竞猜" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "115,390,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#929ED5" Name = "label我的白方第一区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "115,406,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的白方第一区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的白方第一区间押分道具"  Pos = "88, 406, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "115,434,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#929ED5" Name = "label我的白方第二区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "115,450,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的白方第二区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的白方第二区间押分道具"  Pos = "88, 447, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+		
+<Element Type = "String" Text = "--" Pos = "115,475,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#929ED5" Name = "label我的白方第三区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "115,491,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的白方第三区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的白方第三区间押分道具"  Pos = "88, 490, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "115,516,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#929ED5" Name = "label我的白方第四区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "115,532,300,30" Font = "宋体" Align = "L" Height = "12" TextColor = "#FFFFFF" Name = "label我的白方第四区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的白方第四区间押分道具"  Pos = "88, 532, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+		
+<Element Type = "String" Text = "--" Pos = "50,390,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#C08483" Name = "label我的黑方第一区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "50,406,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#FFFFFF" Name = "label我的黑方第一区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的黑方第一区间押分道具"  Pos = "357, 406, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+		
+<Element Type = "String" Text = "--" Pos = "50,434,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#C08483" Name = "label我的黑方第二区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "50,450,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#FFFFFF" Name = "label我的黑方第二区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的黑方第二区间押分道具"  Pos = "357, 447, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+		
+<Element Type = "String" Text = "--" Pos = "50,475,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#C08483" Name = "label我的黑方第三区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "50,491,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#FFFFFF" Name = "label我的黑方第三区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的黑方第三区间押分道具"  Pos = "357, 490, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+
+<Element Type = "String" Text = "--" Pos = "50,516,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#C08483" Name = "label我的黑方第四区间押分" TextShadow="true"  Visible="0"/>
+<Element Type = "String" Text = "--" Pos = "50,532,300,30" Font = "宋体" Align = "R" Height = "12" TextColor = "#FFFFFF" Name = "label我的黑方第四区间所得" TextShadow="true"  Visible="0"/>
+
+<Element Type = "Image" Name="我的黑方第四区间押分道具"  Pos = "357, 532, 16, 16" Visible = "0">
+	<Image  Background = "" />
+</Element>
+		
+<!--竞猜界面-->
+<Element Type = "Image" Name="竞猜背景上层"  Pos = "5, 194" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="5,1605,450,145" />
+</Element>
+
+<Element Type = "Image" Name="竞猜背景"  Pos = "5, 339" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_bkgnd_pkg.png" Pos="5,1380,450,225" />
+</Element>
+
+<Element Type = "Button" Name="btn竞猜全部"  Pos = "50,372" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,620,90,25"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="0,645,90,25"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="0,670,90,25"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="0,695,90,25"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn10-1"  Pos = "140,372" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="90,620,60,25"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="90,645,60,25"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="90,670,60,25"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="90,695,60,25"    Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn4-1"  Pos = "200,372" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="150,620,60,25"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="150,645,60,25"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="150,670,60,25"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="150,695,60,25"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn2-1"  Pos = "260,372" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="210,620,60,25"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="210,645,60,25" Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="210,670,60,25"    Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="210,695,60,25"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn竞猜清零"  Pos = "320,372" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="270,620,90,25"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="270,645,90,25"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="270,670,90,25"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="270,695,90,25"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn筹码_千"  Pos = "65,410" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,470,55,50"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="0,470,55,50"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="0,470,55,50"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="0,520,55,50"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn筹码_万"  Pos = "122,410" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="55,470,55,50"  Normal_TextColor = "#666666"
+        	Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="55,470,55,50"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="55,470,55,50"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="55,520,55,50"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn筹码_十万"  Pos = "180,410" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="110,470,55,50"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="110,470,55,50"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="110,470,55,50"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="110,520,55,50"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn筹码_百万"  Pos = "237,410" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="165,470,55,50"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="165,470,55,50"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="165,470,55,50"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="165,520,55,50"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn筹码_千万"  Pos = "294,410" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="220,470,55,50"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="220,470,55,50"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="220,470,55,50"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="220,520,55,50"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn筹码_亿"  Pos = "348,410" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="275,470,55,50"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="275,470,55,50"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="275,470,55,50"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="275,520,55,50"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn向左翻页"  Pos = "10,480" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,910,30,75"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="30,910,30,75"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="60,910,30,75"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="90,910,30,75"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn向右翻页"  Pos = "420,480" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="120,910,30,75"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="150,910,30,75"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="180,910,30,75"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="210,910,30,75"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具1"  Pos = "40,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_10.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_10.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_10.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具2"  Pos = "105,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_04.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_04.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_04.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具3"  Pos = "170,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_05.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_05.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_05.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具4"  Pos = "235,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_06.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_06.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_06.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具5"  Pos = "300,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_08.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_08.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_08.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具6"  Pos = "365,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_11.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_11.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_11.png"   Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具7"  Pos = "40,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_09.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_09.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_09.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具8"  Pos = "105,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_01.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_01.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_01.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具9"  Pos = "170,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_02.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_02.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_02.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+	
+<Element Type = "Button" Name="btn道具10"  Pos = "235,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_03.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_03.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_03.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+	
+<Element Type = "Button" Name="btn道具11"  Pos = "300,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_07.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_07.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_07.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具12"  Pos = "365,483" Visible = "0">
+	<Image  Normal="BetInfoDlg/item/bet_item_12.png"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg/item/bet_item_12.png"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg/item/bet_item_12.png"      Down_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量1"  Pos = "33,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>	
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量1" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量2"  Pos = "98,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量2" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量3"  Pos = "163,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量3" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量4"  Pos = "228,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量4" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量5"  Pos = "293,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量5" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量6"  Pos = "358,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量6" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量7"  Pos = "33,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量7" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量8"  Pos = "98,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量8" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+	
+<Element Type = "Button" Name="btn道具数量9"  Pos = "163,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量9" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量10"  Pos = "228,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量10" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量11"  Pos = "293,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量11" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "Button" Name="btn道具数量12"  Pos = "358,535" Visible = "0">
+	<Image  Normal="BetInfoDlg/btn_itemcount.png"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg/btn_itemcount.png"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg/btn_itemcount.png"      Down_TextColor = "#FFFFFF"
+	/>
+	<Element Type = "String" Text = "x2" Pos = "0,0,70,20" Font = "宋体" Align = "C" Height = "13" Name = "label道具数量12" TextShadow="true" Bold="true"  Visible="1"/>
+</Element>
+
+<Element Type = "String" Text = "--------------" Pos = "90,203,280,20" Font = "宋体" Align = "C" Height = "12" TextColor = "#BEBEBE" Name = "label竞猜限额" TextShadow="true" Bold="true"  Visible="0"/>
+
+<Element Type = "Button" Name="Btn竞猜"  Pos = "175,290" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="300,190,116,36"  Normal_TextColor = "#666666"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="300,226,116,36"  Hover_TextColor = "#666666"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="300,262,116,36"      Down_TextColor = "#ffffff"
+			Disable="BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="300,298,116,36"      Disable_TextColor = "#ffffff"
+	/>
+</Element>
+
+<Element Type = "Image" Name="竞猜白棋"  Pos = "11, 208" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_kalei_pkg.png" Pos="300,340,60,60" />
+</Element>
+
+<Element Type = "Image" Name="竞猜黑棋"  Pos = "397, 208" Visible = "0">
+	<Image  Background = "BetInfoDlg\bet_kalei_pkg.png" Pos="360,340,60,60" />
+</Element>
+
+<Element Type = "String" Text = "1,234,567,890,123,456" Pos = "40,345,280,20" Font = "宋体" Align = "L" Height = "20" TextColor = "#EBDA9E" Name = "label我的狐币" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "+100,029,000" Pos = "20,295,280,20" Font = "宋体" Align = "L" Height = "24" TextColor = "#FFFFFF" Name = "label我竞猜的狐币" TextShadow="true" Bold="true"  Visible="0"/>
+<Element Type = "String" Text = "+100,029,000" Pos = "20,315,280,20" Font = "宋体" Align = "L" Height = "12" TextColor = "#BEBEBE" Name = "labelBetServiceFee" TextShadow="true" Bold="false"  Visible="0"/>
+<Element Type = "Button" Name="btnFeeHelp"  Pos = "20,280" Visible = "0">
+	<Image  Normal="BetInfoDlg\btn_help.png" Normal_Pos="0,0,24,25"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg\btn_help.png" Hover_Pos="24,0,24,25"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg\btn_help.png" Down_Pos="48,0,24,25"      Down_TextColor = "#FFFFFF"
+	/>
+</Element>
+
+<Element Type = "Image" Name="本次竞猜道具"  Pos = "30, 270" Visible = "0">
+	<Image  Background = "BetInfoDlg/item/bet_item_01.png" />
+</Element>
+
+<Element Type = "Image" Name="动画筹码"  Pos = "30, 270" Visible = "0">		
+	<Image  Background = "BetInfoDlg\bet_kalei_pkg.png" Disable_Pos="0,570,55,50" />
+</Element>
+
+<Element Type = "String" Text = "-----" Pos = "23,245,200,30" Font = "宋体" Align = "L" Height = "14" TextColor = "#EDF8FF" Name = "label当前竞猜白方用户名" TextShadow="true"  Bold="true" Visible="1"/>
+<Element Type = "String" Text = "-----" Pos = "240,245,200,30" Font = "宋体" Align = "R" Height = "14" TextColor = "#EDF8FF" Name = "label当前竞猜黑方用户名" TextShadow="true"  Bold="true" Visible="1"/>
+
+<Element Type = "Button" Name="btn白方返回"  Pos = "380,343" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="360,620,70,26"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="360,646,70,26"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="360,672,70,26"      Down_TextColor = "#FFFFFF"
+	/>
+</Element>
+
+<Element Type = "Button" Name="btn黑方返回"  Pos = "380,343" Visible = "0">
+	<Image  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="360,620,70,26"  Normal_TextColor = "#FFFFFF"
+			Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="360,646,70,26"  Hover_TextColor = "#FFFFFF"
+			Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="360,672,70,26"      Down_TextColor = "#FFFFFF"
+	/>
+</Element>
+
+<!--按钮 -->
+<Element Type = "Button" Name="BtnClose"  Pos = "38,05" Anchor_LTRBC="01100">
+	<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30" Normal_TextColor = "#666666"
+			Hover="button\main_title\btn_title_pkg_01.png" Hover_Pos="25,120,25,30" Hover_TextColor = "#666666"
+			Down="button\main_title\btn_title_pkg_01.png"  Down_Pos="50,120,25,30"    Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnSearchUser"  Pos = "170,36" Anchor_LTRBC="00110">
+	<Image  Normal="BetSearchUserMoneyDlg\btn.png"  Normal_Pos="0,56,33,28" Normal_TextColor = "#666666"
+			Hover="BetSearchUserMoneyDlg\btn.png" Hover_Pos="33,56,33,28" Hover_TextColor = "#666666"
+			Down="BetSearchUserMoneyDlg\btn.png"  Down_Pos="33,56,33,28"    Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Button" Name="BtnCloseDlg"  Pos = "105,34" Anchor_LTRBC="00110">
+	<Image  Normal="button\main_bottom\btn_btmcl_pkg_01.png"  Normal_Pos="0,0,100,30" Normal_TextColor = "#666666"
+			Hover="button\main_bottom\btn_btmcl_pkg_01.png" Hover_Pos="100,0,100,30" Hover_TextColor = "#666666"
+			Down="button\main_bottom\btn_btmcl_pkg_01.png"  Down_Pos="200,0,100,30"    Down_TextColor = "#ffffff" 
+	/>
+</Element>
+
+<Element Type = "Image" Name="底部标签上部条"  Pos = "5, 565" Visible = "1">
+	<Image  Background = "BetInfoDlg\bet_kalei_pkg.png" Pos="0,909,450,1" />
+</Element>
+
+<Element Type = "TabCtrl" Name= "TabCtrlType" Pos = "8,565,260,30" Interval = '0'  Visible="1">
+	<Item Name = "TabCtrl_Item竞猜排行" Visible = '1'
+		  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,720,90,30"  Normal_TextColor = "#666666"
+		  Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="90,720,90,30"  Hover_TextColor = "#666666"
+		  Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="180,720,90,30"      Down_TextColor = "#ffffff" >
+	</Item>	
+
+	<Item Name = "TabCtrl_Item我的竞猜" Visible = '1'
+		  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,750,90,30"  Normal_TextColor = "#666666"
+		  Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="90,750,90,30"  Hover_TextColor = "#666666"
+		  Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="180,750,90,30"      Down_TextColor = "#ffffff" >
+	</Item>
+		
+	<Item Name = "TabCtrl_Item双方信息" Visible = '1'
+		  Normal="BetInfoDlg\bet_kalei_pkg.png" Normal_Pos="0,780,90,30"  Normal_TextColor = "#666666"
+		  Hover="BetInfoDlg\bet_kalei_pkg.png" Hover_Pos="90,780,90,30"  Hover_TextColor = "#666666"
+		  Down="BetInfoDlg\bet_kalei_pkg.png" Down_Pos="180,780,90,30"      Down_TextColor = "#ffffff" >
+	</Item>	
+	
+</Element>	
+
+</root>

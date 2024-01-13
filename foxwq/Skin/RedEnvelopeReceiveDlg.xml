@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "504,368" Transparent = '0'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,504,150">	
+	</Element>
+	
+	<!-- 背景图片，不同类型切换显示 -->
+	<Element Type = "Image" Name="BackImg_red"  Pos = "0,0" Visible = "1">
+		<Image  Background = "RedEnvelope\back_red.png"/>
+	</Element>
+	<Element Type = "Image" Name="BackImg_white"  Pos = "0,0" Visible = "0">
+		<Image  Background = "RedEnvelope\back_white.png"/>
+	</Element>
+	
+	<!-- 头像边框及头像 -->
+	<Element Type = "Image" Name="HeadImgFrame"  Pos = "222,10" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "720,0,59,64"/>
+	</Element>
+	<Element Type = "AnimalImage" Name="HeadImage"  Pos = "224,12,55,60" Stretching = "1" Visible = '1'>
+	</Element>
+	
+	<Element Type = "String" Text = "--" Name = "SenderInfoTxt" Pos = "0,74,504,20" TextColor = "#ffc683" Font = "宋体" Align = "C" Height = "14" Bold="0"  Visible = '1'/>
+	<Element Type = "String" Text = "--------" Name = "MsgInfoTxt_Big" Pos = "0,100,504,24" TextColor = "#ffc683" Font = "宋体" Align = "C" Height = "16" Bold="0"  Visible = '1'/>
+	<Element Type = "String" Text = "--------" Name = "MsgInfoTxt_Small" Pos = "0,94,504,24" TextColor = "#ffc683" Font = "宋体" Align = "C" Height = "12" Bold="0"  Visible = '0'/>
+	<Element Type = "String" Text = "-----" Name = "Grab_Money" Pos = "0,120,504,30" TextColor = "#ffffff" Font = "宋体" Align = "C" Height = "26" Bold="0"  Visible = '1'/>
+	
+	<!-- 关注按钮 -->
+	<Element Type = "Button" Name="BtnAttention"  Pos = "365,74" Anchor_LTRBC="00000">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height = "12"/>
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#ffffff" Normal_Pos="348,32,53,17"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#ffffff" Hover_Pos="348,49,53,17"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="348,66,53,17"
+				Disable="RedEnvelope\image_notxt.png" Disable_TextColor = "#ffffff" Disable_Pos="348,83,53,17"  
+		/>
+	</Element>	
+	
+	<!-- 抢红包结果 -->
+	<Element Type = "String" Text = "-----------" Name = "Grab_Result" Pos = "20,150,400,30" TextColor = "#7e7e7e" Font = "宋体" Align = "L" Height = "12" Bold="0"  Visible = '1'/>
+	
+	<!-- 排序按钮及图标 -->
+	<Element Type = "Image" Name="SortBackLeft"  Pos = "384,158" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "348,15,50,17"/>
+	</Element>
+	<Element Type = "Image" Name="SortBackRight"  Pos = "444,158" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "348,15,50,17"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconLeftUp_Normal"  Pos = "420,161" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "779,14,6,4"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconLeftUp_Light"  Pos = "420,161" Visible = "0">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "785,14,6,4"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconLeftDown_Normal"  Pos = "420,167" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "779,18,6,4"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconLeftDown_Light"  Pos = "420,167" Visible = "0">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "785,18,6,4"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconRightUp_Normal"  Pos = "480,161" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "779,14,6,4"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconRightUp_Light"  Pos = "480,161" Visible = "0">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "785,14,6,4"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconRightDown_Normal"  Pos = "480,167" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "779,18,6,4"/>
+	</Element>
+	<Element Type = "Image" Name="SortIconRightDown_Light"  Pos = "480,167" Visible = "0">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "785,18,6,4"/>
+	</Element>
+	<Element Type = "Button" Name="BtnSortMoney"  Pos = "384,158,36,17" Anchor_LTRBC="00000">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal_TextColor = "#7e7e7e"
+				Hover_TextColor = "#800000"
+				Down_TextColor = "#800000"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnSortTime"  Pos = "444,158,36,17" Anchor_LTRBC="00000">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "12"/>
+		<Image  Normal_TextColor = "#7e7e7e"
+				Hover_TextColor = "#800000"
+				Down_TextColor = "#800000"/>
+	</Element>	
+	
+	
+	<!-- 狐币动态图标 -->
+	<Element Type = "AnimalImage" Name="HuBiIconAnimal"  Pos = "217,133,70,71" Stretching = "1" Visible = '1'>
+	</Element>
+		
+	<Element Type = "String" Text = "---------" Name = "HandSlowTxt" Pos = "0,210,504,24" TextColor = "#ffc683" Font = "宋体" Align = "C" Height = "24" Bold="0"  Visible = '1'/>
+	<Element Type = "String" Text = "---------" Name = "HelpTxt" Pos = "0,250,504,24" TextColor = "#ff9788" Font = "宋体" Align = "C" Height = "16" Bold="0"  Visible = '1'/>
+	
+	<!-- 关闭按钮 -->
+	<Element Type = "Button" Name="BtnClose"  Pos = "50,0" Anchor_LTRBC="01100">
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#666666" Normal_Pos="0,175,50,75"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#666666" Hover_Pos="50,175,50,75"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="100,175,50,75"/>
+	</Element>	
+	
+	<!-- 马上拆红包 -->
+	<Element Type = "Button" Name="BtnGrabEnvelope"  Pos = "174,255" Anchor_LTRBC="00000">
+		<Element Type="String"  Name = "BtnText" Text = "-----" Font = "黑体" Height = "20"/>
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#824524" Normal_Pos="193,143,155,45"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#824524" Hover_Pos="193,188,155,45"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#824524" Down_Pos="193,233,155,45"/>
+	</Element>	
+	
+	<!-- 红包列表及滚动条 -->
+	<Element Type = "CustomCtrl" Name="REULRedEnvelopeList"  Pos = "20,178,459,165" Visible = '1'>		
+	</Element>
+	<Element Type = "CustomCtrl" Name="ListScrollbar"  Pos = "478,178,15,165" Visible = '1'>
+		<Image  top2_btn_n_img = "BetInfoDlg/rolling.png"
+			top2_btn_h_img = "BetInfoDlg/rolling.png"
+			top2_btn_d_img = "BetInfoDlg/rolling.png"
+			top_btn_n_img = "BetInfoDlg/rolling.png"
+			top_btn_h_img = "BetInfoDlg/rolling.png"
+			top_btn_d_img = "BetInfoDlg/rolling.png"
+			bk_img = "BetInfoDlg/rolling.png"
+			block_t_n_img = "BetInfoDlg/rolling.png"
+			block_t_h_img = "BetInfoDlg/rolling.png"
+			block_t_d_img = "BetInfoDlg/rolling.png"
+			block_m_n_img = "BetInfoDlg/rolling.png"
+			block_m_h_img = "BetInfoDlg/rolling.png"
+			block_m_d_img = "BetInfoDlg/rolling.png"
+			block_b_n_img = "BetInfoDlg/rolling.png"
+			block_b_h_img = "BetInfoDlg/rolling.png"
+			block_b_d_img = "BetInfoDlg/rolling.png"
+			bottom_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom_btn_d_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_d_img = "BetInfoDlg/rolling.png"
+		/>
+	</Element>
+	
+	<!-- 问号按钮 -->
+	<Element Type = "Button" Name="BtnHelp"  Pos = "236,280">
+		<Image  Normal="RedEnvelope\image_notxt.png"  Normal_TextColor = "#ffffff" Normal_Pos="0,135,31,31"
+				Hover="RedEnvelope\image_notxt.png"   Hover_TextColor = "#ffffff" Hover_Pos="31,135,31,31"
+				Down="RedEnvelope\image_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="62,135,31,31"
+				Disable="RedEnvelope\image_notxt.png" Disable_TextColor = "#ffffff" Disable_Pos="0,135,31,31"  
+		/>
+	</Element>	
+	
+	<!-- 查看大家手气 -->
+	<Element Type = "Button" Name="BtnLookList"  Pos = "165,308,174,45" Anchor_LTRBC="00000">
+		<Element Type="String"  Name = "BtnText" Text = "--------" Font = "宋体" Height = "16"/>
+		<Image  Normal_TextColor = "#ffc683"
+				Hover_TextColor = "#ffffff"
+				Down_TextColor = "#ffffff"/>
+	</Element>	
+	
+	<!-- 领取列表底部提示文字 -->
+	<Element Type = "String" Text = "-----------" Name = "BottomPromtTxt" Pos = "0,344,504,24" TextColor = "#7e7e7e" Font = "宋体" Align = "C" Height = "12" Bold="0"  Visible = '1'/>
+	
+	
+</root>
+

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Frame" Name="Frame"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_bg.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="imgScoreBack"  Pos = "15,12" Visible = "1">
+		<Image  Background = "button\NFAIAnalysis.png" Pos="156,0,148,35"/>
+	</Element>
+	<Element Type = "Image" Name="imgAICardBack"  Pos = "168,12" Visible = "1">
+		<Image  Background = "button\NFAIAnalysis.png" Pos="196,0,106,35"/>
+	</Element>
+	
+	<Element Type = "String" Text = "-----" Pos = "63,19,100,22" Font = "宋体" Align = "L" Height = "18" TextColor = "#000000" Name = "txtTotalScoreCount"/>
+	<Element Type = "String" Text = "-----" Pos = "175,19,100,22" Font = "宋体" Align = "L" Height = "18" TextColor = "#000000" Name = "txtTotalAICardCount"/>
+	
+	<Element Type = "Button" Name="BtnQuestionMark"  Pos = "365,12">	
+		<Image  Normal="button\NFAIAnalysis.png"  Normal_TextColor = "#934912" Normal_Pos="123,0,22,22"
+				Hover="button\NFAIAnalysis.png"   Hover_TextColor = "#934912" Hover_Pos="123,0,22,22"
+				Down="button\NFAIAnalysis.png"    Down_TextColor = "#934912" Down_Pos="123,22,22,22"
+				Disable="button\NFAIAnalysis.png" Disable_TextColor = "#934912" Disable_Pos="123,22,22,22" 
+		/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnAIAnalysis"  Pos = "148,150">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体"  Bold="0"  Height = "18"/>
+		<Image  Normal="button\NFAIAnalysis.png"  Normal_TextColor = "#ffffff" Normal_Pos="0,0,104,42"
+				Hover="button\NFAIAnalysis.png"   Hover_TextColor = "#ffffff" Hover_Pos="0,42,104,42"
+				Down="button\NFAIAnalysis.png"    Down_TextColor = "#ffffff" Down_Pos="0,84,104,42"
+				Disable="button\NFAIAnalysis.png" Disable_TextColor = "#dcdcdc" Disable_Pos="0,126,104,42" 
+		/>
+	</Element>
+
+</root> 

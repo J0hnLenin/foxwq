@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "312,204" NoActivate="1"> 	
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">			
+		<Image  Background = "SlowlyPopupDialog\gonglei.png" Pos="0,0,312,204"/>
+	</Element>
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="btnClose"  Pos = "276,0">		
+		<Image  Normal="SlowlyPopupDialog\gonglei.png"  Normal_TextColor = "#000000" Normal_Pos="0,286,36,36"
+				Hover="SlowlyPopupDialog\gonglei.png"   Hover_TextColor = "#000000" Hover_Pos="0,322,36,36"
+				Down="SlowlyPopupDialog\gonglei.png"    Down_TextColor = "#000000" Down_Pos="0,358,36,36"/>
+	</Element>
+	
+	
+	<!--攻擂按钮-->
+	<Element Type = "Button" Name="btnGongLei"  Pos = "115,133">
+		<Image  Normal="SlowlyPopupDialog\gonglei.png"  Normal_TextColor = "#666666" Normal_Pos="70,218,106,40"
+				Hover="SlowlyPopupDialog\gonglei.png"   Hover_TextColor = "#666666" Hover_Pos="70,258,106,40"
+				Down="SlowlyPopupDialog\gonglei.png"    Down_TextColor = "#ffffff" Down_Pos="70,298,106,40"/>
+	</Element>
+	
+	
+	<!--当天不再提示框-->
+	<Element Type = "SwithButton" Name="CheckBox"  Pos = "107,179,16,16" Visible = '1'>
+		<Image  OnNormal="SlowlyPopupDialog\gonglei.png"  OnNormal_Pos="0,218,16,16"
+				OnHover="SlowlyPopupDialog\gonglei.png"  OnHover_Pos="0,218,16,16"
+				OffNormal="SlowlyPopupDialog\gonglei.png"  OffNormal_Pos="16,218,16,16"
+			    OffHover="SlowlyPopupDialog\gonglei.png"  OffHover_Pos="16,218,16,16"
+				Disable="SlowlyPopupDialog\gonglei.png"  Disable_Pos="0,218,16,16"
+				/>
+	</Element>
+
+</root>

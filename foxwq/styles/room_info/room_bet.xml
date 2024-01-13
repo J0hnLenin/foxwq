@@ -1,0 +1,28 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root > 
+	<Element Name="bkg" Type = "Image" Pos = "0,0" >	
+			<Image  Background = "rmbg_pkg_01.png" Pos="0,365,350,35"/>
+		
+		<!--动态标签-->
+		<Element Type = "String" Text = "50%" Pos = "18, 8,32,20" Font = "黑体" Align = "C" Height = "16" Bold="true" TextColor = "#adb1fb" Name = "白方赔率" TextShadow="true"/>
+		<Element Type = "String" Text = "50%" Pos = "235,8,32,20" Font = "黑体" Align = "C" Height = "16" Bold="true" TextColor = "#ffa5a5" Name = "黑方赔率" TextShadow="true"/>
+		
+		<!-- 信息按钮 -->
+		<Element Type = "Button" Name="BtnBetInfo"  Pos = "279,8" Anchor_LTRBC="11000">
+			<Image  Normal="btn_rmjc_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,62,19"
+					  Hover="btn_rmjc_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="62,0,62,19"
+					  Down="btn_rmjc_pkg_01.png"      Down_TextColor = "#ffffff"  Down_Pos="124,0,62,19"
+					  Disable="btn_rmjc_pkg_01.png"      Disable_TextColor = "#ffffff" Disable_Pos="186,0,62,19"/>
+		</Element>
+		<!--压分按钮-->
+		<!-- <Element Type = "Button" Name="BtnBet"  Pos = "190,30" Anchor_LTRBC="11000"  Visible = '0'>
+			<Image  Normal="btn\rm_hp_btn_01.png"  Normal_TextColor = "#666666"
+					  Hover="btn\rm_hp_btn_03.png"  Hover_TextColor = "#666666"
+					  Down="btn\rm_hp_btn_05.png"      Down_TextColor = "#ffffff" 
+					  Disable="btn\rm_hp_btn_07.png"      Disable_TextColor = "#ffffff" />
+		</Element> -->
+		<Element Type = "Image" Name="压分进度条"  Pos = "55,9,175,18" Visible = '1'>
+		</Element>	
+	</Element>
+	
+</root>

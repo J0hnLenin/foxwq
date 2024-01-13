@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "230,90" NoActivate="1"> 
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "SlowlyPopupDialog\bg_olrmd.png" Pos="0,0,230,90"/>
+	</Element>
+	<Element Type = "Image" Name="imgClose"  Pos = "195,5" >
+		<Image  Background="TimerPromptDialog\close_btn_pkg.png"   Pos="0,0,30,30"/>
+	</Element>
+	<Element Type = "AnimalImage" Name="头像"  Pos = "10,11,64,68" Stretching = "1" Visible = '1'>
+	</Element>
+	<Element Type = "String" Name = "用户名" Text = "" Pos = "90,50,130,25" Font = "宋体" Align = "M" Height = "14" Bold="1" TextColor = "#cccccc"/>
+</root>

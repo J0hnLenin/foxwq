@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	
+	<!--动画序列-->
+	<Element Type = "AnimalImage" Name="DynamicImage"  Pos = "0,0,180,73" Stretching = "1" Visible = '1'>
+	</Element>
+
+</root> 

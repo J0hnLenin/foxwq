@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "FineArtReplay\notxt_image.png" Pos="0,229,553,35"/>
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,2" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnUnused"  Pos = "1,1">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "14"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="559,229,97,31"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="559,260,97,31"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="559,291,97,31"
+		/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnUsed"  Pos = "98,1">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "14"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="559,229,97,31"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="559,260,97,31"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="559,291,97,31"
+		/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnExpired"  Pos = "195,1">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "14"/>
+		<Image  Normal="FineArtReplay\notxt_image.png"  Normal_TextColor = "#ffffff" Normal_Pos="559,229,97,31"
+				Hover="FineArtReplay\notxt_image.png"   Hover_TextColor = "#ffffff" Hover_Pos="559,260,97,31"
+				Down="FineArtReplay\notxt_image.png"    Down_TextColor = "#ffffff" Down_Pos="559,291,97,31"
+		/>
+	</Element>
+	
+	<Element Type = "String"  Name = "ListContentTxt" Text = "---" Pos = "0,35,553,30" Font = "宋体" Align = "C" Height = "14" TextColor = "#fff6cd" Visible = "1"/>
+	
+	<!-- 列表及滚动条 -->
+	<Element Type = "CustomCtrl" Name="TimesHistoryList"  Pos = "6,65,527,264" Visible = '1'>		
+	</Element>
+	<Element Type = "CustomCtrl" Name="ListScrollbar"  Pos = "532,65,15,264" Visible = '1'>
+		<Image  top2_btn_n_img = "BetInfoDlg/rolling.png"
+			top2_btn_h_img = "BetInfoDlg/rolling.png"
+			top2_btn_d_img = "BetInfoDlg/rolling.png"
+			top_btn_n_img = "BetInfoDlg/rolling.png"
+			top_btn_h_img = "BetInfoDlg/rolling.png"
+			top_btn_d_img = "BetInfoDlg/rolling.png"
+			bk_img = "BetInfoDlg/rolling.png"
+			block_t_n_img = "BetInfoDlg/rolling.png"
+			block_t_h_img = "BetInfoDlg/rolling.png"
+			block_t_d_img = "BetInfoDlg/rolling.png"
+			block_m_n_img = "BetInfoDlg/rolling.png"
+			block_m_h_img = "BetInfoDlg/rolling.png"
+			block_m_d_img = "BetInfoDlg/rolling.png"
+			block_b_n_img = "BetInfoDlg/rolling.png"
+			block_b_h_img = "BetInfoDlg/rolling.png"
+			block_b_d_img = "BetInfoDlg/rolling.png"
+			bottom_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom_btn_d_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_n_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_h_img = "BetInfoDlg/rolling.png"
+			bottom2_btn_d_img = "BetInfoDlg/rolling.png"
+		/>
+	</Element>
+
+</root> 

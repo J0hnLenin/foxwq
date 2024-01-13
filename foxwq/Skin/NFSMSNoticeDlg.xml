@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "468,435" Transparent = '0'> 
+	
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,550,50" Anchor_LTRBC="11110">	
+	</Element>
+	
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "button\sms_chat.png" Pos="0,435,468,435"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos = "426,5" >
+	<Image  Normal="button\sms_chat.png"  Normal_TextColor = "#666666" Normal_Pos="29,1048,36,15"
+			  Hover="button\sms_chat.png"  Hover_TextColor = "#666666"  Hover_Pos="29,1063,36,15"
+			  Down="button\sms_chat.png"      Down_TextColor = "#ffffff" Down_Pos="29,1078,36,15"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos = "397,5" Visible = '1'>
+	<Image  Normal="button\sms_chat.png"  Normal_TextColor = "#666666" Normal_Pos="0,1048,29,15"
+			  Hover="button\sms_chat.png"  Hover_TextColor = "#666666"  Hover_Pos="0,1063,29,15"
+			  Down="button\sms_chat.png"      Down_TextColor = "#ffffff" Down_Pos="0,1078,29,15"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnUserName"  Pos = "57,14,95,22" Visible = '1' Anchor_LTRBC="11000">
+		<Element Type="String"  Name = "BtnUserNickNameText" Text = "----" Font = "黑体" Align = "L" Height = "18" />		
+		<Image  Normal_TextColor = "#FFFFFF" Hover_TextColor = "#FFFFFF" Down_TextColor = "#0051d7"/>
+	</Element>	
+	
+	<Element Type = "String" Text = "" Pos = "60,36,325,22" Font = "黑体" Align = "L" Height = "15" TextColor = "#FFFFFF" Name = "LabelSignature" TextShadow="true"/>
+		
+	<Element Type = "Image" Name="ImgViewMore"  Pos = "5,65,456,0" Stretching = "1" >
+		<Image   Background = "button\sms_chat.png" Pos="0,953,526,20"/>
+	
+		<Element Type = "Button" Name="BtnViewMore"  Pos = "170,3,80,14" StreathBtn = "0">
+		<Element Type = "String" Name = "Static" Text = "----" Pos = "18,0,64,12 " Font = "宋体" Align = "L" Height = "12" TextColor = "#3b8ab5"  />
+			<Image  Normal="button\sms_chat.png"  Normal_TextColor = "#3b8ab5" Normal_Pos="85,870,14,14"
+			  Hover="button\sms_chat.png"  Hover_TextColor = "#0051d7"  Hover_Pos="85,870,14,14"
+			  Down="button\sms_chat.png"      Down_TextColor = "#004369"  Down_Pos="85,870,14,14"/>
+		</Element>
+	</Element>
+	
+	
+	
+</root>

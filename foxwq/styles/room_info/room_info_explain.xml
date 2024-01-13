@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "350,180" Transparent = '0'> 
+	<Element Name="bkg" Type = "Image" Pos = "0,0" >	
+		<Image  Background = "rmbg_pkg_01.png" Pos="0,226,350,139"/>
+		<!--头像-->
+		<Element Type = "AnimalImage" Name="头像"  Pos = "7,8,110,120" Stretching = "1" Visible = '1'>
+				<Image  Background = "" />
+		</Element>
+
+		<Element Type = "Image" Name="白子"  Pos = "125,53" Stretching = "1" Visible = '1'>
+				<Image  Background = "..\..\Skin\listicon\icon_pkg_01.png" Pos="112,16,16,16"/>
+		</Element>
+		<Element Type = "Image" Name="黑子"  Pos = "319,53" Stretching = "1" Visible = '1'>
+				<Image  Background = "..\..\Skin\listicon\icon_pkg_01.png" Pos="128,16,16,16"/>
+		</Element>
+
+		<!--动态标签-->
+		<Element Type = "String" Text = "" Pos = "126,14,112,19" Font = "宋体" Align = "L" Height = "14" Bold="1" TextColor = "#EEFF00" Name = "讲解者"/>
+		<Element Type = "String" Text = "" Pos = "180,14,150,19" Font = "宋体" Align = "L" Height = "14" Bold="1" TextColor = "#e8e8e8" Name = "讲解者名称"/>
+		<Element Type = "String" Text = "" Pos = "180,48,100,19" Font = "宋体" Align = "M" Height = "12" Bold="1" TextColor = "#000000" Name = "讲解类型"/>
+		<Element Type = "String" Text = "" Pos = "124,75,100,16" Font = "宋体" Align = "L" Height = "12" Bold="1" TextColor = "#000000" Name = "白方昵称"/>
+		<Element Type = "String" Text = "" Pos = "232,75,105,16" Font = "宋体" Align = "R" Height = "12" Bold="1" TextColor = "#000000" Name = "黑方昵称"/>
+		<Element Type = "String" Text = "" Pos = "140,100,80,16" Font = "宋体" Align = "L" Height = "12" Bold="1" TextColor = "#000000" Name = "对局类型"/>
+		<Element Type = "String" Text = "" Pos = "200,100,80,16" Font = "宋体" Align = "L" Height = "12" Bold="1" TextColor = "#000000" Name = "总手数"/>
+		<Element Type = "String" Text = "" Pos = "260,100,80,16" Font = "宋体" Align = "L" Height = "12" Bold="1" TextColor = "#000000" Name = "对局结果"/>
+	</Element>
+</root>

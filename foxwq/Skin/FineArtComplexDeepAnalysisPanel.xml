@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	
+	<Element Type = "Button" Name="BtnAll"  Pos = "0,5">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnPaid"  Pos = "105,5">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnAdd1"  Pos = "210,5"  Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnAdd2"  Pos = "315,5" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnAdd3"  Pos = "420,5"  Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnAdd4"  Pos = "525,5"  Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "黑体" Height = "18" Bold="0"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="287,31,104,31"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="287,0,104,31"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="287,0,104,31"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClassifiedSearch"  Pos ="738,8">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体" Height = "14"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="0,340,64,24"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="0,364,64,24"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="0,388,64,24"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSearch"  Pos ="712,8">
+		<Image  Normal="FineArtDeepAnalysis\main_panel.png"  Normal_Pos="0,57,24,24"  Normal_TextColor = "#d1ffc9"
+			    Hover="FineArtDeepAnalysis\main_panel.png"   Hover_Pos="0,81,24,24"  Hover_TextColor = "#d1ffc9"
+			    Down="FineArtDeepAnalysis\main_panel.png"    Down_Pos="0,105,24,24"  Down_TextColor = "#d1ffc9" 			  
+		/>
+	</Element>
+	
+	<Element Type = "Image" Name="EditBackImg"  Pos="595,8" Visible = '1'>
+		<Image  Background = "FineArtDeepAnalysis\main_panel.png"  Pos="0,5,115,24"/>
+	</Element> 
+	
+	
+	
+	
+	
+
+</root> 

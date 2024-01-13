@@ -1,0 +1,80 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Frame" Name="Frame"  Pos = "0,0"  NineGong="10,118,339,390" DisplayScale="1" Visible = '1'>
+		<Image  Background="RoomLADListPanel\rmbg_m_pkg_01.png" Pos="0,0,350,405"/>
+	</Element>
+	<Element Type = "TabCtrl" Name= "TabCtrl类型" Pos = "8,6,330,30"  Align = "L">
+		<Item Name = "全部" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="10,405,60,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="10,435,60,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="10,465,60,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "布局" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="70,405,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="70,435,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="70,465,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "中盘" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="115,405,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="115,435,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="115,465,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "手筋" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="160,405,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="160,435,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="160,465,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "基础" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="205,405,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="205,435,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="205,465,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "死活" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="250,405,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="250,435,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="250,465,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "官子" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="295,405,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="295,435,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="295,465,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+	</Element> 
+
+	<Element Type = "TabCtrl" Name= "TabCtrl难度" Pos = "23,46,300,30"  Align = "L" >
+		<Item Name = "全部1" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="25,555,53,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="25,585,53,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="25,615,53,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "入门" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="78,555,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="78,585,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="78,615,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "初级" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="123,555,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="123,585,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="123,615,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "中级" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="168,555,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="168,585,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="168,615,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "高级" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="213,555,45,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="213,585,45,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="213,615,45,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+		<Item Name = "超高级" Visible = '1'
+		  Normal="RoomLADListPanel\rmbg_m_pkg_01.png"  Normal_Pos="258,555,67,30"  Normal_TextColor = "#d1ffc9"
+		  Hover="RoomLADListPanel\rmbg_m_pkg_01.png"  Hover_Pos="258,585,67,30"  Hover_TextColor = "#d1ffc9"
+		  Down="RoomLADListPanel\rmbg_m_pkg_01.png"  Down_Pos="258,615,67,30"  Down_TextColor = "#d1ffc9">
+		</Item>
+	</Element>
+
+	<Element Type = "String" Name= "str题目"  Pos = "110,90,80,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#F8EB9C" TextShadow="true" Bold="true"  Visible="1"/>
+	<Element Type = "String" Name= "str类别"  Pos = "150,90,100,12" Font = "宋体" Align = "L" Height = "12" TextColor = "#D5D7E3" TextShadow="true" Bold="true"  Visible="1"/>
+
+</root> 

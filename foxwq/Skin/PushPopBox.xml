@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+    <!--标题栏背景图片-->
+	<Element Type = "Image" Name="titleBack"  Pos = "0,0"  Visible = '1'>
+		<Image  Background = "PushPopBox\PushPopBox.png" Pos="2, 0, 332, 32"/>
+	</Element> 
+	
+	<!--野狐图标-->
+	<Element Type = "Image" Name="foxIcon"  Pos = "2,0"  Visible = '1'>
+		<Image  Background = "PushPopBox\PushPopBox.png" Pos="381, 0, 23, 32"/>
+	</Element> 
+	
+	<!--标题文字框-->
+	<Element Type = "String" Text = ""  Name = "titleText" Pos = "27,0,200,32" Font = "宋体" Bold ='1' Align = "L" Height = "16" TextColor = "#DDDDDD"  Visible = '1'/>
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="BtnClose"  Pos = "275,0">
+		<Image  Normal="PushPopBox\PushPopBox.png"   Normal_Pos="337, 0, 22, 32"
+				Hover="PushPopBox\PushPopBox.png"    Hover_Pos="359, 0, 22, 32"
+				Down="PushPopBox\PushPopBox.png"     Down_Pos="359, 0, 22, 32"/>
+	</Element>
+	
+	<!--立即查看按钮-->
+	<Element Type = "Button" Name="BtnGoURL"  Pos = "198,166, 100, 28">
+		<Element Type="String" Text = "----" Font = "宋体" Height	= "14" Bold ='1'  Name = ""/>
+		<Image  Normal="PushPopBox\PushPopBox.png"   Normal_Pos="4, 1, 100, 28"   Normal_TextColor = "#C0C0C0" 
+				Hover="PushPopBox\PushPopBox.png"    Hover_Pos="4, 1, 100, 28"    Hover_TextColor = "#FFFFFF"
+				Down="PushPopBox\PushPopBox.png"     Down_Pos="4, 1, 100, 28"     Down_TextColor = "#FFFFFF"
+		/>
+	</Element>	
+
+	
+	
+
+
+</root> 

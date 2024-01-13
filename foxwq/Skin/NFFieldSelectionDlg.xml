@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+
+	<Element Type = "Button" Name="btnFastMatch"  Pos = "62,198" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\NFFieldSelect.png"  Normal_Pos="0,0,147,28"  Normal_TextColor = "#ffffff"
+			  Hover="button\NFFieldSelect.png" Hover_Pos="0,28,147,28"  Hover_TextColor = "#ffffff"
+			  Down="button\NFFieldSelect.png"  Down_Pos="0,56,147,28"  Down_TextColor = "#ffffff"
+			  Disable="button\NFFieldSelect.png.png"   Disable_Pos="0,84,147,28"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+
+	<Element Type = "Button" Name="btnSelectField"  Pos = "226,198" Visible = '1'>
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\NFFieldSelect.png"  Normal_Pos="147,0,147,28"  Normal_TextColor = "#ffffff"
+			  Hover="button\NFFieldSelect.png" Hover_Pos="147,28,147,28"  Hover_TextColor = "#ffffff"
+			  Down="button\NFFieldSelect.png"  Down_Pos="147,56,147,28"  Down_TextColor = "#ffffff"
+			  Disable="button\NFFieldSelect.png"   Disable_Pos="147,84,147,28"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name = "btnFieldHelp"  Pos = "398,200"  Visible='1'>				 
+		<Image  Normal="button\NFFieldSelect.png"  Normal_Pos="297,21,23,22"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\NFFieldSelect.png"     Hover_Pos="297,43,23,22"  Hover_TextColor = "#d1ffc9"
+			  Down="button\NFFieldSelect.png"      Down_Pos="297,65,23,22"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\NFFieldSelect.png"   Disable_Pos="297,87,23,22"  Disable_TextColor  = "#a1a1a1"/> 
+	</Element>
+	
+	
+	
+
+</root> 

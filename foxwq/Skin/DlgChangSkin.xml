@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	<Element Type = "SkyBkg" Name="SkyBkg" Img = "DlgChangSkin\bg_csk.png">
+		
+		<Element Type = "SkyBtn" Name="1" Img = "DlgChangSkin\sk_csk_01.png" Bkg = "#112D3D">
+		</Element>
+		
+		<Element Type = "SkyBtn" Name="2" Img = "DlgChangSkin\sk_csk_02.png" Bkg = "#0C3711">
+		</Element>     
+		
+		<Element Type = "SkyBtn" Name="3" Img = "DlgChangSkin\sk_csk_03.png" Bkg = "#962E3F">
+		</Element>     
+		
+		<Element Type = "SkyBtn" Name="4" Img = "DlgChangSkin\sk_csk_04.png" Bkg = "#212223"> 
+		</Element>   
+		
+		<Element Type = "SkyBtn" Name="5" Img = "DlgChangSkin\sk_csk_05.png" Bkg = "#26200E">
+		</Element>   
+		
+		<Element Type = "SkyBtn" Name="6" Img = "DlgChangSkin\sk_csk_06.png" Bkg = "#202643">
+		</Element> 
+		
+		<Element Type = "SkyBtn" Name="7" Img = "DlgChangSkin\sk_csk_07.png" Bkg = "#DCE3EC">
+		</Element>
+		
+		<Element Type = "SkyBtn" Name="8" Img = "DlgChangSkin\sk_csk_08.png" Bkg = "#AE8149">
+		</Element>
+		
+	</Element>
+</root> 

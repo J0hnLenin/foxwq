@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "350,220" Transparent = '1'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,350,30" >	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0">	
+		<Image  Background = "TimerPromptDialog\notice.png" Pos="0,0,350,220"/>
+	</Element>
+	<!--按钮 -->
+	<Element Type = "Button" Name="BtnClose"  Pos = "35,5" Anchor_LTRBC="01100">
+		<Image  Normal="TimerPromptDialog\close_btn_pkg.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,30,30"
+				Hover="TimerPromptDialog\close_btn_pkg.png"  Hover_TextColor = "#666666" Hover_Pos="30,0,30,30"
+				Down="TimerPromptDialog\close_btn_pkg.png"      Down_TextColor = "#ffffff" Down_Pos="60,0,30,30"/>
+		</Element>
+	<Element Type = "Button" Name="BtnOK"  Pos = "6,36" Anchor_LTRBC="10010">
+		<Image  Normal="TimerPromptDialog\notice.png"  Normal_TextColor = "#666666" Normal_Pos="0,220,169,30"
+				Hover="TimerPromptDialog\notice.png"  Hover_TextColor = "#666666" Hover_Pos="0,250,169,30"
+				Down="TimerPromptDialog\notice.png"      Down_TextColor = "#ffffff" Down_Pos="0,280,169,30"/>
+		</Element>
+	<Element Type = "Button" Name="BtnCancel"  Pos = "175,36" Anchor_LTRBC="00110">
+	<Image  Normal="TimerPromptDialog\notice.png" Normal_TextColor = "#666666" Normal_Pos="169,220,169,30"
+			  Hover="TimerPromptDialog\notice.png" Hover_TextColor = "#666666" Hover_Pos="169,250,169,30"
+			  Down="TimerPromptDialog\notice.png" Down_TextColor = "#ffffff" Down_Pos="169,280,169,30"/>
+		</Element>
+	<Element Type = "Button" Name="认输并退出"  Pos = "6,36" Anchor_LTRBC="10010" Visible = "0">
+	<Image  Normal="TimerPromptDialog\notice.png" Normal_TextColor = "#666666" Normal_Pos="0,935,169,30"
+			  Hover="TimerPromptDialog\notice.png" Hover_TextColor = "#666666" Hover_Pos="0,965,169,30"
+			  Down="TimerPromptDialog\notice.png" Down_TextColor = "#ffffff" Down_Pos="0,995,169,30"/>
+		</Element>
+	<!-- 标题 -->
+	<Element Type = "String" Text = "" Pos = "10,5,300,30" Font = "宋体" Align = "L" Height = "16" TextColor = "#D09B47" Name = "自定义标题" TextShadow="true"  Bold="true" Visible="1"/>
+	<!-- 内容主信息 -->	
+	<Element Type = "String" Text = "" Pos = "90,40,250,144" Font = "宋体" Align = "L" Height = "15" TextColor = "#EDF8FF" Name = "自定义主信息" TextShadow="true"  MultiLine="1" MultiVCenter="1" Bold="true" Visible="1"/>	
+	
+	<Element Type = "Image" Name = "问号" Pos = "20,80,70,70" Visible = "1">
+		<Image Background = "TimerPromptDialog\notice.png" Pos="0,340,70,70"/>
+		</Element>
+	<Element Type = "Image" Name = "叹号" Pos = "20,80,70,70" Visible = "0">
+		<Image Background = "TimerPromptDialog\notice.png" Pos="70,340,70,70"/>
+		</Element>
+	
+	<!-- 确定要申请自动点目吗？ -->
+	<Element Type = "Image" Name = "确定要申请自动点目吗" Pos = "90,83,200,30" Visible = "0">
+		<Image Background = "TimerPromptDialog\notice.png" Pos="0,530,200,30"/>
+		</Element>
+	<Element Type = "String" Text = "------------" Font = "宋体" Align = "L" Height = "12" Name = "辅助信息" Pos = "90,113, 200,13" Visible = "0" TextColor = "#e64b4b"/>
+	
+		
+	
+</root>

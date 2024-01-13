@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+		
+	<Element Type = "Image" Name="imgTopBack"  Pos = "7,7" Visible = "1">
+		<Image  Background = "button\NFLADBank.png" Pos="0,0,372,162"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSearch"  Pos ="350,170">
+		<Image  Normal="FineArtDeepAnalysis\main_panel.png"  Normal_Pos="0,57,24,24"  Normal_TextColor = "#d1ffc9"
+			    Hover="FineArtDeepAnalysis\main_panel.png"   Hover_Pos="0,81,24,24"  Hover_TextColor = "#d1ffc9"
+			    Down="FineArtDeepAnalysis\main_panel.png"    Down_Pos="0,105,24,24"  Down_TextColor = "#d1ffc9" 			  
+		/>
+	</Element>
+
+</root>

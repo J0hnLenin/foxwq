@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "468,435" Transparent = '0'> 
+	<!--TitleBar,标题栏,鼠标点击此区域可以拖动窗口-->
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,550,50" Anchor_LTRBC="11110">	
+	</Element>
+	<!--PanelMain,主对话框,该对话框的内容将被用语恢复透明区域-->
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "chatting_pkg_01.png" Pos="0,435,468,435"/>
+	</Element>
+	<Element Type = "Button" Name="BtnClose"  Pos = "426,5" >
+	<Image  Normal="chatting_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="29,1048,36,15"
+			  Hover="chatting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="29,1063,36,15"
+			  Down="chatting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="29,1078,36,15"/>
+	</Element>
+	<Element Type = "Button" Name="BtnMinimize"  Pos = "397,5" Visible = '1'>
+	<Image  Normal="chatting_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,1048,29,15"
+			  Hover="chatting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="0,1063,29,15"
+			  Down="chatting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,1078,29,15"/>
+	</Element>
+	
+	<Element Type = "String" Name = "Text用户昵称" Text = "系統消息" Pos = "57,14,95,20" Font = "黑体" Align = "L" Height = "18" TextColor = "#FFFFFF"  Anchor_LTRBC="11000" />
+	
+
+	<Element Type = "Image" Name="头像"  Pos = "12,14,37,41" Stretching = "1" Visible = '1'>
+		<Image  Background = "" />
+	</Element>	
+
+	
+	<Element Type = "Image" Name="Image查看更多"  Pos = "5,65,456,0" Stretching = "1" >
+		<Image  Background = "chatting_pkg_01.png" Pos="0,953,526,20"/>
+	
+		<Element Type = "Button" Name="Btn查看更多"  Pos = "170,3,80,14" StreathBtn = "0">
+		<Element Type = "String" Name = "Static" Text = "查看更多" Pos = "18,0,64,12 " Font = "宋体" Align = "L" Height = "12" TextColor = "#3b8ab5"  />
+			<Image  Normal="chatting_pkg_01.png"  Normal_TextColor = "#3b8ab5" Normal_Pos="85,870,14,14"
+			  Hover="chatting_pkg_01.png"  Hover_TextColor = "#0051d7"  Hover_Pos="85,870,14,14"
+			  Down="chatting_pkg_01.png"      Down_TextColor = "#004369"  Down_Pos="85,870,14,14"/>
+		</Element>
+	</Element>
+	
+	<Element Type = "RichEdit" Name="RichEdit历史框"  Pos = "6,86,456,308" Font = "宋体" Align = "L" Height = "12" ReadOnly = '1'/>		
+</root>
+

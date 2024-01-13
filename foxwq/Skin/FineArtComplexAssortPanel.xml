@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	
+	
+	<Element Type = "String"  Name = "Txt_Type" Text = "---" Pos = "45,0,80,40" Font = "黑体" Align = "R" Height = "16" Bold="0" TextColor = "#d8d6d2" Visible = "1"/>
+	<Element Type = "String"  Name = "Txt_Name" Text = "---" Pos = "227,0,80,40" Font = "黑体" Align = "R" Height = "16" Bold="0" TextColor = "#d8d6d2" Visible = "1"/>
+	<Element Type = "String"  Name = "Txt_Number" Text = "---" Pos = "468,0,80,40" Font = "黑体" Align = "R" Height = "16" Bold="0" TextColor = "#d8d6d2" Visible = "1"/>
+	
+	<Element Type = "Button" Name="BtnSearch"  Pos ="670,8">
+		<Image  Normal="FineArtDeepAnalysis\main_panel.png"  Normal_Pos="0,57,24,24"  Normal_TextColor = "#d1ffc9"
+			    Hover="FineArtDeepAnalysis\main_panel.png"   Hover_Pos="0,81,24,24"  Hover_TextColor = "#d1ffc9"
+			    Down="FineArtDeepAnalysis\main_panel.png"    Down_Pos="0,105,24,24"  Down_TextColor = "#d1ffc9" 			  
+		/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnReturn"  Pos ="738,8">
+		<Element Type="String"  Name = "BtnText" Text = "返回" Font = "黑体" Height = "14"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_Pos="0,340,64,24"  Normal_TextColor = "#88462C"
+				Hover="FineArtComplex\button.png" Hover_Pos="0,364,64,24"  Hover_TextColor = "#88462C"
+				Down="FineArtComplex\button.png"  Down_Pos="0,388,64,24"  Down_TextColor = "#88462C"/>
+	</Element>
+	
+
+	
+	
+	
+	
+
+</root> 

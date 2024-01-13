@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "Frame" Name="Frame"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "HallRoomListPanel\roomlist_bg.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnRedPackage"  Pos ="12,237" >
+		<Image  Normal="button\btn_chat_icon.png"  Normal_Pos="72,0,24,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_icon.png"  Hover_Pos="72,24,24,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_icon.png"  Down_Pos="72,48,24,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_icon.png"  Disable_Pos="72,72,24,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<!-- 过滤聊天按钮，全部、所在地等 -->
+	<Element Type = "Button" Name="BtnAll"  Pos ="36,237" >
+		<Image  Normal="button\btn_chat_icon.png"  Normal_Pos="24,0,24,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_icon.png"  Hover_Pos="24,24,24,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_icon.png"  Down_Pos="24,48,24,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_icon.png"  Disable_Pos="24,72,24,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	<Element Type = "Button" Name="BtnLocation"  Pos ="36,237" Visible = '0'>
+		<Image  Normal="button\btn_chat_icon.png"  Normal_Pos="0,0,24,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_icon.png"  Hover_Pos="0,24,24,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_icon.png"  Down_Pos="0,48,24,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_icon.png"  Disable_Pos="0,72,24,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	<Element Type = "Button" Name="BtnHideAll"  Pos ="36,237" Visible = '0'>
+		<Image  Normal="button\btn_chat_icon.png"  Normal_Pos="96,0,24,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_icon.png"  Hover_Pos="96,24,24,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_icon.png"  Down_Pos="96,48,24,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_icon.png"  Disable_Pos="96,72,24,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMic"  Pos ="60,237">
+		<Image  Normal="button\btn_chat_icon.png"  Normal_Pos="48,0,24,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_icon.png"  Hover_Pos="48,24,24,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_icon.png"  Down_Pos="48,48,24,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_icon.png"  Disable_Pos="48,72,24,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnGreetings"  Pos ="84,237" >
+		<Image  Normal="button\btn_chat_pkg_01.png"  Normal_Pos="0,0,24,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_pkg_01.png"  Hover_Pos="0,24,24,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_pkg_01.png"  Down_Pos="0,48,24,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_pkg_01.png"  Disable_Pos="0,72,24,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnFace"  Pos ="108,237" >
+		<Image  Normal="button\btn_chat_pkg_01.png"  Normal_Pos="24,0,24,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_pkg_01.png"  Hover_Pos="24,24,24,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_pkg_01.png"  Down_Pos="24,48,24,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_pkg_01.png"  Disable_Pos="24,72,24,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	
+	
+	<!-- 发送按钮左右分别切去一段变窄，考虑多语言图不同，左边减20右边减15-->
+	<Element Type = "Button" Name="BtnSend"  Pos ="0,237" >
+		<Image  Normal="button\btn_chat_pkg_01.png"  Normal_Pos="68,0,65,24"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\btn_chat_pkg_01.png"  Hover_Pos="68,24,65,24"  Hover_TextColor = "#d1ffc9"
+			  Down="button\btn_chat_pkg_01.png"  Down_Pos="68,48,65,24"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\btn_chat_pkg_01.png"  Disable_Pos="68,72,65,24"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+
+</root> 

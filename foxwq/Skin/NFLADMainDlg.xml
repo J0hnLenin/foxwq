@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Image" Name="TitleLogo"  Pos = "4,0"  Visible = '1'>
+		<Image  Background = "background\main\logo.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnHelp"  Pos ="105,0" Anchor_LTRBC = "01100" Visible = '0'>
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,0,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,0,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,0,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,0,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMinimize"  Pos ="80,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,60,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,60,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,60,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,60,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMaxmize"  Pos ="55,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,90,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,90,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,90,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,90,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Image" Name="imgBack"  Pos = "28,43" Visible = "1">
+		<Image  Background = "button\NFLADMain.png" Pos="0,0,733,425"/>
+	</Element>
+	
+	<Element Type = "String" Text = "-----" Pos = "60,18,400,80" Font = "黑体" Align = "L" Height = "18" TextColor = "#FCE164" Name = "txtName" TextShadow="true"/>
+	<Element Type = "String" Text = "------" Pos = "634,18,150,80" Font = "黑体" Align = "L" Height = "18" TextColor = "#FCE164" Name = "txtChampion" TextShadow="true"/>
+	
+	<Element Type = "Button" Name="BtnLADMatch"  Pos = "137,170" Visible = '1'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "15" Name = "" Bold="1" TextShadow="1" Pos="0,183,203,20"/>
+		<Image  Normal="button\NFLADMainButton.png"  Normal_Pos="0,442,203,221"  Normal_TextColor = "#fdf7c7"
+			  Hover="button\NFLADMainButton.png" Hover_Pos="203,442,203,221" Hover_TextColor = "#fdf7c7"
+			  Down="button\NFLADMainButton.png" Down_Pos="406,442,203,221" Down_TextColor = "#fdf7c7"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnLADCancel"  Pos = "137,170" Visible = '0'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "48" Name = "" Bold="1" TextShadow="1" Pos="52,35,98,98"/>
+		<Image  Normal="button\NFLADMainButton.png"  Normal_Pos="0,0,203,221"  Normal_TextColor = "#12fd65"
+			  Hover="button\NFLADMainButton.png" Hover_Pos="203,0,203,221" Hover_TextColor = "#12fd65"
+			  Down="button\NFLADMainButton.png" Down_Pos="406,0,203,221" Down_TextColor = "#12fd65"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnMyBank"  Pos = "448,170" Visible = '1'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "15" Name = "" Bold="1" TextShadow="1" Pos="0,183,203,20"/>
+		<Image  Normal="button\NFLADMainButton.png"  Normal_Pos="0,221,203,221"  Normal_TextColor = "#fdf7c7"
+			  Hover="button\NFLADMainButton.png" Hover_Pos="203,221,203,221" Hover_TextColor = "#fdf7c7"
+			  Down="button\NFLADMainButton.png" Down_Pos="406,221,203,221" Down_TextColor = "#fdf7c7"/>
+	</Element>
+	
+	
+	
+
+</root> 

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "309,488" Transparent = '1'> 
+
+	<!--标题鼠标拖动区域-->
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,790,30" Anchor_LTRBC="11110"/>
+	
+	<!--窗口主面板，指定背景图片，必须和root中size指定的大小相同-->
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "svr_back.png" Pos="0,0,309,488"/>
+	</Element>
+
+	<!--蓝色雪花背景-->
+	<Element Type = "Image" Name="bg_c"  Pos = "5,35,300,448"  Visible = '1'>
+		<Image  Background = "..\..\Skin\background\main\bg_c.png" />
+	</Element>
+	
+	<!--叠加背景轮廓图片-->
+	<Element Type = "Image" Name="svlist_bg_2"  Pos = "10,35"  Visible = '1'>
+		<Image  Background = "svlist_pkg_01.png" Pos="488,492,292,448"/>
+	</Element>
+	
+	<!--服务器列表最后一行下方阴影线，也用于刷新按钮的定位-->
+	<Element Type = "Image" Name="ShadownOfList"  Pos = "5,55"  Visible = '1'>
+		<Image  Background = "svlist_pkg_01.png" Pos="200,1063,285,18"/>
+	</Element>	
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="BtnClose"  Pos = "277,4">
+		<Image  Normal="..\..\Skin\button\main_title\btn_title_pkg_01.png"  Normal_TextColor = "#666666"  Normal_Pos="0,120,25,30"
+			    Hover="..\..\Skin\button\main_title\btn_title_pkg_01.png"   Hover_TextColor = "#666666"  Hover_Pos="25,120,25,30"
+			    Down="..\..\Skin\button\main_title\btn_title_pkg_01.png"    Down_TextColor = "#ffffff"  Down_Pos="50,120,25,30"/>
+	</Element>
+	
+	<!--服务器列表-->
+	<Element Type = "ListCtrl" Name= "ListCtrl服务器选择" IgnoreDrawColumnWhenSel = '0'  Pos = "13,92,283,380"  Visible = "1">
+		
+		<HeadCtrl Height = '0' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+		
+		<SelectedRow  Pos = "10,0,285,30">
+			<Image  Background = "svlist_pkg_01.png" Pos="200,1029,285,34"/>	  
+		</SelectedRow>	
+		
+		<Row Height = '30' Background = "svlist_pkg_01.png" Pos="200,965,285,30" HoverImage = "svlist_pkg_01.png" Hover_Pos="200,995,285,34" HoverImageOffset = "0,-1"  />
+		
+		<Cloumn	Width = '35' >
+			<Element Type = "Image" Name="Image服务器"  Pos = "16,7"  Visible = '1'>
+				<Image  Background = "..\..\skin\listicon\icon_pkg_01.png" Pos="144,0,16,16"/>
+			</Element>				 
+		</Cloumn>
+		<Cloumn	Width = '155'>
+			<Element Type="String"  Name = "Lable服务器" Text = "" Height = '12' Font = "宋体"  TextColor = "#bbbbbb" Align = "L"/> <!--高亮颜色eadb67-->
+		</Cloumn>
+		<Cloumn	Width = '155'>
+			<Element Type="String"  Name = "Lable人数" Text = "9999/9999" Height = '12' Font = "宋体"  TextColor = "#bbbbbb" Align = "L"/>
+		</Cloumn>	
+	</Element>
+	
+	<!--刷新按钮-->
+	<Element Type = "Button" Name="BtnRefresh"  Pos = "109,40">	
+		<Image  Normal="svlist_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="200,940,90,25"
+				Hover="svlist_pkg_01.png"   Hover_TextColor = "#d1ffc9"    Hover_Pos="290,940,90,25"
+				Down="svlist_pkg_01.png"    Down_TextColor = "#d1ffc9"     Down_Pos="380,940,90,25"
+				Disable="svlist_pkg_01.png" Disable_TextColor = "#a1a1a1"  Disable_Pos="470,940,90,25"/>
+	</Element>
+	
+</root>
+

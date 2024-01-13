@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	
+	<Element Type = "Image" Name="TopAllBack"  Pos="0,8" Visible = '1'>
+		<Image  Background = "FineArtComplex\top_back.png" Pos="0,0,789,156"/>
+	</Element> 
+	
+	<Element Type = "String"  Name = "Txt_Score_JingJie" Text = "-" Pos = "0,18,60,50" Font = "黑体" Align = "C" Height = "20" Bold="1" TextColor = "#ffd86e" Visible = "1"/>
+	<Element Type = "String"  Name = "Txt_Name_JingJie" Text = "-----------" Pos = "60,18,210,50" Font = "宋体" Align = "L" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+		
+	<Element Type = "String"  Name = "Txt_Name_Current" Text = "----" Pos = "275,18,240,50" Font = "宋体" Align = "C" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+	<Element Type = "String"  Name = "Txt_Score_Current" Text = "--" Pos = "275,40,240,78" Font = "黑体" Align = "C" Height = "30"  Bold="1" TextColor = "#ffd86e" Visible = "1"/>
+
+	<Element Type = "String"  Name = "Txt_Score_FuPan" Text = "-" Pos = "514,18,60,50" Font = "黑体" Align = "C" Height = "20" Bold="1" TextColor = "#ffd86e" Visible = "1"/>
+	<Element Type = "String"  Name = "Txt_Name_FuPan" Text = "----------" Pos = "574,18,210,50" Font = "宋体" Align = "L" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+	
+	<Element Type = "String"  Name = "Txt_Score_Report" Text = "-" Pos = "514,68,60,50" Font = "黑体" Align = "C" Height = "20" Bold="1" TextColor = "#ffd86e" Visible = "1"/>
+	<Element Type = "String"  Name = "Txt_Name_Report" Text = "----------" Pos = "574,68,210,50" Font = "宋体" Align = "L" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+	
+	<Element Type = "Image" Name="LeftImgVip01"  Visible = '1' Pos = "57,90">
+		<Image  Background = "SnatchTreasure\vip01.png"/>
+	</Element> 
+	<Element Type = "String"  Name = "Txt_Vip01_JingJieScore" Text = "-----" Pos = "0,114,138,40" Font = "宋体" Align = "C" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+	<Element Type = "Image" Name="LeftImgVip02"  Visible = '1' Pos = "195,90">
+		<Image  Background = "SnatchTreasure\vip02.png"/>
+	</Element> 	
+	<Element Type = "String"  Name = "Txt_Vip02_JingJieScore" Text = "-----" Pos = "138,114,138,40" Font = "宋体" Align = "C" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+	
+	<Element Type = "Image" Name="RightImgVip01"  Visible = '1' Pos = "571,90">
+		<Image  Background = "SnatchTreasure\vip01.png"/>
+	</Element> 
+	<Element Type = "String"  Name = "Txt_Vip01_FuPanScore" Text = "-----" Pos = "514,114,138,40" Font = "宋体" Align = "C" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+	<Element Type = "Image" Name="RightImgVip02"  Visible = '1' Pos = "709,90">
+		<Image  Background = "SnatchTreasure\vip02.png"/>
+	</Element> 	
+	<Element Type = "String"  Name = "Txt_Vip02_FuPanScore" Text = "-----" Pos = "652,114,138,40" Font = "宋体" Align = "C" Height = "16" TextColor = "#dbd6ce" Visible = "1"/>
+	
+	
+	<Element Type = "Button" Name="BtnViewScoreDetail"  Pos = "317,110">
+		<Element Type="String"  Name = "BtnText" Text = "------" Font = "黑体"  Bold="0"  Height = "16"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_TextColor = "#934912" Normal_Pos="0,256,156,28"
+				Hover="FineArtComplex\button.png"   Hover_TextColor = "#934912" Hover_Pos="0,284,156,28"
+				Down="FineArtComplex\button.png"    Down_TextColor = "#934912" Down_Pos="0,312,156,28"
+				Disable="FineArtComplex\button.png" Disable_TextColor = "#934912" Disable_Pos="0,312,156,28"  
+		/>
+	</Element>		
+	
+	
+	<Element Type = "Button" Name="BtnInputInvitePeople"  Pos = "0,444,114,39">
+		<Element Type="String"  Name = "BtnText" Text = "------" Font = "黑体"  Bold="0"  Height = "18"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_TextColor = "#934912" Normal_Pos="0,98,114,39"
+				Hover="FineArtComplex\button.png"   Hover_TextColor = "#934912" Hover_Pos="0,137,114,39"
+				Down="FineArtComplex\button.png"    Down_TextColor = "#934912" Down_Pos="0,176,114,39"
+				Disable="FineArtComplex\button.png" Disable_TextColor = "#934912" Disable_Pos="0,215,114,39"  
+		/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnInviteFriend"  Pos = "124,444,114,39">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体"  Bold="0"  Height = "18"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_TextColor = "#934912" Normal_Pos="0,98,114,39"
+				Hover="FineArtComplex\button.png"   Hover_TextColor = "#934912" Hover_Pos="0,137,114,39"
+				Down="FineArtComplex\button.png"    Down_TextColor = "#934912" Down_Pos="0,176,114,39"
+				Disable="FineArtComplex\button.png" Disable_TextColor = "#934912" Disable_Pos="0,215,114,39"  
+		/>
+	</Element>	
+	
+	<Element Type = "Button" Name="BtnOneKeyGetAll"  Pos = "675,444">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "黑体"  Bold="0"  Height = "18"/>
+		<Image  Normal="FineArtComplex\button.png"  Normal_TextColor = "#934912" Normal_Pos="0,98,114,39"
+				Hover="FineArtComplex\button.png"   Hover_TextColor = "#934912" Hover_Pos="0,137,114,39"
+				Down="FineArtComplex\button.png"    Down_TextColor = "#934912" Down_Pos="0,176,114,39"
+				Disable="FineArtComplex\button.png" Disable_TextColor = "#934912" Disable_Pos="0,215,114,39"  
+		/>
+	</Element>	
+
+	
+	
+	
+	
+	
+	
+
+</root> 

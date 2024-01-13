@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "384,470"> 	
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,384,40">	
+	</Element>
+	
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">			
+		<Image  Background = "button\nfrule_back.png"/>
+	</Element>
+	
+	<!-- 标题文字 -->
+	<Element Type = "String" Text = "----" Pos = "10,5,374,30" Font = "宋体" Align = "L" Height = "16" TextColor = "#D09B47" Name = "TitleTxt" Bold="true" Visible="1"/>
+	
+	<!-- 用户认证地区名称段位 -->	
+	<Element Type = "Image" Name="OccuImg"  Pos = "4,47,16,16" Visible = "0">
+		<Image  Background = "" />
+	</Element>
+	<Element Type = "Image" Name="CountryImg"  Pos = "22,47,16,16" Visible = "0">
+		<Image  Background = "" />
+	</Element>
+	<Element Type = "String" Text = "----" Pos = "45,40,364,30" Font = "宋体" Align = "L" Height = "14" TextColor = "#FFFFFF" Name = "PlayerNameTxt" Bold="true" Visible="1"/>
+		
+	<!-- 最近20局升降战绩 -->
+	<Element Type = "Image" Name="last20_perf"  Pos = "22,75,362,17" Visible = '1'>
+		<Image  Background = "" />
+	</Element>
+	
+	<!-- 总的规则展示信息 -->
+	<Element Type = "String" Text = "" Pos = "22,87,362,50" Font = "宋体" Align = "L" Height = "16" TextColor = "#FFDE98" Name = "TotalRuleInfoTxt" Bold="true" Visible="1"/>
+	
+	<Element Type = "String" Text = "--" Pos = "24,147,360,18" Font = "宋体" Align = "L" Height = "13" TextColor = "#F2D07D" Name = "TabGameType"  Visible="1"/>
+	<Element Type = "String" Text = "--" Pos = "24,199,360,18" Font = "宋体" Align = "L" Height = "13" TextColor = "#F2D07D" Name = "TabRule"  Visible="1"/>
+	<Element Type = "String" Text = "--" Pos = "24,251,360,18" Font = "宋体" Align = "L" Height = "13" TextColor = "#F2D07D" Name = "TabTime"  Visible="1"/>
+	
+	<Element Type = "String" Text = "" Pos = "10,351,364,50" Font = "宋体" Align = "C" Height = "14" TextColor = "#FF7950" Name = "ProgressTxt" Bold="true" Visible="1"/>
+	
+	<Element Type = "SwithButton" Name="sbRefuseThisPerson"  Pos = "282,412,20,14" Visible = '0'>
+				<Image  OnNormal="button\checkbox_pkg_01.png" OnNormal_Pos="0,14,14,14"  
+					  OnHover="button\checkbox_pkg_01.png" OnHover_Pos="14,14,14,14"  
+					  OffNormal="button\checkbox_pkg_01.png" OffNormal_Pos="28,14,14,14" 
+					  OffHover="button\checkbox_pkg_01.png" OffHover_Pos="42,14,14,14" 
+					  Disable="button\checkbox_pkg_01.png" Disable_Pos="56,14,14,14" 
+				/>
+	</Element>
+	<Element Type = "String" Text = "------"  Name = "txtRefuseThisPerson" Pos = "302,412,77,14" TextColor = "#ffffff" Font = "宋体" Align = "L" Height = "12"  Visible = '0'/>
+	
+	<Element Type = "Button" Name="btnInvite"  Pos = "5,433,90,32" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\nfrule_btn.png"  Normal_Pos="0,0,128,43"  Normal_TextColor = "#8f481c"
+			    Hover="button\nfrule_btn.png" Hover_Pos="0,43,128,43"  Hover_TextColor = "#8f481c"
+			    Down="button\nfrule_btn.png"  Down_Pos="0,86,128,43"  Down_TextColor = "#8f481c"
+			    Disable="button\nfrule_btn.png"   Disable_Pos="0,129,128,43"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="btnAccept"  Pos = "5,433,90,32" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\nfrule_btn.png"  Normal_Pos="0,0,128,43"  Normal_TextColor = "#8f481c"
+			    Hover="button\nfrule_btn.png" Hover_Pos="0,43,128,43"  Hover_TextColor = "#8f481c"
+			    Down="button\nfrule_btn.png"  Down_Pos="0,86,128,43"  Down_TextColor = "#8f481c"
+			    Disable="button\nfrule_btn.png"   Disable_Pos="0,129,128,43"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="btnModify"  Pos = "100,433,90,32" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\nfrule_btn.png"  Normal_Pos="0,0,128,43"  Normal_TextColor = "#8f481c"
+			    Hover="button\nfrule_btn.png" Hover_Pos="0,43,128,43"  Hover_TextColor = "#8f481c"
+			    Down="button\nfrule_btn.png"  Down_Pos="0,86,128,43"  Down_TextColor = "#8f481c"
+			    Disable="button\nfrule_btn.png"   Disable_Pos="0,129,128,43"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="btnCancel"  Pos = "289,433,90,32" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\nfrule_btn.png"  Normal_Pos="128,0,128,43"  Normal_TextColor = "#606060"
+			    Hover="button\nfrule_btn.png" Hover_Pos="128,43,128,43"  Hover_TextColor = "#606060"
+			    Down="button\nfrule_btn.png"  Down_Pos="128,86,128,43"  Down_TextColor = "#606060"
+			    Disable="button\nfrule_btn.png"   Disable_Pos="128,129,128,43"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	
+	<Element Type = "Button" Name="btnRefuse"  Pos = "289,433,90,32" Visible = '0'>
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13"/>
+		<Image  Normal="button\nfrule_btn.png"  Normal_Pos="128,0,128,43"  Normal_TextColor = "#606060"
+			    Hover="button\nfrule_btn.png" Hover_Pos="128,43,128,43"  Hover_TextColor = "#606060"
+			    Down="button\nfrule_btn.png"  Down_Pos="128,86,128,43"  Down_TextColor = "#606060"
+			    Disable="button\nfrule_btn.png"   Disable_Pos="128,129,128,43"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+
+	
+	
+	
+	
+
+</root> 

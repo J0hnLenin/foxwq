@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>	
+	<Element Type = "Image" Name="TitleBack"  Pos = "0,0"  Visible = '1'>
+		<Image  Background = "button\NFArena_Back.png" Pos="345,534,426,42"/>
+	</Element> 
+	
+	<Element Type = "String" Text = "----------" Pos = "0,0,426,42" Font = "宋体" Align = "C" Height = "22" TextColor = "#FFFFFF" Name = "txtTitle" Bold="1"/>
+	
+	<Element Type = "Image" Name="EditBack"  Pos = "70,50"  Visible = '1'>
+		<Image  Background = "button\NFArena_Back.png" Pos="0,534,285,45"/>
+	</Element>
+	
+	<Element Type = "String" Text = "------" Pos = "0,57,426,38" Font = "宋体" Align = "C" Height = "20" TextColor = "#FCE164" Name = "txtEdit" Bold="1"/>
+
+	<Element Type = "Image" Name="TimeBack"  Pos = "96,100"  Visible = '1'>
+		<Image  Background = "button\NFArena_Back.png" Pos="0,652,234,234"/>
+	</Element>
+	
+	<Element Type = "String" Text = "--" Pos = "0,100,426,234" Font = "宋体" Align = "C" Height = "64" TextColor = "#000000" Name = "txtTime" Bold="1"/>
+	
+	<Element Type = "Button" Name="BtnCancel"  Pos = "96,340,234,38" Visible = '1'>
+		<Element Type="String" Text = "----" Font = "宋体" Height = "24" Name = "" Bold="1"/>
+		<Image Normal_TextColor = "#ffffff"  Hover_TextColor = "#c8c8c8" Down_TextColor = "#808080"/>
+	</Element>
+
+</root> 

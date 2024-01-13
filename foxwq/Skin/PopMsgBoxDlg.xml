@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "350,220" Transparent = '1'> 
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,350,30" >	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "TimerPromptDialog\notice.png" Pos="0,0,350,220"/>
+	</Element>
+	
+	<!-- 关闭按钮 -->
+	<Element Type = "Button" Name="BtnClose"  Pos = "35,5" Anchor_LTRBC="01100" Visible = "0">
+		<Image  Normal="TimerPromptDialog\close_btn_pkg.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,30,30"
+				Hover="TimerPromptDialog\close_btn_pkg.png"  Hover_TextColor = "#666666" Hover_Pos="30,0,30,30"
+				Down="TimerPromptDialog\close_btn_pkg.png"      Down_TextColor = "#ffffff" Down_Pos="60,0,30,30"/>
+	</Element>
+	
+	<!-- 接受拒绝按钮 -->
+	<Element Type = "Button" Name="BtnAccept"  Pos = "6,36" Anchor_LTRBC="10010"  Visible = "0">
+		<Image  Normal="TimerPromptDialog\notice.png"  Normal_TextColor = "#666666" Normal_Pos="0,695,169,30"
+				Hover="TimerPromptDialog\notice.png"  Hover_TextColor = "#666666" Hover_Pos="0,725,169,30"
+				Down="TimerPromptDialog\notice.png"      Down_TextColor = "#ffffff" Down_Pos="0,755,169,30"/>
+	</Element>
+	<Element Type = "Button" Name="BtnRefuse"  Pos = "175,36" Anchor_LTRBC="00110"  Visible = "0">
+		<Image  Normal="TimerPromptDialog\notice.png" Normal_TextColor = "#666666" Normal_Pos="169,695,169,30"
+			  Hover="TimerPromptDialog\notice.png" Hover_TextColor = "#666666" Hover_Pos="169,725,169,30"
+			  Down="TimerPromptDialog\notice.png" Down_TextColor = "#ffffff" Down_Pos="169,755,169,30"/>
+	</Element>
+	
+	<!-- 确定取消按钮 -->
+	<Element Type = "Button" Name="BtnOK"  Pos = "6,36" Anchor_LTRBC="10010"  Visible = "0">
+		<Image  Normal="TimerPromptDialog\notice.png"  Normal_TextColor = "#666666" Normal_Pos="0,220,169,30"
+				Hover="TimerPromptDialog\notice.png"  Hover_TextColor = "#666666" Hover_Pos="0,250,169,30"
+				Down="TimerPromptDialog\notice.png"      Down_TextColor = "#ffffff" Down_Pos="0,280,169,30"/>
+	</Element>
+	<Element Type = "Button" Name="BtnCancel"  Pos = "175,36" Anchor_LTRBC="00110"  Visible = "0">
+		<Image  Normal="TimerPromptDialog\notice.png" Normal_TextColor = "#666666" Normal_Pos="169,220,169,30"
+			  Hover="TimerPromptDialog\notice.png" Hover_TextColor = "#666666" Hover_Pos="169,250,169,30"
+			  Down="TimerPromptDialog\notice.png" Down_TextColor = "#ffffff" Down_Pos="169,280,169,30"/>
+	</Element>	
+	
+	<!-- 空白待填写文字左右按钮 -->
+	<Element Type = "Button" Name="BtnBlankLeft"  Pos = "6,36" Anchor_LTRBC="10010"  Visible = "0">
+		<Element Type="String" Text = "----" Font = "宋体" Height = "15" Name = "" Bold="1" TextEdge="1" EdgeColor="#161616" Anchor_LTRBC="10010"/>
+		<Image  Normal="TimerPromptDialog\btn_blank.png"  Normal_TextColor = "#1ebe16" Normal_Pos="0,0,169,30"
+				Hover="TimerPromptDialog\btn_blank.png"  Hover_TextColor = "#1ebe16" Hover_Pos="0,30,169,30"
+				Down="TimerPromptDialog\btn_blank.png"      Down_TextColor = "#1ebe16" Down_Pos="0,60,169,30"/>
+	</Element>
+	<Element Type = "Button" Name="BtnBlankRight"  Pos = "175,36" Anchor_LTRBC="00110"  Visible = "0">
+		<Element Type="String" Text = "----" Font = "宋体" Height = "15" Name = "" Bold="1" TextEdge="1" EdgeColor="#161616" Anchor_LTRBC="00110"/>
+		<Image  Normal="TimerPromptDialog\btn_blank.png" Normal_TextColor = "#f5722b" Normal_Pos="169,0,169,30"
+			  Hover="TimerPromptDialog\btn_blank.png" Hover_TextColor = "#f5722b" Hover_Pos="169,30,169,30"
+			  Down="TimerPromptDialog\btn_blank.png" Down_TextColor = "#f5722b" Down_Pos="169,60,169,30"/>
+	</Element>
+	
+	<!-- 单个确定按钮 -->
+	<Element Type = "Button" Name="BtnSingleOK"  Pos = "224,36" Anchor_LTRBC="10010"  Visible = "0">
+		<Image  Normal="TimerPromptDialog\notice.png"  Normal_TextColor = "#666666" Normal_Pos="218,815,120,30"
+				Hover="TimerPromptDialog\notice.png"  Hover_TextColor = "#666666" Hover_Pos="218,845,120,30"
+				Down="TimerPromptDialog\notice.png"      Down_TextColor = "#ffffff" Down_Pos="218,875,120,30"/>
+	</Element>
+	
+	<!-- 问号图标 -->		
+	<Element Type = "Image" Name = "QuestionMark" Pos = "20,80,70,70" Visible = "0">
+		<Image Background = "TimerPromptDialog\notice.png" Pos="0,340,70,70"/>
+	</Element>
+	
+	<!-- 感叹号图标 -->
+	<Element Type = "Image" Name = "ExclamationMark" Pos = "20,80,70,70" Visible = "0">
+		<Image Background = "TimerPromptDialog\notice.png" Pos="70,340,70,70"/>
+	</Element>
+		
+	<!-- 标题文字 -->
+	<Element Type = "String" Text = "" Pos = "10,5,300,30" Font = "宋体" Align = "L" Height = "16" TextColor = "#D09B47" Name = "TitleTxt" TextShadow="true"  Bold="true" Visible="1"/>
+	
+	<!-- 内容文字 -->	
+	<Element Type = "String" Text = "" Pos = "90,40,250,144" Font = "宋体" Align = "L" Height = "15" TextColor = "#EDF8FF" Name = "ContentTxt" TextShadow="true"  MultiLine="1" MultiVCenter="1" Bold="true" Visible="1"/>	
+	
+	<!-- 底部小文字 -->
+	<Element Type = "String" Text = ""  Name = "BottomSamllText" Pos = "10,165,330,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#C0C0C0"  Visible = "0"/>
+	
+	<!-- 进度条 -->	
+	<Element Type = "CustomCtrl" Name="TimeProgressBar"  Pos = "6,177,338,7"  Visible = "0">
+		<Image  left_img = "TimerPromptDialog\rb_n1_01.png" 
+				mid_img = "TimerPromptDialog\rb_n1_02.png"
+				right_img = "TimerPromptDialog\rb_n1_03.png"/>
+	</Element>
+	
+	<!-- 数字十位及个位 -->	
+	<Element Type = "Image" Name="TenImg"  Pos = "8,154,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+	</Element>
+	<Element Type = "Image" Name="UnitImg"  Pos = "26,154,18,23" Stretching = "1" Visible = '0'>
+			<Image  Background = "" />
+	</Element>
+	
+</root>
+
+

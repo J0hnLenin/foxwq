@@ -1,0 +1,115 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "468,435" Transparent = '0'> 
+	<!--TitleBar,标题栏,鼠标点击此区域可以拖动窗口-->
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,550,50" Anchor_LTRBC="11110">	
+	</Element>
+	<!--PanelMain,主对话框,该对话框的内容将被用语恢复透明区域-->
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "chatting_pkg_01.png" Pos="0,0,468,435"/>
+	</Element>
+	<Element Type = "Button" Name="BtnClose"  Pos = "426,5" >
+	<Image  Normal="chatting_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="29,1048,36,15"
+			  Hover="chatting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="29,1063,36,15"
+			  Down="chatting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="29,1078,36,15"/>
+	</Element>
+	<Element Type = "Button" Name="BtnMinimize"  Pos = "397,5" Visible = '1'>
+	<Image  Normal="chatting_pkg_01.png"  Normal_TextColor = "#666666" Normal_Pos="0,1048,29,15"
+			  Hover="chatting_pkg_01.png"  Hover_TextColor = "#666666"  Hover_Pos="0,1063,29,15"
+			  Down="chatting_pkg_01.png"      Down_TextColor = "#ffffff" Down_Pos="0,1078,29,15"/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnUserNickName"  Pos = "57,14,95,22" Visible = '1' Anchor_LTRBC="11000">
+		<Element Type="String"  Name = "BtnUserNickNameText" Text = "----" Font = "黑体" Align = "L" Height = "18" />		
+		<Image  Normal_TextColor = "#FFFFFF" Hover_TextColor = "#FFFFFF" Down_TextColor = "#0051d7"/>
+	</Element>
+	
+	<Element Type = "String" Text = "" Pos = "60,36,325,22" Font = "黑体" Align = "L" Height = "15" TextColor = "#FFFFFF" Name = "txt用户心情" TextShadow="true"/>
+	
+
+	<Element Type = "Image" Name="头像"  Pos = "12,14,37,41" Stretching = "1" Visible = '1'>
+		<Image  Background = "" />
+	</Element>	
+
+	
+	<Element Type = "Image" Name="Image查看更多"  Pos = "5,65,456,0" Stretching = "1" >
+		<Image   Background = "chatting_pkg_01.png" Pos="0,953,526,20"/>
+	
+		<Element Type = "Button" Name="Btn查看更多"  Pos = "170,3,80,14" StreathBtn = "0">
+		<Element Type = "String" Name = "Static" Text = "more" Pos = "18,0,64,12 " Font = "宋体" Align = "L" Height = "12" TextColor = "#3b8ab5"  />
+			<Image  Normal="chatting_pkg_01.png"  Normal_TextColor = "#3b8ab5" Normal_Pos="85,870,14,14"
+			  Hover="chatting_pkg_01.png"  Hover_TextColor = "#0051d7"  Hover_Pos="85,870,14,14"
+			  Down="chatting_pkg_01.png"      Down_TextColor = "#004369"  Down_Pos="85,870,14,14"/>
+		</Element>
+	</Element>
+	
+	<Element Type = "RichEdit" Name="RichEdit历史框"  Pos = "6,86,456,193" Font = "宋体" Align = "L" Height = "12" ReadOnly = '1'/>		
+	
+
+	<Element Type = "SwithButton" Name="SB发送后关闭窗口"  Pos = "15,402,200,14" Visible = '1'>
+				<Image  OnNormal="..\..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					  OnHover="..\..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					  OffNormal="..\..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					  OffHover="..\..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					  Disable="..\..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"
+					  />
+	</Element>
+	<Element Type = "String" Name = "Text提示"  Text="쪽지를 통한 운영자사칭에 유의해주시기 바랍니다!" Pos = "18,470,385,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Anchor_LTRBC="11000"   Visible = '1'/>
+	
+	<Element Type = "String" Text = "발송후 창닫기"  Name = "Static" Pos = "34,402,85,14" Font = "宋体" Align = "L" Height = "12"  Visible = '1'/>
+	
+	<Element Type = "SwithButton" Name="SB屏蔽"  Pos = "140,402,35,14" Visible = '1'>
+				<Image  OnNormal="..\..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					  OnHover="..\..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					  OffNormal="..\..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					  OffHover="..\..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					  Disable="..\..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"
+					  />
+	</Element>
+	<Element Type = "String" Text = "차단(재접속시 초기화)" Pos = "158,402,125,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text屏蔽" Anchor_LTRBC="11000" Attach = "SB屏蔽"  Visible = '1'/>
+	
+	<Element Type = "Button"  Name="Btn表情" Pos = "10,280"  >
+		<Image  Normal="chatting_pkg_01.png" Normal_TextColor = "#2b509c" Normal_Pos="90,973,24,24"
+			  Hover="chatting_pkg_01.png"    Hover_TextColor = "#5a80d0" Hover_Pos="90,998,24,24"
+			  Down="chatting_pkg_01.png"     Down_TextColor = "#2b509c" Down_Pos="90,1023,24,24"/>
+	</Element>
+	
+	<Element Type = "Button"  Name="发送" Pos = "363,400"  >
+		<Image  Normal="chatting_pkg_01.png" Normal_TextColor = "#2b509c" Normal_Pos="0,973,65,25"
+			  Hover="chatting_pkg_01.png"    Hover_TextColor = "#5a80d0" Hover_Pos="0,998,65,25"
+			  Down="chatting_pkg_01.png"     Down_TextColor = "#2b509c" Down_Pos="0,1023,65,25"/>
+	</Element>
+	<Element Type = "Button"  Name="发送菜单" Pos = "428,400"  >
+		<Image  Normal="chatting_pkg_01.png" Normal_TextColor = "#2b509c" Normal_Pos="65,973,25,25"
+			  Hover="chatting_pkg_01.png"    Hover_TextColor = "#5a80d0" Hover_Pos="65,998,25,25"
+			  Down="chatting_pkg_01.png"     Down_TextColor = "#2b509c" Down_Pos="65,1023,25,25"/>
+	</Element>
+	<Element Type = "RichEdit" Name="RichEdit输入框"  Pos = "6,306,456,88" Font = "宋体" Align = "L" Height = "12" > 
+		<ScrollBar Name="MyProperty_ScrollBar" Type = "ScrollBar" Pos = "0,0" Visible = '0'>
+			<!-- 向上箭头-->
+			<Element Name="VScrollBarUpArrow" Type = "Button">
+				<Image  Normal="VScrollBarUpArrowNormal.bmp"
+					  Down="VScrollBarUpArrowDown.bmp"
+					  Hover="VScrollBarUpArrowUp.bmp"/>
+			</Element>
+			<!--滑槽-->
+			<Element Name="Span" Type = "Panel">
+				<Image Background = "VScrollBarSpanNormal.bmp"/>
+			</Element>
+			<!-- 滑块-->
+			<Element Name="VScrollBarThumb" Type = "Button">
+				<Image  Normal="VScrollBarThumbNormal.bmp"
+					  Down="VScrollBarThumbDown.bmp"
+					  Hover="VScrollBarThumbUp.bmp"/>
+			</Element>
+
+			<!-- 向下箭头-->
+			<Element Name="VScrollBarDownArrow" Type = "Button">
+				<Image  Normal="VScrollBarDownArrowNormal.bmp"
+					  Down="VScrollBarDownArrowDown.bmp"
+					  Hover="VScrollBarDownArrowUp.bmp"/>
+			</Element>
+
+		</ScrollBar>
+	</Element>
+
+</root>

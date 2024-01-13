@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "297,193" NoActivate="1"> 	
+	<Element Name="TitleBar" Type = "Panel" Pos = "0,0,297,193">	
+	</Element>
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">			
+		<Image  Background = "RedEnvelope\notice_back_small.png"/>
+	</Element>
+	
+	<!-- 头像边框及头像 -->
+	<Element Type = "Image" Name="HeadImgFrame"  Pos = "119,10" Visible = "1">
+		<Image  Background = "RedEnvelope\image_notxt.png" Pos = "720,0,59,64"/>
+	</Element>
+	<Element Type = "AnimalImage" Name="HeadImage"  Pos = "121,12,55,60" Stretching = "1" Visible = '1'>
+	</Element>
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="btnClose"  Pos = "270,6">
+		<Image  Normal="RedEnvelope\notice_notxt.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,21,19"
+				Hover="RedEnvelope\notice_notxt.png"   Hover_TextColor = "#666666" Hover_Pos="21,0,21,19"
+				Down="RedEnvelope\notice_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="42,0,21,19"/>
+	</Element>
+	
+	<!--xx发了一个红包-->	
+	<Element Type = "String" Text = "--------" Pos = "0,95,297,22" Font = "宋体" Align = "C" Height = "14" TextColor = "#FFBC80" Name = "PromptTxt"/>
+	
+	<!--领取按钮-->
+	<Element Type = "Button" Name="btnReceive"  Pos = "92,130" Anchor_LTRBC="00000">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "16" Bold="1"/>
+		<Image  Normal="RedEnvelope\notice_notxt.png"  Normal_TextColor = "#ffffff" Normal_Pos="0,19,107,36"
+				Hover="RedEnvelope\notice_notxt.png"   Hover_TextColor = "#ffffff" Hover_Pos="0,55,107,36"
+				Down="RedEnvelope\notice_notxt.png"    Down_TextColor = "#ffffff" Down_Pos="0,91,107,36"/>
+	</Element>	
+	
+	<!--当天不再提示框-->
+	<Element Type = "SwithButton" Name="CheckBox"  Pos = "5,175,200,14" Visible = '1'>
+				<Image  OnNormal="button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					  OnHover="button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					  OffNormal="button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					  OffHover="button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					  Disable="button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"
+					  />
+		</Element>	
+	<Element Type = "String" Text = "------"  Name = "CheckBoxText" Pos = "24,175,200,14" Font = "黑体" Align = "L" Height = "12" TextColor = "#ff7373"  Visible = '1'/>
+
+</root>

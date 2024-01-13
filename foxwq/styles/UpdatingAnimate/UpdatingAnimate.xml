@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "660,290" > 
+	<Image Name = "Top" ImageFile = "lvup_bg.png" Sound = "LEVELUP.wav"/>
+	<NumberPic Name = "Num1" ImageFile = "lvup_num.png"  Pos = '0,65,130,195,260,325,390,455,520,585,650'/>
+	<Image Name = "Duan" ImageFile = "dj_01.png" />
+	<Image Name = "Ji" ImageFile = "dj_02.png"/>
+	<Region Name = 'Duan' Pos = "365,105"/>
+	<Region Name = 'DuanNumber' Pos = "300,79"/>
+</root>

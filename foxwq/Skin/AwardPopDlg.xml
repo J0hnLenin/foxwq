@@ -1,0 +1,25 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "476,291"> 
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<!--背景图片-->
+		<Image  Background = "AwardPopDlg\back.png"/>
+		
+		<!--标题文字-->
+		<Element Type = "String" Text = "----" Pos = "6,6,464,45" Font = "黑体" Align = "C" Height = "24" TextColor = "#E6D551" TextShadow="1" Bold="1" Name = "TitleTxt"/>
+
+		<!-- 内容文字 -->	
+		<Element Type = "String" Text = "----" Pos = "200,50,250,184" Font = "宋体" Align = "L" Height = "20" TextColor = "#FFE280" Name = "PromptTxt" TextShadow="1"  MultiLine="1" MultiVCenter="1" Bold="1" Visible="1"/>
+				
+		<!--确定按钮-->
+		<Element Type = "Button" Name="BtnOK" Pos = "189,242">
+			<Element Type="String"  Name = "BtnText" Text = "--" Font = "黑体" Height = "20" Bold="0"/>
+			<Image  Normal="Task\Task.png"  Normal_Pos="156,38,98,38"  Normal_TextColor = "#6A2D00"
+					Hover="Task\Task.png" Hover_Pos="156,76,98,38"  Hover_TextColor = "#6A2D00"
+					Down="Task\Task.png"  Down_Pos="156,114,98,38"  Down_TextColor = "#6A2D00"
+					Disable="Task\Task.png"  Disable_Pos="156,0,98,38"  Disable_TextColor  = "#6A2D00"
+					/>
+		</Element>	
+	
+	</Element>
+</root>
+

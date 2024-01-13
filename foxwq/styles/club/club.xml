@@ -1,0 +1,749 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "760,565"> 
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">	
+		<Image  Background = "club_pkg_01.png" Pos="0,0,760,565"/>
+
+		<Element Type = "Image" Name="主背景1" Pos = "0,0" Visible = "1">
+			<Image  Background = "club_pkg_01.png" Pos="0,573,760,557"/>
+		</Element>
+		
+		<Element Type = "Button" Name="BtnClose"  Pos = "704,11" >
+			<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff"   Normal_Pos="540,1424,48,20"
+				  Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"   Hover_Pos="540,1456,48,20"
+				  Down="club_pkg_01.png"      Down_TextColor = "#91eeff"   Down_Pos="540,1488,48,20"
+					Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="" />
+		</Element>
+
+			<!--我的棋友会面板-->	
+		<Element Type = "Panel" Name="Panel我的棋友会" Pos = "0,85,760,480" Anchor_LTRBC="11110">	
+			<!--左侧工具栏-->
+			<Element Type="String"  Name = "Str棋友会名称" Text = "棋友会名称" Font = "微软雅黑"  TextColor = "#fcbd66" TextMask = "textmask3.png"
+				Pos = "70,53,105,20" Height= "20" Bold ='1' TransRender="0"  Align = "R"/>
+	
+			<Element Type="String"  Name = "Lable职称" Text = "会长" Font = "宋体"  TextColor = "#ff7e00" Align = "R"
+				Pos = "70,154,105,20" Height= "14" Bold ='0' TransRender="0" />	
+				
+			<Element Type="String"  Name = "Str昵称" Text = "用户名昵称 9段" Font = "宋体"  TextColor = "#ffb56d" Align = "R"
+				Pos = "70,174,105,20" Height= "12" Bold ='0' TransRender="0" />	
+
+			<Element Type="String"  Name = "Lable总人数" Text = "总人数" Font = "宋体"  TextColor = "#ff7e00" Align = "R"
+				Pos = "70,200,105,20" Height= "14" Bold ='0' TransRender="0" />				
+			
+			<Element Type="String"  Name = "Str总人数" Text = "10,000" Font = "宋体"  TextColor = "#ffb56d" Align = "R"
+				Pos = "70,221,105,20" Height= "12" Bold ='0' TransRender="0" />	
+				
+			<Element Type="String"  Name = "Lable活跃度" Text = "活跃度" Font = "宋体"  TextColor = "#ff7e00" Align = "R"
+				Pos = "70,246,105,20" Height= "14" Bold ='0' TransRender="0" />	
+
+			<Element Type="String"  Name = "Str活跃度" Text = "100" Font = "宋体"  TextColor = "#ffb56d" Align = "R"
+				Pos = "70,267,105,20" Height= "12" Bold ='0' TransRender="0" />	
+
+			<Element Type="String"  Name = "Lable基金" Text = "基金" Font = "宋体"  TextColor = "#ff7e00" Align = "R"
+				Pos = "70,292,105,20" Height= "14" Bold ='0' TransRender="0" />	
+			
+			<Element Type="String"  Name = "Str基金" Text = "100,000" Font = "宋体"  TextColor = "#ffb56d" Align = "R"
+				Pos = "70,314,105,20" Height= "12" Bold ='0' TransRender="0" />	
+				
+			<!--<Element Type="String"  Name = "Lable" Text = "基金" Font = "宋体"  TextColor = "#ff7e00" Align = "R"
+				Pos = "70,336,105,20" Height= "14" Bold ='0' TransRender="0" />	
+			
+			<Element Type="String"  Name = "Str基金" Text = "1,000亿" Font = "宋体"  TextColor = "#ffb56d" Align = "R"
+				Pos = "70,358,105,20" Height= "12" Bold ='0' TransRender="0" />-->	
+			
+			<Element Type="String"  Name = "Lable成立时间" Text = "成立时间" Font = "宋体"  TextColor = "#ff7e00" Align = "R"
+				Pos = "70,383,105,20" Height= "14" Bold ='0' TransRender="0" />	
+				
+			<Element Type="String"  Name = "Str成立时间" Text = "2013年5月21日" Font = "宋体"  TextColor = "#ffb56d" Align = "R"
+				Pos = "35,405,141,20" Height= "12" Bold ='0' TransRender="0" />		
+				
+			<Element Type = "Button" Name="Btn设置"  Pos = "29,342,50,20" >
+				<Element Type="String"  Name = "StrBtn设置" Text = "$设置" Font = "宋体" Height	= "13" TransRender="0"/>
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="745,1250,40,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9" Hover_Pos="745,1270,40,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9" Down_Pos="745,1290,40,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="745,1310,40,20" />
+			</Element>
+			<Element Type = "Button" Name="Btn基金"  Pos = "29,342,50,20" >
+				<Element Type="String"  Name = "StrBtn基金" Text = "$基金" Font = "宋体" Height	= "13" TransRender="0"/>
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="745,1250,40,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9" Hover_Pos="745,1270,40,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9" Down_Pos="745,1290,40,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="745,1310,40,20" />
+			</Element>
+			
+			<Element Type = "Button" Name="Btn捐赠"  Pos = "77,342,50,20" >
+				<Element Type="String"  Name = "StrBtn捐赠" Text = "捐赠" Font = "宋体" Height	= "13" TransRender="0" />
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff" Normal_Pos="745,1130,40,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"   Hover_Pos="745,1150,40,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#91eeff"    Down_Pos="745,1170,40,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="745,1310,40,20" />
+			</Element>
+			
+			<Element Type = "Button" Name="Btn领取"  Pos = "125,342,50,20" >
+				<Element Type="String"  Name = "StrBtn领取" Text = "领取" Font = "宋体" Height	= "13" TransRender="1" />
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff" Normal_Pos="745,1130,40,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"   Hover_Pos="745,1150,40,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#91eeff"    Down_Pos="745,1170,40,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="745,1310,40,20" />
+			</Element>
+			
+			<!--首页-->
+			<Element Type = "Panel" Name="Panel我的棋友会首页" Pos = "186,33,527,384" Anchor_LTRBC="11110">	
+				<Element Type = "Image" Name="Img棋友会公告"  Anchor_LTRBC="111000" Visible = "1">
+					<Image  Background = "club_pkg_01.png" Pos="0,1130,531,400"/>
+				</Element>
+				<Element Type = "Image" Name="Icon"  Pos = "11,15,90,75" Anchor_LTRBC="11100" Visible = "1" Stretching ="1">
+						<Image  Background = "" />
+				</Element>
+				<Element Type="String"  Name = "Str简介" Pos = "120,15,400,84" Text = "" Font = "宋体" Height	= "12" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+  				<Element Type = "Button" Name="Btn修改图标"  Pos = "120,70" >
+				<Element Type="String"  Name = "StrBtn修改图标" Text = "修改图标" Font = "宋体" Height	= "13" TransRender="1"/>
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff"  Normal_Pos="540,1130,84,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"    Hover_Pos="540,1150,84,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#91eeff"   Down_Pos="540,1170,84,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20" />
+				</Element>
+				<Element Type = "Button" Name="Btn进入论坛"  Pos = "441,70" >
+				<Element Type="String"  Name = "StrBtn进入论坛" Text = "进入论坛" Font = "宋体" Height	= "13" TransRender="1"/>
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff"  Normal_Pos="540,1130,84,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"    Hover_Pos="540,1150,84,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#91eeff"   Down_Pos="540,1170,84,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20" />
+				</Element>
+				<Element Type = "Button" Name="Btn编辑公告"  Pos = "441,128" >
+				<Element Type="String"  Name = "StrBtn编辑公告" Text = "编辑公告" Font = "宋体" Height	= "13" TransRender="0"/>
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff"  Normal_Pos="540,1130,84,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"    Hover_Pos="540,1150,84,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#91eeff"   Down_Pos="540,1170,84,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20" />
+				</Element>
+				<Element Type="String"  Name = "Str公告日期" Pos = "392,376,461,225" Text = "2013.5.23 16:16" Font = "宋体" Height	= "12" TransRender="0" TextColor = "#737373" MultiLine='1'/>
+				<Element Type="String"  Name = "Str公告" Pos = "30,150,461,225" Text = "" 
+				Font = "宋体" Height	= "16" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+  
+			</Element><!--首页-->
+			
+
+			
+			<!--Begin Of 成员列表-->
+			<Element Type = "Panel" Name="Panel成员列表" Pos = "186,47,527,427" Anchor_LTRBC="11110">	
+				<!--Begin of ListCtrl-->
+				  <Element Type = "ListCtrl" Name= "ListCtrl成员列表" IgnoreDrawColumnWhenSel = '0'  Pos = "0,0,524,380"  Visible = "1">
+					<HeadCtrl Height = '20' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+
+					<!--Begin of 选中的面板-->
+					<SelectedRow  Pos = "10,0">
+					  <Image  Background = "club_pkg_01.png" Pos="0,1689,524,77"/>
+					  <Element Type = "Button" Name="Btn个人信息"  Pos = "258,40" >
+						<Element Type="String"  Name = "StrBtn个人信息" Text = "个人信息" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+										  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+										  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="540,1290,84,20"
+										  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+					  </Element>
+					  <Element Type = "Button" Name="Btn等级"  Pos = "348,40" >
+						<Element Type="String"  Name = "StrBtn等级" Text = "等级" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+										  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+										  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"    Down_Pos="540,1290,84,20"
+										  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+					  </Element>
+					  <Element Type = "Button" Name="Btn踢出"  Pos = "438,40" >
+						<Element Type="String"  Name = "StrBtn踢出" Text = "踢出" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+										  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+										  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"    Down_Pos="540,1290,84,20"
+										  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+					  </Element>
+					</SelectedRow>
+					<!--Begin of 选中的面板-->
+
+					<Row Height = '32' Background = "list_m_b.png" HoverImage = "list_m_c.png"  HoverImageOffset = "-8,-8" ColumnImage = "list_stk_02.png" ColumnImageSelectedRow = "list_stk_01.png"  />
+
+					<Cloumn	Width = '90' Title = "用户名">
+					  <Element Type="String"  Name = "Lable用户名" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '70'  Title = "段位">
+					  <Element Type="String"  Name = "Lable段位" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '70' Title = "职位">
+					  <Element Type="String"  Name = "Lable职位" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '60'  Title = "贡献值">
+					  <Element Type="String"  Name = "Lable活跃度" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '95'  Title = " 捐赠金钱">
+					  <Element Type="String"  Name = "Lable捐赠金钱" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '60' Title = "捐赠道具">
+					  <Element Type="String"  Name = "Lable捐赠道具" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '83' Title = "获取金钱">
+					  <Element Type="String"  Name = "Lable获取金钱" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<!--<Cloumn	Width = '50' Title = "负">
+					  <Element Type="String"  Name = "Lable负" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '60' Title = "状态">
+					  <Element Type="String"  Name = "Lable状态" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>-->
+				  </Element>
+				  <!--End of ListCtrl-->
+
+				  <!--Begin of ListCtrl-->
+				  <Element Type = "ListCtrl" Name= "ListCtrl成员列表2"  IgnoreDrawColumnWhenSel = '0' Pos = "0,0,524,380"  Visible = "1">
+					<HeadCtrl Height = '20' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+
+					<!--Begin of 选中的面板-->
+					<SelectedRow  Pos = "10,0">
+					 <Image  Background = "club_pkg_01.png" Pos="0,1689,524,77"/>
+					  <Element Name="PanelLeftTop" Type = "Image" Pos = "10,32">
+							<Image  Background = "" />
+					</Element>
+					   <Element Type = "Button" Name="Btn个人信息"  Pos = "258,40" >
+						<Element Type="String"  Name = "StrBtn个人信息" Text = "个人信息" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+										  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+										  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"    Down_Pos="540,1290,84,20"
+										  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+					  </Element>
+					  <Element Type = "Button" Name="Btn批准加入"  Pos = "348,40" >
+						<Element Type="String"  Name = "StrBtn批准加入" Text = "批准加入" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+										  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+										  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"    Down_Pos="540,1290,84,20"
+										  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+					  </Element>
+					  <Element Type = "Button" Name="Btn拒绝加入"  Pos = "438,40" >
+						<Element Type="String"  Name = "StrBtn拒绝加入" Text = "拒绝加入" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+										  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+										  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"    Down_Pos="540,1290,84,20"
+										  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+					  </Element>
+					</SelectedRow>
+					<!--Begin of 选中的面板-->
+
+					<Row Height = '32' Background = "list_m_b.png" HoverImage = "list_m_c.png"  HoverImageOffset = "-8,-8" ColumnImage = "list_stk_02.png" ColumnImageSelectedRow = "list_stk_01.png"  />
+
+					<Cloumn	Width = '90' Title = "用户名">
+					  <Element Type="String"  Name = "Lable用户名" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '70'  Title = "段位">
+					  <Element Type="String"  Name = "Lable段位" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '70' Title = "职位">
+					  <Element Type="String"  Name = "Lable职位" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '60'  Title = "贡献值">
+					  <Element Type="String"  Name = "Lable活跃度" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '95'  Title = " 捐赠金钱">
+					  <Element Type="String"  Name = "Lable捐赠金钱" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '60' Title = "捐赠道具">
+					  <Element Type="String"  Name = "Lable捐赠道具" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '83' Title = "获取金钱">
+					  <Element Type="String"  Name = "Lable获取金钱" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<!--<Cloumn	Width = '50' Title = "负">
+					  <Element Type="String"  Name = "Lable负" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>
+					<Cloumn	Width = '60' Title = "状态">
+					  <Element Type="String"  Name = "Lable状态" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+					</Cloumn>-->
+				  </Element>
+				  <!--End of ListCtrl-->
+
+				  <!--TabCtrl 切换ListCtrl-->                                <!---->    
+				  <Element Type = "TabCtrl" Name= "TabCtrl会员标签页" Pos = "0,393,600,40" Align = "L" Interval = '3' >
+					<Item Name = "List1" ReleventElement = "ListCtrl成员列表" Visible = '1'
+					  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="695,1250,50,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"  Hover_Pos="695,1270,50,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" >
+					  <Element Type="String"  Name = "List1" Text = "正常" Font = "宋体" Height	= "12" TransRender="0"/>
+					</Item>
+					<Item Name = "List2"  Visible = '1'  ReleventElement = "ListCtrl成员列表2"
+					  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="695,1250,50,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"  Hover_Pos="695,1270,50,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" >
+					  <Element Type="String"  Name = "List2" Text = "待审核" Font = "宋体" Height	= "12" TransRender="0"/>
+					</Item>
+					<ActiveImage
+					  ActiveNormal="club_pkg_01.png"  ActiveNormal_TextColor = "#ffdebb" ActiveNormal_Pos="695,1190,50,20"
+					  ActiveHover="club_pkg_01.png"   ActiveHover_TextColor = "#ffdebb" ActiveHover_Pos="695,1210,50,20"
+					  ActiveDown="club_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_pos="695,1230,50,20" />
+				  </Element>
+				  <!--TabCtrl ListCtrl-->
+
+				   <!--前页后页-->
+				   <Element Type = "Button" Name="Btn首页"  Pos = "260,393,32,20">
+						<Element Type="String"  Name = "StrBtn首页" Text = "<<" Font = "宋体" Height	= "13" TransRender="0"/>
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="695,1290,50,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="695,1310,50,20" />
+					</Element>
+					<Element Type = "Button" Name="Btn上一页"  Pos = "295,393,32,20">
+						<Element Type="String"  Name = "StrBtn上一页" Text = "<" Font = "宋体" Height	= "13" TransRender="0"/>
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="695,1290,50,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="695,1310,50,20" />
+					</Element>
+					<Element Type = "Button" Name="Btn下一页"  Pos ="330,393,32,20" >
+						<Element Type="String"  Name = "StrBtn下一页" Text = ">" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="695,1290,50,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="695,1310,50,20" />
+					</Element>
+					<Element Type = "Button" Name="Btn末页"  Pos ="365,393,32,20" >
+						<Element Type="String"  Name = "StrBtn末页" Text = ">>" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="695,1290,50,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="695,1310,50,20" />
+					</Element>
+					
+					<!-- 输入框	搜索按钮 -->
+					<Element Type = "Image" Name="输入框"  Pos = "105,390"  Visible = '1'>
+						<Image  Background = "searchbar.png" />
+					</Element>
+					<Element Type = "Button" Name="Btn搜索"  Pos = "201,392">
+					<Image 
+						Normal="searchbtn_pkg_01.png"  Normal_Pos = "0,0,52,21"
+						Hover="searchbtn_pkg_01.png"  Hover_Pos = "0,21,52,21"
+						Down="searchbtn_pkg_01.png"      Down_Pos = "0,42,52,21"  />
+					</Element>
+					<Element Type = "Edit" Name="Edit会员名"  Pos = "108,391,100, 23" Font = "宋体" Align = "L" Height = "16" Border = "0" TextColor = "#FFFFFF" ReadOnly = '0'/>
+
+				  <Element Type="String"  Name = "Str页数" Pos = "395,395,150,20" Text = ""
+							Font = "宋体" Height	= "13" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+					<!--前页后页-->
+
+			</Element>
+			<!--End Of 成员列表-->
+
+			<!--TabCtrl 我的棋友会标签页-->
+			<Element Type = "TabCtrl" Name= "TabCtrl我的棋友会标签页" Pos = "160,5,600,40" Align = "L" Interval = '10' >
+			<Item Name = "首页" ReleventElement = "Panel我的棋友会首页" Visible = '1'
+				Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+				Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+				Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="540,1290,84,20">
+				<Element Type="String"  Name = "Str首页" Text = "首页" Font = "宋体" Height	= "14" TransRender="0"/>
+			</Item>
+			<Item Name = "成员列表"  Visible = '1' ReleventElement = "Panel成员列表"
+				Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+				Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+				Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="540,1290,84,20">
+				<Element Type="String"  Name = "Str成员列表" Text = "成员列表" Font = "宋体" Height	= "14" TransRender="0"/>
+			</Item>
+			<Item Name = "仓库"  Visible = '1'
+				Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="540,1250,84,20"
+				Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="540,1270,84,20"
+				Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="540,1290,84,20">
+				<Element Type="String"  Name = "Str仓库" Text = "仓库" Font = "宋体" Height	= "14" TransRender="0"/>
+			</Item>
+			<ActiveImage
+				ActiveNormal="club_pkg_01.png"  ActiveNormal_TextColor = "#ffdebb"  ActiveNormal_Pos="540,1190,84,20"
+				ActiveHover="club_pkg_01.png"   ActiveHover_TextColor = "#ffdebb" ActiveHover_Pos="540,1210,84,20"
+				ActiveDown="club_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="540,1230,84,20"/>	
+				
+			</Element><!--TabCtrl 我的棋友会标签页-->
+			<Element Type = "Button" Name="Btn退出棋友会"  Pos = "80,440"  >
+				<Element Type="String"  Name = "StrBtn退出棋友会" Text = "退出棋友会" Font = "宋体" Height	= "14" TransRender="0" />
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#ffdebb"  Normal_Pos="540,1190,84,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#ffdebb"  Hover_Pos="540,1210,84,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#ffdebb"   Down_Pos="540,1230,84,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+			</Element>
+			<Element Type = "Button" Name="Btn我的棋友会"  Pos = "625,5"  >
+				<Element Type="String"  Name = "StrBtn我的棋友会" Text = "我的棋友会" Font = "宋体" Height	= "14" TransRender="0" />
+				<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#ffdebb"  Normal_Pos="540,1190,84,20"
+					  Hover="club_pkg_01.png"  Hover_TextColor = "#ffdebb"  Hover_Pos="540,1210,84,20"
+					  Down="club_pkg_01.png"      Down_TextColor = "#ffdebb"   Down_Pos="540,1230,84,20"
+					  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="540,1310,84,20"/>
+			</Element>
+		</Element><!--我的棋友会面板-->
+
+			
+		<!--Begin of 棋友会列表-->
+		<Element Type = "Panel" Name="Panel棋友会列表" Pos = "0,0,760,565" Anchor_LTRBC="11110">				
+			<Image  Background = "club_pkg_01.png" Pos="0,0,760,565"/>
+			
+			<!--Begin of ListCtrl1-->
+			<Element Type = "ListCtrl" Name= "ListCtrl棋友会列表"  IgnoreDrawColumnWhenSel = '0'  Pos = "63,98,662,540"  >
+				<HeadCtrl Height = '20' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+				
+				<!--Begin of 选中的面板-->
+				<SelectedRow  Pos = "62,0">
+					<Image  Background = "club_pkg_01.png" Pos="0,1530,662,82"/>
+					<Element Type = "Image" Name="Icon"  Pos = "55,30,57,44" Anchor_LTRBC="111000" Visible = "1" Stretching ="1">
+						<Image  Background = "" />
+					</Element>
+					
+					<Element Type="String"  Name = "Str棋友会简介" Pos = "127,30,337,43" Text = "" 
+							Font = "宋体" Height	= "12" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+			
+					<Element Type = "Button" Name="Btn加入棋友会"  Pos = "505,30" >
+						<Element Type="String"  Name = "StrBtn加入棋友会" Text = "加入" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"    Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+					</Element>
+					<Element Type = "Button" Name="Btn封停棋友会"  Pos = "580,30" >
+						<Element Type="String"  Name = "StrBtn封停棋友会" Text = "封停" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"    Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+					</Element>
+					<Element Type = "Button" Name="Btn查看棋友会"  Pos = "505,55" >
+						<Element Type="String"  Name = "StrBtn查看棋友会" Text = "查看" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"    Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+					</Element>
+					<Element Type = "Button" Name="Btn查看基金"  Pos = "580,55" >
+						<Element Type="String"  Name = "StrBtn查看基金" Text = "$基金" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"    Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+					</Element>
+					<Element Type = "Button" Name="Btn修改基金"  Pos = "425,55" >
+						<Element Type="String"  Name = "StrBtn修改基金" Text = "$修改基金" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"    Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+					</Element>
+				</SelectedRow>
+				<!--Begin of 选中的面板-->
+				
+				<Row Height = '32' Background = "list_b.png" HoverImage = "list_c.png"  HoverImageOffset = "-8,-8" ColumnImage = "list_stk_02.png" ColumnImageSelectedRow = "list_stk_01.png"  />
+			
+				<!--<Cloumn	Width = '50' Title = "等级">				
+					<Element Type="Image" Pos = "17,7" />
+					<Element Type="Image" Pos = "16,12" />
+				</Cloumn>-->
+				<Cloumn	Width = '38' >
+					<Element Type="Image" Pos = "11,13"/>
+				</Cloumn>
+				<Cloumn	Width = '120'  Title = "棋友会名称">
+					<Element Type="String"  Name = "Lable棋友会名称" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+				</Cloumn>
+				<Cloumn	Width = '130' Title = "会长">
+					<Element Type="String"  Name = "Lable会长" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+				</Cloumn>
+				<Cloumn	Width = '90'  Title = "会员数">
+					<Element Type="String"  Name = "Lable会员数" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+				</Cloumn>
+				<Cloumn	Width = '82'  Title = "活跃度">
+					<Element Type="String"  Name = "Lable活跃度" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+				</Cloumn>
+				<Cloumn	Width = '100' Title = "基金">
+					<Element Type="String"  Name = "Lable基金" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+				</Cloumn>
+				<Cloumn	Width = '100' Title = "成立时间">
+					<Element Type="String"  Name = "Lable成立时间" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+				</Cloumn>
+			</Element>
+			<!--End of ListCtrl1-->
+
+      <!--Begin of ListCtrl2-->
+      <Element Type = "ListCtrl" Name= "ListCtrl棋友会列表2"  IgnoreDrawColumnWhenSel = '2' Pos = "63,98,662,540"  Visible = "0" >
+        <HeadCtrl Height = '20' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+
+        <!--Begin of 选中的面板-->
+        <SelectedRow  Pos = "0,0">
+          <Image  Background = "club_pkg_01.png" Pos="0,1530,662,82"/>
+          <Element Type = "Image" Name="Icon"  Pos = "55,30,57,44" Anchor_LTRBC="111000" Visible = "1" Stretching ="1">
+            <Image  Background = "" />
+          </Element>
+
+          <Element Type="String"  Name = "Str棋友会简介" Pos = "127,30,337,43" Text = ""
+							Font = "宋体" Height	= "12" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+
+		  <Element Type = "Button" Name="Btn加入预审棋友会"  Pos = "505,30" >
+			<Element Type="String"  Name = "StrBtn加入预审棋友会" Text = "加入" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+		  </Element>
+		  <Element Type = "Button" Name="Btn查看棋友会"  Pos = "580,30" >
+						<Element Type="String"  Name = "StrBtn查看棋友会" Text = "查看" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+		  </Element>
+          <Element Type = "Button" Name="Btn批准"  Pos = "505,55" >
+            <Element Type="String"  Name = "StrBtn批准" Text = "批准" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+          </Element>
+		  <Element Type = "Button" Name="Btn拒绝"  Pos = "580,55" >
+            <Element Type="String"  Name = "StrBtn拒绝" Text = "拒绝" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+          </Element>
+
+        </SelectedRow>
+        <!--Begin of 选中的面板-->
+
+        <Row Height = '32' Background = "list_b.png" HoverImage = "list_c.png"  HoverImageOffset = "-8,-8" ColumnImage = "list_stk_02.png" ColumnImageSelectedRow = "list_stk_01.png"  />
+
+       <!-- <Cloumn	Width = '50' Title = "等级">
+          <Element Type="Image" Pos = "17,7" />
+          <Element Type="Image" Pos = "16,12" />
+        </Cloumn>-->
+        <Cloumn	Width = '38' >
+          <Element Type="Image" Pos = "11,13"/>
+        </Cloumn>
+        <Cloumn	Width = '120'  Title = "棋友会名称">
+          <Element Type="String"  Name = "Lable棋友会名称" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '130' Title = "会长">
+          <Element Type="String"  Name = "Lable会长" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '100'  Title = "会员数">
+          <Element Type="String"  Name = "Lable会员数" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '92'  Title = "活跃度">
+          <Element Type="String"  Name = "Lable活跃度" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '80' Title = "基金">
+          <Element Type="String"  Name = "Lable基金" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '100' Title = "成立时间">
+          <Element Type="String"  Name = "Lable成立时间" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+      </Element>
+      <!--End of ListCtrl2-->
+
+      <!--Begin of ListCtrl3-->
+      <Element Type = "ListCtrl" Name= "ListCtrl棋友会列表3" IgnoreDrawColumnWhenSel = '2'  Pos = "63,98,662,540"  Visible = "0">
+        <HeadCtrl Height = '20' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+
+        <!--Begin of 选中的面板-->
+        <SelectedRow  Pos = "0,0">
+          <Image  Background = "club_pkg_01.png" Pos="0,1530,662,82"/>
+          <Element Type = "Image" Name="Icon"  Pos = "55,30,57,44" Anchor_LTRBC="111000" Visible = "1" Stretching ="1">
+            <Image  Background = "DefIco.bmp" />
+          </Element>
+
+          <Element Type="String"  Name = "Str棋友会简介" Pos = "127,30,337,43" Text = ""
+							Font = "宋体" Height	= "12" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+
+          <!--<Element Type = "Button" Name="Btn解封"  Pos = "580,30" >
+            <Element Type="String"  Name = "StrBtn解封" Text = "解封" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_btn4_07.png"  Normal_TextColor = "#d1ffc9"
+							  Hover="club_btn4_08.png"  Hover_TextColor = "#d1ffc9"
+							  Down="club_btn4_09.png"      Down_TextColor = "#d1ffc9" 
+							  Disable="club_btn4_n.png"      Disable_TextColor  = "#a1a1a1"/>
+          </Element>-->
+		  <Element Type = "Button" Name="Btn查看棋友会"  Pos = "505,40" >
+						<Element Type="String"  Name = "StrBtn查看棋友会" Text = "查看" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+		  </Element>
+        </SelectedRow>
+        <!--Begin of 选中的面板-->
+
+        <Row Height = '32' Background = "list_b.png" HoverImage = "list_c.png"  HoverImageOffset = "-8,-8" ColumnImage = "list_stk_02.png" ColumnImageSelectedRow = "list_stk_01.png"  />
+
+        <!--<Cloumn	Width = '50' Title = "等级">
+          <Element Type="Image" Pos = "17,7" />
+          <Element Type="Image" Pos = "16,12" />
+        </Cloumn>-->
+        <Cloumn	Width = '38' >
+          <Element Type="Image" Pos = "11,13"/>
+        </Cloumn>
+        <Cloumn	Width = '120'  Title = "棋友会名称">
+          <Element Type="String"  Name = "Lable棋友会名称" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '130' Title = "会长">
+          <Element Type="String"  Name = "Lable会长" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '100'  Title = "会员数">
+          <Element Type="String"  Name = "Lable会员数" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '92'  Title = "活跃度">
+          <Element Type="String"  Name = "Lable活跃度" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '80' Title = "基金">
+          <Element Type="String"  Name = "Lable基金" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '100' Title = "成立时间">
+          <Element Type="String"  Name = "Lable成立时间" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+      </Element>
+      <!--End of ListCtrl3-->
+
+      <!--Begin of ListCtrl4-->
+      <Element Type = "ListCtrl" Name= "ListCtrl棋友会列表4" IgnoreDrawColumnWhenSel = '2'  Pos = "63,98,662,540"  Visible = "0">
+        <HeadCtrl Height = '20' TextColor = "#888888" Font = "宋体" TextHeight = "12"/>
+
+        <!--Begin of 选中的面板-->
+        <SelectedRow  Pos = "0,0">
+          <Image  Background = "club_pkg_01.png" Pos="0,1530,662,82"/>
+          <Element Type = "Image" Name="Icon"  Pos = "55,30,57,44" Anchor_LTRBC="111000" Visible = "1" Stretching ="1">
+            <Image  Background = "DefIco.bmp" />
+          </Element>
+
+          <Element Type="String"  Name = "Str棋友会简介" Pos = "127,30,337,43" Text = ""
+							Font = "宋体" Height	= "12" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+
+		  <Element Type = "Button" Name="Btn查看棋友会"  Pos = "505,40" >
+						<Element Type="String"  Name = "StrBtn查看棋友会" Text = "查看" Font = "宋体" Height	= "13" TransRender="0" />
+						<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9" Normal_Pos="625,1250,70,20"
+							  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="625,1270,70,20"
+							  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"   Down_Pos="625,1290,70,20"
+							  Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="625,1310,70,20"/>
+		  </Element>
+        </SelectedRow>
+        <!--Begin of 选中的面板-->
+
+        <Row Height = '32' Background = "list_b.png" HoverImage = "list_c.png"  HoverImageOffset = "-8,-8" ColumnImage = "list_stk_02.png" ColumnImageSelectedRow = "list_stk_01.png"  />
+
+        <Cloumn	Width = '38' >
+          <Element Type="Image" Pos = "11,13"/>
+        </Cloumn>
+        <Cloumn	Width = '120'  Title = "棋友会名称">
+          <Element Type="String"  Name = "Lable棋友会名称" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '130' Title = "会长">
+          <Element Type="String"  Name = "Lable会长" Text = "" Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '100'  Title = "会员数">
+          <Element Type="String"  Name = "Lable会员数" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '92'  Title = "活跃度">
+          <Element Type="String"  Name = "Lable活跃度" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '80' Title = "基金">
+          <Element Type="String"  Name = "Lable基金" Text = "" Height = '12'  Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+        <Cloumn	Width = '100' Title = "成立时间">
+          <Element Type="String"  Name = "Lable成立时间" Text = ""  Height = '12' Font = "宋体"  TextColor = "#cccccc" Align = "C"/>
+        </Cloumn>
+      </Element>
+      <!--End of ListCtrl4-->
+
+      <!--列-->
+      <!--TabCtrl 切换ListCtrl-->
+      <Element Type = "TabCtrl" Name= "TabCtrl我的棋友会标签页" Pos = "80,525,600,40" Align = "L" Interval = '3' >
+        <Item Name = "List1" ReleventElement = "ListCtrl棋友会列表" Visible = '1'
+          Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+          Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"  Hover_Pos="695,1270,50,20"
+          Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" >
+          <Element Type="String"  Name = "List1" Text = "正常" Font = "宋体" Height	= "12" TransRender="0"/>
+        </Item>
+        <Item Name = "List2"  Visible = '1'  ReleventElement = "ListCtrl棋友会列表2"
+          Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+          Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"  Hover_Pos="695,1270,50,20"
+          Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" >
+          <Element Type="String"  Name = "List2" Text = "待审核" Font = "宋体" Height	= "12" TransRender="0"/>
+        </Item>
+        <Item Name = "List3"  Visible = '1'  ReleventElement = "ListCtrl棋友会列表3"
+          Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+          Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"  Hover_Pos="695,1270,50,20"
+          Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" >
+          <Element Type="String"  Name = "List3" Text = "封停" Font = "宋体" Height	= "12" TransRender="0"/>
+        </Item>
+		<Item Name = "List4"  Visible = '1'  ReleventElement = "ListCtrl棋友会列表4"
+          Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="695,1250,50,20"
+          Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"  Hover_Pos="695,1270,50,20"
+          Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" >
+          <Element Type="String"  Name = "List3" Text = "暂停" Font = "宋体" Height	= "12" TransRender="0"/>
+        </Item>
+        <ActiveImage
+          ActiveNormal="club_pkg_01.png"  ActiveNormal_TextColor = "#ffdebb"  ActiveNormal_Pos="695,1190,50,20"
+          ActiveHover="club_pkg_01.png"   ActiveHover_TextColor = "#ffdebb"  ActiveHover_Pos="695,1210,50,20"
+          ActiveDown="club_pkg_01.png"    ActiveDown_TextColor = "#ffdebb" ActiveDown_Pos="695,1230,50,20" />
+      </Element>	  
+	  <Element Type = "SwithButton" Name="CheckBox"  Pos = "300,527,200,14" Visible = '1'>
+				<Image  OnNormal="checkbox.png"  OnNormal_Pos="0,14,14,14"
+					  OnHover="checkbox.png"  OnHover_Pos="14,14,14,14"
+					  OffNormal="checkbox.png"  OffNormal_Pos="28,14,14,14"
+					  OffHover="checkbox.png"  OffHover_Pos="42,14,14,14"
+					  Disable="checkbox.png"  Disable_Pos="56,14,14,14"
+					  />
+	  </Element>	
+	  <Element Type = "String" Text = "所在地"  Name = "CheckBoxText" Pos = "316,527,200,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#C0C0C0"  Visible = '1'/>
+	  
+      <!--TabCtrl ListCtrl-->
+
+       <!--前页后页-->
+		<Element Type = "Button" Name="Btn上一页"  Pos = "450,525,50,20">
+			<Element Type="String"  Name = "StrBtn上一页" Text = "上一页" Font = "宋体" Height	= "12" TransRender="0"/>
+			<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="695,1250,50,20"
+				  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+				  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" />
+		</Element>
+		
+		<Element Type = "Button" Name="Btn下一页"  Pos ="510,525,50,20" >
+			<Element Type="String"  Name = "StrBtn下一页" Text = "下一页" Font = "宋体" Height	= "12" TransRender="0" />
+			<Image  Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"   Normal_Pos="695,1250,50,20"
+				  Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="695,1270,50,20"
+				  Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"  Down_Pos="695,1290,50,20" />
+		</Element>
+
+	  <Element Type="String"  Name = "Str页数" Pos = "565,527,150,20" Text = ""
+				Font = "宋体" Height	= "13" TransRender="0" TextColor = "#b6b6b6" MultiLine='1'/>
+	    <!--前页后页-->
+
+    </Element>
+    <!--我的棋友会面板-->
+      	<!--End of 棋友会列表-->
+		
+		<!-- Begin of 顶栏标签页-->
+		<Element Type = "TabCtrl" Name= "TabCtrl顶栏标签页" Pos = "0,55,760,40" Align = "C" Interval = '10' >
+			<Item Name = "Btn建立棋友会" Text = "建立棋友会" ReleventElement = "Panel建立棋友会" Visible = '1'
+				Normal="club_pkg_01.png"  Normal_TextColor = "#d1ffc9"  Normal_Pos="700,1553,140,30"
+				Hover="club_pkg_01.png"  Hover_TextColor = "#d1ffc9"   Hover_Pos="700,1583,140,30"
+				Down="club_pkg_01.png"      Down_TextColor = "#d1ffc9"    Down_Pos="700,1613,140,30"
+				Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1" Disable_Pos="700,1643,140,30">
+				<Element Type="String"  Name = "BtnStr建立棋友会" Text = "建立棋友会" Font = "宋体" Height	= "13" TransRender="0" />
+			</Item>
+			<Item Name = "Btn我的棋友会" ReleventElement = "Panel我的棋友会" Visible = '1'
+				Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff"  Normal_Pos="700,1373,140,30"
+				Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"   Hover_Pos="700,1403,140,30"
+				Down="club_pkg_01.png"      Down_TextColor = "#91eeff"  Down_Pos="700,1433,140,30"
+				Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="700,1613,140,30">
+				<Element Type="String"  Name = "BtnStr我的棋友会" Text = "我的棋友会" Font = "宋体" Height	= "13" TransRender="0" />
+			</Item>
+			<Item Name = "Btn棋友会列表" Text = "棋友会列表" ReleventElement = "Panel棋友会列表" Visible = '1'
+				Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff"  Normal_Pos="700,1373,140,30"
+				Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"   Hover_Pos="700,1403,140,30"
+				Down="club_pkg_01.png"      Down_TextColor = "#91eeff"  Down_Pos="700,1433,140,30"
+				Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="700,1613,140,30">
+				<Element Type="String"  Name = "BtnStr棋友会列表" Text = "棋友会列表" Font = "宋体" Height	= "13" TransRender="0" />
+			</Item>
+			<Item Name = "Btn会战列表" Text = "会战列表" 	   ReleventElement = "Panel会战列表"   Visible = '1'
+				Normal="club_pkg_01.png"  Normal_TextColor = "#91eeff"  Normal_Pos="700,1373,140,30"
+				Hover="club_pkg_01.png"  Hover_TextColor = "#91eeff"   Hover_Pos="700,1403,140,30"
+				Down="club_pkg_01.png"      Down_TextColor = "#91eeff"  Down_Pos="700,1433,140,30"
+				Disable="club_pkg_01.png"      Disable_TextColor  = "#a1a1a1"  Disable_Pos="700,1613,140,30">
+				<Element Type="String"  Name = "BtnStr会战列表" Text = "会战列表" Font = "宋体" Height	= "13" TransRender="0" />
+			</Item>
+			<ActiveImage
+				ActiveNormal="club_pkg_01.png"  ActiveNormal_TextColor = "#ffdebb"  ActiveNormal_Pos="700,1463,140,30"
+				ActiveHover="club_pkg_01.png"   ActiveHover_TextColor = "#ffdebb"   ActiveHover_Pos="700,1493,140,30"
+				ActiveDown="club_pkg_01.png"    ActiveDown_TextColor = "#ffdebb"  ActiveDown_Pos="700,1523,140,30"/>
+		</Element>
+		<!-- End of 顶栏标签页-->
+	</Element><!--Main-->
+</root>

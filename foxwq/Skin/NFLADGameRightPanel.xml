@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+		
+	<Element Type = "Button" Name="BtnSkill_FHNP"  Pos = "15,450" Visible = '1'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "15" Name = "" Bold="1" Pos="140,0,30,20"/>
+		<Image  Normal="button\NFLAD_Skill.png"   Normal_Pos="173,0,173,60"   Normal_TextColor = "#000000"
+			    Hover="button\NFLAD_Skill.png"    Hover_Pos="173,60,173,60"    Hover_TextColor = "#ffffff"
+			    Down="button\NFLAD_Skill.png"     Down_Pos="173,120,173,60"     Down_TextColor = "#000000"
+			    Disable="button\NFLAD_Skill.png"  Disable_Pos="173,180,173,60"  Disable_TextColor = "#000000"
+		/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSkill_QSFT"  Pos = "194,450" Visible = '1'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "15" Name = "" Bold="1" Pos="140,0,30,20"/>
+		<Image  Normal="button\NFLAD_Skill.png"   Normal_Pos="346,0,173,60"   Normal_TextColor = "#000000"
+			    Hover="button\NFLAD_Skill.png"    Hover_Pos="346,60,173,60"    Hover_TextColor = "#ffffff"
+			    Down="button\NFLAD_Skill.png"     Down_Pos="346,120,173,60"     Down_TextColor = "#000000"
+			    Disable="button\NFLAD_Skill.png"  Disable_Pos="346,180,173,60"  Disable_TextColor = "#000000"
+		/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSkill_YHJM"  Pos = "15,512" Visible = '1'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "15" Name = "" Bold="1" Pos="140,0,30,20"/>
+		<Image  Normal="button\NFLAD_Skill.png"   Normal_Pos="519,0,173,60"   Normal_TextColor = "#000000"
+			    Hover="button\NFLAD_Skill.png"    Hover_Pos="519,60,173,60"    Hover_TextColor = "#ffffff"
+			    Down="button\NFLAD_Skill.png"     Down_Pos="519,120,173,60"     Down_TextColor = "#000000"
+			    Disable="button\NFLAD_Skill.png"  Disable_Pos="519,180,173,60"  Disable_TextColor = "#000000"
+		/>
+	</Element>
+	
+	<Element Type = "Button" Name="BtnSkill_DZXY"  Pos = "194,512" Visible = '1'>
+		<Element Type="String" Text = "" Font = "宋体" Height = "15" Name = "" Bold="1" Pos="140,0,30,20"/>
+		<Image  Normal="button\NFLAD_Skill.png"   Normal_Pos="0,0,173,60"   Normal_TextColor = "#000000"
+			    Hover="button\NFLAD_Skill.png"    Hover_Pos="0,60,173,60"    Hover_TextColor = "#ffffff"
+			    Down="button\NFLAD_Skill.png"     Down_Pos="0,120,173,60"     Down_TextColor = "#000000"
+			    Disable="button\NFLAD_Skill.png"  Disable_Pos="0,180,173,60"  Disable_TextColor = "#000000"
+		/>
+	</Element>
+
+</root>

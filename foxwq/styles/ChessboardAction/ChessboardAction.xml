@@ -1,0 +1,633 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "730,55"> 
+	<Element Name="ChessboardActionBackground" Type = "Panel" Pos = "0,0,750,65" Stretching = '1' >	
+		<Element Name="ChessboardAction" Type = "Panel" Pos = "0,0,750,65" >	
+		<Element Name="ChessboardActionPanelTop" Type = "Panel" Pos = "35,0,750,65" >		
+			<Element Type = "Button" Name = "m_gotoBegin"  Pos = "46,3,41,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "0,0,40,30"
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "0,30,40,30"
+				 Down="btn_player_pkg_01.png" Down_Pos = "0,60,40,30"
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "0,90,40,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_fastBackward"  Pos = "87,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "40,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "40,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "40,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "40,90,35,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_backward"  Pos = "122,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "75,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "75,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "75,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "75,90,35,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_forward"  Pos = "157,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "110,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "110,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "110,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "110,90,35,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_fastForward"  Pos = "192,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "145,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "145,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "145,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "145,90,35,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_gotoEnd"  Pos = "227,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "180,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "180,30,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "180,60,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "180,90,35,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_roundBoxBack"  Pos = "262,3,35,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "215,0,35,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "215,0,35,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "215,0,35,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "215,90,35,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_gotoRound"  Pos = "297,3,39,30">
+				<Image  Normal="btn_player_pkg_01.png" Normal_Pos = "250,0,40,30" 
+				 Hover="btn_player_pkg_01.png" Hover_Pos = "250,30,40,30" 
+				 Down="btn_player_pkg_01.png" Down_Pos = "250,60,40,30" 
+				 Disable="btn_player_pkg_01.png" Disable_Pos = "250,90,40,30"/>  
+			</Element>
+			
+			<!-- 对局申请 -->
+			 <Element Type = "Button" Name = "m_gameRequest"  Pos = "535,3,85,30">
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_Pos = "0,30,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_Pos = "85,30,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_Pos = "170,30,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_Pos = "255,30,85,30"/>  
+			</Element>
+			
+			<!-- 新框架飞刀模式选场 -->
+			<Element Type = "Button" Name = "m_NFSelectField"  Pos = "388,3,80,30" Visible = '0'>
+				 <Element Type="String" Text = "选场" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<!-- 新框架飞刀模式重新匹配 -->
+			<Element Type = "Button" Name = "m_NFRematchGame"  Pos = "464,3,80,30" Visible = '0'>
+				 <Element Type="String" Text = "重新匹配" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<!-- 新框架对局续战 -->
+			<Element Type = "Button" Name = "m_NFContinueGame"  Pos = "540,3,80,30" Visible = '0'>
+				 <Element Type="String" Text = "续战" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			 <Element Type = "Button" Name = "m_beginReplay"  Pos = "454,3,85,30">
+				 <Element Type="String" Text = "复盘开始" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_inputResult"  Pos = "455,34,85,30">
+				 <Element Type="String" Text = "判定胜负" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_startGo"  Pos = "536,34,85,30">
+				 <Element Type="String" Text = "开始对局" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_beginTry"  Pos = "46,34,85,30">
+				 <Element Type="String" Text = "开始试下" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_endTry"  Pos = "46,34,85,30">
+				 <Element Type="String" Text = "结束试下" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_retry"  Pos = "127,34,85,30">
+				 <Element Type="String" Text = "重新试下" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_autoNav"  Pos = "335,3,38,30">
+				 <Element Type="String" Text = "自动" Font = "宋体" Height	= "13" Name = "m_autoNavText"/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_openAudio"  Pos = "373,3,85,30">
+				 <Element Type="String" Text = "语音常开" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_closeAudio"  Pos = "373,3,85,30">
+				 <Element Type="String" Text = "关闭常开" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>			
+
+			<Element Type = "RideoBtn" Name= "m_roomMode" Pos = "620,5,100,45" Visible = '1'>
+				<Element Type = "String" Text = "讲解模式" Pos = "20,5,80,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text多人模式" Anchor_LTRBC="11000" />
+				<Item Name = "RideoBtn_Item多人模式" Pos = "5,5,50,15"
+					Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+					Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+					Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14"
+					  Disable="\skin\button\checkbox_pkg_01.png" Disable_Pos="56,0,14,14">
+				</Item>			
+				
+				<Element Type = "String" Text = "音乐模式" Pos = "20,34,80,15" Font = "宋体" Align = "L" Height = "12" TextColor = "#333333" Name = "Text音乐模式" Anchor_LTRBC="11000" />
+				<Item Name = "RideoBtn_Item音乐模式" Pos = "5,34,50,15"
+					Normal="..\..\skin\button\checkbox_pkg_01.png" Normal_Pos="0,0,14,14" 
+					Hover="..\..\skin\button\checkbox_pkg_01.png" Hover_Pos="14,0,14,14"
+					Down="..\..\skin\button\checkbox_pkg_01.png" Down_Pos="28,0,14,14"
+					  Disable="\skin\button\checkbox_pkg_01.png" Disable_Pos="56,0,14,14">
+				</Item>			
+				
+				<ActiveImage
+					ActiveNormal="..\..\skin\button\checkbox_pkg_01.png"  ActiveNormal_TextColor = "#e6e6e6" ActiveNormal_Pos="28,0,14,14"
+					ActiveHover="..\..\skin\button\checkbox_pkg_01.png"   ActiveHover_TextColor = "#e6e6e6"  ActiveHover_Pos="28,0,14,14"
+					ActiveDown="..\..\skin\button\checkbox_pkg_01.png"    ActiveDown_TextColor = "#e6e6e6" ActiveDown_Pos="28,0,14,14"
+					ActiveDisable="..\..\skin\button\checkbox_pkg_01.png"    ActiveDisable_TextColor = "#e6e6e6" ActiveDisable_Pos="70,0,14,14"/>	
+			</Element>
+
+
+			<Element Type = "Button" Name = "m_startMusic"  Pos = "373,34,85,30">
+				 <Element Type="String" Text = "开始音乐" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30"
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30"
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30"
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_endMusic"  Pos = "373,34,85,30">
+				 <Element Type="String" Text = "停止音乐" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_audioSet"  Pos = "454,34,85,30">
+				 <Element Type="String" Text = "语音设置" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_endReplay"  Pos = "454,3,85,30">
+				 <Element Type="String" Text = "结束复盘" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_inputRefBranch"  Pos = "535,3,85,30">
+				 <Element Type="String" Text = "插入参考图" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<!--直播房实时语音讲解，看棋玩家客户端开关按钮-->
+			<Element Type = "Button" Name = "m_watchChessOpen"  Pos = "620,3,85,30"  Visible='0'>
+				 <Element Type="String" Text = "实时讲解" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_pkg_color.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_pkg_color.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_pkg_color.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_pkg_color.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_watchChessClose"  Pos = "620,3,85,30"  Visible='0'>
+				 <Element Type="String" Text = "关闭讲解" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_pkg_color.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_pkg_color.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_pkg_color.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_pkg_color.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>			
+			<Element Type = "Button" Name = "m_listenVoiceOpen"  Pos = "535,3,85,30"  Visible='0'>
+				 <Element Type="String" Text = "实时语音" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_pkg_color.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_pkg_color.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_pkg_color.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_pkg_color.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_listenVoiceClose"  Pos = "535,3,85,30"  Visible='0'>
+				 <Element Type="String" Text = "关闭语音" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_pkg_color.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_pkg_color.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_pkg_color.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_pkg_color.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_RealtimeVoiceModeOpen"  Pos = "620,3,85,30" Visible='0'>
+				 <Element Type="String" Text = "开实时讲解" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_RealtimeVoiceModeClose"  Pos = "620,3,85,30" Visible='0'>
+				 <Element Type="String" Text = "关实时讲解" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<!-- 实时语音讲解模式下，直播房有落子，红点显示新落子数量，必须放在上面几个按钮下面，绘制时才能在上述几个按钮上方 -->
+			<Element Type = "Button" Name="m_RedPointNumber"  Pos =  "689,3,16,16" Visible = '0'>
+			<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height = "10" Bold="false"/>
+				<Image  Normal="red_point.png" Normal_Pos="0,0,16,16" Normal_TextColor = "#FFFFFF"
+						Hover="red_point.png" Hover_Pos="0,0,16,16" Hover_TextColor = "#FFFFFF"
+						Down="red_point.png"  Down_Pos="0,0,16,16" Down_TextColor = "#FFFFFF"/>
+			</Element>
+			
+			 <Element Type = "Button" Name = "m_btnAuto23"  Pos = "620,3,85,30">
+				 <Element Type="String" Name = "BtnText"  Text = "自动23" Font = "宋体" Height	= "13" />
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_btnPauseAuto23"  Pos = "620,34,85,30">
+				 <Element Type="String" Name = "BtnText"  Text = "暂停自动23" Font = "宋体" Height	= "13" />
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_startRecord"  Pos = "373,34,85,30">
+				 <Element Type="String" Text = "开始发言" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_resetRefBranch"  Pos = "455,34,85,30">
+				 <Element Type="String" Text = "重置参考图" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_deleteRefBranch"  Pos = "535,3,85,30">
+				 <Element Type="String" Text = "删除参考图" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_beginRefPoint"  Pos = "536,34,85,30">
+				 <Element Type="String" Text = "对局研究" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_stopRecord"  Pos = "373,34,85,30">
+				 <Element Type="String" Text = "结束发言" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_endRefPoint"  Pos = "536,34,85,30">
+				 <Element Type="String" Text = "结束研究" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_whiteFirst"  Pos = "46,34,36,30">
+				 <Element Type="String" Text = "○●" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_blackFirst"  Pos = "77,34,36,30">
+				 <Element Type="String" Text = "●○" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_allWhite"  Pos = "108,34,30,30">
+				 <Element Type="String" Text = "○" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_allBlack"  Pos = "133,34,30,30">
+				 <Element Type="String" Text = "●" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<!--新加一个A标记按钮，用于直播房实时语音讲解模式，而不改变原有逻辑-->
+			<Element Type = "Button" Name = "m_NewAlphabet"  Pos = "163,34,30,30" Visible='0'>
+				 <Element Type="String" Text = "A" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>	
+			 <Element Type = "Button" Name = "m_number"  Pos = "188,34,30,30">
+				 <Element Type="String" Text = "1" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_triangle"  Pos = "213,34,30,30">
+				 <Element Type="String" Text = "△" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_circle"  Pos = "238,34,30,30">
+				 <Element Type="String" Text = "◎" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_judgeSituation"  Pos = "324,34,85,30">
+				 <Element Type="String" Text = "形势判断" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_lookFineArtMap"  Pos="405,34,85,30" Visible='0'>
+				 <Element Type="String" Text = "绝艺变化图" Font = "宋体" Height="13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_FineArtReplay"  Pos = "486,34,85,30"  Visible='0'>
+				 <Element Type="String" Text = "绝艺复盘" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_pkg_color.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_pkg_color.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_pkg_color.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_pkg_color.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_AIAnalysis"  Pos = "486,34,85,30"  Visible='0'>
+				 <Element Type="String" Text = "绝艺推荐" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_pkg_color.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_pkg_color.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_pkg_color.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_pkg_color.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>			
+						
+			<Element Type = "Button" Name = "m_FineArtRecommend"  Pos = "486,34,125,30"  Visible='0'>
+				 <Element Type="String" Text = "绝艺推荐" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_color_big.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,125,30" 
+				 Hover="btn_color_big.png" Down_TextColor = "#e6e6e6" Hover_Pos = "0,30,125,30" 
+				 Down="btn_color_big.png" Hover_TextColor = "#e6e6e6" Down_Pos = "0,60,125,30" 
+				  Disable="btn_color_big.png" Disable_TextColor = "#939393" Disable_Pos = "0,90,125,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_NFFineArtReport"  Pos = "567,34,110,30"  Visible='0'>
+				 <Element Type="String" Text = "高级绝艺复盘" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_pkg_color.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_pkg_color.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_pkg_color.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_pkg_color.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_FineArtDeepNotPraise"  Pos = "579,37,24,22"  Visible='0'>				 
+				<Image  Normal="btn_praise.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,24,22" 
+				        Down="btn_praise.png" Down_TextColor = "#e6e6e6" Down_Pos = "0,26,24,22" 
+				        Hover="btn_praise.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "0,52,24,22"  />  
+			</Element>
+			<Element Type = "Button" Name = "m_FineArtDeepPraise"  Pos = "579,37,24,22"  Visible='0'>				 
+				<Image  Normal="btn_praise.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "29,0,24,22" 
+				        Down="btn_praise.png" Down_TextColor = "#e6e6e6" Down_Pos = "29,26,24,22" 
+				        Hover="btn_praise.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "29,52,24,22"  />  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_FineArtReplayHelp"  Pos = "611,34,20,30"  Visible='0'>				 
+				<Image  Normal="btn_color_big.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "126,0,20,30" 
+				 Hover="btn_color_big.png" Down_TextColor = "#e6e6e6" Hover_Pos = "126,30,20,30" 
+				 Down="btn_color_big.png" Hover_TextColor = "#e6e6e6" Down_Pos = "126,60,20,30" 
+				 Disable="btn_color_big.png" Disable_TextColor = "#939393" Disable_Pos = "126,90,20,30"/>  
+			</Element>	
+			
+			<Element Type = "Button" Name = "m_showRounds"  Pos = "243,34,85,30">
+				 <Element Type="String" Text = "显示手数" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			 <Element Type = "Button" Name = "m_print"  Pos = "369,3,38,30">
+				 <Element Type="String" Text = "打印" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			<Element Type = "Button" Name = "m_inputSave"  Pos = "403,3,38,30">
+				 <Element Type="String" Text = "保存" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_loadSGF"  Pos = "437,3,38,30">
+				 <Element Type="String" Text = "打开" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>			
+			<Element Type = "Button" Name = "m_saveBoard"  Pos = "471,3,85,30">
+				 <Element Type="String" Text = "保存盘面" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>			
+			
+			<Element Type = "Button" Name = "m_loadChessbook"  Pos = "454,3,85,30">
+				 <Element Type="String" Text = "加载棋谱" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<!-- 妙手 -->
+			<Element Type = "Button" Name = "m_LADPreGame"  Pos = "126,3,85,30">
+				 <Element Type="String" Text = "上一题" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_LADLastGame"  Pos = "226,3,85,30">
+				 <Element Type="String" Text = "下一题" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_LADRetryGame"  Pos = "326,3,85,30">
+				 <Element Type="String" Text = "重试" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_LADGameAnswer"  Pos = "426,3,85,30">
+				<Element Type="String" Text = "答案" Font = "宋体" Height = "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#00E600" Normal_Pos = "0,0,85,30" 
+					    Hover="btn_rmot_pkg_01.png" Down_TextColor = "#D89D4B" Hover_Pos = "85,0,85,30" 
+					    Down="btn_rmot_pkg_01.png" Hover_TextColor = "#D89D4B" Down_Pos = "170,0,85,30" 
+					    Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"
+				/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_LADExitGameAnswer"  Pos = "426,3,85,30">
+				<Element Type="String" Text = "退出答案" Font = "宋体" Height = "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#00E600" Normal_Pos = "0,0,85,30" 
+					    Hover="btn_rmot_pkg_01.png" Down_TextColor = "#D89D4B" Hover_Pos = "85,0,85,30" 
+					    Down="btn_rmot_pkg_01.png" Hover_TextColor = "#D89D4B" Down_Pos = "170,0,85,30"
+					    Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"
+				/>  
+			</Element>
+			
+			<Element Type = "SwithButton" Name="CheckBoxAnswerAllChange"  Pos = "510,11,200,14" Visible = '1'>
+				<Image  OnNormal="..\..\skin\button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+					  OnHover="..\..\skin\button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+					  OffNormal="..\..\skin\button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+					  OffHover="..\..\skin\button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+					  Disable="..\..\skin\button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"
+					  />
+			</Element>	
+			<Element Type = "String" Text = "显示答案中所有变化"  Name = "CheckBoxTextAnswerAllChange" Pos = "526,11,200,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#C0C0C0"  Visible = '1'/>
+			
+		</Element>
+		
+<!--===========-->
+		<Element Name="ChessboardActionPanelBottom" Type = "Panel" Pos = "35,33,750,65" >
+		
+			<Element Type = "Button" Name = "m_retract"  Pos = "40,3,85,30">
+				 <Element Type="String" Text = "悔棋" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<!-- 停一手与悔棋按钮之间有重叠5个像素，原因是按钮图片两边透明比较多，这里保持原来的写法 -->
+			<Element Type = "Button" Name = "m_skip"  Pos = "120,3,85,30">
+				 <Element Type="String" Text = "停一手" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_removeCaptured"  Pos = "205,3,85,30">
+				 <Element Type="String" Text = "清除死子" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_cancelRemoveCaptured"  Pos = "205,3,85,30">
+				 <Element Type="String" Text = "取消清除死子" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<!-- 新框架智能裁判 -->
+			<Element Type = "Button" Name = "m_NFAIJudge"  Pos = "205,3,85,30"  Visible = '0'>
+				 <Element Type="String" Text = "智能裁判" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_applyCalculate"  Pos = "285,3,85,30">
+				 <Element Type="String" Text = "申请点目" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>
+			
+			<Element Type = "Button" Name = "m_enforceCalculate"  Pos = "370,3,85,30">
+				 <Element Type="String" Text = "强制点目" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#00E600" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Down_TextColor = "#D89D4B" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Hover_TextColor = "#D89D4B" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>		
+			
+			 <Element Type = "Button" Name = "m_applyDraw"  Pos = "450,3,85,30">
+				 <Element Type="String" Text = "申请和棋" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>			 
+			 
+			<Element Type = "Button" Name = "m_giveUp"  Pos = "530,3,85,30">
+				 <Element Type="String" Text = "认输" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>			
+			 
+			<Element Type = "Button" Name = "m_alphabet"  Pos = "163,1,30,30">
+				 <Element Type="String" Text = "A" Font = "宋体" Height	= "13" Name = ""/>
+				<Image  Normal="btn_rmot_pkg_01.png" Normal_TextColor = "#e6e6e6" Normal_Pos = "0,0,85,30" 
+				 Hover="btn_rmot_pkg_01.png" Hover_TextColor = "#e6e6e6" Hover_Pos = "85,0,85,30" 
+				 Down="btn_rmot_pkg_01.png" Down_TextColor = "#e6e6e6" Down_Pos = "170,0,85,30" 
+				  Disable="btn_rmot_pkg_01.png" Disable_TextColor = "#939393" Disable_Pos = "255,0,85,30"/>  
+			</Element>		 
+
+		</Element>
+		</Element>
+	</Element>
+ </root>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+	<Element Type = "TitleBar" Name="TitleBarCtrl"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "background\main\bg_title.png" />
+	</Element> 
+	
+	<Element Type = "Button" Name="BtnClose"  Pos ="30,0" Anchor_LTRBC = "01100">
+		<Image  Normal="button\main_title\btn_title_pkg_01.png"  Normal_Pos="0,120,25,30"  Normal_TextColor = "#d1ffc9"
+			  Hover="button\main_title\btn_title_pkg_01.png"     Hover_Pos="25,120,25,30"  Hover_TextColor = "#d1ffc9"
+			  Down="button\main_title\btn_title_pkg_01.png"      Down_Pos="50,120,25,30"  Down_TextColor = "#d1ffc9" 
+			  Disable="button\main_title\btn_title_pkg_01.png"   Disable_Pos="75,120,25,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>	
+	
+	<Element Type = "String" Text = "--" Pos = "10,0,348,30" Font = "宋体" Align = "L" Height = "14" TextColor = "#e8dbc9" Name = "TitleTxt" Bold="true" Visible="1"/>
+	
+	<Element Type = "String" Text = "*---" Pos = "8,460,250,35" Font = "宋体" Align = "L" Height = "14" TextColor = "#F2D07D" Name = "TxtDescription" Bold="0" Visible="1"/>
+	
+	<Element Type = "Button" Name="btnRegister"  Pos = "97,35" Visible = '0' Anchor_LTRBC = "00110">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height	= "13" TextEdge="1" EdgeColor="#0B0F14" Anchor_LTRBC = "00110"/>
+		<Image  Normal="button\NFRingMatch.png"  Normal_Pos="194,0,92,30"  Normal_TextColor = "#EBF1F4"
+			    Hover="button\NFRingMatch.png" Hover_Pos="194,30,92,30"  Hover_TextColor = "#EBF1F4"
+			    Down="button\NFRingMatch.png"  Down_Pos="194,60,92,30"  Down_TextColor = "#EBF1F4"
+			    Disable="button\NFRingMatch.png"   Disable_Pos="194,90,92,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="btnUnregister"  Pos = "97,35" Visible = '0' Anchor_LTRBC = "00110">
+		<Element Type="String"  Name = "BtnText" Text = "----" Font = "宋体" Height	= "13" TextEdge="1" EdgeColor="#0B0F14" Anchor_LTRBC = "00110"/>
+		<Image  Normal="button\NFRingMatch.png"  Normal_Pos="194,0,92,30"  Normal_TextColor = "#EBF1F4"
+			    Hover="button\NFRingMatch.png" Hover_Pos="194,30,92,30"  Hover_TextColor = "#EBF1F4"
+			    Down="button\NFRingMatch.png"  Down_Pos="194,60,92,30"  Down_TextColor = "#EBF1F4"
+			    Disable="button\NFRingMatch.png"   Disable_Pos="194,90,92,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="btnAbstention"  Pos = "97,35" Visible = '0' Anchor_LTRBC = "00110">
+		<Element Type="String"  Name = "BtnText" Text = "--" Font = "宋体" Height	= "13" TextEdge="1" EdgeColor="#0B0F14" Anchor_LTRBC = "00110"/>
+		<Image  Normal="button\NFRingMatch.png"  Normal_Pos="194,0,92,30"  Normal_TextColor = "#EBF1F4"
+			    Hover="button\NFRingMatch.png" Hover_Pos="194,30,92,30"  Hover_TextColor = "#EBF1F4"
+			    Down="button\NFRingMatch.png"  Down_Pos="194,60,92,30"  Down_TextColor = "#EBF1F4"
+			    Disable="button\NFRingMatch.png"   Disable_Pos="194,90,92,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="btnAttacking"  Pos = "97,35" Visible = '0' Anchor_LTRBC = "00110">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "宋体" Height	= "13" TextEdge="1" EdgeColor="#0B0F14" Anchor_LTRBC = "00110"/>
+		<Image  Normal="button\NFRingMatch.png"  Normal_Pos="194,0,92,30"  Normal_TextColor = "#EBF1F4"
+			    Hover="button\NFRingMatch.png" Hover_Pos="194,30,92,30"  Hover_TextColor = "#EBF1F4"
+			    Down="button\NFRingMatch.png"  Down_Pos="194,60,92,30"  Down_TextColor = "#EBF1F4"
+			    Disable="button\NFRingMatch.png"   Disable_Pos="194,90,92,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="btnGuarding"  Pos = "97,35" Visible = '0' Anchor_LTRBC = "00110">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "宋体" Height	= "13" TextEdge="1" EdgeColor="#0B0F14" Anchor_LTRBC = "00110"/>
+		<Image  Normal="button\NFRingMatch.png"  Normal_Pos="194,0,92,30"  Normal_TextColor = "#EBF1F4"
+			    Hover="button\NFRingMatch.png" Hover_Pos="194,30,92,30"  Hover_TextColor = "#EBF1F4"
+			    Down="button\NFRingMatch.png"  Down_Pos="194,60,92,30"  Down_TextColor = "#EBF1F4"
+			    Disable="button\NFRingMatch.png"   Disable_Pos="194,90,92,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="btnWaiting"  Pos = "97,35" Visible = '0' Anchor_LTRBC = "00110">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "宋体" Height	= "13" TextEdge="1" EdgeColor="#0B0F14" Anchor_LTRBC = "00110"/>
+		<Image  Normal="button\NFRingMatch.png"  Normal_Pos="194,0,92,30"  Normal_TextColor = "#EBF1F4"
+			    Hover="button\NFRingMatch.png" Hover_Pos="194,30,92,30"  Hover_TextColor = "#EBF1F4"
+			    Down="button\NFRingMatch.png"  Down_Pos="194,60,92,30"  Down_TextColor = "#EBF1F4"
+			    Disable="button\NFRingMatch.png"   Disable_Pos="194,90,92,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+	<Element Type = "Button" Name="btnOver"  Pos = "97,35" Visible = '0' Anchor_LTRBC = "00110">
+		<Element Type="String"  Name = "BtnText" Text = "---" Font = "宋体" Height	= "13" TextEdge="1" EdgeColor="#0B0F14" Anchor_LTRBC = "00110"/>
+		<Image  Normal="button\NFRingMatch.png"  Normal_Pos="194,0,92,30"  Normal_TextColor = "#EBF1F4"
+			    Hover="button\NFRingMatch.png" Hover_Pos="194,30,92,30"  Hover_TextColor = "#EBF1F4"
+			    Down="button\NFRingMatch.png"  Down_Pos="194,60,92,30"  Down_TextColor = "#EBF1F4"
+			    Disable="button\NFRingMatch.png"   Disable_Pos="194,90,92,30"  Disable_TextColor  = "#a1a1a1"/>
+	</Element>
+	
+
+
+</root> 

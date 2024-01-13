@@ -1,0 +1,105 @@
+(;SZ[9]YTI[0]YHC[5]YHD[3]YHL[18]YHP[50]YHT[60]C[  围棋棋子分黑白两色，黑先白后，轮流在棋盘交叉点上落子。棋子落下后不能移动。
+    下面将为您讲解一些基础的围棋技术，请您在棋盘上落子，进入这深邃奥秘的黑白世界。
+]AB[cg](;W[aa]XGF[4096])(;W[ba]XGF[4096])(;W[ca]XGF[4096])(;W[da]XGF[4096])(;W[ea]XGF[4096]
+)(;W[fa]XGF[4096])(;W[ga]XGF[4096])(;W[ha]XGF[4096])(;W[ia]XGF[4096])(;W[ab]XGF[4096])(;W[bb]
+XGF[4096])(;W[cb]XGF[4096])(;W[db]XGF[4096])(;W[eb]XGF[4096])(;W[fb]XGF[4096])(;W[gb]XGF[4096]
+)(;W[hb]XGF[4096])(;W[ib]XGF[4096])(;W[ac]XGF[4096])(;W[bc]XGF[4096])(;W[cc]XGF[4096])(;W[dc]
+XGF[4096])(;W[ec]XGF[4096])(;W[fc]XGF[4096])(;W[gc]XGF[4096])(;W[hc]XGF[4096])(;W[ic]XGF[4096]
+)(;W[ad]XGF[4096])(;W[bd]XGF[4096])(;W[cd]XGF[4096])(;W[dd]XGF[4096])(;W[ed]XGF[4096])(;W[fd]
+XGF[4096])(;W[gd]XGF[4096])(;W[hd]XGF[4096])(;W[id]XGF[4096])(;W[ae]XGF[4096])(;W[be]XGF[4096]
+)(;W[ce]XGF[4096])(;W[de]XGF[4096])(;W[ee]XGF[4096])(;W[fe]XGF[4096])(;W[ge]XGF[4096])(;W[he]
+XGF[4096])(;W[ie]XGF[4096])(;W[af]XGF[4096])(;W[bf]XGF[4096])(;W[cf]XGF[4096])(;W[df]XGF[4096]
+)(;W[ef]XGF[4096])(;W[ff]XGF[4096])(;W[gf]XGF[4096])(;W[hf]XGF[4096])(;W[if]XGF[4096])(;W[ag]
+XGF[4096])(;W[bg]XGF[4096])(;W[dg]XGF[4096])(;W[eg]XGF[4096])(;W[fg]XGF[4096])(;W[gg]XGF[4096]
+)(;W[hg]XGF[4096])(;W[ig]XGF[4096])(;W[ah]XGF[4096])(;W[bh]XGF[4096])(;W[ch]XGF[4096])(;W[dh]
+XGF[4096])(;W[eh]XGF[4096])(;W[fh]XGF[4096])(;W[gh]XGF[4096])(;W[hh]XGF[4096])(;W[ih]XGF[4096]
+)(;W[ai]XGF[4096])(;W[bi]XGF[4096])(;W[ci]XGF[4096])(;W[di]XGF[4096])(;W[ei]XGF[4096])(;W[fi]
+XGF[4096])(;W[gi]XGF[4096])(;W[hi]XGF[4096])(;W[ii]XGF[4096]))
+
+(;SZ[9]YTI[0]YHC[0]YHD[3]YHL[19]YHP[50]YHT[60]PL[W]C[  和棋子连在一起的空白交叉点叫这个棋子的“气”。当前棋盘上所有黑色棋子的“气”均以“×”表示出来。
+    只有上下左右相邻的交叉点才是连在一起的，斜着的交叉点不是哦。白棋“△”二子不是连在一起的。
+    连在一起的同色棋子作为整体来判断有多少“气”，同生共死。下方的三个黑子有3气。
+
+    若您已经了解“气”的概念，请点击“下一步”按钮。]AB[aa][dd][af][gi][fi][ei]AW[hc][gd][eh][di][dh]
+TR[gd][hc]MA[ba][ab][ed][dc][cd][de][ag][bf][ae][gh][hi][fh])
+
+(;SZ[9]YTI[0]YHC[5]YHD[3]YHL[19]YHP[50]YHT[60]C[  图中黑棋三子有几“气”？请在您认为正确的数字下方落子。
+]AB[dc][ec][fc]AW[gd][gc][gb][cb][cc][cd][db][fb]SL[hh][fh][dh][bh]LB[hg:3][fg:4][dg:5][bg:6]
+(;B[fh]C[  黑棋共有4气，答对了！
+
+]XGF[4096]MA[fd][ed][dd][eb]SL[bh][dh][hh]LB[hg:3][fg:4][dg:5][bg:6])(;B[hh]C[  请再试一次！]
+SL[fh][dh][bh]LB[hg:3][fg:4][dg:5][bg:6])(;B[dh]C[  请再试一次！]SL[fh][hh][bh]LB[hg:3][fg:4][dg:5][bg:6]
+)(;B[bh]C[  请再试一次！]SL[hh][fh][dh]LB[hg:3][fg:4][dg:5][bg:6]))
+
+(;SZ[9]YTI[0]YHC[0]YHD[3]YHL[20]YHP[50]YHT[60]C[  如果一个棋子没有气，就要从棋盘上拿走它。
+    比如，黑棋只要在A位落子，就可拿走这一个白子，因为这个白子已经没有“气”了。
+    而白棋不能在B位落子，因为白棋落子后，已经没有“气”。
+
+    请点击“下一步”按钮。]AB[cc][bd][dd][fd][gc][hd][ge]AW[cd]LB[ce:A][gd:B])
+
+(;SZ[9]YTI[0]YHC[0]YHD[3]YHL[20]YHP[50]YHT[60]C[  需要注意的是，落子时棋子可以处于无气状态。
+    白棋可以在A位落子，虽然暂时处于无气状态，但两颗黑子因为无气而被提掉后，形成如右图的图形，白棋2子就有气了。
+
+    若您已经了解“提”的概念，请点击“下一步”按钮。]AB[ac][ad][ae][af][bf][bc][ce][cd][gc][fc][fd][fe][ff][gf]
+AW[cc][dc][dd][de][df][cf][bd][hc][ic][id][ie][if][hf][gd][ge]LB[be:A][ed:→])
+
+(;SZ[9]YTI[0]YHC[6]YHD[3]YHL[20]YHP[50]YHT[60]C[  黑先
+    每一时刻，都有白棋处于仅剩一气的状态。请用三手棋消灭所有的三块白子！请在A、B、C三点中选择！
+    提示：优先消灭当前只有1气的白棋哦。
+]AB[bc][cb][fb][fc][hb][hc][ga][cf][bf][bg][ch][di][ci][fi][gi][gh][hg][hf][gf][fe][de][ee][dc][hh][bh]
+AW[cc][gc][ei][eh][fh][cg][dg][fg][gg][dh][df][ff]LB[cd:A][gd:B][eg:C];B[cd];W[gb]C[  任务进度：1/3
+]LB[gd:B][eg:C];B[gd];W[ef]C[  任务进度：2/3
+];B[eg]C[  白棋被全部消灭，答对了！
+
+]XGF[4096])
+
+(;SZ[9]YTI[0]YHC[5]YHD[3]YHL[20]YHP[50]YHT[60]C[  黑先
+    请问黑如何顺利提掉带有“△”标记的五个白子？请在A、B、C三点中选择第一步！
+    提示：小心自己的棋子先被吃掉哦。
+]AB[eb][dc][dd][fc][fd][fe][ge][gf][de][ce][cf][dg][dh][fg][fh]AW[gg][gh][cg][ch][di][ei][fi][ff][ef][df][ed][ec]
+TR[ec][ed][df][ef][ff]LB[ee:A][eg:B][eh:C](;B[ee];W[eh]C[  任务进度：2/5
+];B[eg]C[  黑棋成功吃掉白棋五子，答对了！
+
+]XGF[4096])(;B[eg];W[eh]C[  黑棋五子率先阵亡！请再试一次。
+]))
+
+(;SZ[9]YTI[0]YHC[0]YHD[3]YHL[21]YHP[50]YHT[60]C[  在这个图中，黑下A位可以提掉白棋△一子，形成右下角的图形，但白棋下B位又可以提掉黑棋△一子，再次形成左上角的图形，这样不是没完没了了吗？
+    这种现象在围棋中叫做“劫”。当黑提掉白棋一子之后，白不能立即回提，需要隔一回合才能回提，反之亦然。
+
+    请点击“下一步”按钮，按照提示领略劫争全过程。]AB[cb][bc][cd][ff][eg][fh][gg]AW[db][ec][dd][gh][hg][gf][cc]
+TR[cc][gg]LB[dc:A][fg:B])
+
+(;SZ[9]YTI[0]YHC[5]YHD[3]YHL[21]YHP[50]YHT[60]C[  如图所示，存在一个劫争，黑棋首先提劫。
+    请在A位落子。
+]AB[ai][bi][ch][ci][db][cc][dd][ii][ih][ig][gh][gi][if]AW[ah][bh][di][eb][fc][ed][dc][hi][hh][hg]
+LB[ec:A];B[ec];W[dh]C[  由于是黑棋先提劫，白棋不能立即提回，在左下威胁黑棋4子，称为“找劫材”。
+    请在A位落子。
+]LB[cg:A];B[cg];W[dc]C[  白棋在外边走过一手，此时可以提劫了。而黑棋也要找劫材，才能提回。
+    请在A位落子。
+]LB[hf:A];B[hf];W[ec]C[  白棋结束劫争，称为“消劫”。白棋在劫争中获胜，但黑棋相当于在其他地方连走两手，吃掉白三子作为补偿。
+    请在A位落子。
+]LB[gg:A];B[gg]XGF[4096])
+
+(;SZ[9]YTI[0]YHC[0]YHD[3]YHL[22]YHP[50]YHT[60]C[  几个子围成一个点，对方由于落子后没有“气”，不能在这个点里落子，这个点就叫“眼”，图中A位都是“眼”。
+    白棋吃不掉右下的黑棋，因为右下黑棋有2个眼，有2气。而白棋又不能往黑棋的两个眼里下子，因为下子后白棋1子没有气，但黑棋仍有一气。故白棋吃不掉黑棋。
+    可见，一块棋有两个眼，就是活棋。
+    若您已经了解“两眼活棋”的概念，请点击“下一步”按钮。]AB[ba][bb][ab][da][db][eb][fb][fa][cd][dd][de][df][cf][bf][be][hf][if][hg][hi][ih][hh]
+AW[gi][gh][gg][gf][ge][he][ie]LB[ea:A][aa:A][ce:A][ig:A][ii:A])
+
+(;SZ[9]YTI[0]YHC[5]YHD[3]YHL[22]YHP[50]YHT[60]C[  黑先
+    黑棋已经被白棋包围，请问黑棋下一步棋走在哪里，才能保证活棋？
+    提示：做出两只眼就能活棋。
+]AB[dd][ed][fd][gd][ge][ff][ef][df][cf][ce]AW[bd][be][bf][bg][cg][dg][eg][fg][gg][hf][he][hc][hd][gc][fc][ec][dc][cc][gf][cd]
+(;B[ee]C[  黑棋成功做出两只眼，答对了！
+
+]XGF[4096]LB[de:A][fe:A])(;B[de];W[ee]C[  黑棋还剩1口气！当黑棋在A位落子后，黑棋只剩下1只眼，成为死棋！请再试一次！
+]LB[fe:A])(;B[fe];W[ee]C[  黑棋还剩1口气！当黑棋在A位落子后，黑棋只剩下1只眼，成为死棋！请再试一次！
+]LB[de:A]))
+
+(;SZ[9]YTI[0]YHC[5]YHD[4]YHL[23]YHP[80]YHT[60]C[恭喜！您已经完成了新手教学！以下口诀可以帮您记忆之前学到的围棋基本技术。
+
+    星位天元，棋路纵横，黑先白后，地多者胜，无气提走，有气不动，相连棋子，同存共终，单子互提，即为劫争，交换一手，提回便能，一眼则死，两眼则生，做眼破眼，乐在其中，多下多练，棋力有成，围棋有趣，享受为重！
+
+    请在棋盘中央天元处落子，结束新手教学！]AW[aa][ba][ca][da][ea][fa][ga][ha][ia][ib][hb][gb][fb][eb][db][cb][bb][ab][ac][bd][cd][dd][ed][fd][gd][id][ic][hc][gc][fc][ec][dc][cc][bc][ad][be][bf][ae][af][ag][ah][ai][bi][bh][bg][ce][cf][cg][ch][dh][di][ci][dg][df][de][ef][eg][eh][ei][fi][fh][fg][ff][fe][ge][gf][gg][gh][gi][hi][hh][hg][hf][ie][if][ig][ih][ii][he][hd]
+;B[ee]XGF[4096])
+

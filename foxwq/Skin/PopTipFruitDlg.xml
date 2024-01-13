@@ -1,0 +1,38 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<root Size = "656,334"  Transparent='1'> 	
+	<Element Name="PanelMain" Type = "Panel" Pos = "0,0" Anchor_LTRBC="11110">			
+		<Image  Background = "Navigation\poptip_fruit.png"  Pos="0,0,656,334"/>
+	</Element>
+	
+	<!-- 标题文字 -->
+	<Element Type="String" Text="" Pos="90,10,496,50" Font="宋体" Align="C" Height="36" TextColor="#EF6921" Name="TitleTxt" Bold="1" Visible="1"/>
+	
+	<Element Type="String" Text="" Pos="130,60,416,30" Font="宋体" Align="C" Height="24" TextColor="#EF6921" Name="TxtLine1" Bold="1" Visible="0"/>
+	<Element Type="String" Text="" Pos="130,90,416,30" Font="宋体" Align="C" Height="24" TextColor="#EF6921" Name="TxtLine2" Bold="1" Visible="0"/>
+	<Element Type="String" Text="" Pos="130,120,416,30" Font="宋体" Align="C" Height="24" TextColor="#EF6921" Name="TxtLine3" Bold="1" Visible="0"/>
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="btnClose"  Pos = "569,2">		
+		<Image  Normal="Navigation\poptip_fruit.png"   Normal_Pos="126,335,40,34"
+				Hover="Navigation\poptip_fruit.png"    Hover_Pos="166,335,40,34"
+				Down="Navigation\poptip_fruit.png"     Down_Pos="206,335,40,34"/>
+	</Element>
+	
+	<!--种植蟠桃树按钮-->
+	<Element Type = "Button" Name="btnPlantPeach"  Pos = "192,245">		
+		<Image  Normal="Navigation\poptip_fruit.png"  Normal_Pos="0,335,120,45"
+				Hover="Navigation\poptip_fruit.png"   Hover_Pos="0,380,120,45"
+				Down="Navigation\poptip_fruit.png"    Down_Pos="0,425,120,45"/>
+	</Element>
+	
+	<!--种植神仙树按钮-->
+	<Element Type = "Button" Name="btnPlantImmortal"  Pos = "364,245">
+		<Image  Normal="Navigation\poptip_fruit.png"  Normal_Pos="249,335,121,45"
+				Hover="Navigation\poptip_fruit.png"   Hover_Pos="249,380,121,45"
+				Down="Navigation\poptip_fruit.png"    Down_Pos="249,425,121,45"/>
+	</Element>
+		
+	
+	
+
+</root>

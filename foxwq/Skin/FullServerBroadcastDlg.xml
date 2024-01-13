@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<root>
+    <!--背景图片，位置中填写负数是为了去掉背景图片上的阴影-->
+	<Element Type = "Image" Name="backImage"  Pos = "0,0"  Visible = '0'>
+		<Image  Background = "FullServerBroadcastDlg\backImage.png" />
+	</Element> 
+	
+	<!--关闭按钮-->
+	<Element Type = "Button" Name="BtnClose"  Pos = "449,1">
+		<Image  Normal="FullServerBroadcastDlg\btnClose.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,30,30"
+				Hover="FullServerBroadcastDlg\btnClose.png"   Hover_TextColor = "#666666" Hover_Pos="30,0,30,30"
+				Down="FullServerBroadcastDlg\btnClose.png"    Down_TextColor = "#ffffff" Down_Pos="60,0,30,30"/>
+	</Element>
+	
+	<!--表情按钮-->
+	<Element Type = "Button" Name="BtnFace"  Pos ="300,92" >
+		<Image  Normal="FullServerBroadcastDlg\btnFace.png"  Normal_Pos="0,0,24,24"  Normal_TextColor = "#d1ffc9"
+			    Hover="FullServerBroadcastDlg\btnFace.png"  Hover_Pos="0,25,24,24"  Hover_TextColor = "#d1ffc9"
+			    Down="FullServerBroadcastDlg\btnFace.png"  Down_Pos="0,50,24,24"  Down_TextColor = "#d1ffc9"/>	
+	</Element>
+	
+	<!--颜色复选框-->
+	<Element Type = "SwithButton" Name="ckboxColor"  Pos = "10,97,15,14" Visible = '1'>
+		<Image  OnNormal="button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+			    OnHover="button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+			    OffNormal="button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+			    OffHover="button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+			    Disable="button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+	</Element>
+	
+	<!--颜色复选框对应的文字提示-->
+	<Element Type = "String" Text = "--"  Name = "ColorText" Pos = "27,97,30,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#C0C0C0"  Visible = '1'/>
+	
+	<!--粗体复选框-->
+	<Element Type = "SwithButton" Name="ckboxBold"  Pos = "68,97,15,14" Visible = '1'>
+		<Image  OnNormal="button\checkbox_pkg_01.png"  OnNormal_Pos="0,14,14,14"
+			    OnHover="button\checkbox_pkg_01.png"  OnHover_Pos="14,14,14,14"
+			    OffNormal="button\checkbox_pkg_01.png"  OffNormal_Pos="28,14,14,14"
+			    OffHover="button\checkbox_pkg_01.png"  OffHover_Pos="42,14,14,14"
+			    Disable="button\checkbox_pkg_01.png"  Disable_Pos="56,14,14,14"/>
+	</Element>
+	
+	<!--粗体复选框对应的文字提示-->
+	<Element Type = "String" Text = "--"  Name = "BoldText" Pos = "85,97,30,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#C0C0C0"  Visible = '1'/>
+	
+	<!--总金额文字框-->
+	<Element Type = "String" Text = "-------"  Name = "SumMoneyText" Pos = "150,97,300,14" Font = "宋体" Align = "L" Height = "12" TextColor = "#C0C0C0"  Visible = '1'/>
+	
+	<!--发送按钮-->
+	<Element Type = "Button" Name="BtnSend"  Pos = "371,88">
+		<Image  Normal="FullServerBroadcastDlg\btnSend.png"  Normal_TextColor = "#666666" Normal_Pos="0,0,100,30"
+				Hover="FullServerBroadcastDlg\btnSend.png"   Hover_TextColor = "#666666" Hover_Pos="100,0,100,30"
+				Down="FullServerBroadcastDlg\btnSend.png"    Down_TextColor = "#ffffff" Down_Pos="200,0,100,30"/>
+	</Element>
+
+</root> 
